@@ -1,0 +1,56 @@
+{
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+  "manifest_version": 2,
+  "name": "My App",
+  "version": "versionString",
+
+  "default_locale": "en",
+  "description": "A plain text description",
+  "icons": {},
+
+  "action_handlers": ["new_note"],
+  "author": "Sebastian105",
+  "commands": {},
+  "cross_origin_embedder_policy": {
+    "value": "require-corp"
+  },
+  "cross_origin_opener_policy": {
+    "value": "same-origin"
+  },
+  "current_locale": "US-en",
+  "event_rules": [{}],
+  "file_handlers": {},
+  "file_system_provider_capabilities": {
+    "configurable": true,
+    "multiple_mounts": true,
+    "source": "network"
+  },
+  "key": "publicKey",
+  "kiosk": {
+  "kiosk_enabled": true,
+  "kiosk_only": true,
+  "minimum_chrome_version": "versionString",
+  "nacl_modules": [],
+  "offline_enabled": true,
+  "optional_permissions": ["tabs"],
+  "permissions": ["tabs"],
+  "requirements": {},
+  "sandbox": [],
+  "short_name": "Sebastian105",
+  "sockets": {
+    "tcp": {
+      "connect": "*"
+    },
+    "udp": {
+      "send": "*"
+    }
+  },
+  "storage": {
+    "managed_schema": "schema.json"
+    }
+  }
+}
