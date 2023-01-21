@@ -119,6 +119,10 @@ function myFunctionDarkMode() {
    var element = document.body;
    element.classList.toggle("dark-mode");
 }
+function myFunctionTwilight() {
+  var elemenwt = document.body;
+  elemenwt.classlist.toggle("twilight");
+}
 
 function myFunctiongame() {
   var myWindow = window.open("game/index.html", "_blank");
@@ -176,5 +180,11 @@ if(Enabled == false)
 }
 function keybinds(){
   var myWindow = window.open("105/keybinds/index.html");
+}
+function buttonCode()
+{
+      var textbox = document.getElementById("nameChange")
+    document.title = (textbox.value)
+    localStorage.setItem('tabname', textbox.value)
 }
 
