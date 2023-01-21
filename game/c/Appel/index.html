@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EF4SM0THHF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EF4SM0THHF');
+</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../stream.css">
+    <link rel="stylesheet" href="../../../assets/css/style.css">
+    <link href = "https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto+Slab|Roboto:300,400,500,700" rel = "stylesheet" />
+    <script> //Console timestamp script
+      var log = console.log;
+  
+      console.log = function () {
+        var first_parameter = arguments[0];
+        var other_parameters = Array.prototype.slice.call(arguments, 1);
+  
+        function formatConsoleDate(date) {
+          var hour = date.getHours();
+          var minutes = date.getMinutes();
+          var seconds = date.getSeconds();
+          var milliseconds = date.getMilliseconds();
+   
+          return '[' +
+            ((hour < 10) ? '0' + hour : hour) +
+            ':' +
+            ((minutes < 10) ? '0' + minutes : minutes) +
+            ':' +
+            ((seconds < 10) ? '0' + seconds : seconds) +
+            '.' +
+            ('00' + milliseconds).slice(-3) +
+            '] ';
+        }
+  
+        log.apply(console, [formatConsoleDate(new Date()) + first_parameter].concat(other_parameters));
+      };
+      console.log("Hello World")
+    </script>
+    <title>Classroom</title>
+  	<link rel="icon" type="image/png" href="https://ssl.gstatic.com/classroom/favicon_pink.png">
+    <style>
+      .streamIcon {
+        background-color: rgb(229,37,146);
+      }
+      .asideBtnTxt {
+        color: rgb(184,6,114);
+      }
+      #asideBtn:hover {
+        background-color: rgb(251 245 249);
+      }
+      .streamItem:hover {
+        background-color: rgb(246 230 242);
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="navLeft">
+        <div class="hamburger" id="home">
+          <svg width="24" height="24" viewBox="0 0 24 24" focusable="false" style="padding: 12px;">
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+          </svg>
+          <div class="shadow"></div>
+          <script>
+            home.addEventListener('click', function (event) {
+              console.log("Returned to homepage");
+              window.location.href = "/";
+            });
+          </script>
+        </div>
+        <h1 class="classTitleContainer">
+          <a class="classTitleLink">
+            <span class="classTitleMain">Appel</span>
+            <span class="classTitleSub">Not apple</span>
+          </a>
+        </h1>
+      </div>
+      <div class="navRight">
+        <img class="pfp" src="/img/profile.png">
+        <div class="apps">
+          <svg class="gb_Ne" focusable="false" viewBox="0 0 24 24">
+            <path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path>
+          </svg>
+        </div>
+      </div>
+      <script> //Shadow on scroll script
+        let lastKnownScrollPosition = 0;
+        let ticking = false;
+        document.addEventListener('scroll', function (e) {
+          lastKnownScrollPosition = window.scrollY;
+          if (!ticking) {
+            window.requestAnimationFrame(function () {
+              if (lastKnownScrollPosition == 0) {
+                document.getElementsByTagName("nav")[0].style.boxShadow = "";
+              } else {
+                document.getElementsByTagName("nav")[0].style.boxShadow = "0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%)";
+              }
+              ticking = false;
+            });
+            ticking = true;
+          }
+        });
+      </script>
+    </nav>
+    <div class="header" style="background-image: url('https://gstatic.com/classroom/themes/Math.jpg');">
+      <div class="titleContainer">
+        <h2 class="title">Appel</h2>
+        <div class="discription">Again, NOT apple</div>
+      </div>
+    </div>
+    <div class="stream">
+      <aside>
+        <div class="upcoming">
+          <h2 class="asideTitle">Upcoming</h2>
+          <div class="asideSub">
+            <span>do your missing work smh</span>
+          </div>
+          <div id="asideBtn">
+            <span class="asideBtnTxt">View all</span>
+            <script>
+              asideBtn.addEventListener('click', function (event) {
+                console.log("meme");
+                window.location = "https://classroom.google.com/a/not-turned-in/all";
+              });
+            </script>
+          </div>
+        </div>
+      </aside>
+      <main>
+				
+        <div class="streamItem" id="incognito">
+          <div class="streamIcon">
+            <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="padding: 0.5rem;">
+              <path d="M7 15h7v2H7zm0-4h10v2H7zm0-4h10v2H7z"></path>
+              <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-.14 0-.27.01-.4.04a2.008 2.008 0 0 0-1.44 1.19c-.1.23-.16.49-.16.77v14c0 .27.06.54.16.78s.25.45.43.64c.27.27.62.47 1.01.55.13.02.26.03.4.03h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7-.25c.41 0 .75.34.75.75s-.34.75-.75.75-.75-.34-.75-.75.34-.75.75-.75zM19 19H5V5h14v14z"></path>
+            </svg>
+          </div>
+          <div class="streamText">
+            <span class="streamTitle">Original Appel</span>
+            <span class="streamDescription">By Griffpatch</span>
+          </div>
+          <script>
+            incognito.addEventListener('click', function (event) {
+              window.open("1/index.html"); 
+            });
+          </script>
+          <div style="height: 3.5rem; width: 3.5rem; margin: auto 0.5rem auto auto;">
+            <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill: #444; padding: 16px;">
+              <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+            </svg>
+          </div>
+        </div>
+				<div class="streamItem" id="ultraviolet">
+          <div class="streamIcon">
+            <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="padding: 0.5rem;">
+              <path d="M7 15h7v2H7zm0-4h10v2H7zm0-4h10v2H7z"></path>
+              <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-.14 0-.27.01-.4.04a2.008 2.008 0 0 0-1.44 1.19c-.1.23-.16.49-.16.77v14c0 .27.06.54.16.78s.25.45.43.64c.27.27.62.47 1.01.55.13.02.26.03.4.03h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7-.25c.41 0 .75.34.75.75s-.34.75-.75.75-.75-.34-.75-.75.34-.75.75-.75zM19 19H5V5h14v14z"></path>
+            </svg>
+          </div>
+          <div class="streamText">
+            <span class="streamTitle">Underwater appel</span>
+            <span class="streamDescription">Appel but underwater</span>
+          </div>
+          <script>
+            ultraviolet.addEventListener('click', function (event) {
+              window.open("2/index.html");
+            });
+          </script>
+          <div style="height: 3.5rem; width: 3.5rem; margin: auto 0.5rem auto auto;">
+            <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill: #444; padding: 16px;">
+              <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+            </svg>
+          </div>
+        </div>
+        
+				<div class="streamItem" id="womginx">
+          <div class="streamIcon">
+            <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="padding: 0.5rem;">
+              <path d="M7 15h7v2H7zm0-4h10v2H7zm0-4h10v2H7z"></path>
+              <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-.14 0-.27.01-.4.04a2.008 2.008 0 0 0-1.44 1.19c-.1.23-.16.49-.16.77v14c0 .27.06.54.16.78s.25.45.43.64c.27.27.62.47 1.01.55.13.02.26.03.4.03h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7-.25c.41 0 .75.34.75.75s-.34.75-.75.75-.75-.34-.75-.75.34-.75.75-.75zM19 19H5V5h14v14z"></path>
+            </svg>
+          </div>
+          <div class="streamText">
+            <span class="streamTitle">desert appel</span>
+            <span class="streamDescription">Appel but dry</span>
+          </div>
+          <script>
+            womginx.addEventListener('click', function (event) {
+              window.open("3/Desert Appel.html");
+            });
+          </script>
+          <div style="height: 3.5rem; width: 3.5rem; margin: auto 0.5rem auto auto;">
+            <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill: #444; padding: 16px;">
+              <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+            </svg>
+          </div>
+        </div>
+				
+      </main>
+    </div>
+  </body>
+</html>
