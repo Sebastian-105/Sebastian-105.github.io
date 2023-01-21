@@ -6,6 +6,15 @@
   --main-header-background: #21252e;
 	--main-font-family:  'Vollkorn', serif;
 }
+ Sebastian105 {
+      border-radius:5px;
+      padding:2.5px;
+      margin:3px;
+      text-align:center;
+      border-color:grey;
+      border-width:1px;
+      background:lightgrey;
+    }
 .subtitle {
   margin-bottom: 16px;
   text-align:center;
@@ -49,7 +58,7 @@ h3 {
   border-radius: 50%;
   height:50px;
   width:50px;
-  margin-top: 38%;
+  margin-top: 39.75%;
   margin-left: 5%;
   z-index:1000000000000000;
 }
@@ -58,7 +67,7 @@ h3 {
   25% {left:25px; top:0px;}
   50% {left: 25px; top:25px;}
   75% {left:0px; top:25px}
-  100% {transform: rotate(720deg); left:0px; top:0px}
+  100% {left:0px; top:0px}
 }
 #thetimeinexacttime {
   text-align:center;
@@ -220,7 +229,7 @@ h3 {
   z-index: 105;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: black;
   padding-top: 0px;
 }
 
@@ -475,6 +484,10 @@ font-family: 'Vollkorn', serif;
   background-color: #27262b;
   color: white;
 }
+.twilight {
+  color:white;
+  background-color:#070180;
+}
 .picture {
   border: 2px;
   float: right;
@@ -552,15 +565,15 @@ header{
 	color: var(--main-fonts-color);
   font-family: 'Vollkorn', serif;
 	display: flex;
-  background: url("../images/space.png") no-repeat;
+  background-image: linear-gradient(#555, #111);
   background-position:center;
-	background-size:cover;
+	background-size:100%;
   
 }
 
 #home .filter{
-	background: url("../images/space.png") no-repeat;
-	background-size: cover;
+	background: url("../images/space1.png") no-repeat;
+	background-size: 100%;
  position: absolute;
     font-family: 'Vollkorn', serif;
     top: 10px;
