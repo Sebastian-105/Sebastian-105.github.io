@@ -23,6 +23,7 @@ Once you find all these stuff you are free to go! :)
 **[Code of coduct](CODE_OF_CONDUCT.md).** <br>
 **[The changelog](CHANGELOG.md).** <br>
 **[The License](LICENSE).**<br>
+**[Contributing](CONTRIBUTING.md).** <br>
 **[security](SECURITY.md).**<br>
 ## REMEMBER TO CITE ME IN THE CODE AND THE FOOTER
 
