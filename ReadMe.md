@@ -20,7 +20,7 @@ Unless it is directly linking something then delete it. <br>
 	</script>
 ```
 # Downloading my website
-## go to <a href="105/tutorial/code">to learn</a>
+## go to<a href="105/tutorial/code"> here</a>
 ### I am not responsible for any legal stuff after that.
 Once you find all these stuff you are free to go! :)
 
