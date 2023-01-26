@@ -1,6 +1,6 @@
 <!--───────────────────────────────────────────────────────────────────────────────────────────────────────────────────|
 
-|──────────────────────────────────────────────|  
+|──────────────────────────────────────────────|
 |⬛⬛──────⬛⬛⬛⬛───────────⬛⬛⬛⬛⬛──────|
 |⬛⬛─────⬛⬛──⬛⬛────────⬛⬛⬛⬛⬛⬛⬛────|
 |⬛⬛────⬛⬛────⬛⬛──────⬛⬛────────⬛⬛───|
@@ -33,12 +33,13 @@ gtag('config', 'G-EF4SM0THHF');
   <link rel="manifest" href="manifest.json">
   <meta name="deription" content="My Online Name is Sebastian105">
   <meta name="author" content="Sebastian105">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Vollkorn"/>
-  <link href="assets/css/Sebastian105.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="assets/lib/fonts/kings.css"/>
+  <link rel="stylesheet" href="assets/lib/fonts/vollkorn.css"/>
+  <link href="assets/css/Sebastian105.css" rel="stylesheet" type="text/css"/>
   <link rel="help" href="105/help/index.html">
   <link rel="license" href="LICENSE">
   <link rel="icon" href="105.png" style="border-radius:50%;">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="assets/lib/font-awesome.min.css"/>
   <title class="title">Sebastian105</title>
 </head>
 <body onbeforeunload="return MyFunctionalert()">
@@ -102,7 +103,7 @@ gtag('config', 'G-EF4SM0THHF');
 	  <!--───────────────Projects───────────────-->
 	  <div id="projects">
 		 <h3>My Projects</h3>
-		 <div class="subtitle">(click me)</div>
+		 <div class="subtitle" id="xyz" style="font-size:14px;" >(click me to hide projects)</div>
 		  <p id="projects2"><a href="105/projects/index.html">Here are some of my projects, you may like.</a></p>
 		  <div class="work-box" id="projects123">
 		  <div class="work">
@@ -238,7 +239,8 @@ gtag('config', 'G-EF4SM0THHF');
     <a id="jQuerytest" href="assets/images/105/105.png" target="_blank" title="Offical icon">Icon</a>
   </div>
   <a onclick="bio()">The ReadMe</a>
-  </div>
+  <h3 id="hidesidenav">×</h3>
+  </div> <!--─────The side nav─────-->
   <!--───────────────Contact───────────────-->
 	  <div id="contact">
 <!--───────────────social media links───────────────-->
