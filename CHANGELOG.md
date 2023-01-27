@@ -2,6 +2,7 @@
 ## as of `Thursday, January 26, 2023`
 #### NOTE: This might not be 100% but I will try to make it as close as possible
 #### NOTE: Not every change will register as a new update, it has to be a big change.
+# By ***Sebastian105***
 
 <table>
   <tr>
@@ -36,4 +37,3 @@
   </tr>
   </table>
 <h1> I stopped updating</h1>
-# By ***Sebastian105***
