@@ -6,6 +6,12 @@
   --main-header-background: #21252e;
 	--main-font-family: 'Vollkorn', serif;
 }
+body, html, head {
+	font-family:  var(--main-fonts-family);;
+}
+* {
+	font-family:  var(--main-fonts-family);;
+}
  Sebastian105 {
       border-radius:5px;
       padding:2.5px;
@@ -58,7 +64,6 @@ h3 {
   border-radius: 50%;
   height:50px;
   width:50px;
-  margin-top: 39.75%;
   margin-left: 5%;
   z-index:1000000000000000;
 }

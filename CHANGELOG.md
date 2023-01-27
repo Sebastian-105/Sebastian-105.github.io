@@ -1,6 +1,7 @@
 # Sebastian105's Changelog
 ## as of `Thursday, January 26, 2023`
-#### This might not be 100% but I will try to make it as close as possible
+#### NOTE: This might not be 100% but I will try to make it as close as possible
+#### NOTE: Not every change will register as a new update, it has to be a big change.
 
 <table>
   <tr>
@@ -16,10 +17,10 @@
     <td>I might have missed a few things</td><!--extra details-->
   </tr>
   <tr>
-    <td></td><!--Update version-->
-    <td></td><!--Date Changed-->
-    <td></td><!--Thing Changed-->
-    <td></td><!--extra details-->
+    <td>v0.0.1 cont.</td><!--Update version-->
+    <td>01/27/2023</td><!--Date Changed-->
+    <td>Edited index.html, css, js, and jQuery</td><!--Thing Changed-->
+    <td>N/A</td><!--extra details-->
   </tr>
   <tr>
     <td></td><!--Update version-->
