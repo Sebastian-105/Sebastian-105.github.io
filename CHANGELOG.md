@@ -34,5 +34,6 @@
     <td>changed css, changed Sebastian105.png</td><!--Thing Changed-->
     <td>I update a lot today.</td><!--extra details-->
   </tr>
+  </table>
 # I stopped updating
 # By ***Sebastian105***
