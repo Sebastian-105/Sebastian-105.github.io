@@ -29,10 +29,10 @@
     <td>New format (major.minor.patch)</td><!--extra details-->
   </tr>
   <tr>
-    <td></td><!--Update version-->
-    <td></td><!--Date Changed-->
-    <td></td><!--Thing Changed-->
-    <td></td><!--extra details-->
+    <td>v1.0.2</td><!--Update version-->
+    <td>01/27/2023</td><!--Date Changed-->
+    <td>changed css, changed Sebastian105.png</td><!--Thing Changed-->
+    <td>I update a lot today.</td><!--extra details-->
   </tr>
   <tr>
     <td></td><!--Update version-->
