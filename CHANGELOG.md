@@ -35,5 +35,5 @@
     <td>I update a lot today.</td><!--extra details-->
   </tr>
   </table>
-# I stopped updating
+<h1> I stopped updating</h1>
 # By ***Sebastian105***
