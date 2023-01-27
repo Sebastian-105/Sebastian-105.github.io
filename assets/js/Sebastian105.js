@@ -7,6 +7,10 @@ if (window.location.host == "Sebastian105.repl.co") {
 
 function Sebastian105(){
 }
+function searchbar1234(){
+	var search = document.getElementById("mySearch");
+	search.focus();
+}
 function MyFunctionalert(){
   return "Visit my website!";
 }
