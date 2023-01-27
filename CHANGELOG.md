@@ -23,10 +23,10 @@
     <td>N/A</td><!--extra details-->
   </tr>
   <tr>
-    <td></td><!--Update version-->
-    <td></td><!--Date Changed-->
-    <td></td><!--Thing Changed-->
-    <td></td><!--extra details-->
+    <td>v1.0.1</td><!--Update version-->
+    <td>01/27/2023</td><!--Date Changed-->
+    <td>Changed version format</td><!--Thing Changed-->
+    <td>New format (major.minor.patch)</td><!--extra details-->
   </tr>
   <tr>
     <td></td><!--Update version-->
