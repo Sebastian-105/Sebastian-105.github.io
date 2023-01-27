@@ -1,4 +1,3 @@
-/*%%%%%%%%%%%%%%%%%%% Themes %%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 :root{
 	--main-background: #0b0c0f;
 	--main-fonts-color: #fff;
@@ -9,9 +8,21 @@
 body, html, head {
 	font-family:  var(--main-fonts-family);;
 }
+.jQuerytest {
+	margin-right:10px
+}
 * {
+	color:white;
 	font-family:  var(--main-fonts-family);;
 }
+.list {
+	float:right;
+	margin-right:16px;
+	color:white;
+	font-weight:bold;
+	font-size:18px;
+}
+
  Sebastian105 {
       border-radius:5px;
       padding:2.5px;
@@ -262,14 +273,14 @@ h3 {
   cursor: cell;
   outline: none;
   font-family: 'Vollkorn', serif;
-  border-radius: 50px;
+  border-radius: 0px;
 }
 
 /* On mouse-over */
 .sidenav a:hover, .dropdown-btn:hover {
-  color: #f1f1f1;
+  color: white;
   background-color: #30c032;
-  border-radius: 50px;
+  border-radius:0px;
 }
 
 /* Main content */
@@ -290,7 +301,7 @@ h3 {
   display: none;
   background-color: #262626;
   padding-left: 8px;
-  border-radius: 25px;
+  margin-left:10px;
 }
 .dropdown-container2 {
   display: none;
@@ -308,7 +319,16 @@ h3 {
   padding-right: 8px;
   font-family: 'Vollkorn', serif;
 }
-
+.twilight {
+  color:white;
+  background-color:#070180;
+}
+.dark {
+	color:white;
+	background-color:#27262b;
+}
+.light {}
+.terminal {}
 .alert {
   resize:horizontal;
   padding: 0px;
@@ -433,27 +453,25 @@ font-family: 'Vollkorn', serif;
 }
 
 /* Style the sidenav links and the dropdown button */
-.sidenav a, .dropdown-btn {
+.sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 18px;
-  color: #ffffff;
+  color: white;
   display: block;
   border: none;
   background: none;
   width: 100%;
   text-align: left;
-  cursor: cell;
+  cursor: pointer;
   outline: none;
   font-family:  'Vollkorn', serif;
-  border-radius: 25px;
+  border-radius: 0px;
 }
-
 /* On mouse-over */
 .sidenav a:hover, .dropdown-btn:hover {
   color: #f1f1f1;
   background-color: #30c032;
-  border-radius: 25px;
 }
 
 /* Main content */
@@ -474,14 +492,13 @@ font-family: 'Vollkorn', serif;
   display: none;
   background-color: #262626;
   padding-left: 8px;
-  border-radius: 25px;
+  border-radius: 5px;
 }
 
 /* Optional: Style the caret down icon */
 .fa-caret-down {
   float: right;
   padding-right: 8px;
-    
 }
 
 
@@ -493,15 +510,6 @@ font-family: 'Vollkorn', serif;
 .dark-mode {
   background-color: #27262b;
   color: white;
-}
-.twilight {
-  color:white;
-  background-color:#070180;
-}
-.picture {
-  border: 2px;
-  float: right;
-  padding: 5px;
 }
 #announcementBar {
 	padding: 0 1rem 0 1.5rem;

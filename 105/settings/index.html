@@ -18,7 +18,6 @@
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-<script src="assets/js/index.js"></script>
 <script>
   var tabName = localStorage.getItem('tabname');
   document.title = (tabName)
@@ -48,9 +47,9 @@ var Enabled=true;
 <br>
 <div>
   <h1 style="text-align:center; color:white;">Themes<hr></h1>
-  <p style="color:white;"><strong>Note:</strong>  The following themes are in testing, and some may not functioning properly.</p>
-  <button onclick="myFunctionDarkMode()" class="themes105">Classic Dark</button>
-  <button onclick="myFunctionTwilight()" class="themes105">Twilight (blue)</button>
+  <p style="color:white; text-align:center;"><strong>Note:</strong>  The following themes are in testing, and some may not functioning properly.</p>
+  <button onclick="myFunctionDarkMode()" class="themes105" id="classicdark">Classic Dark</button>
+  <button onclick="myFunctionTwilight()" class="themes105" id="twilighttheme">Twilight (blue)</button>
 </div>
 <!-- Next Setting -->
 <!-- Next Setting -->
@@ -58,6 +57,9 @@ var Enabled=true;
 <!-- Next Setting -->
 <!-- Next Setting -->
 <!-- Next Setting -->
+<script src="assets/js/index.js"></script>
   <script src="../../assets/js/Sebastian105.js"></script>
+  <script src="../../assets/js/jQuery.min.js"></script>
+  <script src="../../assets/lib/jquery.min.js"></script>
 </body>
 </html>

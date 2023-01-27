@@ -114,7 +114,7 @@ function feedback() {
 function suggestions() {
    var myWindow = window.open("https://forms.gle/X82sK1epn5Y1Rqj66", "_blank");
 }
-
+/* archive -----------------------------------------------
 function myFunctionDarkMode() {
    var element = document.body;
    element.classList.toggle("dark-mode");
@@ -123,7 +123,7 @@ function myFunctionTwilight() {
   var elemenwt = document.body;
   elemenwt.classlist.toggle("twilight");
 }
-
+------------------------------------------------------*/
 function myFunctiongame() {
   var myWindow = window.open("game/index.html", "_blank");
 }
@@ -183,8 +183,10 @@ function keybinds(){
 }
 function buttonCode()
 {
-      var textbox = document.getElementById("nameChange")
+	var textbox = document.getElementById("nameChange")
     document.title = (textbox.value)
     localStorage.setItem('tabname', textbox.value)
+    textbox.value = ""
+    textbox.focus();
 }
 
