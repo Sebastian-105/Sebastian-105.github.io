@@ -5,17 +5,14 @@
   --main-header-background: #21252e;
   --main-font-family: 'Vollkorn', serif;
   --secondary-font-color:#fff;
-  --main-font-size:18px;
+  --main-font-size:14px;
 }
 
-body,
-html,
-head {
+body,html,head {
 	font-family:var(--main-fonts-family);
-  background:var(--background-color);
-  font:var(--main-fonts-color);
-  font:var(--main-font-size);
-  margin: 0px 0px 0px 0px;
+  color: var(--main-fonts-color);
+  font-size: var(--main-font-size);
+  margin: 0px;
 }
 
 .jQuerytest {
@@ -155,7 +152,7 @@ h3 {
 
 #termsandConditions {
   color: #fff;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 #termsandConditions:hover {
@@ -307,7 +304,6 @@ p {
   background: none;
   width: 100%;
   text-align: left;
-  cursor: cell;
   outline: none;
   padding: 6px 0px 6px 16px;
   text-decoration: none;
@@ -318,18 +314,18 @@ p {
   background: none;
   width: 100%;
   text-align: left;
-  cursor: cell;
+  cursor: pointer;
   outline: none;
   font-family: 'Vollkorn', serif;
   border-radius: 0px;
 }
 
 /* On mouse-over */
-.sidenav a:hover,
-.dropdown-btn:hover {
+.sidenav a:hover, .dropdown-btn:hover {
   color: white;
   background-color: #30c032;
   border-radius: 0px;
+  text-decoration:underline;
 }
 
 /* Main content */
@@ -350,6 +346,7 @@ p {
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
 .dropdown-container {
   display: none;
+  cursor:pointer;
   background-color: #262626;
   padding-left: 8px;
   margin-left: 15px;
