@@ -3,7 +3,7 @@
   --main-fonts-color: #fff;
   --main-decor-color: #00a9e2;
   --main-header-background: #21252e;
-  --main-font-family: 'Source+Code+Pro', serif;
+  --main-font-family: 'Vollkorn', serif;
   --secondary-font-color:#fff;
   --main-font-size:18px;
 }
@@ -11,21 +11,17 @@
 body,
 html,
 head {
-  font-family: var(--main-fonts-family);
-  background: var(--background-color);
-  font: var(--main-fonts-color);
+	font-family:var(--main-fonts-family);
+  background:var(--background-color);
+  font:var(--main-fonts-color);
   font:var(--main-font-size);
+  margin: 0px 0px 0px 0px;
 }
 
 .jQuerytest {
-  margin-right: 10px
+  margin-right: 15px
 }
 
-* {
-  color: white;
-  font-family: var(--main-fonts-family);
-  font:var(--main-font-size);
-}
 
 .list {
   float: right;
@@ -37,7 +33,7 @@ head {
 
 Sebastian105 {
   border-radius: 5px;
-  padding: 2.5px;
+  padding: 2.8px;
   margin: 3px;
   text-align: center;
   border-color: grey;
@@ -209,9 +205,6 @@ input {
   vertical-align: middle;
 }
 
-* {
-  box-sizing: border-box;
-}
 
 /* Create a column layout with Flexbox */
 .row {
@@ -309,7 +302,6 @@ p {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 18px;
-  color: #ffffff;
   display: block;
   border: none;
   background: none;
@@ -360,7 +352,7 @@ p {
   display: none;
   background-color: #262626;
   padding-left: 8px;
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
 .dropdown-container2 {
@@ -384,16 +376,19 @@ p {
 .twilight {
   color: white;
   --background-color: #070180;
+  background-color:#070180;
 }
 
 .dark {
   color: white;
   --background-color: #27262b;
+  background-color:#27262b;
 }
 
 .light {
 	color:white;
-  --background-color: #dbdbdb
+  --background-color: #dbdbdb;
+  background-color:#dbdbdb;
 }
 
 .terminal {
@@ -644,11 +639,6 @@ h3 {
   color: white;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-}
 
 main {
   padding: 0;

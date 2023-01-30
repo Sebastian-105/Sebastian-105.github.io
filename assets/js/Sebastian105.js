@@ -15,7 +15,7 @@ function MyFunctionalert(){
   return "Visit my website!";
 }
 function settings() {
-  if (confirm("This page is still a work in progress, are you sure you want to go here?") === true) {
+  if (confirm("This page is still a work in progress, are you sure you want to go here? \n-Sebastian105") === true) {
     var myWindow = window.open("105/settings/index.html");
     console.log('Opened Settings');
   } else {
@@ -118,7 +118,6 @@ function feedback() {
 function suggestions() {
    var myWindow = window.open("https://forms.gle/X82sK1epn5Y1Rqj66", "_blank");
 }
-/* archive -----------------------------------------------
 function myFunctionDarkMode() {
    var element = document.body;
    element.classList.toggle("dark-mode");
@@ -127,7 +126,6 @@ function myFunctionTwilight() {
   var elemenwt = document.body;
   elemenwt.classlist.toggle("twilight");
 }
-------------------------------------------------------*/
 function myFunctiongame() {
   var myWindow = window.open("game/index.html", "_blank");
 }
