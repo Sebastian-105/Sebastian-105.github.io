@@ -49,7 +49,7 @@ nav {
   border-bottom-width: 1px;
   border-color: black;
   z-index: 2;
-  background-image: url('../images/space1.png');
+  background-image: linear-gradient(#555, #111);
   position: fixed;
 }
 body {
