@@ -1,16 +1,20 @@
 :root {
-  --main-background: #0b0c0f;
+  --background-color: #0b0c0f;
   --main-fonts-color: #fff;
   --main-decor-color: #00a9e2;
   --main-header-background: #21252e;
-  --main-font-family: 'Vollkorn', serif;
+  --main-font-family: 'Source+Code+Pro', serif;
+  --secondary-font-color:#fff;
+  --main-font-size:18px;
 }
 
 body,
 html,
 head {
   font-family: var(--main-fonts-family);
-  ;
+  background: var(--background-color);
+  font: var(--main-fonts-color);
+  font:var(--main-font-size);
 }
 
 .jQuerytest {
@@ -20,7 +24,7 @@ head {
 * {
   color: white;
   font-family: var(--main-fonts-family);
-  ;
+  font:var(--main-font-size);
 }
 
 .list {
@@ -379,17 +383,23 @@ p {
 
 .twilight {
   color: white;
-  background-color: #070180;
+  --background-color: #070180;
 }
 
 .dark {
   color: white;
-  background-color: #27262b;
+  --background-color: #27262b;
 }
 
-.light {}
+.light {
+	color:white;
+  --background-color: #dbdbdb
+}
 
-.terminal {}
+.terminal {
+	color:limegreen;
+  --main-font-family: 'Source+Code+Pro', serif;
+}
 
 .alert {
   resize: horizontal;
@@ -513,10 +523,6 @@ h3 {
 }
 
 /* Body/html */
-body {
-  font-family: 'Vollkorn', serif;
-  background: ;
-}
 
 /* Fixed sidenav, full height */
 .sidenav {
