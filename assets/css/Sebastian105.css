@@ -296,6 +296,7 @@ p {
 /* Style the sidenav links and the dropdown button */
 .sidenav a,
 .dropdown-btn {
+	color:var(--main-font-color);
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 18px;
@@ -305,18 +306,9 @@ p {
   width: 100%;
   text-align: left;
   outline: none;
-  padding: 6px 0px 6px 16px;
-  text-decoration: none;
-  font-size: 18px;
-  color: #ffffff;
-  display: block;
-  border: none;
-  background: none;
-  width: 100%;
-  text-align: left;
   cursor: pointer;
   outline: none;
-  font-family: 'Vollkorn', serif;
+  font-family:var(--main-font-family);
   border-radius: 0px;
 }
 
