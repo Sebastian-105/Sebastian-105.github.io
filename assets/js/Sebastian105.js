@@ -6,10 +6,6 @@ if (window.location.host == "Sebastian105.repl.co") {
 */
 
 function Sebastian105(){
-	if (document.title === "" || null || "null") {
-		document.title = "Classes";
-		document.querySelector("link[rel='shortcut icon']").href = "https://ssl.gstatic.com/classroom/favicon.png";
-	}
 }
 function searchbar1234(){
 	var search = document.getElementById("mySearch");
