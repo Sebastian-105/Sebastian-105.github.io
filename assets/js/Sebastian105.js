@@ -4,7 +4,11 @@ if (window.location.host == "Sebastian105.repl.co") {
 				window.location.host = "Sebastian105.com";
 			}
 */
-
+const favicon = document.getElementsByClassName("tabicon105");
+function tabicon() {
+	let tabicon = prompt("Paste the url of the image you want", "must include https://");
+  favicon.setAttribute("href", tabicon);
+}
 function Sebastian105(){
 }
 function searchbar1234(){
