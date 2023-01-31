@@ -6,11 +6,9 @@ if (window.location.host == "Sebastian105.repl.co") {
 */
 
 function Sebastian105(){
-	if (document.title === "" || null || "index.html") {
+	if (document.title === "" || null || "null") {
 		document.title = "Classes";
 		document.querySelector("link[rel='shortcut icon']").href = "https://ssl.gstatic.com/classroom/favicon.png";
-	}else if (document.title === "Sebastian105") {
-		document.querySelector("link[rel='shortcut icon']").href = "https://sebastian105.repl.co/105.png";
 	}
 }
 function searchbar1234(){
