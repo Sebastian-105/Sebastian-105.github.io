@@ -7,7 +7,7 @@ if (window.location.host == "Sebastian105.repl.co") {
 const favicon = document.getElementsByClassName("tabicon105");
 function tabicon() {
 	let tabicon = prompt("Paste the url of the image you want", "must include https://");
-  favicon.setAttribute("href", tabicon);
+  favicon.setAttribute("href", tabicon.value);
 }
 function Sebastian105(){
 }
