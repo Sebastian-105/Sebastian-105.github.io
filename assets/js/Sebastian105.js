@@ -24,7 +24,7 @@ function settings() {
     var myWindow = window.open("105/settings/index.html");
     console.log('Opened Settings');
   } else {
-    console.log("stayed at homepage");
+    console.log("stayed at homepage \n-Sebastian105");
   }
 }
 function theexacttime() {
