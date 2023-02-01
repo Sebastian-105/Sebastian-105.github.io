@@ -4,18 +4,27 @@ if (window.location.host == "Sebastian105.repl.co") {
 				window.location.host = "Sebastian105.com";
 			}
 */
-
-function Sebastian105(){
+const favicon = document.getElementsByClassName("tabicon105");
+function tabicon() {
+	let tabicon = prompt("Paste the url of the image you want \n(must include https://, http:// etc.)\n-Sebastian105", "https://");
+  favicon.setAttribute("href", tabicon.value);
+}
+function Sebastian105() {
+	
+}
+function searchbar1234(){
+	var search = document.getElementById("mySearch");
+	search.focus();
 }
 function MyFunctionalert(){
   return "Visit my website!";
 }
 function settings() {
-  if (confirm("This page is still a work in progress, are you sure you want to go here?") === true) {
+  if (confirm("This page is still a work in progress, are you sure you want to go here? \n-Sebastian105") === true) {
     var myWindow = window.open("105/settings/index.html");
     console.log('Opened Settings');
   } else {
-    console.log("stayed at homepage");
+    console.log("stayed at homepage \n-Sebastian105");
   }
 }
 function theexacttime() {
@@ -114,7 +123,6 @@ function feedback() {
 function suggestions() {
    var myWindow = window.open("https://forms.gle/X82sK1epn5Y1Rqj66", "_blank");
 }
-
 function myFunctionDarkMode() {
    var element = document.body;
    element.classList.toggle("dark-mode");
@@ -123,7 +131,6 @@ function myFunctionTwilight() {
   var elemenwt = document.body;
   elemenwt.classlist.toggle("twilight");
 }
-
 function myFunctiongame() {
   var myWindow = window.open("game/index.html", "_blank");
 }
@@ -183,8 +190,10 @@ function keybinds(){
 }
 function buttonCode()
 {
-      var textbox = document.getElementById("nameChange")
+	var textbox = document.getElementById("nameChange")
     document.title = (textbox.value)
     localStorage.setItem('tabname', textbox.value)
+    textbox.value = ""
+    textbox.focus();
 }
 

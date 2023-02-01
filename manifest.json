@@ -1,56 +1,44 @@
 {
-  "app": {
-    "background": {
-      "scripts": ["background.js"]
-    }
-  },
-  "manifest_version": 2,
-  "name": "My App",
-  "version": "versionString",
-
-  "default_locale": "en",
-  "description": "A plain text description",
-  "icons": {},
-
-  "action_handlers": ["new_note"],
-  "author": "Sebastian105",
-  "commands": {},
-  "cross_origin_embedder_policy": {
-    "value": "require-corp"
-  },
-  "cross_origin_opener_policy": {
-    "value": "same-origin"
-  },
-  "current_locale": "US-en",
-  "event_rules": [{}],
-  "file_handlers": {},
-  "file_system_provider_capabilities": {
-    "configurable": true,
-    "multiple_mounts": true,
-    "source": "network"
-  },
-  "key": "publicKey",
-  "kiosk": {
-  "kiosk_enabled": true,
-  "kiosk_only": true,
-  "minimum_chrome_version": "versionString",
-  "nacl_modules": [],
-  "offline_enabled": true,
-  "optional_permissions": ["tabs"],
-  "permissions": ["tabs"],
-  "requirements": {},
-  "sandbox": [],
   "short_name": "Sebastian105",
-  "sockets": {
-    "tcp": {
-      "connect": "*"
+  "name": "Sebastian105",
+  "icons": [
+    {
+      "src": "105.png",
+      "type": "image/png",
+      "sizes": "300x300"
     },
-    "udp": {
-      "send": "*"
+    {
+      "src": "105.circle.png",
+      "type": "image/png",
+      "sizes": "300x300"
+    },
+    {
+      "src": "assets/images/105/Sebastian105.png",
+      "type": "image/png",
+      "sizes": "949x547"
     }
-  },
-  "storage": {
-    "managed_schema": "schema.json"
+  ],
+  "id": "/index.html",
+  "start_url": "/index.html",
+  "background_color": "#0b0c0f",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#111",
+  "shortcuts": [
+    {
+      "name": "Games Page | Sebastian105",
+      "short_name": "Games page | Sebastian105",
+      "description": "Unblocked games",
+      "url": "/game/index.html",
+      "icons": [{ "src": "105.png", "sizes": "300x300" }]
+    },
+    {
+      "name": "Chatroom | Sebastian105",
+      "short_name": "Chatroom | Sebastian105",
+      "description": "The live chatroom",
+      "url": "/105/chatroom/index.html",
+      "icons": [{ "src": "105.png", "sizes": "300x300" }]
     }
-  }
+  ],
+  "description": "My website"
 }

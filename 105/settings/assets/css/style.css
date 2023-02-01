@@ -116,7 +116,7 @@ form {
   border-radius: 15.5px;
 }
 
-#submitButton {
+.submitButton {
   border-radius: 5px;
   background-color: #111;
   border: 0;
