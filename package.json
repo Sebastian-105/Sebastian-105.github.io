@@ -1,14 +1,22 @@
-     "name": "Sebastian-105.github.io",
-
-5    "description":"My homepage",
-11    "repository": {
-12        "type": "git",
-13        "url": "git+https://github.com/Sebastian-105/Sebastian-105.github.io.git",
-14    },
-15    "author": "Sebastian105",
-16    "license": "MIT",
-17    "bugs": {
-18        "url": "https://github.com/Sebastian-105/Sebastian-105.github.io/issues"
-19    },
-20    "homepage": "https://github.com/Sebastian-105/Sebastian-105.github.io#readme"
-21
+{
+  "name": "Sebastian105",
+  "version": "1.0.0",
+  "description": "Expressjs Hello World example to provide faster start deploying on Cyclic platform",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sebastian-105/Sebastian-105.github.io"
+  },
+  "author": "Cyclic Software",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sebastian-105/Sebastian-105.github./issues"
+  },
+  "homepage": "https://github.com/Sebastian-105/Sebastian-105.github.io#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
