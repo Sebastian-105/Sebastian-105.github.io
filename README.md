@@ -25,8 +25,10 @@ Once you find all these stuff you are free to go! :)
 **[The License](LICENSE).**<br>
 **[Contributing](CONTRIBUTING.md).** <br>
 **[security](SECURITY.md).**<br>
-### **Deploy**
+### **Deploying**
 [![Deploy to Heroku](https://binbashbanana.github.io/deploy-buttons/buttons/remade/heroku.svg)](https://heroku.com/deploy/?template=https://github.com/Sebastian-105/Sebastian-105.github.io)
+[![Fork on Replit](https://binbashbanana.github.io/deploy-buttons/buttons/remade/replit.svg)](https://replit.com/@Sebastian105/Sebastian105)
+[![Deploy with Netlify](https://binbashbanana.github.io/deploy-buttons/buttons/remade/netlify.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Sebastian-105/Sebastian-105.github.io)
 
 ## REMEMBER TO CITE ME IN THE CODE AND THE FOOTER
 
