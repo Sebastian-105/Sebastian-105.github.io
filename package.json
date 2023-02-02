@@ -1,8 +1,9 @@
      "name": "Sebastian-105.github.io",
-5    "description": "My homepage",
+
+5    "description":"My homepage",
 11    "repository": {
 12        "type": "git",
-13        "url": "git+https://github.com/Sebastian-105/Sebastian-105.github.io.git"
+13        "url": "git+https://github.com/Sebastian-105/Sebastian-105.github.io.git",
 14    },
 15    "author": "Sebastian105",
 16    "license": "MIT",
