@@ -1,0 +1,22 @@
+{
+  "name": "Sebastian105",
+  "version": "1.0.0",
+  "description": "Expressjs Hello World example to provide faster start deploying on Cyclic platform",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sebastian-105/Sebastian-105.github.io"
+  },
+  "author": "Cyclic Software",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sebastian-105/Sebastian-105.github./issues"
+  },
+  "homepage": "https://github.com/Sebastian-105/Sebastian-105.github.io#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}

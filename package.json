@@ -1,22 +1,24 @@
 {
-  "name": "Sebastian105",
+  "name": "sebastian-105.github.io",
   "version": "1.0.0",
-  "description": "Expressjs Hello World example to provide faster start deploying on Cyclic platform",
-  "main": "index.html",
+  "description": "nodejs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sebastian-105/Sebastian-105.github.io"
+    "url": "git+https://github.com/Sebastian-105/Sebastian-105.github.io.git"
   },
-  "author": "Cyclic Software",
-  "license": "MIT",
+  "author": "",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Sebastian-105/Sebastian-105.github./issues"
+    "url": "https://github.com/Sebastian-105/Sebastian-105.github.io/issues"
   },
   "homepage": "https://github.com/Sebastian-105/Sebastian-105.github.io#readme",
   "dependencies": {
-    "express": "^4.17.1"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.12"
+    "express": "^4.18.2",
+    "ip": "^1.1.8"
   }
 }
