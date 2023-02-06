@@ -21,6 +21,19 @@ Unless it is directly linking something then delete it. <br>
 ## go to<a href="105/tutorial/code"> here</a>
 ### I am not responsible for any legal stuff after that.
 Once you find all these stuff you are free to go! :)
+### **Backup Links**
+**[Replit](https://sebastian105.repl.co)**<br>
+**[](https://sebastian-105.github.io)**<br>
+**[render](https://sebastian105.onrender.com)**<br>
+**[netlify](https://sebastian105.netlify.app)**<br>
+**[netlify #2](https://main--sebastian105.netlify.app/)**<br>
+**[netlify #3](https://63dc30cda6465646e3231c47--sebastian105.netlify.app/)**<br>
+**[vercel](https://sebastian105.vercel.app/)**<br>
+**[vercel #2](https://sebastian-105-github-io-git-main-sebastian105.vercel.app/)**<br>
+**[vercel #3](https://sebastian-105-github-bl2pkzbp5-sebastian105.vercel.app/)**<br>
+**[vercel #4]( https://sebastian-105-github-aeu1ihv2g-sebastian105.vercel.app/)**<br>
+**[cyclic](https://sebastian105.cyclic.app/)**<br>
+**[cyclic #2](https://amaranth-turkey-ring.cyclic.app/)**<br>
 ### **Links**
 **[Code of coduct](CODE_OF_CONDUCT.md).** <br>
 **[The changelog](CHANGELOG.md).** <br>
@@ -32,7 +45,7 @@ Once you find all these stuff you are free to go! :)
 [![Fork on Replit](https://binbashbanana.github.io/deploy-buttons/buttons/remade/replit.svg)](https://replit.com/@Sebastian105/Sebastian105)
 [![Deploy with Netlify](https://binbashbanana.github.io/deploy-buttons/buttons/remade/netlify.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Sebastian-105/Sebastian-105.github.io)
 [![Deploy to Render](https://binbashbanana.github.io/deploy-buttons/buttons/remade/render.svg)](https://render.com/deploy?repo=https://github.com/Sebastian-105/Sebastian-105.github.io)
-[![Deploy with Vercel](https://binbashbanana.github.io/deploy-buttons/buttons/remade/vercel.svg)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSebastian-105%2FSebastian-105.github.io) 
+[![Deploy with Vercel](https://binbashbanana.github.io/deploy-buttons/buttons/remade/vercel.svg)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSebastian-105%2FSebastian-105.github.io)
 [![Remix on Glitch](https://binbashbanana.github.io/deploy-buttons/buttons/remade/glitch.svg)](https://glitch.com/edit/#!/import/github/Sebastian-105/Sebastian-105.github.io)
 
 
