@@ -4,13 +4,10 @@ if (window.location.host == "Sebastian105.repl.co") {
 				window.location.host = "Sebastian105.com";
 			}
 */
-const favicon = document.getElementsByClassName("tabicon105");
 function tabicon() {
-	let tabicon = prompt("Paste the url of the image you want \n(must include https://, http:// etc.)\n-Sebastian105", "https://");
-  favicon.setAttribute("href", tabicon.value);
+	let tabicon = alert("this function is currently not working\nThis is not a bug, Do not report\nbest regards,\n-Sebastian105");
 }
 function Sebastian105() {
-	
 }
 function searchbar1234(){
 	var search = document.getElementById("mySearch");

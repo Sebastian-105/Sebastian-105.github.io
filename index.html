@@ -390,16 +390,19 @@ Original Template Made My @lilykhan (but edited a lot, i just put this here so i
     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/javascript" src="config/config.json"></script>
+    <script type="text/javascript" src="config/settings.json"></script>
+
     <script>
       jQuery(function($) {
         $(window).on("keypress", function(event) {
-          if (event.key == "g") {
+          if (event.key == "G") {
             window.open("game/index.html");
           }
         });
       });
-      $(window).on("keypress", function(event) {
-        if (event.key == "s") {
+      $(window).on("keypress", function(e) {
+        if (e.key == "S") {
           window.open("105/settings/index.html");
         }
       });
