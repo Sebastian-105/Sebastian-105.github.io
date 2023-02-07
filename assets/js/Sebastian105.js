@@ -5,9 +5,11 @@ if (window.location.host == "Sebastian105.repl.co") {
 			}
 */
 function tabicon() {
-	let tabicon = alert("this function is currently not working\nThis is not a bug, Do not report\nbest regards,\n-Sebastian105");
+	let tabicon = alert("this function is currently not working\nThis is not a bug, Do not report\nbest regards,\n-Sebastian-105");
 }
 function Sebastian105() {
+	window.addEventListener('offline', () => alert("You have become offline.\nGames still work but you can't open more sites until your online again.\n-Sebastian-105"));
+  alert('IMPORTANT:\nTHE URL OF MY WEBSITES ARE GOING TO CHANGE!!!\nTHE NEW URL IS GOING TO BE "Sebastian-105" INSTEAD OF "sebastian105"\nALL WEBSITES WITH "Sebastian105" WILL NOT LONGER BE UPDATING!\n-Sebastian-105"')
 }
 function searchbar1234(){
 	var search = document.getElementById("mySearch");
@@ -17,11 +19,11 @@ function MyFunctionalert(){
   return "Visit my website!";
 }
 function settings() {
-  if (confirm("This page is still a work in progress, are you sure you want to go here? \n-Sebastian105") === true) {
+  if (confirm("This page is still a work in progress, are you sure you want to go here? \n-Sebastian-105") === true) {
     var myWindow = window.open("105/settings/index.html");
     console.log('Opened Settings');
   } else {
-    console.log("stayed at homepage \n-Sebastian105");
+    console.log("stayed at homepage \n-Sebastian-105");
   }
 }
 function theexacttime() {
@@ -153,11 +155,11 @@ function Chatroom() {
   var myWindow = window.open("105/chatroom/index.html", "_blank");
 }
 function onFunction() {
-  alert ("Your browser has connected back to the internet connection. \n-Sebastian105");
+  alert ("Your browser has connected back to the internet connection. \n-Sebastian-105");
 }
 
 function offFunction() {
-  alert ("We detected that your browser has lost internet connection. \n-Sebastian105");
+  alert ("We detected that your browser has lost internet connection. \n-Sebastian-105");
 }
 function myfunctionofflinegames() {
   var myWindow = window.open("p/offline/index.html");
@@ -172,7 +174,7 @@ function RunMyFunction()
 {
 if(Enabled == false)
 {
- alert("Keybinds have been disabled. \n-Sebastian105");
+ alert("Keybinds have been disabled. \n-Sebastian-105");
 
 }else
 {
