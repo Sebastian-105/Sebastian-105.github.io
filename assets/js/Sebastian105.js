@@ -9,7 +9,6 @@ function tabicon() {
 }
 function Sebastian105() {
 	window.addEventListener('offline', () => alert("You have become offline.\nGames still work but you can't open more sites until your online again.\n-Sebastian-105"));
-  alert('IMPORTANT:\nTHE URL OF MY WEBSITES ARE GOING TO CHANGE!!!\nTHE NEW URL IS GOING TO BE "Sebastian-105" INSTEAD OF "sebastian105"\nALL WEBSITES WITH "Sebastian105" WILL NOT LONGER BE UPDATING!\n-Sebastian-105"')
 }
 function searchbar1234(){
 	var search = document.getElementById("mySearch");
