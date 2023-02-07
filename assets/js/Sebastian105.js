@@ -1,9 +1,3 @@
-/* Enter this if you change url to "Sebastian105.com"
-if (window.location.host == "Sebastian105.repl.co") {
-				alert('Changed URL to "Sebastian105.com"');
-				window.location.host = "Sebastian105.com";
-			}
-*/
 function tabicon() {
 	let tabicon = alert("this function is currently not working\nThis is not a bug, Do not report\nbest regards,\n-Sebastian-105");
 }
