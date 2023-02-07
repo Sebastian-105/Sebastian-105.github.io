@@ -1,4 +1,4 @@
-[![Sebastian105](Sebastian-105.png)](./index.html)
+[![Sebastian-105](Sebastian-105.png)](./index.html)
 
 # Using my Website
   You have to press `run` (only on replit) This website took a lot of time to make so I would apprecite if you could not copy off me and plagiarize this code.  <br> If you want to open my website on github than go here [here (github.io)](https://sebastian-105.github.io) or [here (repl.co)](https://sebastian105.repl.co).
@@ -24,15 +24,12 @@ Once you find all these stuff you are free to go! :)
 ### **Backup Links**
 **[Replit](https://sebastian105.repl.co)**<br>
 **[](https://sebastian-105.github.io)**<br>
-**[render](https://sebastian105.onrender.com)**<br>
-**[netlify](https://sebastian105.netlify.app)**<br>
-**[netlify #2](https://main--sebastian105.netlify.app/)**<br>
+**[render](https://sebastian-105.onrender.com)**<br>
+**[netlify](https://sebastian-105.netlify.app)**<br>
+**[netlify #2](https://main--sebastian-105.netlify.app/)**<br>
 **[netlify #3](https://63dc30cda6465646e3231c47--sebastian105.netlify.app/)**<br>
-**[vercel](https://sebastian105.vercel.app/)**<br>
-**[vercel #2](https://sebastian-105-github-io-git-main-sebastian105.vercel.app/)**<br>
-**[vercel #3](https://sebastian-105-github-bl2pkzbp5-sebastian105.vercel.app/)**<br>
-**[vercel #4]( https://sebastian-105-github-aeu1ihv2g-sebastian105.vercel.app/)**<br>
-**[cyclic](https://sebastian105.cyclic.app/)**<br>
+**[vercel](https://sebastian-105.vercel.app/)**<br>
+**[cyclic](https://sebastian-105.cyclic.app/)**<br>
 **[cyclic #2](https://amaranth-turkey-ring.cyclic.app/)**<br>
 ### **Links**
 **[Code of coduct](CODE_OF_CONDUCT.md).** <br>
@@ -51,4 +48,4 @@ Once you find all these stuff you are free to go! :)
 
 ## REMEMBER TO CITE ME IN THE CODE AND THE FOOTER
 
-# By ***Sebastian105***
+# By ***Sebastian-105***

@@ -6,4 +6,4 @@ If you want to contribute than you have to promise that you. . .<br>
 
 You must also bring something new to the table (I.E. Know JS, HTML/CSS, Python, PHP, RUBY, Java, NodeJS, etc.), you can just want to contribute because you think you can<br>
 
-# ***-Sebastian105***
+# ***-Sebastian-105***

@@ -1,6 +1,6 @@
 {
-  "short_name": "Sebastian105",
-  "name": "Sebastian105",
+  "short_name": "Sebastian-105",
+  "name": "Sebastian-105",
   "icons": [
     {
       "src": "105.png",
@@ -26,15 +26,15 @@
   "theme_color": "#111",
   "shortcuts": [
     {
-      "name": "Games Page | Sebastian105",
-      "short_name": "Games page | Sebastian105",
+      "name": "Games Page | Sebastian-105",
+      "short_name": "Games page | Sebastian-105",
       "description": "Unblocked games",
       "url": "/game/index.html",
       "icons": [{ "src": "105.png", "sizes": "300x300" }]
     },
     {
-      "name": "Chatroom | Sebastian105",
-      "short_name": "Chatroom | Sebastian105",
+      "name": "Chatroom | Sebastian-105",
+      "short_name": "Chatroom | Sebastian-105",
       "description": "The live chatroom",
       "url": "/105/chatroom/index.html",
       "icons": [{ "src": "105.png", "sizes": "300x300" }]
