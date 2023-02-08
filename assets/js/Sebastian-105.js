@@ -2,7 +2,8 @@ function tabicon() {
 	let tabicon = alert("this function is currently not working\nThis is not a bug, Do not report\nbest regards,\n-Sebastian-105");
 }
 function Sebastian105() {
-	window.addEventListener('offline', () => alert("You have become offline.\nGames still work but you can't open more sites until your online again.\n-Sebastian-105"));
+	window.addEventListener('offline', () => console.log("You have become offline.\nGames still work but you can't open more sites until your online again.\n-Sebastian-105"));
+
 }
 function searchbar1234(){
 	var search = document.getElementById("mySearch");
