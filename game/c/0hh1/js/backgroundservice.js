@@ -1,4 +1,4 @@
-/* 
+s/* 
  * BackgroundService
  * Creates a web worker for generating puzzles in the background.
  * (c) 2014 Q42

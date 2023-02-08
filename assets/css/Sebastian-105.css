@@ -829,7 +829,22 @@ h3 {
   font-size: 1.2rem;
   font-family: var(--main-font-family);
 }
-
+.update {
+  text-indent: 15px;
+  font-size: 18px;
+  display:show;
+  z-index:1000000000000000;
+  vertical-align: center;
+  align-self: center;
+  color:white;
+  cursor:pointer;
+}
+.update version {
+  color:white;
+  background-color: grey;
+  padding:5px;
+  border-radius: 5px;
+}
 /*──────────────────
        footer
 ──────────────────*/
