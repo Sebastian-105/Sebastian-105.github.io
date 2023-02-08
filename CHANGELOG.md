@@ -6,16 +6,16 @@
 
 <table>
   <tr>
-    <th>Update version</th>
+    <th>Update version v(.major.minor.small.bug fix)</th>
     <th>Date changed (mm/dd/yyyy)</th>
     <th>Thing Changed</th>
     <th>Extra Details</th>
   </tr>
   <tr>
-    <th></th><!-- Update version-->
-    <th></th><!-- Date changed (mm/dd/yyyy)-->
-    <th></th><!-- Thing changed-->
-    <th></th><!-- Extra details-->
+    <th>v1.0.0.0</th><!-- Update version-->
+    <th>02/08/2023</th><!-- Date changed (mm/dd/yyyy)-->
+    <th>First one</th><!-- Thing changed-->
+    <th>First one</th><!-- Extra details-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
