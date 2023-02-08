@@ -24,10 +24,10 @@
     <th>it's in the side bar</th><!-- Extra details-->
   </tr>
   <tr>
-    <th></th><!-- Update version-->
-    <th></th><!-- Date changed (mm/dd/yyyy)-->
-    <th></th><!-- Thing changed-->
-    <th></th><!-- Extra details-->
+    <th>v1.0.1.1</th><!-- Update version-->
+    <th>02/08/2023</th><!-- Date changed (mm/dd/yyyy)-->
+    <th>fixed the link in `105/updates`</th><!-- Thing changed-->
+    <th>N/A</th><!-- Extra details-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
