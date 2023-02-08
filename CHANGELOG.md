@@ -12,28 +12,327 @@
     <th>Extra Details</th>
   </tr>
   <tr>
-    <td>v0.0.1</td><!--Update version-->
-    <td>01/26/2023</td><!--Date Changed-->
-    <td>made changelog & edited README.md</td><!--Thing Changed-->
-    <td>I might have missed a few things</td><!--extra details-->
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
   </tr>
   <tr>
-    <td>v0.0.1 cont.</td><!--Update version-->
-    <td>01/27/2023</td><!--Date Changed-->
-    <td>Edited index.html, css, js, and jQuery</td><!--Thing Changed-->
-    <td>N/A</td><!--extra details-->
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
   </tr>
   <tr>
-    <td>v1.0.1</td><!--Update version-->
-    <td>01/27/2023</td><!--Date Changed-->
-    <td>Changed version format</td><!--Thing Changed-->
-    <td>New format (major.minor.patch)</td><!--extra details-->
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
   </tr>
   <tr>
-    <td>v1.0.2</td><!--Update version-->
-    <td>01/27/2023</td><!--Date Changed-->
-    <td>changed css, changed Sebastian105.png</td><!--Thing Changed-->
-    <td>I update a lot today.</td><!--extra details-->
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
+  </tr>
+  <tr>
+    <th></th><!-- Update version-->
+    <th></th><!-- Date changed (mm/dd/yyyy)-->
+    <th></th><!-- Thing changed-->
+    <th></th><!-- Extra details-->
   </tr>
   </table>
-<h1> I stopped updating</h1>
