@@ -287,6 +287,7 @@ p {
   width: 15%;
   position: fixed;
   z-index: 105;
+  text-indent:10px;
   top: 0;
   left: 0;
   background-color: black;
@@ -830,7 +831,7 @@ h3 {
   font-family: var(--main-font-family);
 }
 .update {
-  text-indent: 15px;
+  text-indent: 10px;
   font-size: 18px;
   display:show;
   z-index:1000000000000000;
@@ -858,10 +859,10 @@ h3 {
   background-color: #f44336;
 }
 .footer.offline::before {
-  content: "|Offline Mode ~ " ;
+  content: "| Offline Mode |─> " ;
 }
 .footer.offline::after {
-  content: " ~ Offline Mode|" ;
+  content: " <─| Offline Mode |" ;
 }
 
 #copyright {
