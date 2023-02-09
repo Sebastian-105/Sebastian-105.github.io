@@ -9,6 +9,11 @@ function searchbar1234(){
 	var search = document.getElementById("mySearch");
 	search.focus();
 }
+function copytoclipboard(){
+  alert("Username has been copied.");
+  navigator.clipboard.writeText("sebastian105#3143");
+  console.log("Username has been copied.");
+}
 function MyFunctionalert(){
   return "Visit my website!";
 }
