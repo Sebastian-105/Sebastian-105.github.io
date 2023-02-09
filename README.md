@@ -29,8 +29,6 @@ Once you find all these stuff you are free to go! :)
 **[netlify #2](https://main--sebastian-105.netlify.app/)**<br>
 **[netlify #3](https://63dc30cda6465646e3231c47--sebastian105.netlify.app/)**<br>
 **[vercel](https://sebastian-105.vercel.app/)**<br>
-**[cyclic](https://sebastian-105.cyclic.app/)**<br>
-**[cyclic #2](https://amaranth-turkey-ring.cyclic.app/)**<br>
 ### **Links**
 **[Code of coduct](CODE_OF_CONDUCT.md).** <br>
 **[The changelog](CHANGELOG.md).** <br>
