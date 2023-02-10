@@ -42,10 +42,10 @@
     <th>shift + c</th><!-- Extra details-->
   </tr>
   <tr>
-    <th></th><!-- Update version-->
-    <th></th><!-- Date changed (mm/dd/yyyy)-->
-    <th></th><!-- Thing changed-->
-    <th></th><!-- Extra details-->
+    <th>v1.1.3</th><!-- Update version-->
+    <th>02/10/2023</th><!-- Date changed (mm/dd/yyyy)-->
+    <th>added close sidenav button</th><!-- Thing changed-->
+    <th>N/A</th><!-- Extra details-->
   </tr>
   <tr>
     <th></th><!-- Update version-->

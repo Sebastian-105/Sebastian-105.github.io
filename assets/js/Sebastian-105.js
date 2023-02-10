@@ -5,6 +5,10 @@ function Sebastian105() {
 	window.addEventListener('offline', () => console.log("You have become offline.\nGames still work but you can't open more sites until your online again.\n-Sebastian-105"));
   document.getElementsByClassName("footer").style.background = "#f44336";
 }
+function closesidenav() {
+  $(".sidenav").fadeOut("slow");
+  console.log('Closed sidenav');
+}
 function searchbar1234(){
 	var search = document.getElementById("mySearch");
 	search.focus();
@@ -194,4 +198,3 @@ function buttonCode()
     textbox.value = ""
     textbox.focus();
 }
-

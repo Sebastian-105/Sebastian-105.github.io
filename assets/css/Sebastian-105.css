@@ -384,8 +384,8 @@ p {
 	color:limegreen;
   --main-font-family: 'Source+Code+Pro', serif;
 }
-
 .alert {
+  width:100%;
   resize: horizontal;
   padding: 0px;
   background-color: black;
@@ -393,7 +393,8 @@ p {
   opacity: 1;
   transition: opacity 0.6s;
   margin-bottom: 0px;
-  margin-left: 15%;
+  text-indent: 25%;
+  font-size: 15px;
 }
 
 .alert.success {
@@ -509,6 +510,16 @@ h3 {
 /* Body/html */
 
 /* Fixed sidenav, full height */
+#closesidenav {
+  font-size: 25px;
+  margin-top: 160px;
+  margin-left: 160px;
+  cursor:pointer;
+}
+#closesidenav:hover {
+  color:grey;
+  transform: scale(1.05);
+}
 .sidenav {
   height: 100%;
   width: 15%;
