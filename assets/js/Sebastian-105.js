@@ -6,7 +6,7 @@ function Sebastian105() {
   document.getElementsByClassName("footer").style.background = "#f44336";
 }
 function closesidenav() {
-  $(".sidenav").fadeOut("slow");
+  $(".sidenav").fadeToggle("slow");
   console.log('Closed sidenav');
 }
 function searchbar1234(){
