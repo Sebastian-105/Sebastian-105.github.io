@@ -395,19 +395,15 @@ Original Template Made My @lilykhan (but edited a lot, i just put this here so i
     <script src="https://icon105.netlify.app/Sebastian105.js" defer></script>
 
     <script>
-      jQuery(function($) {
-        $(window).on("keypress", function(event) {
-          if (event.key == "G") {
-            window.open("game/index.html");
-          }
-        });
-      });
-      $(window).on("keypress", function(e) {
-        if (e.key == "S") {
-          window.open("105/settings/index.html");
+      document.addEventListener("keydown", e => {
+        if (e.key === "G") {
+          window.open("game/index.html");
+        } else if (e.key === "S") {
+          window.open("105/settings/index.html")
+        } else if (e.key === "C") {
+          window.open("105/chatroom/index.html");
         }
-      });
-
+      })
     </script>
   </body>
 
