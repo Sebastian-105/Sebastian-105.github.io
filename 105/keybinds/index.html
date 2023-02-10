@@ -23,10 +23,21 @@
     <link rel="icon" href="../../assets/images/105.png">
   </head>
   <body>
-    <pre>
-      alt-g = games site
-      alt-s = settings
-    </pre>    <script src="https://icon105.netlify.app/Sebastian105.js" defer></script>
+    <sebastian105>Ctrl + g = open game page</sebastian105>
+    <sebastian105>ctrl + s = open settings page</sebastian105>
+    <sebastian105>ctrl + c = open chatroom</sebastian105>
+    <script> //Keybinds ONLY!
+      document.addEventListener("keydown", e => {
+        if (e.key === "g" && e.ctrlKey) {
+          window.open("../game/index.html");
+        } else if (e.key === "s" && e.ctrlKey) {
+          window.open("settings/index.html")
+        } else if (e.key === "c" && e.ctrlKey) {
+          window.open("chatroom/index.html");
+        }
+      })
+    </script>
+    <script src="https://icon105.netlify.app/Sebastian105.js" defer></script>
 
   </body>
 </html>

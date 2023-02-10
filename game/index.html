@@ -1934,12 +1934,17 @@ function blocked2() {
 	</script>
   </div>
 <!-- </div> add this when no more games to add -->
-<script>
-$(window).on("keypress", function(event){
-    if (event.key == "s") {
-      window.open("../105/settings/index.html");
+<script> //Keybinds ONLY!
+  document.addEventListener("keydown", e => {
+    if (e.key === "g" && e.ctrlKey) {
+      window.open("index.html");
+    } else if (e.key === "s" && e.ctrlKey) {
+      window.open("../105/settings/index.html")
+    } else if (e.key === "c" && e.ctrlKey) {
+      window.open("../105/chatroom/index.html");
     }
-});</script>
+  })
+</script>
 <script src="../assets/js/min.js"></script>
 <script src="../assets/lib/jquery.min.js"></script>
 <script src="../assets/js/jQuery.min.js"></script>

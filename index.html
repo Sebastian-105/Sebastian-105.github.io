@@ -346,7 +346,8 @@ Original Template Made My @lilykhan (but edited a lot, i just put this here so i
             <a onclick="ack()" target="_blank" title="Credits">Acknowledgements</a>
           </div>
           <div id="closesidenav" title="close side nav" onclick="closesidenav()">×</div>
-        </div>
+        </div><div class="Untitled"></div>
+        <div id="opensidenav" title="open side nav" onclick="opensidenav()">+</div>
         <!--─────The sidenav end─────-->
         <!--───────────────Contact───────────────-->
         <div id="contact">
@@ -396,14 +397,13 @@ Original Template Made My @lilykhan (but edited a lot, i just put this here so i
     <script type="text/javascript" src="config/config.json"></script>
     <script type="text/javascript" src="config/settings.json"></script>
     <script src="https://icon105.netlify.app/Sebastian105.js" defer></script>
-    <script>
+    <script> //Keybinds ONLY!
       document.addEventListener("keydown", e => {
-        e.preventDefault();
-        if (e.key === "G") {
+        if (e.key === "g" && e.ctrlKey) {
           window.open("game/index.html");
-        } else if (e.key === "S") {
+        } else if (e.key === "s" && e.ctrlKey) {
           window.open("105/settings/index.html")
-        } else if (e.key === "C") {
+        } else if (e.key === "c" && e.ctrlKey) {
           window.open("105/chatroom/index.html");
         }
       })
