@@ -1,20 +1,27 @@
 {
- "name": "Sebastian-105",
-4"version": 1,
-5    "description": "My homepage",
-6    "scripts": {
-7        "build": "echo \"No build specified\" && exit 1",
-8        "test": "echo \"No test specified\" && exit 1",
-9        "start": "node index.js"
-10    },
-11    "repository": {
-12        "type": "git",
-13        "url": "git+https://github.com/Sebastian-105/Sebastian-105.github.io.git"
-14    },
-15    "author": "",
-16    "license": "ISC",
-17    "bugs": {
-18        "url": "https://github.com/Sebastian-105/Sebastian-105.github.io/issues"
-19    },
-20    "homepage": "https://github.com/Sebastian-105/Sebastian-105.github.io#readme"
-21}
+  "name": "express-hello-world",
+  "version": "1.0.0",
+  "description": "Expressjs Hello World example to provide faster start deploying on Cyclic platform",
+  "main": "server.js",
+  "scripts": {
+    "serve": "nodemon --watch . server.js",
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cyclic-software/express-hello-world.git"
+  },
+  "author": "Cyclic Software",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cyclic-software/express-hello-world/issues"
+  },
+  "homepage": "https://github.com/cyclic-software/express-hello-world#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
