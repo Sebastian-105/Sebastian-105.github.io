@@ -9,7 +9,7 @@
     "editor.defaultFormatter": null,
     "editor.fastScrollSensitivity": 10,
     "editor.lightbulb.enabled": false,
-    "editor.lineNumbers": "relative",
+    "editor.lineNumbers": "on",
     "editor.matchBrackets": "never",
     "editor.cursorSmoothCaretAnimation": "on",
     "editor.cursorStyle": "line",
