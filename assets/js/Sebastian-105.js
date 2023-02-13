@@ -13,6 +13,9 @@ function searchbar1234(){
 	var search = document.getElementById("mySearch");
 	search.focus();
 }
+function light() {
+  $("#favicon").attr("href","105.inverted.png");
+}
 function copytoclipboard(){
   alert("Username has been copied.");
   navigator.clipboard.writeText("sebastian105#3143");
