@@ -314,6 +314,10 @@ Original Template Made My @lilykhan (but edited a lot, i just put this here so i
           window.open("105/chatroom/index.html");
         } else if (e.key === "h" && e.ctrlKey) {
          alert("You pressed ctrl-h this is only here to prevent you from showing some unwanteds from seeing your history\n-Sebastian-105")
+        } else if (e.key === "w"  && e.ctrlKey) {
+          if (confirm("you pressed do you really want to leave my website?\n-Sebastian-105") === true) {
+            window.close();
+          }
         }
       })
     </script>
