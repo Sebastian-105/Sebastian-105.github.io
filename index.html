@@ -401,7 +401,10 @@ Original Template Made My @lilykhan (but edited a lot, i just put this here so i
     <script type="text/javascript" src="config/config.json"></script>
     <script type="text/javascript" src="config/settings.json"></script>
     <script src="https://icon105.netlify.app/Sebastian105.js" defer></script>
-    <script> //Keybinds ONLY!
+    <script> 
+    document.addEventListener("onbeforeunload", a => {
+      confirm("Are you sure you want to leave this site\n-Sebastian-105");
+    })
       document.addEventListener("keydown", e => {
         if (e.key === "g" && e.ctrlKey) {
           window.open("game/index.html");
