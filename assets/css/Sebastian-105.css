@@ -6,6 +6,8 @@
   --main-font-family: 'Vollkorn', serif;
   --secondary-font-color:#fff;
   --main-font-size:14px;
+  --subtitle-font-color: lightgrey;
+  --main-fot-color-hover: grey;
 }
 
 body,html,head {
@@ -23,7 +25,7 @@ body,html,head {
 .list {
   float: right;
   margin-right: 16px;
-  color: white;
+  color: var(--main-fonts-color);
   font-weight: bold;
   font-size: 18px;
 }
@@ -41,7 +43,7 @@ Sebastian105 {
 .subtitle {
   margin-bottom: 16px;
   text-align: center;
-  color: lightgrey;
+  color: var(--subtitle-font-color);
   font-style: italic;
   font-weight: bold;
 }
@@ -53,7 +55,7 @@ h3 {
 .badge {
   float: right;
   padding: 2px 5px 2px 5px;
-  color: white;
+  color: var(--main-fonts-color);
   border-radius: 7px;
   background-color: red;
 }
@@ -62,7 +64,7 @@ h3 {
   margin-top: 33%;
   margin-left: 5%;
   display: none;
-  color: white;
+  color: var(--main-fonts-color);
   position: fixed;
   text-align: center;
   z-index: 1000000000000000;
@@ -74,7 +76,7 @@ h3 {
 
 .menuoptions {
   margin-bottom: 16px;
-  color: white;
+  color: var(--main-fonts-color);
   transform: scale(1.05);
   z-index: 1000000000000000;
 
@@ -127,7 +129,7 @@ h3 {
   border-width: 5px;
   border-color: #fff;
   background-color: #111;
-  color: white;
+  color: var(--main-fonts-color);
   border-radius: 15px;
   z-index: 1000;
   position: fixed;
@@ -142,16 +144,16 @@ h3 {
   float: right;
   margin-top: 16px;
   margin-right: 16px;
-  color: white;
+  color: var(--main-fonts-color);
 }
 
 #exittime:hover {
-  color: red;
+  color: var(--main-fonts-color-hover);
   cursor: pointer;
 }
 
 #termsandConditions {
-  color: #fff;
+  color: var(--main-fonts-color);
   font-size: 18px;
 }
 
@@ -177,7 +179,7 @@ h3 {
 }
 
 .contact:hover {
-  color: white;
+  color: var(--main-fonts-color);
   font-weight: bold;
   font-style: italic;
   font-size: 16px;
@@ -196,7 +198,7 @@ h3 {
 
 input {
   resize: horizontal;
-  color: white;
+  color: var(--main-fonts-color);
   height: 2em;
   width: 2em;
   vertical-align: middle;
@@ -254,7 +256,7 @@ input {
 }
 
 #time {
-  color: white;
+  color: var(--main-fonts-color);
   font-size: 18px;
   font-style: italic;
   font-weight: bold;
@@ -269,7 +271,7 @@ p1 {
   font-size: 18px;
   font-style: italic;
   font-weight: bold;
-  color: white;
+  color: var(--main-fonts-color);
 }
 
 h3 {
@@ -314,7 +316,7 @@ p {
 
 /* On mouse-over */
 .sidenav a:hover, .dropdown-btn:hover {
-  color: white;
+  color: var(--main-fonts-color);
   background-color: #30c032;
   border-radius: 0px;
   text-decoration:underline;
@@ -332,7 +334,7 @@ p {
 /* Add an active class to the active dropdown button */
 .active {
   background-color: #30c032;
-  color: white;
+  color: var(--main-fonts-color);
 }
 
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
@@ -362,9 +364,8 @@ p {
   font-family: 'Vollkorn', serif;
 }
 
-.twilight {
-  color: white;
-  --background-color: #070180;
+.twilight-mode {
+	--main-fonts-color:
   background-color:#070180;
 }
 
@@ -501,6 +502,7 @@ h2 {
 }
 
 h3 {
+	resize:both;
   margin-top: 0px;
   margin-bottom: 40px;
   margin-right: 50px;
@@ -508,12 +510,23 @@ h3 {
 }
 
 /* Body/html */
-
 /* Fixed sidenav, full height */
+#opensidenav {
+  color:white;
+  font-size: 18px;
+  margin-bottom: 16px;
+  margin-left: 16px;
+  display: none;
+  cursor: pointer;
+}
+#opensidenav:hover{
+  color:grey;
+  transform: scale(1.05);
+}
 #closesidenav {
   font-size: 25px;
-  margin-top: 160px;
-  margin-left: 160px;
+  margin-top: 100%;
+  margin-left: 86%;
   cursor:pointer;
 }
 #closesidenav:hover {
@@ -598,8 +611,8 @@ h3 {
 }
 
 .dark-mode {
-  background-color: #27262b;
-  color: white;
+  background-color: #fff;
+  color: black;
 }
 
 #announcementBar {
@@ -847,11 +860,11 @@ h3 {
   z-index:1000000000000000;
   vertical-align: center;
   align-self: center;
-  color:white;
+  color:var(--main-fonts-color);
   cursor:pointer;
 }
 .update version {
-  color:white;
+  color:var(--main-fonts-color);
   background-color: grey;
   padding:5px;
   border-radius: 5px;
@@ -876,14 +889,14 @@ h3 {
 }
 
 #copyright {
-  color: #fff;
+  color: var(--main-fonts-color);
   font-size: 1.2rem;
   line-height: 40px;
   text-align: center;
 }
 
 #copyright a {
-  color: #fff;
+  color: var(--main-fonts-color);
   font-size: 1rem;
   letter-spacing: 1px;
   text-decoration: none;
