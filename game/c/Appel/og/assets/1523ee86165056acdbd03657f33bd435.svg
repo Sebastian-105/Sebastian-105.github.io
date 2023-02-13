@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <g>
+    <polygon points="45.44 55 55 55 50.22 66 45.44 55" style="fill: none;stroke: #000;stroke-linejoin: round;stroke-width: 4px"/>
+    <polygon points="45.44 55 55 55 50.22 66 45.44 55" style="fill: #b3b3b3"/>
+  </g>
+  <g>
+    <polygon points="35.44 55 45 55 40.22 66 35.44 55" style="fill: none;stroke: #000;stroke-linejoin: round;stroke-width: 4px"/>
+    <polygon points="35.44 55 45 55 40.22 66 35.44 55" style="fill: #b3b3b3"/>
+  </g>
+  <g>
+    <polygon points="25.43 55 35 55 30.22 66 25.43 55" style="fill: none;stroke: #000;stroke-linejoin: round;stroke-width: 4px"/>
+    <polygon points="25.43 55 35 55 30.22 66 25.43 55" style="fill: #b3b3b3"/>
+  </g>
+  <g>
+    <polygon points="34.56 23 25 23 29.78 12 34.56 23" style="fill: none;stroke: #000;stroke-linejoin: round;stroke-width: 4px"/>
+    <polygon points="34.56 23 25 23 29.78 12 34.56 23" style="fill: #b3b3b3"/>
+  </g>
+  <g>
+    <polygon points="44.56 23 35 23 39.78 12 44.56 23" style="fill: none;stroke: #000;stroke-linejoin: round;stroke-width: 4px"/>
+    <polygon points="44.56 23 35 23 39.78 12 44.56 23" style="fill: #b3b3b3"/>
+  </g>
+  <g>
+    <polygon points="54.56 23 45 23 49.78 12 54.56 23" style="fill: none;stroke: #000;stroke-linejoin: round;stroke-width: 4px"/>
+    <polygon points="54.56 23 45 23 49.78 12 54.56 23" style="fill: #b3b3b3"/>
+  </g>
+  <g>
+    <polygon points="24 44.44 24 54 13 49.22 24 44.44" style="fill: none;stroke: #000;stroke-linejoin: round;stroke-width: 4px"/>
+    <polygon points="24 44.44 24 54 13 49.22 24 44.44" style="fill: #b3b3b3"/>
+  </g>
+  <g>
+    <polygon points="24 34.44 24 44 13 39.22 24 34.44" style="fill: none;stroke: #000;stroke-linejoin: round;stroke-width: 4px"/>
+    <polygon points="24 34.44 24 44 13 39.22 24 34.44" style="fill: #b3b3b3"/>
+  </g>
+  <g>
+    <polygon points="24 24.43 24 34 13 29.22 24 24.43" style="fill: none;stroke: #000;stroke-linejoin: round;stroke-width: 4px"/>
+    <polygon points="24 24.43 24 34 13 29.22 24 24.43" style="fill: #b3b3b3"/>
+  </g>
+  <g>
+    <polygon points="56 33.56 56 24 67 28.78 56 33.56" style="fill: none;stroke: #000;stroke-linejoin: round;stroke-width: 4px"/>
+    <polygon points="56 33.56 56 24 67 28.78 56 33.56" style="fill: #b3b3b3"/>
+  </g>
+  <g>
+    <polygon points="56 43.56 56 34 67 38.78 56 43.56" style="fill: none;stroke: #000;stroke-linejoin: round;stroke-width: 4px"/>
+    <polygon points="56 43.56 56 34 67 38.78 56 43.56" style="fill: #b3b3b3"/>
+  </g>
+  <g>
+    <polygon points="56 53.56 56 44 67 48.78 56 53.56" style="fill: none;stroke: #000;stroke-linejoin: round;stroke-width: 4px"/>
+    <polygon points="56 53.56 56 44 67 48.78 56 53.56" style="fill: #b3b3b3"/>
+  </g>
+  <g>
+    <rect x="24" y="23" width="32" height="32" style="fill: none;stroke: #000;stroke-linejoin: round;stroke-width: 4px"/>
+    <rect x="24" y="23" width="32" height="32" style="fill: #39b54a"/>
+  </g>
+  <rect x="33" y="32" width="14" height="14" style="fill: #3ac54d"/>
+</svg>

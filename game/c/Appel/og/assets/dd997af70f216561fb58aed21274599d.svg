@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g>
+    <g>
+      <path d="M42,30h6a4,4,0,0,1,4,4v4H42Z" style="fill: none;stroke: #000;stroke-miterlimit: 10;stroke-width: 4px"/>
+      <path d="M42,30h6a4,4,0,0,1,4,4v4H42Z" style="fill: #ff8b00"/>
+    </g>
+    <rect x="34" y="10" width="12" height="22"/>
+    <path d="M29.82,51H26.18A14.22,14.22,0,0,1,12,36.82V34.18C12,26.38,18.38,19,26.18,19h3.64C37.62,19,44,26.38,44,34.18v2.64A14.22,14.22,0,0,1,29.82,51Z"/>
+    <path d="M28.09,31.24l-1.32.49a3.88,3.88,0,0,1-5-2.27L17.89,19l-1.08-2.91a3.86,3.86,0,0,1,2.26-5l1.32-.49a3.88,3.88,0,0,1,5,2.26l5,13.38A3.87,3.87,0,0,1,28.09,31.24Z"/>
+    <rect x="25" y="19" width="13" height="4"/>
+    <g>
+      <rect x="38" y="14" width="6" height="16" style="fill: none;stroke: #000;stroke-miterlimit: 10;stroke-width: 4px"/>
+      <rect x="38" y="14" width="6" height="16" style="fill: #fff"/>
+    </g>
+    <rect x="40" y="22" width="4" height="4"/>
+    <path d="M40,30h7.23C49.86,30,52,31.78,52,34v4H40Z" style="fill: #ff8b00"/>
+  </g>
+</svg>
