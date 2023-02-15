@@ -298,8 +298,8 @@ if(permission === "granted"){
    showNotification();
 } else if(permission === "default"){
    requestAndShowPermission();
-} else {
-  alert("Use normal alert");
+} else if (permission === "denied") {
+  alert("permissions have been denied.  You can no longer get updates about my website via notifications.\n-Sebastian-105");
 }
 
 function requestAndShowPermission() {
@@ -313,15 +313,15 @@ function showNotification() {
   //  if(document.visibilityState === "visible") {
   //      return;
   //  }
-   let title = "I love Educative.io";
-   let icon = 'https://homepages.cae.wisc.edu/~ece533/images/zelda.png'; //this is a large image may take more time to show notifiction, replace with small size icon
-   let body = "Message to be displayed";
+   let title = "New Update";
+   let icon = '/105.png'; //this is a large image may take more time to show notifiction, replace with small size icon
+   let body = "There has been a new update.  Click here to check it out.";
 
    let notification = new Notification(title, { body, icon });
 
    notification.onclick = () => {
+          window.open("https://github.com/Sebastian-105/Sebastian-105.github.io/blob/Sebastian-105/CHANGELOG.md");
           notification.close();
-          window.parent.focus();
    }
    
 }
