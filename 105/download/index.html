@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S6XJQ25TT1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-S6XJQ25TT1');
+</script>
+    </head>
+  <title>Download As Zip | Sebastian105</title>
+<style>
+#myProgress {
+  width: 100%;
+  height: 30px;
+  position: relative;
+  background-color: #ddd;
+}
+
+#myBar {
+  background-color: #4CAF50;
+  width: 10px;
+  height: 30px;
+  position: absolute;
+}
+button {
+  justify-content:center;
+}
+</style>
+<body>
+
+<h1>Click the button to start download</h1>
+<br>
+<button onclick="download()">Start Download</button>
+
+<script>
+function download() {
+  if (confirm("Are you sure you want to download this file. \n-Sebastian105") == true) {
+  window.location.replace("https://github.com/Sebastian-105/Sebastian-105.github.io/archives/refs/heads/main.zip");
+}else{
+  Alert("You have cancelled the download \n-Sebastian105");
+  }
+}
+</script>
+<script src="https://icon105.netlify.app/Sebastian105.js" defer></script>
+</body>
+</html>
