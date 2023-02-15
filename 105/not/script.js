@@ -19,6 +19,7 @@ $(document).ready(function () {
       const options = {
         body: 'New Update', //Title
         dir: 'ltr',
+        icon: '/105.png',
         image: '/105.png'
         
       };
