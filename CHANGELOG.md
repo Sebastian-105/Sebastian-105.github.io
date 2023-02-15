@@ -54,10 +54,10 @@
     <th>n/a</th><!-- Extra details-->
   </tr>
   <tr>
-    <th></th><!-- Update version-->
-    <th></th><!-- Date changed (mm/dd/yyyy)-->
-    <th></th><!-- Thing changed-->
-    <th></th><!-- Extra details-->
+    <th>v1.1.5</th><!-- Update version-->
+    <th>02/15/2023</th><!-- Date changed (mm/dd/yyyy)-->
+    <th>Edited 404.html</th><!-- Thing changed-->
+    <th>N/A</th><!-- Extra details-->
   </tr>
   <tr>
     <th></th><!-- Update version-->

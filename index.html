@@ -1,4 +1,3 @@
-
 <!--───────────────────────────────────────────────────────────────────────────────────────────────────────────────────|
 
 |──────────────────────────────────────────────|
@@ -49,12 +48,12 @@ Original Template Made My @lilykhan (but edited a lot, i just put this here so i
     <link rel="stylesheet" href="assets/lib/font-awesome.min.css" />
     <link rel="help" href="105/help/index.html" />
     <link rel="license" href="LICENSE" />
-    <link id="favicon" rel="icon" href="105.png" style="border-radius: 50%" />
+    <link rel="icon" href="105.png" style="border-radius: 50%" />
     <title class="title">Sebastian-105</title>
   </head>
 
   <body onbeforeunload="return MyFunctionalert()">
-    <div class="container" onload="showNotification(update)">
+    <div class="container" onload="Sebastian105()">
       <!--───────────────Header───────────────-->
       <div class="hamburger">
         <div class="line1"></div>
@@ -191,7 +190,7 @@ Original Template Made My @lilykhan (but edited a lot, i just put this here so i
         </div>
         <!--───────────────Sidenav───────────────-->
         <div class="sidenav">
-          <div class="update" title="Whats New?">Version: <version>v1.1.4</version></div><br>
+          <div class="update" title="Whats New?">Version: <version>v1.1.5</version></div><br>
           <a onclick="settings()" title="Settings">Settings</a>
           <a onclick="downloadlink()">Download</a>
           <div class="dropdown-container2">
@@ -295,12 +294,7 @@ Original Template Made My @lilykhan (but edited a lot, i just put this here so i
     <script src="./assets/lib/jquery.min.js"></script>
     <script src="./assets/js/jQuery.min.js"></script>
     <script src="./assets/js/Sebastian-105.js"></script>
-    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script src="//unpkg.com/brain.js"></script>
-    <script type="text/javascript" src="config/config.json"></script>
-    <script type="text/javascript" src="config/settings.json"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
     <script src="https://icon105.netlify.app/Sebastian105.js" defer></script>
     <script> //Keybinds ONLY!
       document.addEventListener("keydown", e => {
