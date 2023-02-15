@@ -17,9 +17,10 @@ $(document).ready(function () {
       Notification.requestPermission();
     } else {
       const options = {
-        body: 'New Update',
+        body: 'New Update', //Title
         dir: 'ltr',
         image: '/105.png'
+        
       };
       const notification = new Notification('Notification', options);
 
