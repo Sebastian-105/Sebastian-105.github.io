@@ -17,14 +17,14 @@ $(document).ready(function () {
       Notification.requestPermission();
     } else {
       const options = {
-        body: 'Simple Chrome Desktop Notification',
+        body: 'New Update',
         dir: 'ltr',
-        image: 'image.jpg'
+        image: '/105.png'
       };
       const notification = new Notification('Notification', options);
 
       notification.onclick = function () {
-        window.open('https://www.google.com');
+        window.open('https://github.com/Sebastian-105/Sebastian-105.github.io/blob/Sebastian-105/CHANGELOG.md');
       };
     }
   }
