@@ -1,5 +1,17 @@
 {
     "githubPullRequests.ignoredPullRequestBranches": [
         "Sebastian-105"
-    ]
+    ],
+    "editor.fontSize": 15,
+    "editor.tabSize": 2,
+    "editor.accessibilityPageSize": 1,
+    "editor.codeActionWidget.showHeaders": false,
+    "editor.defaultFormatter": null,
+    "editor.fastScrollSensitivity": 10,
+    "editor.lightbulb.enabled": false,
+    "editor.lineNumbers": "on",
+    "editor.matchBrackets": "never",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.cursorStyle": "line",
+    "editor.minimap.enabled": false
 }
