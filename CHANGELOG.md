@@ -26,7 +26,7 @@
   <tr>
     <th>v1.0.2</th><!-- Update version-->
     <th>02/08/2023</th><!-- Date changed (mm/dd/yyyy)-->
-    <th>fixed the link in <code>105/updates</code><th><!-- Thing changed-->
+    <th>fixed the link in 105/updates</th><!-- Thing changed-->
     <th>N/A</th><!-- Extra details-->
   </tr>
   <tr>
