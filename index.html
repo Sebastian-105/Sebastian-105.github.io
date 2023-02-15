@@ -313,11 +313,12 @@ function showNotification() {
   //  if(document.visibilityState === "visible") {
   //      return;
   //  }
+   let requireInteraction = true
    let title = "New Update";
    let icon = '/105.png'; //this is a large image may take more time to show notifiction, replace with small size icon
    let body = "There has been a new update.  Click here to check it out.";
 
-   let notification = new Notification(title, { body, icon });
+   let notification = new Notification(title, { body, icon,requireInteraction: true });
 
    notification.onclick = () => {
           window.open("https://github.com/Sebastian-105/Sebastian-105.github.io/blob/Sebastian-105/CHANGELOG.md");
