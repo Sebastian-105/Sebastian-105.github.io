@@ -1,5 +1,4 @@
-
-<!--─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────|
+<!--───────────────────────────────────────────────────────────────────────────────────────────────────────────────────|
 
 |──────────────────────────────────────────────|
 |⬛⬛──────⬛⬛⬛⬛───────────⬛⬛⬛⬛⬛──────|
@@ -191,7 +190,7 @@ Original Template Made My @lilykhan (but edited a lot, i just put this here so i
         </div>
         <!--───────────────Sidenav───────────────-->
         <div class="sidenav">
-          <div class="update" title="Whats New?">Version: <version>v1.2.5</version></div><br>
+          <div class="update" title="Whats New?">Version: <version class="currentversion">Loading. . .</version></div><br>
           <a onclick="settings()" title="Settings">Settings</a>
           <a onclick="downloadlink()">Download</a>
           <div class="dropdown-container2">
@@ -293,6 +292,10 @@ Original Template Made My @lilykhan (but edited a lot, i just put this here so i
     </footer>
     <script src="./assets/js/min.js"></script>
     <script>
+      // CURRENT VERSION
+      var version = "1.2.5";
+      document.getElementById("currentversion").innerHTML = "v" + version;
+      // End of Current Version
       let permission = Notification.permission;
 
 if(permission === "granted"){
@@ -314,12 +317,11 @@ function showNotification() {
   //  if(document.visibilityState === "visible") {
   //      return;
   //  }
-   let requireInteraction = true
-   let title = "New Update";
+   let title = "New Update v" + version;
    let icon = '/105.png'; //this is a large image may take more time to show notifiction, replace with small size icon
    let body = "There has been a new update.  Click here to check it out.";
 
-   let notification = new Notification(title, { body, icon,requireInteraction: true });
+   let notification = new Notification(title, { body, icon });
 
    notification.onclick = () => {
           window.open("https://github.com/Sebastian-105/Sebastian-105.github.io/blob/Sebastian-105/CHANGELOG.md");
@@ -329,10 +331,10 @@ function showNotification() {
 }
     </script>
     <script src="./assets/lib/jquery.min.js"></script>
-    <script src="./assets/js/jQuery.min.js"></script>
-    <script src="./assets/js/Sebastian-105.js"></script>
+    <script src="assets/js/jQuery.min.js"></script>
+    <script src="assets/js/Sebastian-105.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
-    <script src="https://icon105.netlify.app/Sebastian105.js" defer></script>
+    <script src="https://external-105.netlify.app/js/105.js" defer></script>
     <script> //Keybinds ONLY!
       document.addEventListener("keydown", e => {
         if (e.key === "g" && e.ctrlKey) {
@@ -344,9 +346,9 @@ function showNotification() {
         } else if (e.key === "c" && e.ctrlKey) {
           window.open("105/chatroom/index.html");
         } else if (e.key === "h" && e.ctrlKey) {
-         alert("You pressed ctrl-h this is only here to prevent you from showing some unwanteds from seeing your history\n-Sebastian-105")
+         alert("You pressed ctrl-h this is only here to prevent you from showing your parents/teacher from seeing your history\n-Sebastian-105")
         } else if (e.key === "w"  && e.ctrlKey) {
-          if (confirm("you pressed do you really want to leave my website?\n-Sebastian-105") === true) {
+          if (confirm(`you pressed "ctrl + w" do you really want to leave my website?\n-Sebastian-105`) === true) {
             window.close();
           }
         }
