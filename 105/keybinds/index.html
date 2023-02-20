@@ -26,14 +26,17 @@
     <sebastian105>Ctrl + g = open game page</sebastian105>
     <sebastian105>ctrl + s = open settings page</sebastian105>
     <sebastian105>ctrl + c = open chatroom</sebastian105>
+    <sebastian105>ctrl + d = open docs page</sebastian105>
     <script> //Keybinds ONLY!
       document.addEventListener("keydown", e => {
         if (e.key === "g" && e.ctrlKey) {
-          window.open("../game/index.html");
+          window.open("../../game/index.html");
         } else if (e.key === "s" && e.ctrlKey) {
-          window.open("settings/index.html")
+          window.open("../settings/index.html")
         } else if (e.key === "c" && e.ctrlKey) {
-          window.open("chatroom/index.html");
+          window.open("../chatroom/index.html");
+        } else if (e.key === "c" && e.ctrlKey) {
+          window.open("../../docs/index.html");
         }
       })
     </script>
