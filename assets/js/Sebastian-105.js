@@ -25,6 +25,11 @@ function settings() {
     console.log("stayed at homepage \n-Sebastian-105");
   }
 }
+function version() {
+  var v = document.getElementsByClassName("currentversion");
+  var version = "v1.2.5";
+  v.innerHTML = version;
+}
 function theexacttime() {
 var d = new Date();
 let h = d.getHours();
