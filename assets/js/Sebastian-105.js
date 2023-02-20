@@ -25,7 +25,7 @@ function settings() {
     console.log("stayed at homepage \n-Sebastian-105");
   }
 }
-function version() {
+function versionname() {
   var v = document.getElementsByClassName("currentversion");
   var version = "v1.2.5";
   v.innerHTML = version;
