@@ -12,12 +12,14 @@
   gtag('config', 'G-S6XJQ25TT1');
 </script>
       <style>
-        button {
+        .button {
         text-align: center;
         margin-top: 2.5rem;
         padding: 15px 32px;
         margin: 4px 2px;
         cursor: pointer;
+        margin-right:auto;
+        margin-left:auto;
         }
         h1 {
         text-align: center;
@@ -34,9 +36,10 @@
 
       <h1>Sorry the requested URL was not found</h1>
       <p>This page has not been found!</p>
-      {|<button onclick="myFunctionchatroom()">The Chatroom</button>}|{
-      <button onclick="myFunctionABCD()">Homepage</button>}|{
-      <button onclick="myFunctionABC()">Game page</button>|}
+      <div class=button> 
+      {|<button class="button" onclick="myFunctionchatroom()">The Chatroom</button>}|{
+      <button class="button" onclick="myFunctionABCD()">Homepage</button>}|{
+      <button class="button" onclick="myFunctionABC()">Game page</button>|}</div>
       <script>
         function myFunctionchatroom() {
           window.location.href="105/chatroom/index.html";
