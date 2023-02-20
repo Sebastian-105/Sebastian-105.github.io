@@ -3,6 +3,42 @@ h1, h2 {
   font-weight: bold;
   font-style: italic;
 }
+body, html {
+  background-color:rgb(11, 11, 11);
+  border-color: white;
+  color:white;
+  font-size: 25px;
+}
+/*%%%%%%%%%%%%%%%%%%%%%%%%% -- Content -- %%%%%%%%%%%%%%%%%%%*/
+content {
+  margin-left: 50px;
+  margin-top: 1.5rem;
+  font-size: 25px;
+}
+content::after {
+  content: "-Sebastian-105";
+}
+.content{
+  margin-left: 50px;
+}
+.content::after {
+  content: "-Sebastian-105";
+}
+.subtitle {
+  color:lightgrey;
+  font-style: italic;
+  text-align: center;
+  margin-left:40%;
+  width:10%;
+  font-size:0.69rem;
+}
+subtitle {
+  color:lightgrey;
+  text-align: center;
+  font-style: italic;
+  font-size:0.69rem;
+}
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%% -- SIDENAV -- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
 .overlay {
   height: 100%;
   width: 0;
