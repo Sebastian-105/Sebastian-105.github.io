@@ -224,11 +224,17 @@ body {
  margin-top: 13px;
  margin-left: 25px;
 }
+svg {
+  display: none;
+}
+path {
+  display: none;
+}
 .classroom {
  background-color:#282828;
  border-radius: 0.6rem;
  width: 18.375rem;
- height: 18.75rem;
+ height: 15rem;
  border: 0.0625rem solid #dadce0;
  margin-right: 25px;
  margin-bottom: 25px;
@@ -284,7 +290,7 @@ body {
  border-radius: 50%;
  float: right;
  position: relative;
- margin-top: -2.44rem;
+ margin-bottom: 16px;
  right: 16px;
 }
 .b {
@@ -295,7 +301,7 @@ body {
  border-top: 0.0625rem solid #dadce0;
  border-radius: 0 0 0.6rem 0.6rem;
  flex-wrap: wrap;
- display: flex;
+ display: none;
 }
 .b > .icon {
  position: relative;
@@ -350,12 +356,23 @@ body {
  -webkit-user-select: none;
 }
 .btnShadow {
+  width: 152px;
  height: 36px;
  background-color: #1a73e8;
  position: absolute;
  bottom: 5;
  opacity: 0;
  border-radius: 4px;
+ font-family: "Google Sans",Roboto,Arial,sans-serif;
+ font-size: .875rem;
+ letter-spacing: .0107142857em;
+ font-weight: 500;
+ text-transform: none;
+ position: relative;
+ bottom: 18px;
+ color: #1a73e8;
+ user-select: none;
+ -webkit-user-select: none;
 }
 .btnShadow:hover {
  opacity: 0.1;

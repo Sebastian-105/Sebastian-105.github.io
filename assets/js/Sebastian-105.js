@@ -26,9 +26,8 @@ function settings() {
   }
 }
 function versionname() {
-  var v = document.getElementsByClassName("currentversion");
-  var version = "v1.2.5";
-  v.innerHTML = version;
+  let version = "v1.3.6";
+  document.getElementById("currentverisonasdf").innerHTML = version;
 }
 function theexacttime() {
 var d = new Date();

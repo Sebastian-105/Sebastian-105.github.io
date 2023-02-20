@@ -134,56 +134,8 @@ function blocked2() {
 		</div>
 	</div>
   <div id="buttons">
-    <div id="feedback" class="btn f">
-      <svg enable-background="new 0 0 24 24" focusable="false" height="18" viewBox="0 0 24 24" width="18" class="icon">
-        <g>
-          <g>
-            <path d="M20,3H4C2.9,3,2,3.9,2,5v14c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V5 C22,3.9,21.1,3,20,3z M20,19H4V5h16V19z" fill-rule="evenodd">
-            </path>
-            <polygon fill-rule="evenodd" points="19.41,10.42 17.99,9 14.82,12.17 13.41,10.75 12,12.16 14.82,15">
-            </polygon>
-            <rect fill-rule="evenodd" height="2" width="5" x="5" y="7"></rect>
-            <rect fill-rule="evenodd" height="2" width="5" x="5" y="11"></rect>
-            <rect fill-rule="evenodd" height="2" width="5" x="5" y="15"></rect>
-          </g>
-        </g>
-      </svg>
-      <span class="btnText">Send Feedback</span>
-      <div class="btnShadow f"></div>
-    </div>
-    <div id="chatroom" class="btn c">
-      <svg focusable="false" width="18" height="18" viewBox="0 0 24 24" class=" icon">
-        <path
-          d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z">
-        </path>
-      </svg>
-      <span class="btnText">Chatroom</span>
-      <div class="btnShadow c"></div>
-      <script>
-        chatroom.addEventListener('click', function (event) {
-          console.log("Chatroom Opened");
-          window.open("../105/chatroom/index.html", "_blank");
-        });
-      </script>
-    </div>
   </div>
-	<div id="feedbackModal" class="modal">
-		<div class="fbModalContent">
-			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdE9VHou6yPnkx87khgPxbML2ibj-bHM2q__0h2QgZxNgETZg/viewform?embedded=true" width="614" height="868" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-		</div>
-		<script>
-			feedback.addEventListener('click', function (event) {
-				console.log("Feedback Form Opened");
-				feedbackModal.style.display = "block";
-			});
-			window.addEventListener('click', function(event) {
-				if (event.target == feedbackModal) {
-					console.log("Feedback Form Closed");
-					feedbackModal.style.display = "none";
-				}
-			});
-		</script>
-	</div>
+	
   <div id="content">
     <!-- F3 - Home Page -->
     <div class="classroom">
@@ -193,15 +145,10 @@ function blocked2() {
             <div class="main">Home Page</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
         <img src="../105.png" class="gameIcon" alt="Appel"/>
       </div>
-      <div class="b">
         <div class="icon">
         </div>
-      </div>
     </div>
     <!-- F3 - Spotify -->
     <div class="classroom">
@@ -212,25 +159,15 @@ function blocked2() {
             <div class="sub">Dont Judge!</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="Appel"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -243,25 +180,13 @@ function blocked2() {
             <div class="sub">Inspiration for this site.</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="Proxy" style="background-color: rgb(3 34 36);"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
-        </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+        </div>
         </div>
       </div>
     </div>
@@ -274,25 +199,15 @@ function blocked2() {
             <div class="sub">One of the best games sites</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="Proxy" style="background-color: rgb(3 34 36);"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -305,25 +220,15 @@ function blocked2() {
             <div class="sub">basically just splix.io</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="Appel"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -336,25 +241,15 @@ function blocked2() {
             <div class="sub">unblocks sites</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="Proxy" style="background-color: rgb(3 34 36);"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -367,25 +262,15 @@ function blocked2() {
             <div class="sub">From <a href="melvin.is-an.app">Melvin4life's chess</a></div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="Proxy" style="background-color: rgb(3 34 36);"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -398,25 +283,15 @@ function blocked2() {
             <div class="sub">Mince-Craft [1.5.2]  (works offline)</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="2048"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -429,25 +304,15 @@ function blocked2() {
             <div class="sub">Mince-Craft [1.8.8]  (works offline)</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="2048"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -461,25 +326,15 @@ function blocked2() {
             <div class="sub">Strangley Addicting.</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="Zombs"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -491,9 +346,7 @@ function blocked2() {
             <div class="main">Chess</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="Appel"/>
       </div>
       <div class="b">
@@ -510,25 +363,15 @@ function blocked2() {
             <div class="sub">funny birb</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="Flappy Bird"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -541,25 +384,15 @@ function blocked2() {
             <div class="sub">don't get eaten!</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="Appel"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -572,25 +405,15 @@ function blocked2() {
             <div class="sub">{insert description here}</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png"Icon.png" class="gameIcon" alt="Appel"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -603,25 +426,15 @@ function blocked2() {
             <div class="sub">Wow, who would have thought?</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="Appel"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -634,25 +447,15 @@ function blocked2() {
             <div class="sub">"GET TO ZE CHOPPER!"</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="Appel"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -665,25 +468,15 @@ function blocked2() {
             <div class="sub">square go boing  (works offline)</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="Geometry Dash"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -696,25 +489,15 @@ function blocked2() {
             <div class="sub">pixelated football.  (works offline)</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="Retro Bowl"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -727,25 +510,15 @@ function blocked2() {
             <div class="sub">It's 2048.</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="2048"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -758,25 +531,15 @@ function blocked2() {
             <div class="sub">Gun game..</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="Proxy" style="background-color: rgb(3 34 36);"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -789,25 +552,15 @@ function blocked2() {
             <div class="sub">buy those grandmas.   (works offline)</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="Cookie Clicker"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -820,25 +573,15 @@ function blocked2() {
             <div class="sub">YOU WILL RAGE QUIT! (works offline)</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="Cookie Clicker"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div><!-- B2 - Cookie Clicker -->
@@ -850,25 +593,15 @@ function blocked2() {
             <div class="sub">YOU WILL RAGE QUIT! x2 (works offline)</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="Cookie Clicker"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -881,25 +614,15 @@ function blocked2() {
             <div class="sub">not dollar store version</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="Subway Surfers"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -912,25 +635,15 @@ function blocked2() {
             <div class="sub">Double Speak Games</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="A Dark Room"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -963,25 +676,15 @@ function blocked2() {
             </script>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="Wordle"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -994,25 +697,15 @@ function blocked2() {
             <div class="sub">is that thing a frog?  (works offline)</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="Cut The Rope"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -1025,25 +718,15 @@ function blocked2() {
             <div class="sub">Tetris, but first-person.  (works offline)</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="First-Person Tetris"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -1057,25 +740,15 @@ function blocked2() {
             <div class="sub">quack quack</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="Duck Life 4"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -1088,25 +761,15 @@ function blocked2() {
             <div class="sub">literally just super mario</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="Low's Adventures 2"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -1119,25 +782,15 @@ function blocked2() {
             <div class="sub">that mobile game</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="Stick Ninja"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -1150,25 +803,15 @@ function blocked2() {
             <div class="sub">Can you beat spider-man?</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="Stick Ninja"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -1181,25 +824,15 @@ function blocked2() {
             <div class="sub">that other mobile game</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="Stack"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -1212,25 +845,15 @@ function blocked2() {
             <div class="sub">A little logic game.  (works offline)</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="Low's Adventures 2"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -1243,25 +866,15 @@ function blocked2() {
             <div class="sub">vroom</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="Drift Boss"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -1274,25 +887,15 @@ function blocked2() {
             <div class="sub">acorns are nuts</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="Doctor Acorn 3"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -1305,25 +908,15 @@ function blocked2() {
             <div class="sub">dont scream too loud</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="Getting Over It"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -1337,25 +930,15 @@ function blocked2() {
 
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="Flappy Bird"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -1368,25 +951,15 @@ function blocked2() {
             <div class="sub">waddle waddle</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="Slinguin"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -1400,25 +973,15 @@ function blocked2() {
             <div class="sub">not apple.  (works offline)</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="Appel"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -1431,25 +994,15 @@ function blocked2() {
             <div class="sub">s p e e d.   (works offline)</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="Slope"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -1462,25 +1015,15 @@ function blocked2() {
             <div class="sub">Alt Link: yandex.az</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="Dune"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -1493,25 +1036,15 @@ function blocked2() {
             <div class="sub">Alt Link: yandex.eu</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="Helix"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -1524,25 +1057,15 @@ function blocked2() {
             <div class="sub">Alt Link: https://yandex.eu/</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="Yandex"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -1555,25 +1078,15 @@ function blocked2() {
             <div class="sub">no, the other mobile game</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="Jetpack Joyride"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -1586,25 +1099,15 @@ function blocked2() {
             <div class="sub">one of the mobile games</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="Doodle Jump"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -1617,25 +1120,15 @@ function blocked2() {
             <div class="sub">bouncing blob   (works offline)</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="Run 3"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -1648,25 +1141,15 @@ function blocked2() {
             <div class="sub">fortnite but bad</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="1v1.lol"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -1679,25 +1162,15 @@ function blocked2() {
             <div class="sub">dollar store version</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="Temple Run"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -1710,25 +1183,15 @@ function blocked2() {
             <div class="sub">cluck cluck</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="Crossy Road"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -1741,25 +1204,15 @@ function blocked2() {
             <div class="sub">an old classic</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="Happy Wheels"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -1772,25 +1225,15 @@ function blocked2() {
             <div class="sub">🏀 🗑️ ✨</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="Basketball Stars"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -1803,25 +1246,15 @@ function blocked2() {
             <div class="sub">Alien invaders but different</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="Spacevale"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -1834,25 +1267,15 @@ function blocked2() {
             <div class="sub">Jump! Duck!   (works offline)</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="Moto"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -1864,25 +1287,15 @@ function blocked2() {
             <div class="sub">Dont touch red</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="Moto"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
     </div>
@@ -1894,26 +1307,9 @@ function blocked2() {
             <div class="sub">"Wtf is this?" -the gamemaker</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
-        <img src="../105.png" class="gameIcon" alt="Moto"/>
+        
       </div>
-      <div class="b">
-        <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
-        </div>
-        <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
-        </div>
+      <img src="../105.png" class="gameIcon" alt="Moto"/>
       </div>
   </div>
 		<!-- Moto x3m -->
@@ -1926,25 +1322,15 @@ function blocked2() {
             <div class="sub">Vroom Vroom.</div>
           </a>
         </div>
-        <svg focusable="false" width="24" height="24" viewBox="0 0 24 24" style="fill:white; position:relative; padding: 12px; bottom: 95px; left: 245px;">
-          <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
-        </svg>
+       
         <img src="../105.png" class="gameIcon" alt="Moto"/>
       </div>
       <div class="b">
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7.55 0c.14-.15.33-.25.55-.25s.41.1.55.25c.12.13.2.31.2.5 0 .41-.34.75-.75.75s-.75-.34-.75-.75c0-.19.08-.37.2-.5zM19 5v10.79C16.52 14.37 13.23 14 12 14s-4.52.37-7 1.79V5h14zM5 19v-.77C6.74 16.66 10.32 16 12 16s5.26.66 7 2.23V19H5z">
-            </path>
-            <path d="M12 13c1.94 0 3.5-1.56 3.5-3.5S13.94 6 12 6 8.5 7.56 8.5 9.5 10.06 13 12 13zm0-5c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s-1.5-.67-1.5-1.5S11.17 8 12 8z">
-            </path>
-          </svg>
+         
         </div>
         <div class="icon">
-          <svg focusable="false" width="24" height="24" viewBox="0 0 24 24">
-          <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z">
-          </path>
-          </svg>
+         
         </div>
       </div>
   </div> -->
