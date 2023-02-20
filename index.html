@@ -190,7 +190,7 @@ Original Template Made My @lilykhan (but edited a lot, i just put this here so i
         </div>
         <!--───────────────Sidenav───────────────-->
         <div class="sidenav">
-          <div class="update" title="Whats New?">Version: <version class="currentversion">Loading. . .</version></div><br>
+          <div class="update" title="Whats New?">Version: <version onload="versionname()"class="currentversion">Loading. . .</version></div><br>
           <a onclick="settings()" title="Settings">Settings</a>
           <a onclick="downloadlink()">Download</a>
           <div class="dropdown-container2">
@@ -293,8 +293,6 @@ Original Template Made My @lilykhan (but edited a lot, i just put this here so i
     <script src="./assets/js/min.js"></script>
     <script>
       // CURRENT VERSION
-      var version = "1.2.5";
-      document.getElementById("currentversion").innerHTML = "v" + version;
       // End of Current Version
       let permission = Notification.permission;
 
@@ -334,7 +332,7 @@ function showNotification() {
     <script src="assets/js/jQuery.min.js"></script>
     <script src="assets/js/Sebastian-105.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
-    <script src="https://external-105.netlify.app/js/105.js" defer></script>
+    <script src="https://icon105.netlify.app/js/105.js" defer></script>
     <script> //Keybinds ONLY!
       document.addEventListener("keydown", e => {
         if (e.key === "g" && e.ctrlKey) {
