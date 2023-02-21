@@ -1,8 +1,9 @@
 # Sebastian105's Changelog
 ## as of `Wed, Feb 08, 2023`
-#### NOTE: This might not be 100% but I will try to make it as close as possible
-#### NOTE: all updates will also be posted <a href="https://github.com/Sebastian-105/Sebastian-105.github.io/releases/">here</a>.
-#### NOTE: Not every change will register as a new update, it has to be a big change.
+#### NOTES: 
+- This might not be 100% but I will try to make it as close as possible
+- all updates will also be posted <a href="https://github.com/Sebastian-105/Sebastian-105.github.io/releases/">here</a>.
+-  Not every change will register as a new update, it has to be a big change.
 # By: ***Sebastian-105***
 
 
