@@ -9,8 +9,8 @@ function closesidenav() {
   $(".sidenav").fadeToggle("slow");
   console.log('Closed sidenav');
 }
+var author = "Sebastian-105";
 function copytoclipboard(){
-  alert("Username has been copied.");
   navigator.clipboard.writeText("sebastian105#3143");
   console.log("Username has been copied.");
 }
@@ -197,4 +197,9 @@ function buttonCode()
     localStorage.setItem('tabname', textbox.value)
     textbox.value = ""
     textbox.focus();
+}
+if (document.title.includes("Sebastian-105")) {
+} else {
+  var title = document.title;
+  title += " | Sebastian-105"
 }
