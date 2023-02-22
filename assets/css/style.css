@@ -356,27 +356,16 @@ path {
  -webkit-user-select: none;
 }
 .btnShadow {
-  width: 152px;
- height: 36px;
- background-color: #1a73e8;
- position: absolute;
- bottom: 5;
- opacity: 0;
- border-radius: 4px;
- font-family: "Google Sans",Roboto,Arial,sans-serif;
- font-size: .875rem;
- letter-spacing: .0107142857em;
- font-weight: 500;
- text-transform: none;
- position: relative;
- bottom: 18px;
- color: #1a73e8;
- user-select: none;
- -webkit-user-select: none;
+  height: 36px;
+  background-color: #1a73e8;
+  position: absolute;
+  bottom: 5;
+  opacity: 0;
+  border-radius: 4px;
 }
 .btnShadow:hover {
- opacity: 0.1;
- cursor: cell;
+  opacity: 0.1;
+  cursor: pointer;
 }
 .modal {
  display: none;
@@ -433,6 +422,27 @@ path {
  user-select: none;
  -webkit-user-select: none;
 }
+.spacing {
+  margin:50px;
+}
+.footer {
+  color:white;
+  border:solid;
+  border-left-width:0px;
+  border-bottom-width:0px;
+  border-right-width:0px;
+  border-top-width:3px;
+  border-top-color:white;
+  margin-bottom: 0px;
+  height: 75px;
+  margin-top: 100px;
+  text-align: justify;
+  font-family: 'Times New Roman', serif;
+}
+.footer img {
+  margin-top:25px;
+}
+
 .fbModalContent::after {
  content: "";
  clear: both;
