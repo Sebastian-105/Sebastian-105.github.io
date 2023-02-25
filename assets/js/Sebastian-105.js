@@ -206,3 +206,42 @@ if (document.title.includes("Sebastian-105")) {
 function resettabname() {
   document.title = "Sebastian-105";
 }
+setInterval(sunnyslimes, 900000);
+function sunnyslimes() {
+  const sunny = `
+  <style>
+  .sunnyslimes {
+    background:#111;
+    color:white;
+    transform: translate(-50%,-50%);
+  }
+  .sunnyslimes-overlay {
+    background-color: rgba(0, 0, 0, 0, 0.4);
+    position: fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100vh;
+  }
+  .sunnyslimes h1 {
+    text-align:center;
+    font-size:50px;
+  }
+  .sunnyslimes subtitle {
+    text-align:center;
+    text-style:italic;
+    font-size:14px;
+  }
+  </style>
+  <div class="sunnyslimes-overlay">
+  <div class="sunnyslimes"><h1>New Go To my Sisters Website</h1>
+  <subtitle>coded by me (Sebastian-105)</subtitle>
+  <p>Whats is it?:<p>
+  <p>A slime website, buy her slimes!</p>
+  <a href="https://sunnyslimes.netlify.app">go here for more info</a>
+  </div>
+  </div>
+  `
+  document.body.insertAdjacentHTML("beforeend", sunny);
+
+}
