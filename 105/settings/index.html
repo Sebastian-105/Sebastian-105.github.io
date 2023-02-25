@@ -36,7 +36,7 @@ $(function(){
   <form placeholder="Change Tab Title..." onsubmit="buttonCode();">
     <input type="text" value="" id="nameChange">
     <input type="button" style="color:white" value="Name Tab" onclick="buttonCode()" class="submitButton">
-    <input type="button" style="color:white" value="Reset tab name" onclick="reset()"  id ="reset" class="submitButton">
+    <input type="button" style="color:white" value="Reset tab name" onclick="resettabname()"  id ="reset" class="submitButton">
     <input type="button" style="color:white; width:150px;" value="Change tab icon" onclick="tabicon()" class="submitButton">
   </form>
 </div>
@@ -58,11 +58,12 @@ var Enabled=true;
     $("link[rel*='icon']").attr("href", "../../105.inverted.png");
   </script>
 <!-- Next Setting -->
+<h1 style="text-align: center;">Other<hr></h1>
+<button onclick="onoff()" id="onoff" class="themes105" title="useful for making sure no one knows it's my site">Turn off the little icon site wide</button>
 <!-- Next Setting -->
 <!-- Next Setting -->
 <!-- Next Setting -->
 <!-- Next Setting -->
- 
 <!-- Next Setting -->
 <script src="assets/js/index.js"></script>
   <script src="../../assets/js/Sebastian-105.js"></script>

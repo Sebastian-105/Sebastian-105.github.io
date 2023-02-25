@@ -201,5 +201,8 @@ function buttonCode()
 if (document.title.includes("Sebastian-105")) {
 } else {
   var title = document.title;
-  title += " | Sebastian-105"
+  document.title += " | Sebastian-105";
+}
+function resettabname() {
+  document.title = "Sebastian-105";
 }
