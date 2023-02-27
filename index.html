@@ -27,7 +27,7 @@ Original Template Made By @lilykhan (but edited a lot, i just put this here so i
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag("js", new Date());
+      gtag("js", new Date()); 
       gtag("config", "G-EF4SM0THHF");
 
     </script>
@@ -38,7 +38,7 @@ Original Template Made By @lilykhan (but edited a lot, i just put this here so i
     <meta property="og:title" content="Sebastian-105" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://sebastian-105.github.io" />
-    <meta property="og:image" content="105.png" />
+    <meta property="og:image" content="./105.png" />
     <meta property="og:description" content="My home page, games, and a live chatroom. | Sebastian-105 | Made with https://github.com">
     <link rel="manifest" href="manifest.json" />
     <link rel="stylesheet" href="assets/lib/fonts/kings.css" />
@@ -52,7 +52,7 @@ Original Template Made By @lilykhan (but edited a lot, i just put this here so i
     <title class="title">Sebastian-105</title>
   </head>
 
-  <body onbeforeunload="return MyFunctionalert()">
+  <body onload="test123451234512345()">
     <div class="container" onload="Sebastian105()">
       <!--───────────────Header───────────────-->
       <div class="hamburger">
@@ -150,6 +150,15 @@ Original Template Made By @lilykhan (but edited a lot, i just put this here so i
                   <div class="work-content">Games site</div>
                 </a>
               </div>
+              <div class="work-box" id="projects123">
+                <div class="work">
+                  <div class="card">
+                    <img class="work-img" src="105.circle.png" />
+                    <a href="https://Organization-105.github.io" target="_blank">
+                      <!--Link to project-->
+                      <div class="work-content">Organization-105</div>
+                    </a>
+                  </div>
               <div class="card" title="offical chatroom">
                 <img class="work-img" src="105.png" title="offical chatroom" />
                 <a href="105/chatroom/index.html" target="_blank">
@@ -157,32 +166,11 @@ Original Template Made By @lilykhan (but edited a lot, i just put this here so i
                   <div class="work-content">Chatroom</div>
                 </a>
               </div>
-              <div class="card" title="replit account">
-                <img class="work-img" src="105.circle.png" />
-                <a href="https://replit.com/@Sebastian105/Sebastian105?v=1" target="_blank">
-                  <!--Link to project-->
-                  <div class="work-content">Sebastian105 coverpage (replit)</div>
-                </a>
-              </div>
-              <div class="card" title="replit coverpage">
-                <img class="work-img" src="105.circle.png" />
-                <a href="https://replit.com/@Sebastian105/Sebastian105?v=1" target="_blank">
-                  <!--Link to project-->
-                  <div class="work-content">Cover Page</div>
-                </a>
-              </div>
               <div class="card">
                 <img class="work-img" src="105.circle.png" />
-                <a href="105/todo/index.html" target="_blank">
+                <a href="https://once-upon-a-slime.netlify.app" target="_blank">
                   <!--Link to project-->
-                  <div class="work-content">Todo</div>
-                </a>
-              </div>
-              <div class="card">
-                <img class="work-img" src="105.circle.png" />
-                <a href="#" target="_blank">
-                  <!--Link to project-->
-                  <div class="work-content">Untitled</div>
+                  <div class="work-content">Lucia's Slime website</div>
                 </a>
               </div>
             </div>
@@ -328,11 +316,14 @@ function showNotification() {
    
 }
     </script>
-    <script src="./assets/lib/jquery.min.js"></script>
+    <script src="https://unpkg.com/jquery@3.6.3/dist/jquery.js"></script>
     <script src="assets/js/jQuery.min.js"></script>
     <script src="assets/js/Sebastian-105.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="assets/js/react.js"></script>
     <script src="https://icon105.netlify.app/js/105.js" defer></script>
+
     <script> //Keybinds ONLY!
       document.addEventListener("keydown", e => {
         e.preventDefault();
