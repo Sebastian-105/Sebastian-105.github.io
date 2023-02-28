@@ -1,21 +1,22 @@
 {
-  "name": "Sebastian-105",
+  "name": "starter-express-api",
   "version": "1.0.0",
-  "description": "My home page",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sebastian-105/Sebastian-105.git"
+    "url": "git+https://github.com/cyclic-software/starter-express-api.git"
   },
-  "author": "Cyclic Software",
-  "license": "MIT",
+  "author": "",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Sebastian-105/Sebastian-105.github.io/issues"
+    "url": "https://github.com/cyclic-software/starter-express-api/issues"
   },
-  "homepage": "https://github.com/Sebastian-105/Sebastian-105.github.io/",
+  "homepage": "https://github.com/cyclic-software/starter-express-api#readme",
   "dependencies": {
     "express": "^4.17.1"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.12"
   }
 }
