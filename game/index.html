@@ -122,7 +122,28 @@ function blocked2() {
   </nav>
 
 	<div id="announcementBar">
-		<p class="announcement" style="font-size:18px;">This Games site is getting old. <a href="https://game-sebastian-105.vercel.app">go here for better sites (vercel.app)</a> | <a href="https://game-sebastian-105.netliyf.app">or go here (netlify.app)</a></p>
+		<p class="announcement" style="font-size:18px;">This Games site is getting old. <a href="https://game-sebastian-105.vercel.app">go here for better sites (vercel.app)</a> ~ <a href="https://game-sebastian-105.netliyf.app">or go here (netlify.app)</a> ~ You will be redirected to one of these site in <sebastian id="sebastian"></sebastian><id id="a">s</id></p>
+    <script>
+      var countdown_from_ten = 10;
+      var sebastian = document.getElementById("sebastian");
+      sebastian.innerHTML += countdown_from_ten;
+      var s = setInterval(() => {
+        countdown_from_ten = 10
+        sebastian.innerHTML --
+        if (sebastian.innerHTML < 0) {
+    clearInterval(s);
+    if (document.location.href.includes("vercel.app")) {
+    window.location.replace("https://game-sebastian-105.vercel.app");}
+    if (document.location.href.includes("netlify.app")){
+      window.location.replace("https://game-sebastian-105.netlify.app");
+    } if (document.location.href.includes("file://")) {
+    document.getElementById("a").innerHTML = ""
+} else {
+  document.getElementById("a").innerHTML = ""
+}
+}
+      }, 1000);
+    </script>
 		<script>
       var visible = new Boolean(true); //Announcement Toggle
     </script>
