@@ -122,7 +122,7 @@ function blocked2() {
   </nav>
 
 	<div id="announcementBar">
-		<p class="announcement" style="font-size:18px;">This Games site is getting old. <a href="https://game-sebastian-105.vercel.app">go here for better sites (vercel.app)</a> ~ <a href="https://game-sebastian-105.netliyf.app">or go here (netlify.app)</a> ~ You will be redirected to one of these site in <sebastian id="sebastian"></sebastian><id id="a">s</id></p>
+		<p class="announcement" style="font-size:18px;">This Games site is getting old. <a href="https://game-sebastian-105.vercel.app">go here for better sites (vercel.app)</a> ~ <a href="https://game-sebastian-105.netlify.app">or go here (netlify.app)</a> ~ You will be redirected to one of these site in <sebastian id="sebastian"></sebastian><id id="a">s</id></p>
     <script>
       var countdown_from_ten = 10;
       var sebastian = document.getElementById("sebastian");
@@ -130,13 +130,16 @@ function blocked2() {
       var s = setInterval(() => {
         countdown_from_ten = 10
         sebastian.innerHTML --
-        if (sebastian.innerHTML < 0) {
+        if (sebastian.innerHTML < 1) {
     clearInterval(s);
-    if (document.location.href.includes("vercel.app")) {
+    if (document.location.href.startsWith("game-")) {
+      document.getElementById("a").innerHTML = "Your already on one of the game sites! Congrats!"
+    }
+    else if (document.location.href.includes("vercel.app")) {
     window.location.replace("https://game-sebastian-105.vercel.app");}
-    if (document.location.href.includes("netlify.app")){
+    else if (document.location.href.includes("netlify.app")){
       window.location.replace("https://game-sebastian-105.netlify.app");
-    } if (document.location.href.includes("file://")) {
+    } else if (document.location.href.includes("file://")) {
     document.getElementById("a").innerHTML = ""
 } else {
   document.getElementById("a").innerHTML = ""
@@ -164,7 +167,7 @@ function blocked2() {
     <div class="classroom">
       <div class="a">
         <div class="banner" style='background-image: linear-gradient(#555, #282828);'>
-          <a class="classText" href="../index.html" style="color:white;" target="_blank" rel="noopener noreferrer" onclick='console.log("Clicked on Home")'>
+          <a class="classText" href="https://sebastian-105.github.io/" style="color:white;" target="_blank" rel="noopener noreferrer" onclick='console.log("Clicked on Home")'>
             <div class="main">Home Page</div>
           </a>
         </div>
@@ -1355,7 +1358,7 @@ function blocked2() {
   </div>
   <!-- Games go here -->
   <div class="spacing"></div>
-<footer class="footer"><img src="./105.png" style="width:35px; height:35px;border-radius: 50%;">  &copy; 2023 Sebastian-105, DanyangXu77. <a style="padding-left: 50px;" href="https://github.com/Sebastian-105">@Sebastian-105</a> ~ <a href="https://github.com/DanyangXu77">@DanyangXu77</a> ~ <a href="../105/terms/index.html">Terms</a> ~ <a href="../105/settings/index.html">Settings</a> ~ <a href="../index.html">Homepage</a> ~ </footer>
+<footer class="footer"><img src="./105.png" style="width:35px; height:35px;border-radius: 50%;">  &copy; 2023 Sebastian-105, DanyangXu77. <a style="padding-left: 50px;" href="https://github.com/Sebastian-105">@Sebastian-105</a> ~ <a href="https://github.com/DanyangXu77">@DanyangXu77</a> ~ <a href="https://sebastian-105.github.io/105/terms/index.html">Terms</a> ~ <a href="https://sebastian-105.github.io/105/settings/index.html">Settings</a> ~ <a href="https://sebastian-105.github.io/index.html">Homepage</a> ~ </footer>
 <!-- </div> add this when no more games to add -->
 <script> //Keybinds ONLY!
   document.addEventListener("keydown", e => {
