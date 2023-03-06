@@ -210,10 +210,15 @@ function buttonCode()
     textbox.focus();
 }
 if (document.title.includes("Sebastian-105")) {
-} else {
+} else if (document.title.includes("Sebastian105")) {
+  document.title = "Sebastian-105";
+} else if (document.title = " | Sebastian-105") {
+  document.title = "Sebastian-105"
+}
+  else {
   var title = document.title;
   document.title += " | Sebastian-105";
 }
 function resettabname() {
   document.title = "Sebastian-105";
-}
+} 

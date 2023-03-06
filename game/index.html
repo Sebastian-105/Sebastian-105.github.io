@@ -125,7 +125,7 @@ function blocked2() {
 		<p class="announcement" style="font-size:18px;">This Games site is getting old. <a href="https://game-sebastian-105.vercel.app">go here for better sites (vercel.app)</a> ~ <a href="https://game-sebastian-105.netlify.app">or go here (netlify.app)</a> ~ You will be redirected to one of these site in <sebastian id="sebastian"></sebastian><id id="a">s</id></p>
     <script>
       if (document.location.href.includes("game-sebastian-105")) {
-      document.getElementById("announcementBar").innerHTML = "Your already on one of the game sites! Congrats!"
+      document.getElementsByClassName("announcement").innerHTML = "Your already on one of the game sites! Congrats!"
     }
       var countdown_from_ten = 10;
       var sebastian = document.getElementById("sebastian");
@@ -142,20 +142,25 @@ function blocked2() {
       window.location.replace("https://game-sebastian-105.netlify.app");
     } else if (document.location.href.includes("file://")) {
     document.getElementById("a").innerHTML = ""
-} else {
+    $("#announcementBar").hide("slow");
+} else if (document.location.href.includes("github.io")) {
+$("#announcementBar").hide("slow");
+}
+else {
   document.getElementById("a").innerHTML = ""
+  $("#announcementBar").hide("slow");
 }
 }
       }, 1000);
     </script>
 		<script>
+      jq
       var visible = new Boolean(true); //Announcement Toggle
     </script>
 		<div id="dismiss">
 			<div class="btn d">
 	    <span class="btnText" style="top: 16.075; left: 15;">
-      <a onclick="getElementById('announcementBar').style.display = 'none'
-      console.log(`closed announcementBar \n-Sebastian-105`)">Dismiss</a></span>
+      <a onclick="$('#announcementBar').hide('slow');">Dismiss</a></span>
 	      <div class="btnShadow d"></div>
 	    </div>
 		</div>
@@ -221,9 +226,9 @@ function blocked2() {
     <div class="classroom">
       <div class="a">
         <div class="banner" style='background-image: linear-gradient(#555, #282828);'>
-          <a class="classText" href="https://melvin.cluster.ws/" style="color:white;" target="_blank" rel="noopener noreferrer" onclick='console.log("Clicked on Melvin")'>
+          <a class="classText" href="http://melvin.is-an.app/" style="color:white;" target="_blank" rel="noopener noreferrer" onclick='console.log("Clicked on Melvin")'>
             <div class="main" title="made by a kid at Jonas Clarke Middle School">melvin.cluster.ws</div>
-            <div class="sub">One of the best games sites</div>
+            <div class="sub">One of the best games sites (after mine of course)</div>
           </a>
         </div>
        
