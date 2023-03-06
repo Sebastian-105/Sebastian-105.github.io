@@ -132,7 +132,7 @@ function blocked2() {
         sebastian.innerHTML --
         if (sebastian.innerHTML < 1) {
     clearInterval(s);
-    if (document.location.href.startsWith("game-")) {
+    if (document.location.href.includes("game-sebastian-105")) {
       document.getElementById("a").innerHTML = "Your already on one of the game sites! Congrats!"
     }
     else if (document.location.href.includes("vercel.app")) {
