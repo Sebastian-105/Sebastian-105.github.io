@@ -1,9 +1,7 @@
-function tabicon() {
-	let tabicon = alert("this function is currently not working\nThis is not a bug, Do not report\nbest regards,\n-Sebastian-105");
-}
+
 function Sebastian105() {
 	window.addEventListener('offline', () => 
-  $("offline").fadeIn("slow").delay(5000).fadeOut("slow"))
+  $("offline").fadeIn("slow"))
   document.getElementById("OfflineMode").innerHTML = "Offline"
 }
 function closesidenav() {
@@ -194,11 +192,20 @@ if(Enabled == false)
 function keybinds(){
   var myWindow = window.open("105/keybinds/index.html");
 }
+function tabicon() {
+  var tabiconvar = document.getElementById("tabchange").value;
+  var newtabicon = $("link[rel*='icon']").attr("href", tabiconvar);
+  localStorage.setItem('tabicon', tabiconvar);
+}
 function buttonCode()
 {
 	var textbox = document.getElementById("nameChange")
+  if (textbox.value.includes("Sebastian-105")) {
     document.title = (textbox.value)
-    localStorage.setItem('tabname', textbox.value)
+  } else {
+    newtitle105 = textbox.value + " | Sebastian-105"
+    document.title = (newtitle105)
+  }
     textbox.value = ""
     textbox.focus();
 }
