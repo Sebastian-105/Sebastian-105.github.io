@@ -124,6 +124,9 @@ function blocked2() {
 	<div id="announcementBar">
 		<p class="announcement" style="font-size:18px;">This Games site is getting old. <a href="https://game-sebastian-105.vercel.app">go here for better sites (vercel.app)</a> ~ <a href="https://game-sebastian-105.netlify.app">or go here (netlify.app)</a> ~ You will be redirected to one of these site in <sebastian id="sebastian"></sebastian><id id="a">s</id></p>
     <script>
+      if (document.location.href.includes("game-sebastian-105")) {
+      document.getElementById("announcementBar").innerHTML = "Your already on one of the game sites! Congrats!"
+    }
       var countdown_from_ten = 10;
       var sebastian = document.getElementById("sebastian");
       sebastian.innerHTML += countdown_from_ten;
@@ -132,10 +135,8 @@ function blocked2() {
         sebastian.innerHTML --
         if (sebastian.innerHTML < 1) {
     clearInterval(s);
-    if (document.location.href.includes("game-sebastian-105")) {
-      document.getElementById("a").innerHTML = "Your already on one of the game sites! Congrats!"
-    }
-    else if (document.location.href.includes("vercel.app")) {
+    
+    if (document.location.href.includes("vercel.app")) {
     window.location.replace("https://game-sebastian-105.vercel.app");}
     else if (document.location.href.includes("netlify.app")){
       window.location.replace("https://game-sebastian-105.netlify.app");
