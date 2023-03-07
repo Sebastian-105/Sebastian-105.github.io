@@ -24,21 +24,5 @@
   "display": "standalone",
   "scope": "/",
   "theme_color": "#111",
-  "shortcuts": [
-    {
-      "name": "Games Page | Sebastian-105",
-      "short_name": "Games page | Sebastian-105",
-      "description": "Unblocked games",
-      "url": "/game/index.html",
-      "icons": [{ "src": "105.png", "sizes": "300x300" }]
-    },
-    {
-      "name": "Chatroom | Sebastian-105",
-      "short_name": "Chatroom | Sebastian-105",
-      "description": "The live chatroom",
-      "url": "/105/chatroom/index.html",
-      "icons": [{ "src": "105.png", "sizes": "300x300" }]
-    }
-  ],
   "description": "My website"
 }
