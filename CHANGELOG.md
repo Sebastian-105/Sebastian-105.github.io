@@ -1,5 +1,5 @@
 # Sebastian105's Changelog
-## as of `Wed, Feb 08, 2023`
+## as of  `Wed, Feb 08, 2023`
 #### NOTES: 
 - This might not be 100% but I will try to make it as close as possible
 - all updates will also be posted <a href="https://github.com/Sebastian-105/Sebastian-105.github.io/releases/">here</a>.
@@ -99,10 +99,10 @@
     <th>of fixed it, idk</th><!-- Extra details-->
   </tr>
   <tr>
-    <th></th><!-- Update version-->
-    <th></th><!-- Date changed (mm/dd/yyyy)-->
-    <th></th><!-- Thing changed-->
-    <th></th><!-- Extra details-->
+    <th>v1.5.8</th><!-- Update version-->
+    <th>03/08/23</th><!-- Date changed (mm/dd/yyyy)-->
+    <th>Added Bitlife & GBA</th><!-- Thing changed-->
+    <th><a href="https://github.com/Sebastian-105/Sebastian-105.github.io/releases/tag/v1.5.8">See here for more info</a></th><!-- Extra details-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
