@@ -4,23 +4,11 @@
   "version_name": "v1",
   "manifest_version": 3,
   "version": "1",
-  "icons": [
-    {
-      "src": "105.png",
-      "type": "image/png",
-      "sizes": "300x300"
-    },
-    {
-      "src": "105.circle.png",
-      "type": "image/png",
-      "sizes": "300x300"
-    },
-    {
-      "src": "assets/images/105/Sebastian105.png",
-      "type": "image/png",
-      "sizes": "949x547"
-    }
-  ],
+  "icons": [{
+    "src": "/105.png",
+      "sizes": "300x300",
+      "type": "image/png"
+    }],
   "id": "/index.html",
   "start_url": "/index.html",
   "background_color": "#0b0c0f",
