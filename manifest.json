@@ -2,7 +2,7 @@
   "short_name": "Sebastian-105",
   "name": "Sebastian-105",
   "version_name": "v1",
-  "manifest_version": "v1",
+  "manifest_version": 3,
   "version": "1",
   "icons": [
     {
