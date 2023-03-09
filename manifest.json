@@ -1,6 +1,7 @@
 {
   "short_name": "Sebastian-105",
   "name": "Sebastian-105",
+  "version": "1",
   "icons": [
     {
       "src": "105.png",
