@@ -105,10 +105,10 @@
     <th><a href="https://github.com/Sebastian-105/Sebastian-105.github.io/releases/tag/v1.5.8">See here for more info</a></th><!-- Extra details-->
   </tr>
   <tr>
-    <th></th><!-- Update version-->
-    <th></th><!-- Date changed (mm/dd/yyyy)-->
-    <th></th><!-- Thing changed-->
-    <th></th><!-- Extra details-->
+    <th>v1.6.8</th><!-- Update version-->
+    <th>03/09/23</th><!-- Date changed (mm/dd/yyyy)-->
+    <th>Added Stickman hook</th><!-- Thing changed-->
+    <th><a href="https://github.com/Sebastian-105/Sebastian-105.github.io/releases/tag/v1.6.8">See here for more info</a></th><!-- Extra details-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
