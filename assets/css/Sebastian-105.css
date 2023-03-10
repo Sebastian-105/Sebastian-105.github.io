@@ -9,6 +9,30 @@
   --subtitle-font-color: lightgrey;
   --main-fot-color-hover: grey;
 }
+/* little alert in corner */
+.corner .iconcorner {
+  float: left;
+  width:10px;
+  height: 10px;
+  background-image: url("../../105.png");
+}
+.corner {
+  height: 50px;
+  width:200px;
+  right: 16px;
+  bottom:16px;
+  border-radius: 10px;
+  color:white;
+  background-color: #04AA6D;
+  display: none;
+}
+.corner.info {
+  background-color: #00a9e2;
+}
+.corner.danger {
+  background-color:#f44336;
+}
+/* end */
 space {
   padding:50px;
   margin:50px;
@@ -813,10 +837,6 @@ h3 {
 
 .work {
   display: inline-block;
-  flex: 1;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
   padding: 20px;
 }
 
@@ -917,7 +937,18 @@ h3 {
 .footer.offline::after {
   content: " <─| Offline Mode |" ;
 } 
-
+.alertcorner {
+  display:none;
+  position:fixed;
+  padding:10px;
+  vertical-align: bottom;
+  bottom: 10px;
+  right:10px;
+  border-radius: 10px;
+  background-color: #04AA6D;
+  
+} 
+.alertcorner .offline {background-color:#f44336;}
 .footer a {
   color: var(--main-fonts-color);
   font-size: 1rem;

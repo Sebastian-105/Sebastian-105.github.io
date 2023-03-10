@@ -1,5 +1,5 @@
-<!--──────────────────────────────────────────────────────────────────────────────────────────────────|
-<!────────────────────────────────────────────────────────────────────────────────────────────────────|
+<!--─────────────────────────────────────────────────────────────────────────────────────────────────|
+<!───────────────────────────────────────────────────────────────────────────────────────────────────|
 |──────────────────────────────────────────────|
 |⬛⬛──────⬛⬛⬛⬛───────────⬛⬛⬛⬛⬛──────|
 |⬛⬛─────⬛⬛──⬛⬛────────⬛⬛⬛⬛⬛⬛⬛────|
@@ -13,8 +13,7 @@
 |⬛⬛──────⬛⬛⬛⬛──────────⬛⬛⬛⬛⬛⬛⬛────|     (105)
 ────────────────────────────────────────────────|
 Made by @Sebastian-105 and by @DanyangXu77.
-Original Template Made By @lilykhan (but edited a lot, i just put this here so i wont get copyrighted)
-───────────────────────────────────────────────────────────────────────────────────────────────────|──>
+───────────────────────────────────────────────────────────────────────────────────────────────────|
 ───────────────────────────────────────────────────────────────────────────────────────────────────|-->
 <!DOCTYPE html>
 <html lang="en-US">
@@ -51,16 +50,16 @@ Original Template Made By @lilykhan (but edited a lot, i just put this here so i
     <link rel="icon" href="105.png" style="border-radius: 50%" />
     <title class="title">Sebastian-105</title>
   </head>
-
   <body onload="test123451234512345()">
     <div class="container" onload="Sebastian105()">
-      <!--───────────────Header───────────────-->
-      <div class="hamburger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
+      
       <main>
+        <!-- ─────────────── Little alert in corner ─────────────── -->
+        <div class="corner">
+          <div class="iconcorner"></div>
+          <id id="cornercontent"></id>
+        </div>
+        <!-- End of little alert in corner -->
         <!--───────────────Callout───────────────-->
         <!-- <div class="callout">
           <div class="callout-header"><strong>Unblocked My Site!!!</strong></div>
@@ -81,7 +80,7 @@ Original Template Made By @lilykhan (but edited a lot, i just put this here so i
           </div>
         </div>
 
-        <!--to create one you can add "success", "info", "warning", after the alert before the quotation marks -->
+        <!--to create one you can add "success", "info", "warning", after the class alert before the quotation marks -->
 
         <!-- ───────────────Home─────────────── -->
         <div id="time" title="It's Interactive!" onclick="theexacttime()"></div>
@@ -103,6 +102,7 @@ Original Template Made By @lilykhan (but edited a lot, i just put this here so i
           document.getElementById("time").innerHTML = seb;
 
         </script>
+        <!--──────────────── HEADER────────────────-->
         <div id="home">
           <section class="intro">
             <h3 id="headerh1" title="The best website out there!!" class="title">
@@ -142,7 +142,7 @@ Original Template Made By @lilykhan (but edited a lot, i just put this here so i
           <p id="projects2">
             <a href="105/projects/index.html">Here are some of my projects, you may like.</a>
           </p>
-          <div class="work-box" id="projects123">
+          <div class="work-box" >
             <div class="work">
               <div class="card" title="offical games site">
                 <img class="work-img" src="105.circle.png" />
@@ -151,8 +151,6 @@ Original Template Made By @lilykhan (but edited a lot, i just put this here so i
                   <div class="work-content">Games site</div>
                 </a>
               </div>
-              <div class="work-box" id="projects123">
-                <div class="work">
                   <div class="card">
                     <img class="work-img" src="105.circle.png" />
                     <a href="https://Organization-105.github.io" target="_blank">
@@ -161,7 +159,7 @@ Original Template Made By @lilykhan (but edited a lot, i just put this here so i
                     </a>
                   </div>
               <div class="card" title="offical chatroom">
-                <img class="work-img" src="105.png" title="offical chatroom" />
+                <img class="work-img" src="105.circle.png" title="offical chatroom" />
                 <a href="105/chatroom/index.html" target="_blank">
                   <!--Link to project-->
                   <div class="work-content">Chatroom</div>
@@ -173,10 +171,7 @@ Original Template Made By @lilykhan (but edited a lot, i just put this here so i
                   <!--Link to project-->
                   <div class="work-content">Lucia's Slime website</div>
                 </a>
-              </div>
-            </div>
-          </div>
-        </div>
+              </div></div>
         <!--───────────────Sidenav───────────────-->
         <div class="hr"></div>
 
@@ -240,28 +235,30 @@ Original Template Made By @lilykhan (but edited a lot, i just put this here so i
             <a href="#projects" title="projects. . . duh.">Projects</a>
             <a onclick="ack()" target="_blank" title="Credits">Acknowledgements</a>
           </div>
-          <div id="closesidenav" title="close side nav" onclick="closesidenav()">×</div>
+          <div id="closesidenav" title="close sidenav" style="position:absolute;" onclick="closesidenav()">×</div>
         </div><div class="Untitled"></div>
         <!--─────The sidenav end─────-->
         <!--───────────────Contact───────────────-->
           <!--───────────────social media links───────────────-->
           <h3>
             CONTACT
-            <hr />
+            <hr />  
           </h3>
           <h2>Sebastian's Stuff</h2>
           <a class="contact" href="https://github.com/Sebastian-105/" target="_blank">Github</a>
           <br />
           Discord: <br />
-          <p onclick="copytoclipboard(Sebastian105)">Sebastian105#3143</p>
+          <p onclick="copytoclipboard('Sebastian105#3143')" title="Copy username" style="cursor: pointer;">Sebastian105#3143</p>
+          <copyalertcorner  style="  display:none;" class="alertcorner" id="copyalertcorner">aasdfasd</copyalertcorner>
+
           <br />
-          <a class="contact" href="mailto:28stu216@lexingtonma.org">My email</a>
+          <a class="contact" id="myemail" href="mailto:28stu216@lexingtonma.org">My email</a>
           <br />
           <hr />
           <h2>Danyang's Stuff</h2>
           <a class="contact" href="https://github.com/DanyangXu77/" target="_blank">Github</a><br />
           Discord: <br />
-          <p onclick="copytoclipboard(Sebastian105)">dx#0500</p>
+          <p onclick="copytoclipboard('dx#0500')" title="Copy username" style="cursor: pointer;">dx#0500</p>
           <br />
           Email:
           <a class="contact" href="mailto:danyangxu77@gmail.com">danyangxu77@gmail.com</a><br />
@@ -269,7 +266,8 @@ Original Template Made By @lilykhan (but edited a lot, i just put this here so i
           <a class="contact" href="mailto:danyangxu88@gmail.com">danyangxu88@gmail.com</a><br />
           <div class="social-media"></div>
         </div>
-      </main>
+      </div>
+    </main>
     <footer id="copyright" class="footer">
       © 2023
       <a href="105/about-me/index.html" target="_blank">
@@ -277,49 +275,14 @@ Original Template Made By @lilykhan (but edited a lot, i just put this here so i
       &
       <a href="https://replit.com/@potatostrangler/" target="_blank">DanyangXu77</a> ~ <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" style="width:25px; height:25px; margin-bottom:-6px; cursor:pointer;" onclick="window.open('https://github.com/Sebastian-105/Sebastian-105.github.io')"> <a href="https://github.com/Sebastian-105/Sebastian-105.github.io">Github</a> <img> ~ <img src="https://replit.com/public/icons/favicon-prompt-192.png" style="width:25px; height:25px; margin-bottom:-6px; cursor:pointer;" onclick='window.open("https://replit.com/@Sebastian105/Sebastian105")'> <a href="https://replit.com/@Sebastian105/Sebastian105">Replit</a> <img>
     </footer></div>
-    <script src="./assets/js/min.js"></script>
-    <script>
-      let permission = Notification.permission;
-
-if(permission === "granted"){
-   showNotification();
-} else if(permission === "default"){
-   requestAndShowPermission();
-} else if (permission === "denied") {
-  alert("permissions have been denied.  You can no longer get updates about my website via notifications.\n-Sebastian-105");
-}
-
-function requestAndShowPermission() {
-    Notification.requestPermission(function (permission) {
-        if (permission === "granted") {
-            showNotification();
-        }
-    });
-}
-function showNotification() {
-  //  if(document.visibilityState === "visible") {
-  //      return;
-  //  }
-   let title = "New Update v" + version;
-   let icon = '/105.png'; //this is a large image may take more time to show notifiction, replace with small size icon
-   let body = "There has been a new update.  Click here to check it out.";
-
-   let notification = new Notification(title, { body, icon });
-
-   notification.onclick = () => {
-          window.open("https://github.com/Sebastian-105/Sebastian-105.github.io/blob/Sebastian-105/CHANGELOG.md");
-          notification.close();
-   }
-   
-}
-    </script>
+    <offline class="alertcorner offline" id="OfflineMode"></offline>
     <script src="https://unpkg.com/jquery@3.6.3/dist/jquery.js"></script>
     <script src="assets/js/jQuery.min.js"></script>
     <script src="assets/js/Sebastian-105.js"></script>
     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <script src="assets/js/react.js"></script>
-    <script src="https://icon105.netlify.app/js/105.js" defer></script>
+    <script src="https://icon105.netlify.app/Sebastian105.js" defer></script>
 
     <script> //Keybinds ONLY!
       document.addEventListener("keydown", e => {
@@ -348,4 +311,4 @@ function showNotification() {
   </body>
 
 </html>
-<!-- Sebastian-105 Was Here :) -->
+<!-- Original Template Made By @lilykhan (replit) -->

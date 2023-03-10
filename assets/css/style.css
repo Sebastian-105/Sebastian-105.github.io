@@ -230,7 +230,7 @@ svg {
 path {
   display: none;
 }
-.classroom {
+.game-box {
  background-color:#282828;
  border-radius: 0.6rem;
  width: 18.375rem;
@@ -241,7 +241,7 @@ path {
  cursor: cell;
  left: 25px;
 }
-.classroom:hover {
+.game-box:hover {
  box-shadow: 0 2px 5px #bebebe;
  transform: scaleY(1.05);
  transform: scaleX(1.05);

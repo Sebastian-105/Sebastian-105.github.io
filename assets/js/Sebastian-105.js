@@ -1,18 +1,20 @@
-function tabicon() {
-	let tabicon = alert("this function is currently not working\nThis is not a bug, Do not report\nbest regards,\n-Sebastian-105");
-}
+
 function Sebastian105() {
-	window.addEventListener('offline', () => console.log("You have become offline.\nGames still work but you can't open more sites until your online again.\n-Sebastian-105"));
-  document.getElementsByClassName("footer").style.background = "#f44336";
+	window.addEventListener('offline', () => 
+  $("offline").fadeIn("slow"))
+  document.getElementById("OfflineMode").innerHTML = "Offline"
 }
 function closesidenav() {
   $(".sidenav").fadeToggle("slow");
   console.log('Closed sidenav');
 }
 var author = "Sebastian-105";
-function copytoclipboard(){
-  navigator.clipboard.writeText("sebastian105#3143");
+
+function copytoclipboard(copiedcontent){
+  navigator.clipboard.writeText(copiedcontent);
   console.log("Username has been copied.");
+  $("copyalertcorner").fadeIn("slow").delay(5000).fadeOut("slow");
+  document.getElementById("copyalertcorner").innerHTML = "Successfully copied: " + copiedcontent;
 }
 function MyFunctionalert(){
   return "Visit my website!";
@@ -190,19 +192,33 @@ if(Enabled == false)
 function keybinds(){
   var myWindow = window.open("105/keybinds/index.html");
 }
+function tabicon() {
+  var tabiconvar = document.getElementById("tabchange").value;
+  var newtabicon = $("link[rel*='icon']").attr("href", tabiconvar);
+  localStorage.setItem('tabicon', tabiconvar);
+}
 function buttonCode()
 {
 	var textbox = document.getElementById("nameChange")
+  if (textbox.value.includes("Sebastian-105")) {
     document.title = (textbox.value)
-    localStorage.setItem('tabname', textbox.value)
+  } else {
+    newtitle105 = textbox.value + " | Sebastian-105"
+    document.title = (newtitle105)
+  }
     textbox.value = ""
     textbox.focus();
 }
 if (document.title.includes("Sebastian-105")) {
-} else {
+} else if (document.title.includes("Sebastian105")) {
+  document.title = "Sebastian-105";
+} else if (document.title = " | Sebastian-105") {
+  document.title = "Sebastian-105"
+}
+  else {
   var title = document.title;
   document.title += " | Sebastian-105";
 }
 function resettabname() {
   document.title = "Sebastian-105";
-}
+} 

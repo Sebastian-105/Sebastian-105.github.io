@@ -1,7 +1,7 @@
 [![Sebastian-105](./Sebastian-105.png)](./index.html)
 
 # Using my Website
-  You have to press `run` (only on replit) This website took a lot of time to make so I would apprecite if you could not copy off me and plagiarize this code.  <br> If you want to open my website on github than go here [here (github.io)](https://sebastian-105.github.io) or [here (repl.co)](https://sebastian105.repl.co).
+  You have to press `run` (only on replit) This website took a lot of time to make so I would apprecite if you could not copy off me and plagiarize this code.  <br> If you want to open my website on github than go here [here (github.io)](https://sebastian-105.github.io).
 ## Forking
 
 Unless it is directly linking something then delete it. <br>
@@ -21,14 +21,19 @@ Unless it is directly linking something then delete it. <br>
 ## go to<a href="105/tutorial/code"> here</a>
 ### I am not responsible for any legal stuff after that.
 Once you find all these stuff you are free to go! :)
-### **Backup Links**
+### **Website Links**
+**[Github](https://sebastian-105.github.io)**<br>
 **[Replit](https://sebastian105.repl.co)**<br>
-**[](https://sebastian-105.github.io)**<br>
 **[render](https://sebastian-105.onrender.com)**<br>
 **[netlify](https://sebastian-105.netlify.app)**<br>
-**[netlify #2](https://main--sebastian-105.netlify.app/)**<br>
-**[netlify #3](https://63dc30cda6465646e3231c47--sebastian105.netlify.app/)**<br>
+**[netlify #2](https://sebastian-105--sebastian-105.netlify.app/)**<br>
 **[vercel](https://sebastian-105.vercel.app/)**<br>
+### **Doc Links**
+**[Vercel](https://docs-sebastian-105.vercel.app)**<br>
+**[Netlify](https://docs-sebastian-105.netlify.app)**<br>
+### **Games Page Links**
+**[Vercel](https://game-sebastian-105.vercel.app)**<br>
+**[Netlify](https://game-sebastian-105.netlify.app)**<br>
 ### **Links**
 **[Code of coduct](CODE_OF_CONDUCT.md).** <br>
 **[The changelog](CHANGELOG.md).** <br>
