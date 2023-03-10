@@ -125,8 +125,8 @@ function blocked2() {
 		<p class="announcement" style="font-size:18px;">This Games site is getting old. <a href="https://game-sebastian-105.vercel.app">go here for better sites (vercel.app)</a> ~ <a href="https://game-sebastian-105.netlify.app">or go here (netlify.app)</a> ~ You will be redirected to one of these site in <sebastian id="sebastian"></sebastian><id id="a">s</id></p>
     <script>
       if (document.location.href.includes("game-sebastian-105")) {
-      document.getElementsByClassName("announcement").innerHTML = "Your already on one of the game sites! Congrats!"
-    }
+        $("#announcementBar").hide("slow");
+    } else {
       var countdown_from_ten = 10;
       var sebastian = document.getElementById("sebastian");
       sebastian.innerHTML += countdown_from_ten;
@@ -151,7 +151,7 @@ else {
   $("#announcementBar").hide("slow");
 }
 }
-      }, 1000);
+      }, 1000);}
     </script>
 		<script>
       jq
