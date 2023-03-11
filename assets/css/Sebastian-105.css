@@ -9,6 +9,8 @@
   --subtitle-font-color: lightgrey;
   --main-fot-color-hover: grey;
 }
+@import url('themes.css');
+@import url('mobile.css');
 /* little alert in corner */
 .corner .iconcorner {
   float: left;

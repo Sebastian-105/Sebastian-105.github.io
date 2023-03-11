@@ -100,21 +100,23 @@
   </tr>
   <tr>
     <th>v1.5.8</th><!-- Update version-->
-    <th>03/08/23</th><!-- Date changed (mm/dd/yyyy)-->
+    <th>03/08/2023</th><!-- Date changed (mm/dd/yyyy)-->
     <th>Added Bitlife & GBA</th><!-- Thing changed-->
     <th><a href="https://github.com/Sebastian-105/Sebastian-105.github.io/releases/tag/v1.5.8">See here for more info</a></th><!-- Extra details-->
   </tr>
   <tr>
     <th>v1.6.8</th><!-- Update version-->
-    <th>03/09/23</th><!-- Date changed (mm/dd/yyyy)-->
+    <th>03/09/2023</th><!-- Date changed (mm/dd/yyyy)-->
     <th>Added Stickman hook</th><!-- Thing changed-->
     <th><a href="https://github.com/Sebastian-105/Sebastian-105.github.io/releases/tag/v1.6.8">See here for more info</a></th><!-- Extra details-->
   </tr>
+  <h1> Major Update!!!!!!!</h1>
+  <hr>
   <tr>
-    <th></th><!-- Update version-->
-    <th></th><!-- Date changed (mm/dd/yyyy)-->
-    <th></th><!-- Thing changed-->
-    <th></th><!-- Extra details-->
+    <th>v2.6.8</th><!-- Update version-->
+    <th>03/11/2023</th><!-- Date changed (mm/dd/yyyy)-->
+    <th>Changed the Games format and how it works</th><!-- Thing changed-->
+    <th><a href="https://github.com/Sebastian-105/Sebastian-105.github.io/releases/tag/v2.6.8">See here for more info</th><!-- Extra details-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
