@@ -1207,6 +1207,8 @@ input[type="color"] {
   width: fit-content;
   padding: 0.5em;
   cursor: pointer;
+  color:white;
+  background-color: white;
 }
 
 .gamecontainer>.nav>span {
@@ -1223,7 +1225,7 @@ input[type="color"] {
   cursor: pointer;
   right: 0;
   position: fixed;
-  background-color: var(--theme);
+  background-color: white;
   border-radius: 999999999999999999999px;
 }
 
@@ -1232,7 +1234,7 @@ input[type="color"] {
 }
 
 .gamecontainer>.nav>.item>svg>path {
-  fill: var(--background);
+  fill: white;
 }
 
 .gamecontainer>div {
