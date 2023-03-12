@@ -7,7 +7,7 @@ const gamesContainer = document.querySelector('.games');
 const searchBar = document.querySelector('.searchbar');
 const gameContainer = document.querySelector('.gamecontainer');
 const gameFrame = gameContainer.querySelector('.frame');
-const gameNav = gameContainer.querySelector('.nav');
+const gameNav = gameContainer.querySelector('.navbar');
 
 // Listen for input event on the search bar
 searchBar.addEventListener('input', (e) => {
@@ -72,6 +72,7 @@ fetch('./games.json')
         gameContainer.classList.remove('hidden');
         gameFrame.querySelector('iframe').src = `c/${game.root}index.html`;
         gameNav.querySelector('span').textContent = game.name;
+        document.querySelector('.navbar').classList.add('hidden');
       };
 
       // Add click event listener to the back button in the game container to go back to the games list
@@ -80,7 +81,7 @@ fetch('./games.json')
         searchBar.classList.remove('hidden');
         gameContainer.classList.add('hidden');
         document.querySelector('.saveItems').classList.remove('hidden');
-        document.querySelector('.navbar').classList.remove('noshadow');
+        document.querySelector('.navbar').classList.remove('hidden');
         gameFrame.src = '';
       });
 

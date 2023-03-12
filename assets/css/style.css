@@ -1219,11 +1219,11 @@ input[type="color"] {
 }
 
 .gamecontainer>.nav>.item#fullscreen {
-  margin: 0.2em;
+  margin: auto;
   width: fit-content;
   padding: 0.4em;
   cursor: pointer;
-  right: 0;
+  right: auto;
   position: fixed;
   background-color: white;
   border-radius: 999999999999999999999px;
