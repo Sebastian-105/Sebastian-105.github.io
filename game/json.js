@@ -7,7 +7,7 @@ const gamesContainer = document.querySelector('.games');
 const searchBar = document.querySelector('.searchbar');
 const gameContainer = document.querySelector('.gamecontainer');
 const gameFrame = gameContainer.querySelector('.frame');
-const gameNav = gameContainer.querySelector('.navbar');
+const gameNav = gameContainer.querySelector('.nav');
 
 // Listen for input event on the search bar
 searchBar.addEventListener('input', (e) => {
