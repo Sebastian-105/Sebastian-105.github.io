@@ -3,36 +3,33 @@
 body[theme="default"] {
   --background: #1c1c1c;
   --theme: #4caf50;
-  --text: white;
-  --text-secondary: black;
+  --font-color: white;
+  --font-color2nd: black;
 }
 
 body[theme="light"] {
   --background: white;
   --theme: #4caf50;
-  --text: black;
-  --text-secondary: black;
+  --font-color: black;
 }
 
 body[theme="orchid"] {
   --background: #1c1c1c;
   --theme: #b625cc;
-  --text: white;
-  --text-secondary: white;
+  --font-color: white;
 }
 
 body[theme="sky"] {
   --background: #1c1c1c;
   --theme: #0084ff;
-  --text: white;
-  --text-secondary: black;
+  --font-color: white;
+  --font-color2nd: black;
 }
 
 body[theme="winter"] {
   --background: linear-gradient(to right, #2377a4, #79c0d7), #79c0d7;
   --theme: #3da341;
-  --text: white;
-  --text-secondary: white;
+  --font-color: white;
 }
 
 body[theme="winter"] .navbar {
@@ -41,8 +38,8 @@ body[theme="winter"] .navbar {
 
 body[theme="nebelung"] {
   --background: #dabc9a;
-  --text: black;
-  --text-secondary: white;
+  --font-color: black;
+  --font-color2nd: white;
   --theme: linear-gradient(to right, #3d2d1e, #190f05);
 }
 
@@ -54,8 +51,8 @@ body[theme="nebelung"] .navbar {
 body[theme="piplup"] {
   --background: #5bacee;
   --theme: #0026ff;
-  --text: white;
-  --text-secondary: black;
+  --font-color: white;
+  --font-color2nd:black;
 }
 
 @keyframes nebelungBreathing {
@@ -97,8 +94,8 @@ body[theme="piplup"] {
 body[theme="forternish"] {
   --background: #003443;
   --theme: linear-gradient(15deg, #82c4e4, #60f108);
-  --text: white;
-  --text-secondary: black;
+  --font-color: white;
+  --font-color2nd: black;
 }
 
 body[theme="forternish"] * {
@@ -108,8 +105,7 @@ body[theme="forternish"] * {
 body[theme="northernfish"] {
   --background: linear-gradient(to bottom right, #91fa9e, #0ec9f8);
   --theme: #3778ff;
-  --text: black;
-  --text-secondary: black;
+  --font-color: black;
 }
 
 body[theme="northernfish"] .navbar {
@@ -127,43 +123,43 @@ body[theme="northernfish"]::-webkit-scrollbar {
 body[theme="forgor"] {
   --background: #efefef;
   --theme: #d7d700;
-  --text: #d7d700;
-  --text-secondary: #efefef;
+  --font-color: #d7d700;
+  --font-color2nd: #efefef;
 }
 
 body[theme="monotonium"] {
   --background: white;
   --theme: black;
-  --text: black;
-  --text-secondary: white;
+  --font-color: black;
+  --font-color2nd: white;
 }
 
 body[theme="monotonium-dark"] {
   --background: black;
   --theme: white;
-  --text: white;
-  --text-secondary: black;
+  --font-color: white;
+  --font-color2nd: black;
 }
 
 body[theme="concrete"] {
   --background: gray;
   --theme: white;
-  --text: white;
-  --text-secondary: grey;
+  --font-color: white;
+  --font-color2nd: grey;
 }
 
 body[theme="sunset"] {
   --background: #1c1c1c;
   --theme: #e83141;
-  --text: white;
-  --text-secondary: black;
+  --font-color: white;
+  --font-color2nd: black;
 }
 
 body[theme="russell2259"] {
   --background: rgba(17, 17, 17, 0.777);
   --theme: #0473fb;
-  --text: #fff;
-  --text-secondary: black;
+  --font-color: #fff;
+  --font-color2nd: black;
 }
 
 html,
@@ -174,15 +170,15 @@ body {
 body[theme="fracital"] {
   --background: #222;
   --theme: #f971e4;
-  --text: white;
-  --text-secondary: black;
+  --font-color: white;
+  --font-color2nd: black;
 }
 
 body[theme="hacker"] {
   --background: black;
   --theme: #72dc83;
-  --text: white;
-  --text-secondary: black;
+  --font-color: white;
+  --font-color2nd: black;
 }
 
 body[theme="hacker"] * {
@@ -192,6 +188,6 @@ body[theme="hacker"] * {
 body[theme="parrot"] {
   --background: #1a1404;
   --theme: #0580c3;
-  --text: #c39e1f;
-  --text-secondary: #000000;
+  --font-color: #c39e1f;
+  --font-color2nd: #000000;
 }
