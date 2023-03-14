@@ -4,38 +4,9 @@
 
 // Select the elements
 const gamesContainer = document.querySelector('.games');
-const searchBar = document.querySelector('.searchbar');
 const gameContainer = document.querySelector('.gamecontainer');
 const gameFrame = gameContainer.querySelector('.frame');
 const gameNav = gameContainer.querySelector('.nav');
-
-// Listen for input event on the search bar
-searchBar.addEventListener('input', (e) => {
-  const query = searchBar.value.trim().toLowerCase();
-
-  // Loop through all the games in the container and show/hide them depending on whether they match the search query
-  for (let game in gamesContainer.children) {
-    if (gamesContainer.children[game] instanceof Element) {
-      if (query) {
-        const gameName = gamesContainer.children[game].querySelector('span').innerText.trim().toLowerCase();
-        if (gameName.includes(query)) {
-          gamesContainer.children[game].removeAttribute('hidden');
-        } else {
-          gamesContainer.children[game].setAttribute('hidden', '');
-        }
-      } else {
-        gamesContainer.children[game].removeAttribute('hidden');
-      }
-    }
-  }
-
-  // If there are no games shown, display the "No games" message, otherwise hide it
-  if (document.querySelectorAll('.game:not([hidden])').length == 0) {
-    document.querySelector('.nogames').style.display = 'initial';
-  } else {
-    document.querySelector('.nogames').style.display = 'none';
-  }
-});
 
 // Fetch the games data from a JSON file
 fetch('./games.json')
@@ -73,6 +44,8 @@ fetch('./games.json')
         gameFrame.querySelector('iframe').src = `c/${game.root}index.html`;
         gameNav.querySelector('span').textContent = game.name;
         document.querySelector('.navbar').classList.add('hidden');
+        document.querySelector('.spacing').classList.add('hidden');
+        document.querySelector('.footer').classList.add('hidden');
       };
 
       // Add click event listener to the back button in the game container to go back to the games list
