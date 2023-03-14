@@ -19,10 +19,10 @@ fetch('./games.json')
       game105.innerHTML = `<!-- ${game.name} -->
         <div class="a">
           <div class="banner" style='background-image: linear-gradient(#555, #282828);'>
-            <seb class="classText" style="color:white;" target="_blank" rel="noopener noreferrer" onclick='console.log("Clicked on ${game.name}")'>
+            <a class="classText" href="c/${game.root}index.html" style="color:white;" target="_blank" rel="noopener noreferrer" onclick='console.log("Clicked on ${game.name}")'>
               <div class="main">${game.name}</div>
               <div class="sub">${game.sub}</div>
-            </seb>
+            </a>
           </div>
           <img src="${game.img}" class="gameIcon" alt="${game.name}"/>
         </div>
@@ -38,24 +38,10 @@ fetch('./games.json')
 
       // Add click event listener to the game element to show the game in the game container
       game105.onclick = (e) => {
-        gamesContainer.classList.add('hidden');
-        searchBar.classList.add('hidden');
-        gameContainer.classList.remove('hidden');
-        gameFrame.querySelector('iframe').src = `c/${game.root}index.html`;
-        gameNav.querySelector('span').textContent = game.name;
-        document.querySelector('.navbar').classList.add('hidden');
-        document.querySelector('.spacing').classList.add('hidden');
-        document.querySelector('.footer').classList.add('hidden');
       };
 
       // Add click event listener to the back button in the game container to go back to the games list
       gameNav.querySelector('#back').addEventListener('click', (e) => {
-        gamesContainer.classList.remove('hidden');
-        searchBar.classList.remove('hidden');
-        gameContainer.classList.add('hidden');
-        document.querySelector('.saveItems').classList.remove('hidden');
-        document.querySelector('.navbar').classList.remove('hidden');
-        gameFrame.src = '';
       });
 
       // Add click event listener to the fullscreen button in the game container to enter fullscreen mode
