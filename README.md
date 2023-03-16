@@ -47,6 +47,13 @@ Once you find all these stuff you are free to go! :)
 [![Deploy to Render](https://binbashbanana.github.io/deploy-buttons/buttons/remade/render.svg)](https://render.com/deploy?repo=https://github.com/Sebastian-105/Sebastian-105.github.io)
 [![Deploy with Vercel](https://binbashbanana.github.io/deploy-buttons/buttons/remade/vercel.svg)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSebastian-105%2FSebastian-105.github.io)
 [![Remix on Glitch](https://binbashbanana.github.io/deploy-buttons/buttons/remade/glitch.svg)](https://glitch.com/edit/#!/import/github/Sebastian-105/Sebastian-105.github.io)
+# Versions:
+
+<a style="font-size:25px;" href="https://github.com/Sebastian-105/Sebastian-105_v1">@Sebastian-105/Sebastian-105_v1</a>
+Just for reference this is v2
+
+# Contributers:
+<a href="https://github.com/DanyangXu77"><img src="https://avatars.githubusercontent.com/u/116617888?v=4" style="border-radius: 50%; width:100px; height:100px;">   @DanyangXu77</a>
 
 
 ## REMEMBER TO CITE ME IN THE CODE AND THE FOOTER
