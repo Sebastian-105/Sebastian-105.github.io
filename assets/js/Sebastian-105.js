@@ -19,6 +19,7 @@ function copytoclipboard(copiedcontent){
 function MyFunctionalert(){
   return "Visit my website!";
 }
+j
 function settings() {
   if (confirm("This page is still a work in progress, are you sure you want to go here? \n-Sebastian-105") === true) {
     var myWindow = window.open("105/settings/index.html");

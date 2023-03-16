@@ -1,57 +1,12 @@
-/*
-<!--─────────────────────────────────────────────────────────────────────────────────────────────────|
-<!───────────────────────────────────────────────────────────────────────────────────────────────────|
-|──────────────────────────────────────────────|
-|⬛⬛──────⬛⬛⬛⬛───────────⬛⬛⬛⬛⬛──────|
-|⬛⬛─────⬛⬛──⬛⬛────────⬛⬛⬛⬛⬛⬛⬛────|
-|⬛⬛────⬛⬛────⬛⬛──────⬛⬛────────⬛⬛───|
-|⬛⬛───⬛⬛──────⬛⬛────⬛⬛────────────────|
-|⬛⬛──⬛⬛────────⬛⬛────⬛⬛───────────────|
-|⬛⬛──⬛⬛────────⬛⬛──────⬛⬛⬛⬛⬛⬛⬛───|
-|⬛⬛───⬛⬛──────⬛⬛───────────────────⬛⬛──|
-|⬛⬛────⬛⬛────⬛⬛─────────────────────⬛⬛─|
-|⬛⬛─────⬛⬛──⬛⬛───────⬛⬛──────────⬛⬛──|
-|⬛⬛──────⬛⬛⬛⬛──────────⬛⬛⬛⬛⬛⬛⬛────|     (105)
-────────────────────────────────────────────────|
-Made by @3kh0 (github) modified by @Sebastian-105 (github).
-───────────────────────────────────────────────────────────────────────────────────────────────────|
-───────────────────────────────────────────────────────────────────────────────────────────────────|-->
-*/
+// Hello epic hacker (maybe skid) you are looking at one of the many scripts that powers the site, this script has extra comments and info to help you understand what is going on.
+
+// This is a JavaScript code that creates a game catalog page with a search feature, a game detail page, and the ability to save and load user data. It uses fetch to load game data from a JSON file, creates game elements for each game, and adds click event listeners to show the game in a game container. The code also includes functions to handle saving and loading user data as well as a function to handle a specific key sequence.
 
 // Select the elements
 const gamesContainer = document.querySelector('.games');
-const searchBar = document.querySelector('.searchbar');
 const gameContainer = document.querySelector('.gamecontainer');
 const gameFrame = gameContainer.querySelector('.frame');
 const gameNav = gameContainer.querySelector('.nav');
-
-// Listen for input event on the search bar
-searchBar.addEventListener('input', (e) => {
-  const query = searchBar.value.trim().toLowerCase();
-
-  // Loop through all the games in the container and show/hide them depending on whether they match the search query
-  for (let game in gamesContainer.children) {
-    if (gamesContainer.children[game] instanceof Element) {
-      if (query) {
-        const gameName = gamesContainer.children[game].querySelector('span').innerText.trim().toLowerCase();
-        if (gameName.includes(query)) {
-          gamesContainer.children[game].removeAttribute('hidden');
-        } else {
-          gamesContainer.children[game].setAttribute('hidden', '');
-        }
-      } else {
-        gamesContainer.children[game].removeAttribute('hidden');
-      }
-    }
-  }
-
-  // If there are no games shown, display the "No games" message, otherwise hide it
-  if (document.querySelectorAll('.game:not([hidden])').length == 0) {
-    document.querySelector('.nogames').style.display = 'initial';
-  } else {
-    document.querySelector('.nogames').style.display = 'none';
-  }
-});
 
 // Fetch the games data from a JSON file
 fetch('./games.json')
@@ -60,15 +15,16 @@ fetch('./games.json')
     // Loop through each game and create a new game element for it
     games.forEach((game) => {
       const game105 = document.createElement('div');
-      game105.className = 'game-box';
+      game105.className = '#game';
       game105.innerHTML = `<!-- ${game.name} -->
+      <div class="game-box">
         <div class="a">
           <div class="banner" style='background-image: linear-gradient(#555, #282828);'>
-            <seb class="classText" style="color:white;" target="_blank" rel="noopener noreferrer" onclick='console.log("Clicked on ${game.name}")'>
+            <seb><a class="classText" href="c/${game.root}index.html" style="color:white;" target="_blank" rel="noopener noreferrer" onclick='console.log("Clicked on ${game.name}")'>
               <div class="main">${game.name}</div>
               <div class="sub">${game.sub}</div>
-            </seb>
-          </div>
+            </a>
+          </div></seb>
           <img src="${game.img}" class="gameIcon" alt="${game.name}"/>
         </div>
         <div class="b">
@@ -78,27 +34,15 @@ fetch('./games.json')
           <div class="icon">
            
           </div>
+      </div>
       </div>`;
       gamesContainer.appendChild(game105);
-
       // Add click event listener to the game element to show the game in the game container
       game105.onclick = (e) => {
-        gamesContainer.classList.add('hidden');
-        searchBar.classList.add('hidden');
-        gameContainer.classList.remove('hidden');
-        gameFrame.querySelector('iframe').src = `c/${game.root}index.html`;
-        gameNav.querySelector('span').textContent = game.name;
-        document.querySelector('.navbar').classList.add('hidden');
       };
 
       // Add click event listener to the back button in the game container to go back to the games list
       gameNav.querySelector('#back').addEventListener('click', (e) => {
-        gamesContainer.classList.remove('hidden');
-        searchBar.classList.remove('hidden');
-        gameContainer.classList.add('hidden');
-        document.querySelector('.saveItems').classList.remove('hidden');
-        document.querySelector('.navbar').classList.remove('hidden');
-        gameFrame.src = '';
       });
 
       // Add click event listener to the fullscreen button in the game container to enter fullscreen mode
