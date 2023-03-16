@@ -10,7 +10,7 @@
 |⬛⬛───⬛⬛──────⬛⬛───────────────────⬛⬛──|
 |⬛⬛────⬛⬛────⬛⬛─────────────────────⬛⬛─|
 |⬛⬛─────⬛⬛──⬛⬛───────⬛⬛──────────⬛⬛──|
-|⬛⬛──────⬛⬛⬛⬛──────────⬛⬛⬛⬛⬛⬛⬛────|     ( 1 0 5 )
+|⬛⬛──────⬛⬛⬛⬛──────────⬛⬛⬛⬛⬛⬛⬛────|     (105)
 ────────────────────────────────────────────────|
 Made by @Sebastian-105 and by @DanyangXu77.
 ───────────────────────────────────────────────────────────────────────────────────────────────────|
@@ -287,6 +287,8 @@ Made by @Sebastian-105 and by @DanyangXu77.
     <script> //Keybinds ONLY!
       document.addEventListener("keydown", e => {
         e.preventDefault();
+        if (e.key === "f" && e.ctrlKey) {
+      document.requestFullscreen();}
         if (e.key === "g" && e.ctrlKey) {
         	console.log("game page opened");
           window.open("game/index.html");
