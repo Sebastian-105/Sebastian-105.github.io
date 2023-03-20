@@ -49,7 +49,7 @@ Once you find all these stuff you are free to go! :)
 [![Remix on Glitch](https://binbashbanana.github.io/deploy-buttons/buttons/remade/glitch.svg)](https://glitch.com/edit/#!/import/github/Sebastian-105/Sebastian-105.github.io)
 # Versions:
 
-<a style="font-size:25px;" href="https://github.com/Sebastian-105/Website-v1">@Sebastian-105/Sebastian-105_v1</a>
+<a style="font-size:25px;" href="https://github.com/Sebastian-105/Website-v1">Sebastian-105/Website-v1</a>
 Just for reference this is v2
 
 # Contributers:
