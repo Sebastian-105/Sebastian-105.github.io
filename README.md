@@ -55,7 +55,8 @@ Just for reference this is v2
 # Contributers:
 <a href="https://github.com/DanyangXu77"><img src="https://avatars.githubusercontent.com/u/116617888?v=4" style="border-radius: 50%; width:100px; height:100px;">   @DanyangXu77</a>
 
-
+# Other 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/859bbfb3-435a-4cc4-8feb-b9b6d55cc80b/deploy-status)](https://app.netlify.com/sites/sebastian-105/deploys)
 ## REMEMBER TO CITE ME IN THE CODE AND THE FOOTER
 
 # By ***Sebastian-105***
