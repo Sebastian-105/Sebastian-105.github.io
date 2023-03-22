@@ -258,10 +258,5 @@ document.addEventListener("keydown", e => {
     } else if (e.key === "c" && e.ctrlKey) {
       window.open("105/chatroom/index.html");
     } else if (e.key === "d" && e.ctrlKey) {
-      window.open("docs/index.html"); }
-      else if (e.key === "w"  && e.ctrlKey) {
-      if (confirm(`you pressed "ctrl + w" do you really want to leave my website?\n-Sebastian-105`) === true) {
-        window.close();
-      }
-    }
+      window.open("docs/index.html"); 
   })
