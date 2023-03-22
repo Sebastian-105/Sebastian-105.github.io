@@ -4,6 +4,7 @@
   --decoration: #00a9e2;
   --font-family: 'Vollkorn', serif;
   --font-family2nd: 'Consolas',monospace ;
+  --font-family3rd: 'Roboto', serif;
   --secondary-font-color:#fff;
   --font-size:15px;
   --sub-font-color: lightgrey;
@@ -13,6 +14,8 @@
 @import url('themes.css');
 @import url('mobile.css');
 @import url("https://fonts.googleapis.com/css?family=Consolas");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
 /* little alert in corner */
 .corner .iconcorner {
   float: left;
@@ -150,7 +153,9 @@ h3 {
   margin-right: 16px;
   color: var(--font-color);
 }
-
+#currentverisonasdf {
+  font-family: var(--font-family2nd);
+}
 #exittime:hover {
   color: var(--font-color-hover);
   cursor: pointer;
@@ -517,7 +522,6 @@ h3 {
 }
 #closesidenav {
   font-size: 25px;
-  margin-top: 100%;
   margin-left: 86%;
   cursor:pointer;
 }
@@ -828,12 +832,15 @@ h3 {
   align-self: center;
   color:var(--font-color);
   cursor:pointer;
+  font-family: var(--font-family2nd);
+
 }
 .update version {
   color:var(--font-color);
   background-color: grey;
   padding:5px;
   border-radius: 5px;
+  font-family: var(--font-family2nd);
 }
 /*──────────────────
        footer
@@ -2269,7 +2276,9 @@ GAME STYLE/CSS
  .hidden {
    display: none;
  }
- 
+ .show {
+  display: block;
+ }
  .gamecontainer {
    height: 50em;
  }

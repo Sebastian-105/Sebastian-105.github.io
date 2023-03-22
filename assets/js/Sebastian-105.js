@@ -1,4 +1,22 @@
-
+/*
+<!--─────────────────────────────────────────────────────────────────────────────────────────────────|
+<!───────────────────────────────────────────────────────────────────────────────────────────────────|
+|──────────────────────────────────────────────|
+|⬛⬛──────⬛⬛⬛⬛───────────⬛⬛⬛⬛⬛──────|
+|⬛⬛─────⬛⬛──⬛⬛────────⬛⬛⬛⬛⬛⬛⬛────|
+|⬛⬛────⬛⬛────⬛⬛──────⬛⬛────────⬛⬛───|
+|⬛⬛───⬛⬛──────⬛⬛────⬛⬛────────────────|
+|⬛⬛──⬛⬛────────⬛⬛────⬛⬛───────────────|
+|⬛⬛──⬛⬛────────⬛⬛──────⬛⬛⬛⬛⬛⬛⬛───|
+|⬛⬛───⬛⬛──────⬛⬛───────────────────⬛⬛──|
+|⬛⬛────⬛⬛────⬛⬛─────────────────────⬛⬛─|
+|⬛⬛─────⬛⬛──⬛⬛───────⬛⬛──────────⬛⬛──|
+|⬛⬛──────⬛⬛⬛⬛──────────⬛⬛⬛⬛⬛⬛⬛────|     (105)
+────────────────────────────────────────────────|
+Made by @Sebastian-105 and by @DanyangXu77.
+───────────────────────────────────────────────────────────────────────────────────────────────────|
+───────────────────────────────────────────────────────────────────────────────────────────────────|-->
+*/
 function Sebastian105() {
 	window.addEventListener('offline', () => 
   $("offline").fadeIn("slow"))
@@ -19,7 +37,6 @@ function copytoclipboard(copiedcontent){
 function MyFunctionalert(){
   return "Visit my website!";
 }
-j
 function settings() {
   if (confirm("This page is still a work in progress, are you sure you want to go here? \n-Sebastian-105") === true) {
     var myWindow = window.open("105/settings/index.html");
@@ -28,10 +45,9 @@ function settings() {
     console.log("stayed at homepage \n-Sebastian-105");
   }
 }
-function versionname() {
   let version = "v1.3.6";
-  document.getElementById("currentverisonasdf").innerHTML = version;
-}
+  $("#currentverisonasdf").html(version);
+
 function theexacttime() {
 var d = new Date();
 let h = d.getHours();
@@ -223,3 +239,29 @@ if (document.title.includes("Sebastian-105")) {
 function resettabname() {
   document.title = "Sebastian-105";
 } 
+document.addEventListener("keydown", e => {
+  e.preventDefault();
+  if (e.key === "f" && e.ctrlKey) {
+    if (!document.fullscreenElement) {
+      document.requestFullscreen();
+    }
+  }
+    else if (e.key === "g" && e.ctrlKey) {
+      console.log("game page opened");
+      window.open("game/index.html");
+    } else if (e.key === "s" && e.ctrlKey) {
+      window.open("105/settings/index.html");
+      console.log("settings page opened");
+    } else if (e.key === "h" && e.ctrlKey) {
+      window.open("./index.html");
+      console.log("settings page opened");
+    } else if (e.key === "c" && e.ctrlKey) {
+      window.open("105/chatroom/index.html");
+    } else if (e.key === "d" && e.ctrlKey) {
+      window.open("docs/index.html"); }
+      else if (e.key === "w"  && e.ctrlKey) {
+      if (confirm(`you pressed "ctrl + w" do you really want to leave my website?\n-Sebastian-105`) === true) {
+        window.close();
+      }
+    }
+  })
