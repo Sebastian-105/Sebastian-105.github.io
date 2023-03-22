@@ -259,4 +259,4 @@ document.addEventListener("keydown", e => {
       window.open("105/chatroom/index.html");
     } else if (e.key === "d" && e.ctrlKey) {
       window.open("docs/index.html"); 
-  })
+  }})
