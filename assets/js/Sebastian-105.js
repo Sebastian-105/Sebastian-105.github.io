@@ -36,6 +36,8 @@ function copytoclipboard(copiedcontent){
   navigator.clipboard.writeText(copiedcontent);
   console.log("Username has been copied.");
   $("copyalertcorner").fadeIn("slow").delay(5000).fadeOut("slow");
+  $('copyalertcorner').css('background-color', '#04AA6D');
+
   document.getElementById("copyalertcorner").innerHTML = "Successfully copied: " + copiedcontent;
 }
 function settings() {
@@ -162,6 +164,7 @@ function buttonCode()
   var tabnameforrealz123 = document.title = tabnameforrealz
   localStorage.setItem('tabname1234', tabnameforrealz);
   $("copyalertcorner").fadeIn("slow").delay(5000).fadeOut("slow");
+  $('copyalertcorner').css('background-color', '#04AA6D');
   document.getElementById("copyalertcorner").innerHTML = `Successfully Changed tab title to: ${document.title}`;
 }
 function tabicon() {
@@ -171,10 +174,11 @@ function tabicon() {
  localStorage.setItem('tabicon105', tabiconforrealz);
  if (thetabicon.includes('https://')  || thetabicon.includes("http://") ||thetabicon.includes("file://") ||thetabicon.includes('localhost')){
  $("copyalertcorner").fadeIn("slow").delay(5000).fadeOut("slow");
+ $('copyalertcorner').css('background-color', '#04AA6D');
   document.getElementById("copyalertcorner").innerHTML = "Successfully Changed tab icon " + thetabicon;
 } else {
   $("copyalertcorner").fadeIn("slow").delay(5000).fadeOut("slow");
-  $("copyalertcorner").css('background-color', 'red');
+  $('copyalertcorner').css('background-color', '#04AA6D');
   document.getElementById("copyalertcorner").innerHTML = "Fail to Change tab icon. Check to see if it includes https://";
 }
 }
@@ -182,6 +186,7 @@ function resettabname() {
   document.title = "Sebastian-105";
   localStorage.getItem("tabname1234", "Sebastian-105");
   $("copyalertcorner").fadeIn("slow").delay(5000).fadeOut("slow");
+  $('copyalertcorner').css('background-color', '#04AA6D');
   document.getElementById("copyalertcorner").innerHTML = `Successfully Reset tab name back to ${document.title}`;
 } 
 document.addEventListener("keydown", e => {
@@ -204,15 +209,17 @@ document.addEventListener("keydown", e => {
       e.preventDefault();
       window.open("docs/index.html"); }
   });
-  window.addEventListener('online',  online);
+  document.addEventListener('online',  online);
+  document.addEventListener('offline', offline);
+window.addEventListener('online',  online);
 window.addEventListener('offline', offline);
 function online() {
   $("copyalertcorner").fadeIn("slow").delay(5000).fadeOut("slow");
   document.getElementById("copyalertcorner").innerHTML = `You are back Online`;
-
+  $('copyalertcorner').css('background-color', '#2196F3');
 }
 function offline() {
   $("copyalertcorner").fadeIn("slow").delay(5000).fadeOut("slow");
-  $('copyalertcorner').addClass('offline');
+  $('copyalertcorner').css('background-color', '#f44336');
   document.getElementById("copyalertcorner").innerHTML = `Offline | Reconnect and try again | Offline`;
 }
