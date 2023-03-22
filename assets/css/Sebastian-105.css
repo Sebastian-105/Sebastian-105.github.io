@@ -13,8 +13,7 @@
 }
 @import url('themes.css');
 @import url('mobile.css');
-@import url("https://fonts.googleapis.com/css?family=Consolas");
-@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Consolas|Roboto");
 
 /* little alert in corner */
 .corner .iconcorner {
@@ -205,13 +204,6 @@ h3 {
   max-width: 800px;
 }
 
-input {
-  resize: horizontal;
-  color: var(--font-color);
-  height: 2em;
-  width: 2em;
-  vertical-align: middle;
-}
 
 
 /* Create a column layout with Flexbox */
@@ -601,8 +593,6 @@ h3 {
   background-color: #fff;
   color: black;
 }
-@import url('https://fonts.googleapis.com/css2?family=Roboto');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 .link105 {
   color: white;
@@ -865,18 +855,19 @@ h3 {
 .footer.offline::after {
   content: " <─| Offline Mode |" ;
 } 
-.alertcorner {
+copyalertcorner {
   display:none;
   position:fixed;
   padding:10px;
   vertical-align: bottom;
   bottom: 10px;
   right:10px;
+  font-size: 15px;
   border-radius: 10px;
   background-color: #04AA6D;
   
 } 
-.alertcorner .offline {background-color:#f44336;}
+copyalertcorner .offline {background-color:#f44336;}
 .footer a {
   color: var(--font-color);
   font-size: 1rem;
@@ -2016,15 +2007,6 @@ GAME STYLE/CSS
    border: 0;
  }
  
- .input {
-   border: white;
-   background: var(--theme);
-   width: 200px;
-   padding: 10px;
-   border-radius: 15px;
-   outline: none;
-   color: var(--text-secondary);
- }
  
  .play-link {
    width: fit-content;
@@ -2256,13 +2238,6 @@ GAME STYLE/CSS
    margin: 1rem auto;
  }
  
- input[type="color"] {
-   background-color: var(--theme);
-   border: none;
-   border-radius: 5px;
-   outline: none;
-   padding: 2px;
- }
  
  .bookmarklet {
    margin-bottom: 50px;

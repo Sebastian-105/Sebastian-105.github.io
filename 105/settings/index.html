@@ -2,14 +2,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script type='text/javascript'>
-    window.smartlook||(function(d) {
-      var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
-      var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
-      c.charset='utf-8';c.src='https://web-sdk.smartlook.com/recorder.js';h.appendChild(c);
-      })(document);
-      smartlook('init', 'fe72cf6eebf6ef82bb81b19703c7485f6a30e4af', { region: 'eu' });
-  </script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-S6XJQ25TT1"></script>
 <script>
@@ -24,10 +16,16 @@
 <link rel="stylesheet" href="../../assets/css/Sebastian-105.css">
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<link rel='icon' href='' />
 <script>
-  var tabName = localStorage.getItem('tabname');
-  document.title = (tabName)
+  // Title //
+  var localStoragetitle = localStorage.getItem('tabname1234')
+  document.title = localStoragetitle;
+  // Icon //
+  let tabiconabc = localStorage.getItem('tabicon105');
+  jQuery(function($) {
+    $("link[rel*='icon']").attr("href", tabiconabc);
+    });
 </script>
 </head>
 <body onload="functiona()">
@@ -40,43 +38,22 @@ $(function(){
   $("#buildTopnav").load("../navbar.html");
 });
 </script>
-<div id="setting">
-  <form placeholder="Change Tab Title..." onsubmit="buttonCode();">
-    <input type="text" value="" id="nameChange">
-    <input type="button" style="color:white" value="Name Tab" onclick="buttonCode()" class="submitButton">
-    <input type="button" style="color:white" value="Reset tab name" onclick="resettabname()"  id ="reset" class="submitButton">
-    <input type="button" style="color:white; width:150px;" value="Change tab icon" onclick="tabicon()" class="submitButton">
+    <input type="button" style="color:white" value="Edit Title" onclick="buttonCode()" class="submitButton">
+    <input type="button" style="color:white" value="Reset Title" onclick="resettabname()"  id ="reset" class="submitButton">
+    <input type="button" style="color:white; width:150px;" value="Edit Icon/favicon" onclick="tabicon()" class="submitButton">
   </form>
-</div>
-<!-- Next Setting --> <br><br><br>
-<script type="text/javascript">
-var Enabled=true;
-</script>
-<!-- Next Setting -->
-<br>
-<div>
-  <h1 style="text-align:center; color:white;">Themes<hr></h1>
-  <p style="color:white; text-align:center;"><strong>Note:</strong>  The following themes are in testing, and some may not functioning properly.</p>
-  <button onclick="myFunctionDarkMode()" class="themes105" id="classicdark">Classic Dark</button><subtitle>Not working</subtitle>
-  <button onclick="icon()" class="themes105" id="classicdark">Light Icon</button>
-
-  <button onclick="myFunctionTwilight()" class="themes105" id="twilighttheme">Twilight (blue)</button><subtitle>Not working</subtitle>
-</div>
-  <script>
-    $("link[rel*='icon']").attr("href", "../../105.inverted.png");
-  </script>
-<!-- Next Setting -->
-<h1 style="text-align: center;">Other<hr></h1>
-<button onclick="onoff()" id="onoff" class="themes105" title="useful for making sure no one knows it's my site">Turn off the little icon site wide</button>
+  <copyalertcorner  style="  display:none;" class="alertcorner" id="copyalertcorner">Sebastian-105</copyalertcorner>
+<!-- Next Setting --> <br><br><br>  
 <!-- Next Setting -->
 <!-- Next Setting -->
 <!-- Next Setting -->
 <!-- Next Setting -->
 <!-- Next Setting -->
 <script src="assets/js/index.js"></script>
-  <script src="../../assets/js/Sebastian-105.js"></script>
-  <script src="../../assets/js/jQuery.min.js"></script>
-  <script src="../../assets/lib/jquery.min.js"></script>    <script src="https://icon105.netlify.app/Sebastian105.js" defer></script>
+<script src='../../assets/js/Sebastian-105.js'></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="../../assets/js/jQuery.min.js"></script>
+<script src="https://icon105.netlify.app/Sebastian105.js" defer></script>
 
 </body>
 </html>

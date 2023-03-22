@@ -20,12 +20,14 @@
     <meta content="Games | Sebastian-105" property="og:title" />
     <meta content="The better unblocked games website." property="og:description" />
     <meta content="105.png" property="og:image" />
-    <link href="105.png" rel="icon" />
+    <link rel="icon"  href="105.png"/>
     <link href="https://sebastian-105.vercel.app/assets/css/style.css" rel="stylesheet"/>
     <link href="../assets/css/Sebastian-105.css" rel="stylesheet" />
 <script>
-  var localStoragetitle = localStorage.getItem('tabname')
+  var tabiconabc = localStorage.getItem('tabicon105')
+  var localStoragetitle = localStorage.getItem('tabname1234')
   document.title = localStoragetitle
+  $("link[rel*='icon']").attr("href", tabiconabc);
 </script>
   </head>
 
@@ -47,7 +49,9 @@
         <script>
           var visible = new Boolean(true); //Announcement Toggle
         </script> 
+        
       </div>
+      
 </center><div id="games">
 <div class="games">
   <!-- Games go here -->
@@ -89,6 +93,7 @@
 
     <div class="spacing"></div>
     <footer class="footer" style="text-align: center;"><img src="./105.png" style="width:35px; height:35px;border-radius: 50%;">  &copy; 2022 - 2023 Sebastian-105, DanyangXu77. <a style="padding-left: 50px;" href="https://github.com/Sebastian-105">@Sebastian-105</a> ~ <a href="https://github.com/DanyangXu77">@DanyangXu77</a> ~ <a href="https://sebastian-105.github.io/105/terms/index.html">Terms</a> ~ <a href="https://sebastian-105.github.io/105/settings/index.html">Settings</a> ~ <a href="https://sebastian-105.github.io/index.html">Homepage</a> ~ </footer>
+    <copyalertcorner  style="  display:none;" class="alertcorner" id="copyalertcorner">aasdfasd</copyalertcorner>
     <script>
       if (document.location.href.includes("file:///")) {
         location.replace('./file.html');
