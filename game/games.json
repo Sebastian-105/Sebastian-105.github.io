@@ -109,8 +109,8 @@
   },
   {
     "name":"Flappy Bird",
-    "root":"B I R B/",
-    "sub":"FlappyBird",
+    "root":"FlappyBird",
+    "sub":"B I R B",
     "img":"./105.png"
   },
   {
