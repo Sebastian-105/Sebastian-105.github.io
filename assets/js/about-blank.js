@@ -1,4 +1,14 @@
-<!--─────────────────────────────────────────────────────────────────────────────────────────────────|
+var jqueryhtml = $("html").html();
+width = screen.width;
+height = screen.height
+var gametitle = localStorage.getItem("tabname1234");
+function abgs() {
+  var aboutblank = window.open("", `${gametitle}`, `width=${width} height=${height}`);
+  aboutblank.document.write(jqueryhtml);
+}
+function aboutblank_home()  {
+  var aboutblank = window.open("", "Sebastian-105", `width=${width} height=${height}`);
+  aboutblank.document.write(`<!--─────────────────────────────────────────────────────────────────────────────────────────────────|
 <!───────────────────────────────────────────────────────────────────────────────────────────────────|
 |──────────────────────────────────────────────|
 |⬛⬛──────⬛⬛⬛⬛───────────⬛⬛⬛⬛⬛──────|
@@ -312,7 +322,7 @@ Made by @Sebastian-105 and by @DanyangXu77.
         } else if (e.key === "d" && e.ctrlKey) {
           window.open("docs/index.html"); }
           else if (e.key === "b" && e.ctrlKey) {
-          aboutblank_home();
+          aboutblank();
         }
       })
   
@@ -321,4 +331,263 @@ Made by @Sebastian-105 and by @DanyangXu77.
   </body>
 
 </html>
-<!-- Original Template Made By @lilykhan (replit) -->
+<!-- Original Template Made By @lilykhan (replit) -->`)}
+
+function aboutblank_game()  {
+  var aboutblank = window.open("", "Sebastian-105 | Game", `width=${width} height=${height}`);
+  aboutblank.document.write(`
+<!-- Edited by Sebastian-105 & DanyangXu77.  Made from scratch by Choobs. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script type='text/javascript'>
+      window.smartlook||(function(d) {
+        var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+        var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+        c.charset='utf-8';c.src='https://web-sdk.smartlook.com/recorder.js';h.appendChild(c);
+        })(document);
+        smartlook('init', 'fe72cf6eebf6ef82bb81b19703c7485f6a30e4af', { region: 'eu' });
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The better unblocked games website." />
+    <meta name="keywords" content="front-end web developer, unblocked, games, google sites, unblocked games mom, ublocked, code, coding, programmer, development, javascript, jquery, bootstrap, sass, less, git" />
+    <meta name="author" content="Sebastian-105" />
+    <meta content="Games | Sebastian-105" property="og:title" />
+    <meta content="The better unblocked games website." property="og:description" />
+    <meta content="105.png" property="og:image" />
+    <link rel="icon"  href="105.png"/>
+    <link href="https://sebastian-105.vercel.app/assets/css/style.css" rel="stylesheet"/>
+    <link href="../assets/css/Sebastian-105.css" rel="stylesheet" />
+<script>
+  var tabiconabc = localStorage.getItem('tabicon105')
+  var localStoragetitle = localStorage.getItem('tabname1234')
+  document.title = localStoragetitle
+  $("link[rel*='icon']").attr("href", tabiconabc);
+</script>
+  </head>
+
+  <body id="game-page-body">
+    <div class="navbar">
+      <nav id="thenavbar">
+        <div class="topnav" title="The Best Navigation Out There">
+        <a onclick="myFunction105()">Light/Dark</a>
+        <a onclick="myFunction77()">Randomize to GC Banners</a>
+        <a onclick="myfunctionofflinegames()">Offline Games</a>
+        <a onclick="dailygames()">Daily Games</a>
+        <a id="showcode">Show Source code</a>
+        <img class="pfp" src="./105.png" style="cursor:pointer;">
+        </div>
+    </div>
+    <center>
+      <div id="announcementBar" style="top: 6px;">
+        <p class="announcement" style="font-size:18px;">Made a bunch of alt links <a href="../105/blocked">Heres the list of unblocked websites</a>!</p>
+        <script>
+          var visible = new Boolean(true); //Announcement Toggle
+        </script> 
+        
+      </div>
+      
+</center><div id="games">
+<div class="games">
+  <!-- Games go here -->
+</div>
+
+</div>
+    
+    <div class="gamecontainer hidden">
+      <div class="nav">
+        <div class="item" id="back">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" fill="white">
+            <path d="M627 948 276 597q-5-5-7-10t-2-11q0-6 2-11t7-10l351-351q11-11 28-11t28 11q12 12 12 28.5T683 261L368 576l315 315q13 13 12 29t-12 27q-12 12-28.5 12T627 948Z" />
+</svg>
+        </div>
+
+        <span>
+          Loading...
+        </span>
+
+        <div class="item right" id="fullscreen">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" fill="white">
+            <path
+              d="M230 856q-12.75 0-21.375-8.625T200 826V693q0-12.75 8.675-21.375 8.676-8.625 21.5-8.625 12.825 0 21.325 8.625T260 693v103h103q12.75 0 21.375 8.675 8.625 8.676 8.625 21.5 0 12.825-8.625 21.325T363 856H230Zm-.175-367Q217 489 208.5 480.375T200 459V326q0-12.75 8.625-21.375T230 296h133q12.75 0 21.375 8.675 8.625 8.676 8.625 21.5 0 12.825-8.625 21.325T363 356H260v103q0 12.75-8.675 21.375-8.676 8.625-21.5 8.625ZM597 856q-12.75 0-21.375-8.675-8.625-8.676-8.625-21.5 0-12.825 8.625-21.325T597 796h103V693q0-12.75 8.675-21.375 8.676-8.625 21.5-8.625 12.825 0 21.325 8.625T760 693v133q0 12.75-8.625 21.375T730 856H597Zm132.825-367Q717 489 708.5 480.375T700 459V356H597q-12.75 0-21.375-8.675-8.625-8.676-8.625-21.5 0-12.825 8.625-21.325T597 296h133q12.75 0 21.375 8.625T760 326v133q0 12.75-8.675 21.375-8.676 8.625-21.5 8.625Z"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <div class="frame">
+        <iframe frameborder="0" id="gameframe" class="gameframe"></iframe>
+      </div>
+    </div>
+
+    <span class="spinner">
+      <svg viewBox="22 22 44 44">
+        <circle class="spinnerSvg" cx="44" cy="44" r="20.2" fill="none" stroke-width="3.6"></circle>
+      </svg>
+    </span>
+
+    <div class="spacing"></div>
+    <footer class="footer" style="text-align: center;"><img src="./105.png" style="width:35px; height:35px;border-radius: 50%;">  &copy; 2022 - 2023 Sebastian-105, DanyangXu77. <a style="padding-left: 50px;" href="https://github.com/Sebastian-105">@Sebastian-105</a> ~ <a href="https://github.com/DanyangXu77">@DanyangXu77</a> ~ <a href="https://sebastian-105.github.io/105/terms/index.html">Terms</a> ~ <a href="https://sebastian-105.github.io/105/settings/index.html">Settings</a> ~ <a href="https://sebastian-105.github.io/index.html">Homepage</a> ~ </footer>
+    <copyalertcorner  style="  display:none;" class="alertcorner" id="copyalertcorner">aasdfasd</copyalertcorner>
+    <script>
+      if (document.location.href.includes("file:///")) {
+        location.replace('./file.html');
+
+      }
+    </script>
+    <script> //Keybinds ONLY!
+      document.addEventListener("keydown", e => {
+        e.preventDefault();
+        if (e.key === "g" && e.ctrlKey) {
+          window.open("index.html");
+        }else if (e.key === "h" && e.ctrlKey) {
+          window.open("../index.html")
+        } else if (e.key === "s" && e.ctrlKey) {
+          window.open("../105/settings/index.html")
+        } else if (e.key === "c" && e.ctrlKey) {
+          window.open("../105/chatroom/index.html");
+        }
+      })
+    </script>
+    <script src="../assets/js/min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="../assets/lib/jquery.min.js"></script>
+    <script src="../assets/js/jQuery.min.js"></script>
+    <script src="../assets/js/Sebastian-105.js"></script>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="./json.js"></script>
+  </body>
+</html>`)}
+function aboutblank_game123()  {
+  var aboutblank = window.open("", "Sebastian-105 | Game", `width=${width} height=${height}`);
+  aboutblank.document.write(`
+<!-- Edited by Sebastian-105 & DanyangXu77.  Made from scratch by Choobs. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script type='text/javascript'>
+      window.smartlook||(function(d) {
+        var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+        var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+        c.charset='utf-8';c.src='https://web-sdk.smartlook.com/recorder.js';h.appendChild(c);
+        })(document);
+        smartlook('init', 'fe72cf6eebf6ef82bb81b19703c7485f6a30e4af', { region: 'eu' });
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The better unblocked games website." />
+    <meta name="keywords" content="front-end web developer, unblocked, games, google sites, unblocked games mom, ublocked, code, coding, programmer, development, javascript, jquery, bootstrap, sass, less, git" />
+    <meta name="author" content="Sebastian-105" />
+    <meta content="Games | Sebastian-105" property="og:title" />
+    <meta content="The better unblocked games website." property="og:description" />
+    <meta content="105.png" property="og:image" />
+    <link rel="icon"  href="105.png"/>
+    <link href="https://sebastian-105.vercel.app/assets/css/style.css" rel="stylesheet"/>
+    <link href="../assets/css/Sebastian-105.css" rel="stylesheet" />
+<script>
+  var tabiconabc = localStorage.getItem('tabicon105')
+  var localStoragetitle = localStorage.getItem('tabname1234')
+  document.title = localStoragetitle
+  $("link[rel*='icon']").attr("href", tabiconabc);
+</script>
+  </head>
+
+  <body id="game-page-body">
+    <div class="navbar">
+      <nav id="thenavbar">
+        <div class="topnav" title="The Best Navigation Out There">
+        <a onclick="myFunction105()">Light/Dark</a>
+        <a onclick="myFunction77()">Randomize to GC Banners</a>
+        <a onclick="myfunctionofflinegames()">Offline Games</a>
+        <a onclick="dailygames()">Daily Games</a>
+        <a id="showcode">Show Source code</a>
+        <img class="pfp" src="./105.png" style="cursor:pointer;">
+        </div>
+    </div>
+    <center>
+      <div id="announcementBar" style="top: 6px;">
+        <p class="announcement" style="font-size:18px;">Made a bunch of alt links <a href="../105/blocked">Heres the list of unblocked websites</a>!</p>
+        <script>
+          var visible = new Boolean(true); //Announcement Toggle
+        </script> 
+        
+      </div>
+      
+</center><div id="games">
+<div class="games">
+  <!-- Games go here -->
+</div>
+
+</div>
+    
+    <div class="gamecontainer hidden">
+      <div class="nav">
+        <div class="item" id="back">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" fill="white">
+            <path d="M627 948 276 597q-5-5-7-10t-2-11q0-6 2-11t7-10l351-351q11-11 28-11t28 11q12 12 12 28.5T683 261L368 576l315 315q13 13 12 29t-12 27q-12 12-28.5 12T627 948Z" />
+</svg>
+        </div>
+
+        <span>
+          Loading...
+        </span>
+
+        <div class="item right" id="fullscreen">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" fill="white">
+            <path
+              d="M230 856q-12.75 0-21.375-8.625T200 826V693q0-12.75 8.675-21.375 8.676-8.625 21.5-8.625 12.825 0 21.325 8.625T260 693v103h103q12.75 0 21.375 8.675 8.625 8.676 8.625 21.5 0 12.825-8.625 21.325T363 856H230Zm-.175-367Q217 489 208.5 480.375T200 459V326q0-12.75 8.625-21.375T230 296h133q12.75 0 21.375 8.675 8.625 8.676 8.625 21.5 0 12.825-8.625 21.325T363 356H260v103q0 12.75-8.675 21.375-8.676 8.625-21.5 8.625ZM597 856q-12.75 0-21.375-8.675-8.625-8.676-8.625-21.5 0-12.825 8.625-21.325T597 796h103V693q0-12.75 8.675-21.375 8.676-8.625 21.5-8.625 12.825 0 21.325 8.625T760 693v133q0 12.75-8.625 21.375T730 856H597Zm132.825-367Q717 489 708.5 480.375T700 459V356H597q-12.75 0-21.375-8.675-8.625-8.676-8.625-21.5 0-12.825 8.625-21.325T597 296h133q12.75 0 21.375 8.625T760 326v133q0 12.75-8.675 21.375-8.676 8.625-21.5 8.625Z"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <div class="frame">
+        <iframe frameborder="0" id="gameframe" class="gameframe"></iframe>
+      </div>
+    </div>
+
+    <span class="spinner">
+      <svg viewBox="22 22 44 44">
+        <circle class="spinnerSvg" cx="44" cy="44" r="20.2" fill="none" stroke-width="3.6"></circle>
+      </svg>
+    </span>
+
+    <div class="spacing"></div>
+    <footer class="footer" style="text-align: center;"><img src="./105.png" style="width:35px; height:35px;border-radius: 50%;">  &copy; 2022 - 2023 Sebastian-105, DanyangXu77. <a style="padding-left: 50px;" href="https://github.com/Sebastian-105">@Sebastian-105</a> ~ <a href="https://github.com/DanyangXu77">@DanyangXu77</a> ~ <a href="https://sebastian-105.github.io/105/terms/index.html">Terms</a> ~ <a href="https://sebastian-105.github.io/105/settings/index.html">Settings</a> ~ <a href="https://sebastian-105.github.io/index.html">Homepage</a> ~ </footer>
+    <copyalertcorner  style="  display:none;" class="alertcorner" id="copyalertcorner">aasdfasd</copyalertcorner>
+    <script>
+      if (document.location.href.includes("file:///")) {
+        location.replace('./file.html');
+
+      }
+    </script>
+    <script> //Keybinds ONLY!
+      document.addEventListener("keydown", e => {
+        e.preventDefault();
+        if (e.key === "g" && e.ctrlKey) {
+          window.open("index.html");
+        }else if (e.key === "h" && e.ctrlKey) {
+          window.open("../index.html")
+        } else if (e.key === "s" && e.ctrlKey) {
+          window.open("../105/settings/index.html")
+        } else if (e.key === "c" && e.ctrlKey) {
+          window.open("../105/chatroom/index.html");
+        }
+      })
+    </script>
+    <script src="../assets/js/min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="../assets/lib/jquery.min.js"></script>
+    <script src="../assets/js/jQuery.min.js"></script>
+    <script src="../assets/js/Sebastian-105.js"></script>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="./json.js"></script>
+  </body>
+</html>`)}
