@@ -13,8 +13,7 @@
 }
 @import url('themes.css');
 @import url('mobile.css');
-@import url("https://fonts.googleapis.com/css?family=Consolas|Roboto");
-
+@import url('../lib/fonts/fonts.css');
 /* little alert in corner */
 .corner .iconcorner {
   float: left;
