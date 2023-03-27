@@ -13,5 +13,8 @@
     "editor.matchBrackets": "always",
     "editor.cursorSmoothCaretAnimation": "on",
     "editor.cursorStyle": "line",
-    "editor.minimap.enabled": false
+    "editor.minimap.enabled": false,
+    "[css]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    }
 }
