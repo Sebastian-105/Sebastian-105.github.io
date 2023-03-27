@@ -125,10 +125,10 @@
     <th><a href="https://github.com/Sebastian-105/Sebastian-105.github.io/releases/tag/v2.6.9">See here for more info</th><!-- Extra details-->
   </tr>
   <tr>
-    <th></th><!-- Update version-->
-    <th></th><!-- Date changed (mm/dd/yyyy)-->
-    <th></th><!-- Thing changed-->
-    <th></th><!-- Extra details-->
+    <th>v2.7.9</th><!-- Update version-->
+    <th>03/27/2023</th><!-- Date changed (mm/dd/yyyy)-->
+    <th>Added about:blank option on home page and game page</th><!-- Thing changed-->
+    <th>pressing ctrl+b on sites will make it work</th><!-- Extra details-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
