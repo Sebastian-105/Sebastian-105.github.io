@@ -1260,7 +1260,7 @@ GAME STYLE/CSS
   border-radius: 50%;
   position: absolute;
   margin: 8.5px;
-  cursor: cell;
+  cursor: pointer;
   right: 110px;
  }
  .plus {
@@ -1277,7 +1277,7 @@ GAME STYLE/CSS
  }
  .shadow:hover {
   opacity: 0.1;
-  cursor: cell;
+  cursor: pointer;
  }
  .hamburger > .shadow {
   bottom: 8px;
@@ -1569,7 +1569,7 @@ GAME STYLE/CSS
   background: none;
   width: 100%;
   text-align: left;
-  cursor: cell;
+  cursor: pointer;
   outline: none;padding: 6px 0px 6px 16px;
   text-decoration: none;
   font-size: 20px;
@@ -1579,7 +1579,7 @@ GAME STYLE/CSS
   background: none;
   width: 100%;
   text-align: left;
-  cursor: cell;
+  cursor: pointer;
   outline: none;
   font-family:var(--font-family);
   border-radius: 50px;
