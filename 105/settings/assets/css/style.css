@@ -118,9 +118,13 @@ form {
 
 .submitButton {
   border-radius: 5px;
-  background-color: #111;
+  background-color: gray;
   border: 0;
   margin-top:22px;
+  font-size: 15px;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
   height: 40px;
   width:100px;
 }
