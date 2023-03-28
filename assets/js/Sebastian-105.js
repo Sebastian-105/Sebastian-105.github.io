@@ -26,7 +26,8 @@ function Sebastian105() {
   document.getElementById('OfflineMode').innerHTML = 'Offline';
 }
 function closesidenav() {
-  $('.sidenav').fadeToggle('slow');
+  $('.sidenav').hide('slow');
+  $('#time').hide('slow')
   console.log('Closed sidenav');
 }
 function tabfocus() {
@@ -63,7 +64,7 @@ function settings() {
     console.log('stayed at homepage \n-Sebastian-105');
   }
 }
-let version = 'v2.8.9';
+let version = 'v2.6.9';
 $('#currentverisonasdf').html(version);
 $('body').append("<script src='/assets/js/about-blank.js'>");
 if (location.href.includes('game/c/')) {
@@ -274,7 +275,6 @@ if (hour < 12) {
 setInterval(() => {
 document.getElementById('therealtime').innerHTML = thetime +' '+ name;
 document.getElementById('timedropdown').innerHTML = `${name}'s account settings`; 
-
 }, 1);
 }
 setInterval(time, 1);
