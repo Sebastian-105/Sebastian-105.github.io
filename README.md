@@ -53,9 +53,15 @@ Once you find all these stuff you are free to go! :)
 Just for reference this is v2
 
 # Contributers:
-<a href="https://github.com/DanyangXu77"><img src="https://avatars.githubusercontent.com/u/116617888?v=4" style="border-radius: 50%; width:100px; height:100px;">   @DanyangXu77</a>
+<a href="https://github.com/Sebastian-105"><img src="https://sebastian-105.vercel.app/105.round.png" style=" width:50px; height:50px;"></a>
+<a href="https://github.com/DanyangXu77"><img src="https://avatars.githubusercontent.com/u/116617888?v=4" style="border-radius: 50%; width:50px; height:50px;"></a>
+
+# Info/Stats
+![Stargazers repo roster for @3kh0/3kh0.github.io](https://bytecrank.com/nastyox/reporoster/php/stargazersSVG.php?theme=light&user=Sebastian-105&repo=Sebastian-105.github.io)<br />
+![Stargazers repo roster for @3kh0/3kh0.github.io](https://bytecrank.com/nastyox/reporoster/php/forkersSVG.php?theme=light&user=Sebastian-105&repo=Sebastian-105.github.io)
 
 # Other 
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/859bbfb3-435a-4cc4-8feb-b9b6d55cc80b/deploy-status)](https://app.netlify.com/sites/sebastian-105/deploys)
 ## REMEMBER TO CITE ME IN THE CODE AND THE FOOTER
 
