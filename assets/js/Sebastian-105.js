@@ -19,7 +19,7 @@ Made by @Sebastian-105 (https://github.com).
 Here is most of the javascript for "sebastian-105"
 */
 var name = localStorage.getItem('personname');
-var tabicon105 = localStorage.setItem('tabicon105', '/105.png');
+var tabicon105 = localStorage.setItem('tabicon105', `https://sebastian-105.vercel.app/105.png`);
 var tabname1234 = localStorage.setItem('tabname1234', 'Sebastian-105');
 function Sebastian105() {
   window.addEventListener('offline', () => $('offline').fadeIn('slow'));
@@ -39,7 +39,7 @@ function tabfocus() {
   }
 }
 setInterval(tabfocus, 1);
-var examplelink = location.href;
+var examplelink = location;
 var author = 'Sebastian-105';
 
 function copytoclipboard(copiedcontent) {
@@ -196,8 +196,8 @@ function tabicon() {
     'URL for image: \nMust include https:// or http://',
     examplelink
   );
-  var tabiconforrealz = $("link[rel*='icon']").attr('href', thetabicon);
-  localStorage.setItem('tabicon105', tabiconforrealz);
+  $("link[rel*='icon']").attr('href', thetabicon);
+  localStorage.setItem('tabicon105', thetabicon);
   if (
     thetabicon.includes('https://') ||
     thetabicon.includes('http://') ||
@@ -217,7 +217,7 @@ function tabicon() {
 }
 function resettabname() {
   document.title = 'Sebastian-105';
-  localStorage.getItem('tabname1234', 'Sebastian-105');
+  localStorage.setItem('tabname1234', 'Sebastian-105');
   $('copyalertcorner').fadeIn('slow').delay(1500).fadeOut('fast');
   $('copyalertcorner').css('background-color', '#04AA6D');
   document.getElementById(

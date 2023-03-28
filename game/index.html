@@ -24,10 +24,14 @@
     <link href="https://sebastian-105.vercel.app/assets/css/style.css" rel="stylesheet"/>
     <link href="../assets/css/Sebastian-105.css" rel="stylesheet" />
 <script>
-  var tabiconabc = localStorage.getItem('tabicon105')
+  // Title //
   var localStoragetitle = localStorage.getItem('tabname1234')
-  document.title = localStoragetitle
-  $("link[rel*='icon']").attr("href", tabiconabc);
+  document.title = localStoragetitle;
+  // Icon //
+  let tabiconabc = localStorage.getItem('tabicon105');
+setTimeout(() => {
+$("link[rel*='icon']").attr("href", tabiconabc);
+}, 1);
 </script>
   </head>
 

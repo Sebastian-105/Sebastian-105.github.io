@@ -16,16 +16,16 @@
 <link rel="stylesheet" href="../../assets/css/Sebastian-105.css">
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel='icon' href='' />
+<link rel='icon'/>
 <script>
   // Title //
   var localStoragetitle = localStorage.getItem('tabname1234')
   document.title = localStoragetitle;
   // Icon //
   let tabiconabc = localStorage.getItem('tabicon105');
-  jQuery(function($) {
-    $("link[rel*='icon']").attr("href", tabiconabc);
-    });
+setTimeout(() => {
+$("link[rel*='icon']").attr("href", tabiconabc);
+}, 1);
 </script>
 </head>
 <body onload="functiona()">
@@ -41,6 +41,7 @@ $(function(){
     <input type="button" style="color:white" value="Edit Title" onclick="buttonCode()" class="submitButton">
     <input type="button" style="color:white" value="Reset Title" onclick="resettabname()"  id ="reset" class="submitButton">
     <input type="button" style="color:white; width:150px;" value="Edit Icon/favicon" onclick="tabicon()" class="submitButton">
+<input type="button" style="color:white; width:150px;" value="reset settings" onclick="localStorage.clear()" class="submitButton">
   </form>
   <copyalertcorner  style="  display:none;" class="alertcorner" id="copyalertcorner">Sebastian-105</copyalertcorner>
 <!-- Next Setting --> <br><br><br>  
