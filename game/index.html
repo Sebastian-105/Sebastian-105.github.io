@@ -24,14 +24,10 @@
     <link href="https://sebastian-105.vercel.app/assets/css/style.css" rel="stylesheet"/>
     <link href="../assets/css/Sebastian-105.css" rel="stylesheet" />
 <script>
-  // Title //
+  var tabiconabc = localStorage.getItem('tabicon105')
   var localStoragetitle = localStorage.getItem('tabname1234')
-  document.title = localStoragetitle;
-  // Icon //
-  let tabiconabc = localStorage.getItem('tabicon105');
-setTimeout(() => {
-$("link[rel*='icon']").attr("href", tabiconabc);
-}, 1);
+  document.title = localStoragetitle
+  $("link[rel*='icon']").attr("href", tabiconabc);
 </script>
   </head>
 
@@ -98,31 +94,8 @@ $("link[rel*='icon']").attr("href", tabiconabc);
     <div class="spacing"></div>
     <footer class="footer" style="text-align: center;"><img src="./105.png" style="width:35px; height:35px;border-radius: 50%;">  &copy; 2022 - 2023 Sebastian-105, DanyangXu77. <a style="padding-left: 50px;" href="https://github.com/Sebastian-105">@Sebastian-105</a> ~ <a href="https://github.com/DanyangXu77">@DanyangXu77</a> ~ <a href="https://sebastian-105.github.io/105/terms/index.html">Terms</a> ~ <a href="https://sebastian-105.github.io/105/settings/index.html">Settings</a> ~ <a href="https://sebastian-105.github.io/index.html">Homepage</a> ~ </footer>
     <copyalertcorner  style="  display:none;" class="alertcorner" id="copyalertcorner">aasdfasd</copyalertcorner>
-    <script>
-      if (document.location.href.includes("file:///")) {
-        location.replace('./file.html');
-
-      }
-    </script>
-    <script> //Keybinds ONLY!
-      document.addEventListener("keydown", e => {
-        e.preventDefault();
-        if (e.key === "g" && e.ctrlKey) {
-          window.open("index.html");
-        }else if (e.key === "h" && e.ctrlKey) {
-          window.open("../index.html")
-        } else if (e.key === "s" && e.ctrlKey) {
-          window.open("../105/settings/index.html")
-        } else if (e.key === "c" && e.ctrlKey) {
-          window.open("../105/chatroom/index.html");
-        } else if (e.key === "b" && e.ctrlKey) {
-          aboutblank_game()
-        }
-       })
-    </script>
     <script src="../assets/js/min.js"></script>
     <script src="./js/index.js"></script>
-    <script defer src="/_vercel/insights/script.js"></script>
     <script src="../assets/lib/jquery.min.js"></script>
     <script src="../assets/js/jQuery.min.js"></script>
     <script src="../assets/js/Sebastian-105.js"></script>
