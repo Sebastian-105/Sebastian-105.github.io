@@ -121,12 +121,12 @@ form {
   background-color: gray;
   border: 0;
   margin-top:22px;
-  font-size: 15px;
+  font-size: 18px;
   text-align: center;
-  padding-left: 10px;
-  padding-right: 10px;
-  height: 40px;
-  width:100px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 50px;
+  width:300px;
 }
 
 input[type=text] {

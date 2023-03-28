@@ -25,7 +25,7 @@
   let tabiconabc = localStorage.getItem('tabicon105');
 setTimeout(() => {
 $("link[rel*='icon']").attr("href", tabiconabc);
-}, 1);
+}, 1000);
 </script>
 </head>
 <body onload="functiona()">
@@ -40,8 +40,8 @@ $(function(){
 </script>
     <input type="button" style="color:white" value="Edit Title" onclick="buttonCode()" class="submitButton">
     <input type="button" style="color:white" value="Reset Title" onclick="resettabname()"  id ="reset" class="submitButton">
-    <input type="button" style="color:white; width:150px;" value="Edit Icon/favicon" onclick="tabicon()" class="submitButton">
-<input type="button" style="color:white; width:150px;" value="reset settings" onclick="localStorage.clear()" class="submitButton">
+    <input type="button" style="color:white" value="Edit Icon/favicon" onclick="tabicon()" class="submitButton">
+<input type="button" style="color:white" value="reset settings" onclick="localStorage.clear()" class="submitButton">
   </form>
   <copyalertcorner  style="  display:none;" class="alertcorner" id="copyalertcorner">Sebastian-105</copyalertcorner>
 <!-- Next Setting --> <br><br><br>  
