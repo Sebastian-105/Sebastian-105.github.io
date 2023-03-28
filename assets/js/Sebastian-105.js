@@ -63,7 +63,7 @@ function settings() {
     console.log('stayed at homepage \n-Sebastian-105');
   }
 }
-let version = 'v2.6.9';
+let version = 'v2.8.9';
 $('#currentverisonasdf').html(version);
 $('body').append("<script src='/assets/js/about-blank.js'>");
 if (location.href.includes('game/c/')) {
