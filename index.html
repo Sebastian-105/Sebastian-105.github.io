@@ -76,9 +76,9 @@ Made by @Sebastian-105 and by @DanyangXu77.
         </div> -->
         <!-- ───────────────Alert Box───────────────-->
         <!-- in order to add an alert box copy. . . -->
-        <div class="alert info" style="display: block">
+        <div class="alert info" style="display: none">
           <div id="tacbox" style="display: block">
-            <input id="terms2" type="checkbox" oninput="terms()" />
+            <input id="terms2" type="checkbox" oninput="terms()" onclick='termslocalstroage()'/>
             <label for="checkbox">By using any URL under this domain, I
               agree to these
               <a href="105/terms/index.html">Terms and Conditions</a>.</label>
@@ -88,25 +88,8 @@ Made by @Sebastian-105 and by @DanyangXu77.
         <!--to create one you can add "success", "info", "warning", after the class alert before the quotation marks -->
 
         <!-- ───────────────Home─────────────── -->
-        <div id="time" title="It's Interactive!" onclick="theexacttime()"></div>
-        <div class="exacttime">
-          <br /><br /><br />
-          <h1 id="thetimeinexacttime"></h1>
-          <div id="exittime">dismiss</div>
-        </div>
-        <script>
-          const hour = new Date().getHours();
-          let seb;
-          if (hour < 12) {
-            seb = "Good Morning";
-          } else if (hour < 17) {
-            seb = "Good Afternoon";
-          }else{
-            seb = "Good Evening";
-          }
-          document.getElementById("time").innerHTML = seb;
+        <div id="time" title="It's Interactive!" style='position: fixed'><time id="therealtime" onclick="username()" ></time><div class="profile"><dropdown id='timedropdown' onclick='window.open("105/settings/index.html")'></dropdown> ~ </div></div>
 
-        </script>
         <!--──────────────── HEADER────────────────-->
         <div id="home">
           <section class="intro">
@@ -202,7 +185,7 @@ Made by @Sebastian-105 and by @DanyangXu77.
             <a class="jQuerytest" href="https://forms.gle/7HRXRmFUnAN8KRDfA" target="_blank">Feedback</a>
           </div>
           <button class="dropdown-btn" title="all my forms">
-            <div class="list">~</div>
+            <div class="list">~</div> 
             Extra links
           </button>
           <div class="dropdown-container">
