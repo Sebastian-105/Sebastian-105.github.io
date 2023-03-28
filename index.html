@@ -40,22 +40,14 @@ Made by @Sebastian-105 and by @DanyangXu77.
     <meta property="og:image" content="./105.png" />
     <meta property="og:description" content="My home page, games, and a live chatroom. | Sebastian-105 | Made with https://github.com">
     <link rel="manifest" href="manifest.json" />
-    <link rel="stylesheet" href="assets/lib/fonts/kings.css" />
-    <link rel="stylesheet" href="assets/lib/fonts/SourceCodePro.css" />
-    <link rel="stylesheet" href="assets/lib/fonts/vollkorn.css" />
     <link rel="stylesheet" href="assets/css/Sebastian-105.css" />
     <link rel="stylesheet" href="assets/lib/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://sebastian-105.vercel.app/assets/lib/fonts/kings.css" />
-    <link rel="stylesheet" href="https://sebastian-105.vercel.app/assets/lib/fonts/SourceCodePro.css" />
-    <link rel="stylesheet" href="https://sebastian-105.vercel.app/assets/lib/fonts/vollkorn.css" />
-    <link rel="stylesheet" href="https://sebastian-105.vercel.app/assets/css/Sebastian-105.css" />
-    <link rel="stylesheet" href="https://sebastian-105.vercel.app/assets/lib/font-awesome.min.css" />
     <link rel="help" href="105/help/index.html" />
     <link rel="license" href="LICENSE" />
     <link rel="icon" href="105.png" style="border-radius: 50%" />
     <title class="title">Sebastian-105</title>
   </head>
-  <body onload="test123451234512345()">
+  <body onload="test123451234512345()" >
     <div class="container" onload="Sebastian105()">
       
       <main>
@@ -88,12 +80,12 @@ Made by @Sebastian-105 and by @DanyangXu77.
         <!--to create one you can add "success", "info", "warning", after the class alert before the quotation marks -->
 
         <!-- ───────────────Home─────────────── -->
-        <div id="time" title="It's Interactive!" style='position: fixed'><time id="therealtime" onclick="username()" ></time><div class="profile"><dropdown id='timedropdown' onclick='window.open("105/settings/index.html")'></dropdown> ~ </div></div>
+        <div id="time" title="It's Interactive!" style='position: fixed; display:block;'><time id="therealtime" onclick="username()" ></time><p style='margin: 3.5px;'></p><div class="profile"><dropdown id='timedropdown' onclick='window.open("105/settings/index.html")'></dropdown></div></div>
 
         <!--──────────────── HEADER────────────────-->
         <div id="home">
           <section class="intro">
-            <h3 id="headerh1" title="The best website out there!!" class="title">
+            <h3 id="headerh1" title="The best website out there!!" class="title" >
               Sebastian-105
               <hr />
               <hr />
@@ -163,16 +155,15 @@ Made by @Sebastian-105 and by @DanyangXu77.
         <!--───────────────Sidenav───────────────-->
         <div class="hr"></div>
 
-        <div class="sidenav">
+        <div class="sidenav" sy>
           <div class="update" title="Whats New?">Version: <version onload="versionname()" id="currentverisonasdf">Loading. . .</version></div><br>
-          <a onclick="settings()" title="Settings">Settings</a>
+          <a onclick="settings()" title="Settings">Settings<badge>Update</badge></a>
           <a onclick="downloadlink()">Download</a>
           <div class="dropdown-container2">
            </div>
-          <a onclick="myFunctiongame()" target="_blank">Offical Games Site</a>
-          <a onclick="Chatroom()" target="_blank">Offical Chatroom</a>
+          <a onclick="myFunctiongame()" target="_blank">Games Site</a>
+          <a onclick="Chatroom()" target="_blank">The Chatroom</a>
           <a onclick="blocked()" target="_blank" title="click this in advance">Blocked?</a>
-          <a class="jQuerytest" onclick='aboutblank()' target="_blank">Open site in blank</a>
           <button class="dropdown-btn" title="all my forms">
             Forms
             <div class="list">~</div>
@@ -237,7 +228,7 @@ Made by @Sebastian-105 and by @DanyangXu77.
           <a class="contact" href="https://github.com/Sebastian-105/" target="_blank">Github</a>
           <br />
           Discord: <br />
-          <p onclick="copytoclipboard('Sebastian105#3143')" title="Copy username" style="cursor: pointer;">Sebastian105#3143</p>
+          <p onclick="copytoclipboard('Sebastian105#3143')" title="Copy username" style="cursor: pointer;font-family: var(--font-family);">Sebastian105#3143</p>
           <copyalertcorner  style="  display:none;" class="alertcorner" id="copyalertcorner">aasdfasd</copyalertcorner>
 
           <br />

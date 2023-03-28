@@ -2,8 +2,8 @@
   --background: #27262b; /*Background-color*/
   --font-color: #fff; 
   --decoration: #00a9e2;
-  --font-family: 'Vollkorn', serif;
-  --font-family2nd: 'Consolas',monospace ;
+  --font-family: 'Consolas',monospace;
+  --font-family2nd: "Vollkorn", serif ;
   --font-family3rd: 'Roboto', serif;
   --secondary-font-color:#fff;
   --font-size:15px;
@@ -30,6 +30,7 @@ dropdown {
 }
 
 danyang {
+  
   font-family: var(--danyang-font-family);
 }
 .corner {
@@ -38,20 +39,24 @@ danyang {
   right: 16px;
   bottom:16px;
   border-radius: 10px;
+  font-family: var(--font-family);
   color:white;
   background-color: #04AA6D;
   display: none;
 }
 .corner.info {
   background-color: #00a9e2;
+  font-family: var(--font-family);
 }
 .corner.danger {
   background-color:#f44336;
+  font-family: var(--font-family);
 }
 /* end */
 space {
   padding:50px;
   margin:50px;
+  font-family: var(--font-family);
 }
 body,html,head {
 	font-family:var(--main-fonts-family);
@@ -62,7 +67,8 @@ body,html,head {
 }
 
 .jQuerytest {
-  margin-right: 10px
+  margin-right: 10px;
+  font-family: var(--font-family2nd);
 }
 
 
@@ -76,6 +82,7 @@ body,html,head {
 
 Sebastian105 {
   border-radius: 5px;
+  font-family: var(--font-family);
   padding: 2.8px;
   margin: 3px;
   text-align: center;
@@ -105,11 +112,12 @@ h3 {
   margin-bottom: 16px;
 }
 
-.badge {
-  float: right;
+badge {
+  margin-left: 5px;
   padding: 2px 5px 2px 5px;
   color: var(--font-color);
   border-radius: 7px;
+  font-family: var(--font-family2nd);
   background-color: red;
 }
 
@@ -272,7 +280,7 @@ h3 {
   font-style: italic;
   margin: 0px;
   width: 100%;
-  left: -10%;
+  left: 75%;
   font-weight: bold;
   border-color: white;
 }
@@ -314,6 +322,7 @@ p {
   position: fixed;
   z-index: 105;
   top: 0;
+  font-family: var(--font-family);
   left: 0;
   background-color: black;
   padding-top: 0px;
@@ -334,7 +343,7 @@ p {
   outline: none;
   cursor: pointer;
   outline: none;
-  font-family:var(--font-family);
+  font-family: var(--font-family2nd);
   border-radius: 0px;
 }
 
@@ -377,11 +386,11 @@ p {
 .fa-caret-down {
   float: right;
   padding-right: 8px;
-  font-family:var(--font-family);
+  font-family: var(--font-family2nd);
 }
 
 .twilight-mode {
-	--font-color:
+	--font-color:white;
   background-color:#070180;
 }
 
@@ -749,6 +758,8 @@ h3 {
   justify-content: center;
   text-align: center;
   color: var(--font-color);
+  font-family: var(--font-family2nd);
+
 }
 
 #projects h3 {
@@ -756,7 +767,7 @@ h3 {
 }
 
 #projects p {
-  font-family: var(--font-family);
+  font-family: var(--font-family2nd);
   font-size: 1.2rem;
   padding: 10px;
 }
@@ -787,7 +798,7 @@ h3 {
   padding: 10px 5px;
   font-size: 1rem;
   color: var(--font-color);
-  font-family: var(--font-family);
+  font-family: var(--font-family2nd);
   cursor: pointer;
 }
 
@@ -847,16 +858,6 @@ h3 {
        footer
 ──────────────────*/
 
-.footer {
-  top:50px;
-  color: var(--font-color);
-  font-size: 1.2rem;
-  line-height: 40px;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  background-color: var(--background);
-}
 .footer.offline {
   background-color: #f44336;
 }
@@ -1511,6 +1512,14 @@ GAME STYLE/CSS
    margin:50px;
  }
  .footer {
+   top:50px;
+  color: var(--font-color);
+  font-size: 1.2rem;
+  line-height: 40px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background);
    color:white;
    border:solid;
    border-left-width:0px;
