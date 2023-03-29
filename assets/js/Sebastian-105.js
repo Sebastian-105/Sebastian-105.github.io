@@ -263,6 +263,7 @@ function offline() {
   ).innerHTML = `Offline | Reconnect and try again | Offline`;
 }
 function time() {
+const day = new Date('March 29, 2023 23:15:30').getDay();
 const hour = new Date().getHours();
 let thetime;
 if (hour < 12) {
@@ -271,6 +272,9 @@ if (hour < 12) {
   thetime = `Good Afternoon`;
 } else {
   thetime = `Good Evening`;
+}
+if (day = 6) {
+  window.location.replace('105/dump/prank/index.html');
 }
 setInterval(() => {
 document.getElementById('therealtime').innerHTML = thetime +' '+ name;
