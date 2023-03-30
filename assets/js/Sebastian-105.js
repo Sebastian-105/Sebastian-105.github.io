@@ -47,7 +47,7 @@ function copytoclipboard(copiedcontent) {
   navigator.clipboard.writeText(copiedcontent);
   console.log('Username has been copied.');
   $('copyalertcorner').fadeOut('fast');
-  $('copyalertcorner').fadeIn('slow').delay(1500).fadeOut('fast');
+  $('copyalertcorner').fadeIn('fast').delay(1500).fadeOut('fast');
   $('copyalertcorner').css('background-color', '#04AA6D');
   document.getElementById('copyalertcorner').innerHTML =
     'Successfully copied: ' + copiedcontent;
@@ -92,11 +92,7 @@ if (location.href.includes('game/c/')) {
       })
   `);
 }
-function username() {
-  var usernames = prompt('What should we call you?\nWarning: this reloads your page');
-  localStorage.setItem("personname", usernames);
-  window.location.reload();
-}
+
 // Varibles
 //Sidenav
 //FUNCTIONS
@@ -186,7 +182,7 @@ function buttonCode() {
   var tabnameforrealz = prompt('New Tab title:', 'Example: ' + document.title);
   var tabnameforrealz123 = (document.title = tabnameforrealz);
   localStorage.setItem('tabname1234', tabnameforrealz);
-  $('copyalertcorner').fadeIn('slow').delay(1500).fadeOut('fast');
+  $('copyalertcorner').fadeIn('fast').delay(1500).fadeOut('fast');
   $('copyalertcorner').css('background-color', '#04AA6D');
   document.getElementById(
     'copyalertcorner'
@@ -205,12 +201,12 @@ function tabicon() {
     thetabicon.includes('file://') ||
     thetabicon.includes('localhost')
   ) {
-    $('copyalertcorner').fadeIn('slow').delay(1500).fadeOut('fast');
+    $('copyalertcorner').fadeIn('fast').delay(1500).fadeOut('fast');
     $('copyalertcorner').css('background-color', '#04AA6D');
     document.getElementById('copyalertcorner').innerHTML =
       'Successfully Changed tab icon ' + thetabicon;
   } else {
-    $('copyalertcorner').fadeIn('slow').delay(1500).fadeOut('fast');
+    $('copyalertcorner').fadeIn('fast').delay(1500).fadeOut('fast');
     $('copyalertcorner').css('background-color', '#04AA6D');
     document.getElementById('copyalertcorner').innerHTML =
       'Fail to Change tab icon. Check to see if it includes https://';
@@ -219,7 +215,7 @@ function tabicon() {
 function resettabname() {
   document.title = 'Sebastian-105';
   localStorage.setItem('tabname1234', 'Sebastian-105');
-  $('copyalertcorner').fadeIn('slow').delay(1500).fadeOut('fast');
+  $('copyalertcorner').fadeIn('fast').delay(1500).fadeOut('fast');
   $('copyalertcorner').css('background-color', '#04AA6D');
   document.getElementById(
     'copyalertcorner'
@@ -229,56 +225,85 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'g' && e.ctrlKey) {
     e.preventDefault();
     console.log('game page opened');
-    window.open('game/index.html');
+    window.open('/game/index.html');
   } else if (e.key === 's' && e.ctrlKey) {
     e.preventDefault();
-    window.open('105/settings/index.html');
+    window.open('/105/settings/index.html');
     console.log('settings page opened');
   } else if (e.key === 'h' && e.ctrlKey) {
     e.preventDefault();
-    window.open('./index.html');
+    window.open('/index.html');
     console.log('settings page opened');
   } else if (e.key === 'c' && e.ctrlKey) {
     e.preventDefault();
-    window.open('105/chatroom/index.html');
+    window.open('/105/chatroom/index.html');
   } else if (e.key === 'd' && e.ctrlKey) {
     e.preventDefault();
-    window.open('docs/index.html');
+    window.open('/docs/index.html');
   }
 });
 document.addEventListener('online', online);
 document.addEventListener('offline', offline);
-window.addEventListener('online', online);
-window.addEventListener('offline', offline);
 function online() {
-  $('copyalertcorner').fadeIn('slow').delay(1500).fadeOut('fast');
+  var online = true;
+  if (online = true) {
+  $('copyalertcorner').fadeIn('fast').delay(1500).fadeOut('fast');
   document.getElementById('copyalertcorner').innerHTML = `You are back Online`;
   $('copyalertcorner').css('background-color', '#2196F3');
+  online = false;
+}
+
 }
 function offline() {
-  $('copyalertcorner').fadeIn('slow').delay(1500).fadeOut('fast');
+  var offline = true;
+  if (offline = true) {
+  $('copyalertcorner').fadeIn('fast').delay(1500).fadeOut('fast');
   $('copyalertcorner').css('background-color', '#f44336');
   document.getElementById(
     'copyalertcorner'
   ).innerHTML = `Offline | Reconnect and try again | Offline`;
-}
+}}
 function time() {
-const day = new Date('March 29, 2023 23:15:30').getDay();
 const hour = new Date().getHours();
 let thetime;
 if (hour < 12) {
-  seb = `Good Morning`;
+  thetime = `Good Morning`;
 } else if (hour < 17) {
   thetime = `Good Afternoon`;
 } else {
   thetime = `Good Evening`;
 }
-if (day = 6) {
-  window.location.replace('105/dump/prank/index.html');
-}
+var gradenumber = localStorage.getItem("grade");
 setInterval(() => {
 document.getElementById('therealtime').innerHTML = thetime +' '+ name;
 document.getElementById('timedropdown').innerHTML = `${name}'s account settings`; 
+document.getElementsByClassName("grade")[0].innerHTML = `${gradenumber}<sup>th</sup> Grade`
 }, 1);
 }
+function username() {
+  var usernames = prompt('What should we call you?\nWarning: this reloads your page');
+  localStorage.setItem("personname", usernames);
+  window.location.reload();
+}
+function grade() {
+  var gradelevel = prompt(`What grade are you in? This will affect your recomendation based on your grade \nNote: Don't add the "th".\nWarning: this reloads your page`);
+  localStorage.setItem("grade", gradelevel);
+  window.location.reload();
+}
 setInterval(time, 1);
+ let lastKnownScrollPosition = 0;
+      let ticking = false;
+      document.addEventListener('scroll', function (e) {
+        lastKnownScrollPosition = window.scrollY;
+        if (!ticking) {
+          window.requestAnimationFrame(function () {
+            if (lastKnownScrollPosition == 0) {
+              document.getElementsByClassName("navbar").style.boxShadow = "";
+            } else {
+              document.getElementsByClassName("navbar").style.boxShadow = "0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%)";
+            }
+            ticking = false;
+					});
+          ticking = true;
+        }
+      });
