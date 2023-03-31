@@ -15,10 +15,9 @@ fetch('./games.json')
     // Loop through each game and create a new game element for it
     games.forEach((game) => {
       const game105 = document.createElement('div');
-      game105.className = '#game';
+      game105.className = 'game-box';
       game105.innerHTML = `<!-- ${game.name} -->
-      <div class="game-box">
-        <div class="a">
+        <div class="a" style="font-family: 'Consolas', monospace;">
           <div class="banner" style='background-image: linear-gradient(#555, #282828);'>
             <seb><a class="classText" href="c/${game.root}index.html" style="color:white;" target="_blank" rel="noopener noreferrer" onclick='console.log("Clicked on ${game.name}")'>
               <div class="main">${game.name}</div>
@@ -33,7 +32,6 @@ fetch('./games.json')
           </div>
           <div class="icon">
            
-          </div>
       </div>
       </div>`;
       gamesContainer.appendChild(game105);
