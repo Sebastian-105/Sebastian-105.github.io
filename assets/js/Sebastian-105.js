@@ -235,7 +235,6 @@ function resettabname() {
 }
 document.addEventListener('keydown', (e) => {
   if (e.key === 'g' && e.ctrlKey) {
-    e.preventDefault();
     console.log('game page opened');
     window.open('game/index.html');
   } else if (e.key === 's' && e.ctrlKey) {
