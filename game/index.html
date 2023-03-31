@@ -20,14 +20,18 @@
     <meta content="Games | Sebastian-105" property="og:title" />
     <meta content="The better unblocked games website." property="og:description" />
     <meta content="105.png" property="og:image" />
-    <link rel="icon"  href="105.png"/>
     <link href="https://sebastian-105.vercel.app/assets/css/style.css" rel="stylesheet"/>
     <link href="../assets/css/Sebastian-105.css" rel="stylesheet" />
+    <link rel='icon'/>
 <script>
-  var tabiconabc = localStorage.getItem('tabicon105')
+  // Title //
   var localStoragetitle = localStorage.getItem('tabname1234')
-  document.title = localStoragetitle
-  $("link[rel*='icon']").attr("href", tabiconabc);
+  document.title = localStoragetitle;
+  // Icon //
+  let tabiconabc = localStorage.getItem('tabicon105');
+setTimeout(() => {
+$("link[rel*='icon']").attr("href", tabiconabc);
+}, 1000);
 </script>
   </head>
 
