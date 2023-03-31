@@ -40,22 +40,14 @@ Made by @Sebastian-105 and by @DanyangXu77.
     <meta property="og:image" content="./105.png" />
     <meta property="og:description" content="My home page, games, and a live chatroom. | Sebastian-105 | Made with https://github.com">
     <link rel="manifest" href="manifest.json" />
-    <link rel="stylesheet" href="assets/lib/fonts/kings.css" />
-    <link rel="stylesheet" href="assets/lib/fonts/SourceCodePro.css" />
-    <link rel="stylesheet" href="assets/lib/fonts/vollkorn.css" />
     <link rel="stylesheet" href="assets/css/Sebastian-105.css" />
     <link rel="stylesheet" href="assets/lib/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://sebastian-105.vercel.app/assets/lib/fonts/kings.css" />
-    <link rel="stylesheet" href="https://sebastian-105.vercel.app/assets/lib/fonts/SourceCodePro.css" />
-    <link rel="stylesheet" href="https://sebastian-105.vercel.app/assets/lib/fonts/vollkorn.css" />
-    <link rel="stylesheet" href="https://sebastian-105.vercel.app/assets/css/Sebastian-105.css" />
-    <link rel="stylesheet" href="https://sebastian-105.vercel.app/assets/lib/font-awesome.min.css" />
     <link rel="help" href="105/help/index.html" />
     <link rel="license" href="LICENSE" />
     <link rel="icon" href="105.png" style="border-radius: 50%" />
     <title class="title">Sebastian-105</title>
   </head>
-  <body onload="test123451234512345()">
+  <body onload="test123451234512345()" >
     <div class="container" onload="Sebastian105()">
       
       <main>
@@ -76,20 +68,24 @@ Made by @Sebastian-105 and by @DanyangXu77.
         </div> -->
         <!-- ───────────────Alert Box───────────────-->
         <!-- in order to add an alert box copy. . . -->
+        <div class="alert info" style="display: none">
+          <div id="tacbox" style="display: block">
+            <input id="terms2" type="checkbox" oninput="terms()" onclick='termslocalstroage()'/>
+            <label for="checkbox">By using any URL under this domain, I
+              agree to these
+              <a href="105/terms/index.html">Terms and Conditions</a>.</label>
+          </div>
+        </div>
 
         <!--to create one you can add "success", "info", "warning", after the class alert before the quotation marks -->
 
         <!-- ───────────────Home─────────────── -->
-        <div id="time" title="It's Interactive!" onclick="theexacttime()"></div>
-        <div class="exacttime">
-          <br /><br /><br />
-          <h1 id="thetimeinexacttime"></h1>
-          <div id="exittime">dismiss</div>
-        </div>
+        <div id="time" title="It's Interactive!" style='position: fixed; display:block;'><time id="therealtime" onclick="username()" ></time><p style='margin: 3.5px;'></p><div class="profile"><dropdown id='timedropdown' onclick='window.open("105/settings/index.html")'></dropdown></div></div>
+
         <!--──────────────── HEADER────────────────-->
         <div id="home">
           <section class="intro">
-            <h3 id="headerh1" title="The best website out there!!" class="title">
+            <h3 id="headerh1" title="The best website out there!!" class="title" >
               Sebastian-105
               <hr />
               <hr />
@@ -232,7 +228,7 @@ Made by @Sebastian-105 and by @DanyangXu77.
           <a class="contact" href="https://github.com/Sebastian-105/" target="_blank">Github</a>
           <br />
           Discord: <br />
-          <p onclick="copytoclipboard('Sebastian105#3143')" title="Copy username" style="cursor: pointer;">Sebastian105#3143</p>
+          <p onclick="copytoclipboard('Sebastian105#3143')" title="Copy username" style="cursor: pointer;font-family: var(--font-family);">Sebastian105#3143</p>
           <copyalertcorner  style="  display:none;" class="alertcorner" id="copyalertcorner">aasdfasd</copyalertcorner>
 
           <br />
@@ -271,34 +267,6 @@ Made by @Sebastian-105 and by @DanyangXu77.
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <script src="assets/js/react.js"></script>
     <script src="https://icon105.netlify.app/Sebastian105.js" defer></script>
-    <script>
-      
-    </script>
-    <script> //Keybinds ONLY!
-      document.addEventListener("keydown", e => {
-        e.preventDefault();
-        if (e.key === "f" && e.ctrlKey) {
-      document.requestFullscreen();}
-        if (e.key === "g" && e.ctrlKey) {
-        	console.log("game page opened");
-          window.open("game/index.html");
-        } else if (e.key === "s" && e.ctrlKey) {
-          window.open("105/settings/index.html");
-        	console.log("settings page opened");
-        } else if (e.key === "h" && e.ctrlKey) {
-          window.open("./index.html");
-        	console.log("settings page opened");
-        } else if (e.key === "c" && e.ctrlKey) {
-          window.open("105/chatroom/index.html");
-        } else if (e.key === "d" && e.ctrlKey) {
-          window.open("docs/index.html"); }
-          else if (e.key === "b" && e.ctrlKey) {
-          aboutblank_home();
-        }
-      })
-  
-      
-    </script>
   </body>
 
 </html>
