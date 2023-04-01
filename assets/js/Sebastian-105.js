@@ -31,15 +31,6 @@ function closesidenav() {
   $('#time').hide('slow');
   console.log('Closed sidenav');
 }
-function tabfocus() {
-  if (location.href.include('game/c')) {
-    if (document.hasFocus()) {
-      document.title = tabname1234;
-    } else {
-      document.title = 'New Tab';
-    }
-  }
-}
 setInterval(tabfocus, 1);
 var examplelink = location;
 var author = 'Sebastian-105';
