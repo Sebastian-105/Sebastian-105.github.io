@@ -36,6 +36,12 @@
     "img":"./105.png"
   },
   {
+    "name":"iAsk.ai",
+    "root":"ai/",
+    "sub":"Like ChatGPT",
+    "img":"./105.png"
+  },
+  {
     "name":"Bitlife",
     "root":"bitlife/",
     "sub":"Bitlife, thats all",
