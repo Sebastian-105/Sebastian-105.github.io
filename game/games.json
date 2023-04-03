@@ -1,302 +1,296 @@
 [
   {
     "name":"Sebastian-105",
-    "root":"/",
+    "root":"c//",
     "sub":"Homepage",
     "img":"./105.png"
   },
   {
-    "name":"My Spotfy Playlist",
-    "root":"/",
-    "sub":"",
-    "img":"./105.png"
-  },
-  {
     "name":"1v1.lol",
-    "root":"1v1lol/",
+    "root":"c/1v1lol/",
     "sub":"Fortnite but bad",
     "img":"./105.png"
   },
   {
     "name":"Slope",
-    "root":"Slope/",
+    "root":"c/Slope/",
     "sub":"S P E E D",
     "img":"./105.png"
   },
   {
     "name":"2048",
-    "root":"2048/",
+    "root":"c/2048/",
     "sub":"Can you get the 2048?",
     "img":"./105.png"
   },
   {
     "name":"Appel",
-    "root":"Appel/",
+    "root":"c/Appel/",
     "sub":"not apple",
     "img":"./105.png"
   },
   {
     "name":"iAsk.ai",
-    "root":"ai/",
+    "root":"https://iask.ai/",
     "sub":"Like ChatGPT",
     "img":"./105.png"
   },
   {
     "name":"Bitlife",
-    "root":"bitlife/",
+    "root":"c/bitlife/",
     "sub":"Bitlife, thats all",
     "img":"./105.png"
   },
   {
     "name":"Chess",
-    "root":"chess/",
+    "root":"c/chess/",
     "sub":"Impossible mode",
     "img":"./105.png"
   },
   {
     "name":"Cookie Clicker",
-    "root":"CookieClicker/",
+    "root":"c/CookieClicker/",
     "sub":"Buy those grandmas",
     "img":"./105.png"
   },
   {
     "name":"Copter.io",
-    "root":"copter/",
+    "root":"c/copter/",
     "sub":"Only works at home",
     "img":"./105.png"
   },
   {
     "name":"Crossy Road",
-    "root":"CrossyRoad/",
+    "root":"c/CrossyRoad/",
     "sub":"Cross the road.",
     "img":"./105.png"
   },
   {
     "name":"Cut The Rope",
-    "root":"CutTheRope/",
+    "root":"c/CutTheRope/",
     "sub":"Is this thing a frog?",
     "img":"./105.png"
   },
   {
     "name":"Doctor Acorn 3",
-    "root":"DoctorAcorn3/",
+    "root":"c/DoctorAcorn3/",
     "sub":"Other 2 dr. acorns are dead (maybe)",
     "img":"./105.png"
   },
   {
     "name":"Doodle Jump",
-    "root":"DoodleJump/",
+    "root":"c/DoodleJump/",
     "sub":"I have no idea what this is",
     "img":"./105.png"
   },
   {
     "name":"DriftBoss",
-    "root":"DriftBoss/",
+    "root":"c/DriftBoss/",
     "sub":"V R O O M",
     "img":"./105.png"
   },
   {
     "name":"Duck Life 4",
-    "root":"DuckLife4/",
+    "root":"c/DuckLife4/",
     "sub":"That one duck game",
     "img":"./105.png"
   },
   {
     "name":"Eaglercraft [1.5.2]",
-    "root":"eaglercraft/",
+    "root":"c/eaglercraft/",
     "sub":"Minecraft 1.5.2",
     "img":"./105.png"
   },
   {
     "name":"EaglercraftX [1.8.8]",
-    "root":"eaglercraft-1.8/",
+    "root":"c/eaglercraft-1.8/",
     "sub":"Minecraft 1.8.8",
     "img":"./105.png"
   },
   {
     "name":"Flappy Bird",
-    "root":"FlappyBird",
+    "root":"c/FlappyBird",
     "sub":"B I R B",
     "img":"./105.png"
   },
   {
     "name":"First Person Tetris",
-    "root":"FPTetris/",
+    "root":"c/FPTetris/",
     "sub":"Tetris but first person",
     "img":"./105.png"
   },
   {
     "name":"Game Boy Emulator",
-    "root":"gba/",
+    "root":"c/gba/",
     "sub":"Emulatar? Emalator? huh?",
     "img":"./105.png"
   },
   {
     "name":"Geometry Dash",
-    "root":"GeometryDash/",
+    "root":"c/GeometryDash/",
     "sub":"Stratch Version",
     "img":"./105.png"
   },
   {
     "name":"Getting Over It",
-    "root":"GettingOverIt/",
+    "root":"c/GettingOverIt/",
     "sub":"${game desc. here}",
     "img":"./105.png"
   },
   {
     "name":"Happy Wheels",
-    "root":"HappyWheels/",
+    "root":"c/HappyWheels/",
     "sub":"An old game",
     "img":"./105.png"
   },
   {
     "name":"Hextris",
-    "root":"hextris/",
+    "root":"c/hextris/",
     "sub":"hexagon",
     "img":"./105.png"
   },
   {
     "name":"Jetpack Joyride",
-    "root":"JetpackJoyride/",
+    "root":"c/JetpackJoyride/",
     "sub":"green little shooter flying",
     "img":"./105.png"
   },
   {
     "name":"Krunker.io",
-    "root":"krunker/",
+    "root":"c/krunker/",
     "sub":"doesn't work anymore",
     "img":"./105.png"
   },
   {
     "name":"Lows Adventures 2",
-    "root":"LowsAdventures2/",
+    "root":"c/LowsAdventures2/",
     "sub":"wheres #1?",
     "img":"./105.png"
   },
   {
     "name":"Ping pong but bad",
-    "root":"nerd/",
+    "root":"c/nerd/",
     "sub":"kinda bad",
     "img":"./105.png"
   },
   {
     "name":"Pacman",
-    "root":"pacman/",
+    "root":"c/pacman/",
     "sub":"Nom Nom eat em up!",
     "img":"./105.png"
   },
   {
     "name":"Paper.io",
-    "root":"paperio/",
+    "root":"c/paperio/",
     "sub":"bots",
     "img":"./105.png"
   },
   {
     "name":"proxy",
-    "root":"proxy/",
+    "root":"c/proxy/",
     "sub":"Used to unblock stuff",
     "img":"./105.png"
   },
   {
     "name":"RetroBowl",
-    "root":"retrobowl/",
+    "root":"c/retrobowl/",
     "sub":"Pixelated (american) football",
     "img":"./105.png"
   },
   {
     "name":"Relic Runway",
-    "root":"RR/",
+    "root":"c/RR/",
     "sub":"Subway Surfers but different",
     "img":"./105.png"
   },
   {
     "name":"Run 3",
-    "root":"Run3/",
+    "root":"c/Run3/",
     "sub":"RUN! Little gray dude RUN!",
     "img":"./105.png"
   },
   {
     "name":"Slinguin",
-    "root":"Slinguin/",
+    "root":"c/Slinguin/",
     "sub":"what is this?",
     "img":"./105.png"
   },
   {
     "name":"Solitaire",
-    "root":"solitaire/",
+    "root":"c/solitaire/",
     "sub":"Your depressed?",
     "img":"./105.png"
   },
   {
     "name":"Stack",
-    "root":"stack/",
+    "root":"c/stack/",
     "sub":"A mobile game",
     "img":"./105.png"
   },
   {
     "name":"Stickman Hook",
-    "root":"stickman/",
+    "root":"c/stickman/",
     "sub":"Test ur skills, are you spider-man.",
     "img":"./105.png"
   },
   
   {
     "name":"Stick Ninja",
-    "root":"StickNinja/",
+    "root":"c/StickNinja/",
     "sub":"A stickman thats a ninja",
     "img":"./105.png"
   },
   {
     "name":"Subway Surfers",
-    "root":"SubwaySurfers/",
+    "root":"c/SubwaySurfers/",
     "sub":"A mobile game",
     "img":"./105.png"
   },
   {
     "name":"Sugar Sugar 3",
-    "root":"SugarSugar3/",
+    "root":"c/SugarSugar3/",
     "sub":"wht is this?",
     "img":"./105.png"
   },
   {
     "name":"T-rex game",
-    "root":"t-rex/",
+    "root":"c/t-rex/",
     "sub":"made by google",
     "img":"./105.png"
   },
   {
     "name":"Temple Run",
-    "root":"TempleRun/",
+    "root":"c/TempleRun/",
     "sub":"It's subway surfers, that's it",
     "img":"./105.png"
   },
   {
     "name":"Trimps",
-    "root":"trimps/",
+    "root":"c/trimps/",
     "sub":"idk what this is",
     "img":"./105.png"
   },
   {
     "name":"Wordle",
-    "root":"Wordle/",
+    "root":"c/Wordle/",
     "sub":"Changes daily",
     "img":"./105.png"
   },
   {
     "name":"Worlds Hardest Game",
-    "root":"worlds-hardest-game/",
+    "root":"c/worlds-hardest-game/",
     "sub":"YOU WILL RAGE QUIT",
     "img":"./105.png"
   },
   {
     "name":"Worlds Hardest Game ×2",
-    "root":"worlds-hardest-game-2/",
+    "root":"c/worlds-hardest-game-2/",
     "sub":"YOU WILL RAGE QUIT ×2",
     "img":"./105.png"
   },
   {
     "name":"Zombsroyale.io",
-    "root":"Zombsroyale-multiplayer/",
+    "root":"c/Zombsroyale-multiplayer/",
     "sub":"100 Player 2D Real-Time Battle Royale",
     "img":"./105.png"
   }

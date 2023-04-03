@@ -19,7 +19,7 @@ fetch('./games.json')
       game105.innerHTML = `<!-- ${game.name} -->
         <div class="a" style="font-family: 'Consolas', monospace;">
           <div class="banner" style='background-image: linear-gradient(#555, #282828);'>
-            <seb><a class="classText" href="c/${game.root}index.html" style="color:white;" target="_blank" rel="noopener noreferrer" onclick='console.log("Clicked on ${game.name}")'>
+            <seb><a class="classText" href="${game.root}" style="color:white;" target="_blank" rel="noopener noreferrer" onclick='console.log("Clicked on ${game.name}")'>
               <div class="main">${game.name}</div>
               <div class="sub">${game.sub}</div>
             </a>
