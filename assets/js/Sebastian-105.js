@@ -19,9 +19,11 @@ Made by @Sebastian-105 (https://github.com).
 Here is most of the javascript for "sebastian-105"
 */
 var name = localStorage.getItem('personname');
-var tabicon105 = localStorage.getItem(
-  'tabicon105');
-var tabname1234 = localStorage.getItem('tabname1234');
+var tabicon105 = localStorage.setItem(
+  'tabicon105',
+  `https://sebastian-105.vercel.app/105.png`
+);
+var tabname1234 = localStorage.setItem('tabname1234', 'Sebastian-105');
 function Sebastian105() {
   window.addEventListener('offline', () => $('offline').fadeIn('slow'));
   document.getElementById('OfflineMode').innerHTML = 'Offline';
@@ -31,7 +33,6 @@ function closesidenav() {
   $('#time').hide('slow');
   console.log('Closed sidenav');
 }
-setInterval(tabfocus, 1);
 var examplelink = location;
 var author = 'Sebastian-105';
 
@@ -316,7 +317,7 @@ if (
   $('body').append(`<script>
   //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% | Title | %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
   var localStoragetitle = localStorage.getItem('tabname1234')
-  setTimeout(() => {
+  setTimeout(() => { 
   document.title = localStoragetitle; 
   }, 105);
   //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% | Icon | %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
