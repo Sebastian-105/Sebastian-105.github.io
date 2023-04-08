@@ -143,10 +143,10 @@
     <th>Similar to ChatGPT</th><!-- Extra details-->
   </tr>
   <tr>
-    <th></th><!-- Update version-->
-    <th></th><!-- Date changed (mm/dd/yyyy)-->
-    <th></th><!-- Thing changed-->
-    <th></th><!-- Extra details-->
+    <th>v2.9.10</th><!-- Update version-->
+    <th>04/07/2023</th><!-- Date changed (mm/dd/yyyy)-->
+    <th>Fixed RetroBowl</th><!-- Thing changed-->
+    <th>Bug Fix</th><!-- Extra details-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
