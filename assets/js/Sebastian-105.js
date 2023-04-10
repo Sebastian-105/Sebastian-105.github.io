@@ -19,8 +19,8 @@ Made by @Sebastian-105 (https://github.com).
 Here is most of the javascript for the "sebastian-105" website
 */
 var name = localStorage.getItem('personname');
-var tabicon105 = localStorage.setItem('tabicon105', `/105.png`);
-var tabname1234 = localStorage.setItem('tabname1234', 'Sebastian-105');
+var tabicon105 = localStorage.getItem('tabicon105');
+var tabname1234 = localStorage.getItem('tabname1234');
 function Sebastian105() {
   window.addEventListener('offline', () => $('offline').fadeIn('slow'));
   document.getElementById('OfflineMode').innerHTML = 'Offline';
@@ -206,6 +206,9 @@ document.addEventListener('keydown', (e) => {
   } else if (e.key === 'c' && e.ctrlKey) {
     e.preventDefault();
     window.open('/105/chatroom/index.html');
+  } else if (e.key === 'o' && e.ctrlKey) {
+    e.preventDefault();
+    window.open('https://organization-105.netlify.app/');
   } else if (e.key === 'd' && e.ctrlKey) {
     e.preventDefault();
     window.open('/docs/index.html');
