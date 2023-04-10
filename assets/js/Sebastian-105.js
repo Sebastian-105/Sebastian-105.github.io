@@ -25,11 +25,7 @@ function Sebastian105() {
   window.addEventListener('offline', () => $('offline').fadeIn('slow'));
   document.getElementById('OfflineMode').innerHTML = 'Offline';
 }
-function closesidenav() {
-  $('.sidenav').hide('slow');
-  $('#time').hide('slow');
-  console.log('Closed sidenav');
-}
+
 var examplelink = location;
 var author = 'Sebastian-105';
 

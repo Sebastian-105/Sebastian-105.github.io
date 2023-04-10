@@ -97,9 +97,7 @@ danyang {
 
 /* end */
 space {
-  padding: 50px;
-  margin: 50px;
-  font-family: var(--font-family);
+  margin: 100px;
 }
 
 body,
@@ -593,6 +591,7 @@ h3 {
   display: none;
   cursor: pointer;
 }
+#line1 {width:500px;}#line2{width:500px;}
 
 #opensidenav:hover {
   color: grey;
@@ -601,7 +600,9 @@ h3 {
 
 #closesidenav {
   font-size: 25px;
-  margin-left: 86%;
+  top:16px;
+  left:16px;
+  position: absolute;
   cursor: pointer;
 }
 
