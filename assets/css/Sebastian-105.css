@@ -18,7 +18,6 @@ Made by @Sebastian-105 (https://github.com).
 ───────────────────────────────────────────────────────────────────────────────────────────────────|-->
 Here is most of the CSS for the "sebastian-105" website
 */
-
 /* Varibles */
 :root {
   --background: #27262b;
@@ -37,7 +36,6 @@ Here is most of the CSS for the "sebastian-105" website
 }
 /* Imports */
 @import url('themes.css');
-@import url('mobile.css');
 @import url('../lib/fonts/fonts.css');
 /* Good classes */
 .dark {
