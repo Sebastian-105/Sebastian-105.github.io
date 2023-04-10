@@ -197,10 +197,10 @@ document.addEventListener('keydown', (e) => {
     e.preventDefault();
     window.open('/index.html');
     console.log('settings page opened');
-  } else if (e.key === ',' && e.ctrlKey) {
+  } else if (e.key === ',' && e.altKey) {
     e.preventDefault();
     buttonCode();
-  } else if (e.key === '.' && e.ctrlKey) {
+  } else if (e.key === '.' && e.altKey) {
     e.preventDefault();
     tabicon();
   } else if (e.key === 'c' && e.ctrlKey) {
