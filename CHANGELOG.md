@@ -12,103 +12,103 @@
     <th>Update version v(.major.minor.small/bug fix)</th>
     <th>Date changed (mm/dd/yyyy)</th>
     <th>Thing Changed</th>
-    <th>Extra Details</th>
+    <th>Update type</th>
   </tr>
   <tr>
     <th>v1.0.0</th><!-- Update version-->
     <th>02/08/2023</th><!-- Date changed (mm/dd/yyyy)-->
     <th>First one</th><!-- Thing changed-->
-    <th>First one</th><!-- Extra details-->
+    <th>First one</th><!-- Update type-->
   </tr>
   <tr>
     <th>v1.0.1</th><!-- Update version-->
     <th>02/08/2023</th><!-- Date changed (mm/dd/yyyy)-->
     <th>Added updates</th><!-- Thing changed-->
-    <th>it's in the side bar</th><!-- Extra details-->
+    <th>Feature</th><!-- Update type-->
   </tr>
   <tr>
     <th>v1.0.2</th><!-- Update version-->
     <th>02/08/2023</th><!-- Date changed (mm/dd/yyyy)-->
     <th>fixed the link in 105/updates</th><!-- Thing changed-->
-    <th>N/A</th><!-- Extra details-->
+    <th>Bug Fix</th><!-- Update type-->
   </tr>
   <tr>
     <th>v1.1.1</th><!-- Update version-->
     <th>02/08/2023</th><!-- Date changed (mm/dd/yyyy)-->
     <th>added paper.io</th><!-- Thing changed-->
-    <th>thanks to <a href="https://melvin.cluster.ws">melvin.cluster.ws</a></th><!-- Extra details-->
+    <th>Game Add</th><!-- Update type-->
   </tr>
   <tr>
     <th>v1.1.2</th><!-- Update version-->
     <th>02/10/2023</th><!-- Date changed (mm/dd/yyyy)-->
     <th>Added Keybind for chatroom</th><!-- Thing changed-->
-    <th>shift + c</th><!-- Extra details-->
+    <th>Feature</th><!-- Update type-->
   </tr>
   <tr>
     <th>v1.1.3</th><!-- Update version-->
     <th>02/13/2023</th><!-- Date changed (mm/dd/yyyy)-->
     <th>changed Keybinds</th><!-- Thing changed-->
-    <th><a href="105/keybinds/index.html">links here</a></th><!-- Extra details-->
+    <th>Feature</th><!-- Update type-->
   </tr>
   <tr>
     <th>v1.1.4</th><!-- Update version-->
     <th>02/13/2023</th><!-- Date changed (mm/dd/yyyy)-->
     <th>Added close sidenav</th><!-- Thing changed-->
-    <th>n/a</th><!-- Extra details-->
+    <th>Feature</th><!-- Update type-->
   </tr>
   <tr>
     <th>v1.1.5</th><!-- Update version-->
     <th>02/15/2023</th><!-- Date changed (mm/dd/yyyy)-->
     <th>Edited 404.html</th><!-- Thing changed-->
-    <th>N/A</th><!-- Extra details-->
+    <th>Bug Fix</th><!-- Update type-->
   </tr>
   <tr>
     <th>v1.2.5</th><!-- Update version-->
     <th>02/17/2023</th><!-- Date changed (mm/dd/yyyy)-->
     <th>Added Chess</th><!-- Thing changed-->
-    <th>After long wait</th><!-- Extra details-->
+    <th>Add Game</th><!-- Update type-->
   </tr>
   <tr>
     <th>v1.2.6</th><!-- Update version-->
     <th>02/20/2023</th><!-- Date changed (mm/dd/yyyy)-->
     <th>Added little widget in corner (again)</th><!-- Thing changed-->
-    <th>N/A</th><!-- Extra details-->
+    <th>Feature</th><!-- Update type-->
   </tr>
   <tr>
     <th>v1.3.6</th><!-- Update version-->
     <th>02/20/2023</th><!-- Date changed (mm/dd/yyyy)-->
     <th>Big layout change</th><!-- Thing changed-->
-    <th>(games page only)</th><!-- Extra details-->
+    <th>Semi-Major Update</th><!-- Update type-->
   </tr>
   <tr>
     <th>v1.3.7</th><!-- Update version-->
     <th>02/20/2023</th><!-- Date changed (mm/dd/yyyy)-->
     <th>added <a href="docs/index.html">Docs</a></th><!-- Thing changed-->
-    <th>n/a</th><!-- Extra details-->
+    <th>Feature</th><!-- Update type-->
   </tr>
   <tr>
     <th>v1.3.8</th><!-- Update version-->
     <th>02/21/2023</th><!-- Date changed (mm/dd/yyyy)-->
     <th>Update eaglercraftX</th><!-- Thing changed-->
-    <th>N/A</th><!-- Extra details-->
+    <th>Bug Fix</th><!-- Update type-->
   </tr>
   <tr>
     <th>v1.4.8</th><!-- Update version-->
     <th>02/21/2023</th><!-- Date changed (mm/dd/yyyy)-->
     <th>Added Spacevale</th><!-- Thing changed-->
-    <th>of fixed it, idk</th><!-- Extra details-->
+    <th>Game add</th><!-- Update type-->
   </tr>
   <tr>
     <th>v1.5.8</th><!-- Update version-->
     <th>03/08/2023</th><!-- Date changed (mm/dd/yyyy)-->
     <th>Added Bitlife & GBA</th><!-- Thing changed-->
-    <th><a href="https://github.com/Sebastian-105/Sebastian-105.github.io/releases/tag/v1.5.8">See here for more info</a></th><!-- Extra details-->
+    <th>Game Add x2</th><!-- Update type-->
   </tr>
   <tr>
     <th>v1.6.8</th><!-- Update version-->
     <th>03/09/2023</th><!-- Date changed (mm/dd/yyyy)-->
     <th>Added Stickman hook</th><!-- Thing changed-->
-    <th><a href="https://github.com/Sebastian-105/Sebastian-105.github.io/releases/tag/v1.6.8">See here for more info</a></th><!-- Extra details-->
+    <th>Game Add</th><!-- Update type-->
   </tr>
   <h1> Major Update!!!!!!!</h1>
   <hr>
@@ -116,228 +116,228 @@
     <th>v2.6.8</th><!-- Update version-->
     <th>03/11/2023</th><!-- Date changed (mm/dd/yyyy)-->
     <th>Changed the Games format and how it works</th><!-- Thing changed-->
-    <th><a href="https://github.com/Sebastian-105/Sebastian-105.github.io/releases/tag/v2.6.8">See here for more info</th><!-- Extra details-->
+    <th>Major Update</th><!-- Update type-->
   </tr>
   <tr>
     <th>v2.6.9</th><!-- Update version-->
     <th>03/16/2023</th><!-- Date changed (mm/dd/yyyy)-->
     <th>Fixed slight bug</th><!-- Thing changed-->
-    <th><a href="https://github.com/Sebastian-105/Sebastian-105.github.io/releases/tag/v2.6.9">See here for more info</th><!-- Extra details-->
+    <th>Bug Fix</th><!-- Update type-->
   </tr>
   <tr>
     <th>v2.7.9</th><!-- Update version-->
     <th>03/27/2023</th><!-- Date changed (mm/dd/yyyy)-->
     <th>Added about:blank option on home page and game page</th><!-- Thing changed-->
-    <th>pressing ctrl+b on sites will make it work</th><!-- Extra details-->
+    <th>Feature</th><!-- Update type-->
   </tr>
   <tr>
     <th>v2.8.9</th><!-- Update version-->
     <th>03/28/2023</th><!-- Date changed (mm/dd/yyyy)-->
     <th>Added Name option & Fixed icon change.</th><!-- Thing changed-->
-    <th>Will now know your name if you choose.</th><!-- Extra details-->
+    <th>Feature</th><!-- Update type-->
   </tr>
   <tr>
     <th>v2.9.9</th><!-- Update version-->
     <th>04/03/2023</th><!-- Date changed (mm/dd/yyyy)-->
     <th>Added Ask.ai</th><!-- Thing changed-->
-    <th>Similar to ChatGPT</th><!-- Extra details-->
+    <th>Add Game</th><!-- Update type-->
   </tr>
   <tr>
     <th>v2.9.10</th><!-- Update version-->
     <th>04/07/2023</th><!-- Date changed (mm/dd/yyyy)-->
     <th>Fixed RetroBowl</th><!-- Thing changed-->
-    <th>Bug Fix</th><!-- Extra details-->
+    <th>Bug Fix</th><!-- Update type-->
+  </tr>
+  <tr>
+    <th>v2.10.10</th><!-- Update version-->
+    <th>04/10/2023</th><!-- Date changed (mm/dd/yyyy)-->
+    <th>Added 'open sidenav' button</th><!-- Thing changed-->
+    <th>Feature</th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Extra details-->
+    <th></th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Extra details-->
+    <th></th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Extra details-->
+    <th></th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Extra details-->
+    <th></th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Extra details-->
+    <th></th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Extra details-->
+    <th></th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Extra details-->
+    <th></th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Extra details-->
+    <th></th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Extra details-->
+    <th></th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Extra details-->
+    <th></th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Extra details-->
+    <th></th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Extra details-->
+    <th></th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Extra details-->
+    <th></th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Extra details-->
+    <th></th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Extra details-->
+    <th></th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Extra details-->
+    <th></th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Extra details-->
+    <th></th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Extra details-->
+    <th></th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Extra details-->
+    <th></th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Extra details-->
+    <th></th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Extra details-->
+    <th></th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Extra details-->
+    <th></th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Extra details-->
+    <th></th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Extra details-->
+    <th></th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Extra details-->
+    <th></th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Extra details-->
+    <th></th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Extra details-->
+    <th></th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Extra details-->
+    <th></th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Extra details-->
+    <th></th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Extra details-->
+    <th></th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Extra details-->
-  </tr>
-  <tr>
-    <th></th><!-- Update version-->
-    <th></th><!-- Date changed (mm/dd/yyyy)-->
-    <th></th><!-- Thing changed-->
-    <th></th><!-- Extra details-->
+    <th></th><!-- Update type-->
   </tr>
   </table>

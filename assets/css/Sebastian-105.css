@@ -42,6 +42,12 @@ Here is most of the CSS for the "sebastian-105" website
   background-color: #111;
   color: white;
 }
+.opennav {
+  position: fixed;
+  font-size:25px;
+  left:15px;
+  top:15px;
+}
 .circle {
   border-radius: 50%;
 }
@@ -381,7 +387,7 @@ p {
   left: 0;
   background-color: black;
   padding-top: 0px;
-  opacity: 1;
+  display:none;
 }
 
 /* Style the sidenav links and the dropdown button */
@@ -1845,7 +1851,6 @@ footer {
 
 * {
   font-family: var(--font-family);
-  user-select: none;
 }
 
 html {
