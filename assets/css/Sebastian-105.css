@@ -104,7 +104,7 @@ space {
 body,
 html,
 head {
-  font-family: var(--main-fonts-family);
+  font-family: var(--font-family);
   color: var(--font-color);
   font-size: var(--font-size);
   background-color: var(--background);
@@ -1468,7 +1468,7 @@ path {
 }
 
 .main {
-  font-family: var(--font-family2nd);
+  font-family: var(--font-family);
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.75rem;
@@ -1486,7 +1486,7 @@ path {
 }
 
 .sub {
-  font-family: var(--font-family2nd);
+  font-family: var(--font-family);
   font-size: 0.95rem;
   font-weight: 400;
   line-height: 1.75rem;
