@@ -34,25 +34,35 @@ Here is most of the CSS for the "sebastian-105" website
   --font-color2nd: white;
   --danyang-font-family: 'Google Sans';
 }
+
 /* Imports */
 @import url('themes.css');
 @import url('../lib/fonts/fonts.css');
 @import url('https://fonts.googleapis.com/css?family=Vollkorn');
+
 /* Good classes */
 .dark {
   background-color: #111;
   color: white;
 }
+
 .opennav {
   position: fixed;
-  font-size:25px;
-  left:15px;
-  cursor:pointer;
-  top:15px;
+  font-size: 25px;
+  left: 15px;
+  cursor: pointer;
+  top: 15px;
 }
+
+.opennav:hover {
+  color: grey;
+  transform: scale(1.05);
+}
+
 .circle {
   border-radius: 50%;
 }
+
 /* little alert in corner */
 .corner .iconcorner {
   float: left;
@@ -335,13 +345,14 @@ badge {
   font-weight: bold;
   border-color: white;
 }
+
 .grade {
   margin-top: 20px;
   background-color: black;
   border-radius: 10px;
   padding: 5px;
-  border-width: 5px; 
-  width: 200px; 
+  border-width: 5px;
+  width: 200px;
 }
 
 p1 {
@@ -387,7 +398,7 @@ p {
   left: 0;
   background-color: black;
   padding-top: 0px;
-  display:none;
+  display: none;
 }
 
 /* Style the sidenav links and the dropdown button */
@@ -591,7 +602,14 @@ h3 {
   display: none;
   cursor: pointer;
 }
-#line1 {width:500px;}#line2{width:500px;}
+
+#line1 {
+  width: 500px;
+}
+
+#line2 {
+  width: 500px;
+}
 
 #opensidenav:hover {
   color: grey;
@@ -600,8 +618,8 @@ h3 {
 
 #closesidenav {
   font-size: 25px;
-  top:16px;
-  left:16px;
+  top: 16px;
+  left: 16px;
   position: absolute;
   cursor: pointer;
 }
