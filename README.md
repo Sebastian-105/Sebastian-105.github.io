@@ -53,8 +53,7 @@ Once you find all these stuff you are free to go! :)
 Just for reference this is v2
 
 # Contributers:
-<a href="https://github.com/Sebastian-105"><img src="https://sebastian-105.vercel.app/105.round.png" style=" width:50px; height:50px;"></a>
-<a href="https://github.com/DanyangXu77"><img src="https://avatars.githubusercontent.com/u/116617888?v=4" style="border-radius: 50%; width:50px; height:50px;"></a>
+![Contrib](https://contrib.rocks/image?repo=Sebastian-105/Sebastian-105.github.io#)
 
 # Info/Stats
 ![Stargazers repo roster for @3kh0/3kh0.github.io](https://bytecrank.com/nastyox/reporoster/php/stargazersSVG.php?theme=light&user=Sebastian-105&repo=Sebastian-105.github.io)<br />
