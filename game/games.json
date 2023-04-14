@@ -204,6 +204,12 @@
     "img":"./105.png"
   },
   {
+    "name":"Rocket Bot Royale",
+    "root":"c/rocket/",
+    "sub":"2d battle royale with rocket-tanks",
+    "img":"./105.png"
+  },
+  {
     "name":"Run 3",
     "root":"c/Run3/",
     "sub":"RUN! Little gray dude RUN!",

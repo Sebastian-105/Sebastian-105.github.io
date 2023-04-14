@@ -155,10 +155,10 @@
     <th>Feature</th><!-- Update type-->
   </tr>
   <tr>
-    <th></th><!-- Update version-->
-    <th></th><!-- Date changed (mm/dd/yyyy)-->
-    <th></th><!-- Thing changed-->
-    <th></th><!-- Update type-->
+    <th>v2.11.10</th><!-- Update version-->
+    <th>04/14/2023</th><!-- Date changed (mm/dd/yyyy)-->
+    <th>Adddd "Rocket Bot Royale" game</th><!-- Thing changed-->
+    <th>Add Game</th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
