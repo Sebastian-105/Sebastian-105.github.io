@@ -23,12 +23,6 @@
     "sub":"Can you get the 2048?",
     "img":"./105.png"
   },
-  // {
-  //   "name":"Appel",
-  //   "root":"c/Appel/",
-  //   "sub":"not apple",
-  //   "img":"./105.png"
-  // },
   {
     "name":"iAsk.ai",
     "root":"https://iask.ai/",
