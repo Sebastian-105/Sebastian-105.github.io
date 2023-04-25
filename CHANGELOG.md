@@ -161,10 +161,10 @@
     <th>Add Game</th><!-- Update type-->
   </tr>
   <tr>
-    <th></th><!-- Update version-->
-    <th></th><!-- Date changed (mm/dd/yyyy)-->
-    <th></th><!-- Thing changed-->
-    <th></th><!-- Update type-->
+    <th>v2.12.10</th><!-- Update version-->
+    <th>04/25/2023</th><!-- Date changed (mm/dd/yyyy)-->
+    <th>I am, as of 04/25/2023, will only update the games site if theres a bug or a game thats highly requested</th><!-- Thing changed-->
+    <th>Update</th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
