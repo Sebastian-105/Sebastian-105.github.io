@@ -39,6 +39,7 @@ Here is most of the CSS for the "sebastian-105" website
 @import url('themes.css');
 @import url('../lib/fonts/fonts.css');
 @import url('https://fonts.googleapis.com/css?family=Vollkorn');
+@import url('https://fonts.googleapis.com/css?family=Consolas');
 
 /* Good classes */
 .dark {
@@ -1486,7 +1487,7 @@ path {
 }
 
 .main {
-  font-family: var(--font-family2nd);
+  font-family: var(--font-family);
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.75rem;
@@ -1504,7 +1505,7 @@ path {
 }
 
 .sub {
-  font-family: var(--font-family2nd);
+  font-family: var(--font-family);
   font-size: 0.95rem;
   font-weight: 400;
   line-height: 1.75rem;
@@ -2129,6 +2130,7 @@ footer {
   -webkit-user-select: none;
   user-select: none;
   position: relative;
+  font-family: var(--font-family);
   transition: 0.5s;
 }
 
