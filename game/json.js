@@ -17,23 +17,7 @@ fetch('./games.json')
       const game105 = document.createElement('div');
       game105.className = 'game-box';
       game105.innerHTML = `<!-- ${game.name} -->
-        <div class="a">
-          <div class="banner" style='background-image: linear-gradient(#555, #282828);'>
-            <seb><a class="classText" href="${game.root}" style="color:white;" target="_blank" rel="noopener noreferrer" onclick='console.log("Clicked on ${game.name}")'>
-              <div class="main">${game.name}</div>
-              <div class="sub">${game.sub}</div>
-            </a>
-          </div></seb>
-          <img src="${game.img}" class="gameIcon" alt="${game.name}"/>
-        </div>
-        <div class="b">
-          <div class="icon">
-           
-          </div>
-          <div class="icon">
-           
-      </div>
-      </div>`;
+        <div class="a"><div class="banner" style='background-image: linear-gradient(#555, #282828);'><seb><a class="classText" href="c/${game.root}/" style="color:white;" target="_blank" rel="noopener noreferrer" onclick='console.log("Clicked on ${game.name}")'><div class="main">${game.name}</div><div class="sub">${game.sub}</div></a></div></seb><img src="${game.img}" class="gameIcon" alt="${game.name}"/></div><div class="b"><div class="icon"></div><div class="icon"></div></div>`;
       gamesContainer.appendChild(game105);
       // Add click event listener to the game element to show the game in the game container
       game105.onclick = (e) => {

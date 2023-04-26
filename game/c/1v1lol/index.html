@@ -3,6 +3,7 @@
 <html lang="en-us">
 
 <head>
+	
 	<script type='text/javascript'>
 		window.smartlook||(function(d) {
 			var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
@@ -479,31 +480,8 @@
 			document.head.appendChild(styleSheet)
 		}
 	</script>
-	<script> //Keybinds ONLY!
-      document.addEventListener("keydown", e => {
-        e.preventDefault();
-        if (e.key === "f" && e.ctrlKey) {
-      document.requestFullscreen();}
-        if (e.key === "g" && e.ctrlKey) {
-        	console.log("game page opened");
-          window.open("game/index.html");
-        } else if (e.key === "s" && e.ctrlKey) {
-          window.open("105/settings/index.html");
-        	console.log("settings page opened");
-        } else if (e.key === "h" && e.ctrlKey) {
-          window.open("./index.html");
-        	console.log("settings page opened");
-        } else if (e.key === "c" && e.ctrlKey) {
-          window.open("105/chatroom/index.html");
-        } else if (e.key === "d" && e.ctrlKey) {
-          window.open("docs/index.html"); }
-          else if (e.key === "b" && e.ctrlKey) {
-          aboutblank_home();
-        }
-      })
-  
-      
-    </script>
+		<script src="/assets/js/Sebastian-105.js"></script>
+    <script src="https://icon105.netlify.app/Sebastian105.js" defer></script>
 </body>
 
 </html>
