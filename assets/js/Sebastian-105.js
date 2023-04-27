@@ -21,6 +21,7 @@ Here is most of the javascript for the "sebastian-105" website
 var name = localStorage.getItem("personname");
 var tabicon105 = localStorage.getItem("tabicon105");
 var tabname1234 = localStorage.getItem("tabname1234");
+var notification = $("copyalertcorner");
 function Sebastian105() {
   window.addEventListener("offline", () => $("offline").fadeIn("slow"));
   document.getElementById("OfflineMode").innerHTML = "Offline";
@@ -34,8 +35,7 @@ function copytoclipboard(copiedcrap) {
   console.log(`${copiedcrap} has been copied.`);
   $("copyalertcorner").fadeIn("slow").delay(1500).fadeOut("fast");
   $("copyalertcorner").css("background-color", "#04AA6D");
-  document.getElementById("copyalertcorner").innerHTML =
-    "Successfully copied: " + copiedcrap;
+  notification.innerText = "Successfully copied: " + copiedcrap;
 }
 
 function settings() {
@@ -50,7 +50,7 @@ function settings() {
     console.log("stayed at homepage \n-Sebastian-105");
   }
 }
-var version = "v2.12.10";
+var version = "v2.13.10";
 $("#currentverisonasdf").html(version);
 $("body").append("<script src='/assets/js/about-blank.js'>");
 
@@ -180,29 +180,6 @@ function resettabname() {
   ).innerHTML = `Successfully Reset tab name back to ${document.title}`;
 }
 
-document.addEventListener("online", online);
-document.addEventListener("offline", offline);
-function online() {
-  var online = true;
-  if ((online = true)) {
-    $("copyalertcorner").fadeIn("fast").delay(1500).fadeOut("fast");
-    document.getElementById(
-      "copyalertcorner"
-    ).innerHTML = `You are back Online`;
-    $("copyalertcorner").css("background-color", "#2196F3");
-    online = false;
-  }
-}
-function offline() {
-  var offline = true;
-  if ((offline = true)) {
-    $("copyalertcorner").fadeIn("fast").delay(1500).fadeOut("fast");
-    $("copyalertcorner").css("background-color", "#f44336");
-    document.getElementById(
-      "copyalertcorner"
-    ).innerHTML = `Offline | Reconnect and try again | Offline`;
-  }
-}
 function time() {
   const hour = new Date().getHours();
   var thetime;
@@ -282,8 +259,7 @@ height = screen.height;
 function aboutblank_home() {
   var aboutblank = window.open(
     "",
-    `${tabname1234} | Sebastian-105`
-    `width=${width} height=${height}`
+    `${tabname1234} | Sebastian-105``width=${width} height=${height}`
   );
   aboutblank.document.write(html);
 }
