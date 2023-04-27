@@ -21,11 +21,7 @@ Here is most of the javascript for the "sebastian-105" website
 var name = localStorage.getItem("personname");
 var tabicon105 = localStorage.getItem("tabicon105");
 var tabname1234 = localStorage.getItem("tabname1234");
-var notification = $("copyalertcorner");
-function Sebastian105() {
-  window.addEventListener("offline", () => $("offline").fadeIn("slow"));
-  document.getElementById("OfflineMode").innerHTML = "Offline";
-}
+var notification = notification;
 
 var examplelink = location;
 var author = "Sebastian-105";
@@ -33,8 +29,8 @@ var author = "Sebastian-105";
 function copytoclipboard(copiedcrap) {
   navigator.clipboard.writeText(copiedcrap);
   console.log(`${copiedcrap} has been copied.`);
-  $("copyalertcorner").fadeIn("slow").delay(1500).fadeOut("fast");
-  $("copyalertcorner").css("background-color", "#04AA6D");
+  notification.fadeIn("slow").delay(1500).fadeOut("fast");
+  notification.css("background-color", "#04AA6D");
   notification.innerText = "Successfully copied: " + copiedcrap;
 }
 
@@ -136,12 +132,12 @@ function RunMyFunction() {
 function keybinds() {
   var myWindow = window.open("105/keybinds/index.html");
 }
-function buttonCode() {
+function tabname() {
   var tabnameforrealz = prompt("New Tab title:", "Example: " + document.title);
   var tabnameforrealz123 = (document.title = tabnameforrealz);
   localStorage.setItem("tabname1234", tabnameforrealz);
-  $("copyalertcorner").fadeIn("fast").delay(1500).fadeOut("fast");
-  $("copyalertcorner").css("background-color", "#04AA6D");
+  notification.fadeIn("fast").delay(1500).fadeOut("fast");
+  notification.css("background-color", "#04AA6D");
   document.getElementById(
     "copyalertcorner"
   ).innerHTML = `Successfully Changed tab title to: ${document.title}`;
@@ -159,13 +155,13 @@ function tabicon() {
     thetabicon.includes("file://") ||
     thetabicon.includes("localhost")
   ) {
-    $("copyalertcorner").fadeIn("fast").delay(1500).fadeOut("fast");
-    $("copyalertcorner").css("background-color", "#04AA6D");
+    notification.fadeIn("fast").delay(1500).fadeOut("fast");
+    notification.css("background-color", "#04AA6D");
     document.getElementById("copyalertcorner").innerHTML =
       "Successfully Changed tab icon " + thetabicon;
   } else {
-    $("copyalertcorner").fadeIn("fast").delay(1500).fadeOut("fast");
-    $("copyalertcorner").css("background-color", "#04AA6D");
+    notification.fadeIn("fast").delay(1500).fadeOut("fast");
+    notification.css("background-color", "#04AA6D");
     document.getElementById("copyalertcorner").innerHTML =
       "Fail to Change tab icon. Check to see if it includes https://";
   }
@@ -173,8 +169,8 @@ function tabicon() {
 function resettabname() {
   document.title = "Sebastian-105";
   localStorage.setItem("tabname1234", "Sebastian-105");
-  $("copyalertcorner").fadeIn("fast").delay(1500).fadeOut("fast");
-  $("copyalertcorner").css("background-color", "#04AA6D");
+  notification.fadeIn("fast").delay(1500).fadeOut("fast");
+  notification.css("background-color", "#04AA6D");
   document.getElementById(
     "copyalertcorner"
   ).innerHTML = `Successfully Reset tab name back to ${document.title}`;
@@ -259,7 +255,8 @@ height = screen.height;
 function aboutblank_home() {
   var aboutblank = window.open(
     "",
-    `${tabname1234} | Sebastian-105``width=${width} height=${height}`
+    `${tabname1234} | Sebastian-105`,
+    `width=${width} height=${height}`
   );
   aboutblank.document.write(html);
 }
@@ -270,6 +267,12 @@ document.addEventListener("keydown", (e) => {
     e.preventDefault();
     console.log("game page opened");
     window.open("/game/index.html");
+  } else if (e.key === "g" && e.altKey) {
+    e.preventDefault();
+    var aboutblank = window.open(
+      "/game/index.html", "Games | Sebastian-105",
+      `width=${width} height=${height}`
+    );
   } else if (e.key === "s" && e.ctrlKey) {
     e.preventDefault();
     window.open("/105/settings/index.html");
@@ -280,7 +283,7 @@ document.addEventListener("keydown", (e) => {
     console.log("settings page opened");
   } else if (e.key === "," && e.altKey) {
     e.preventDefault();
-    buttonCode();
+    tabname();
   } else if (e.key === "." && e.altKey) {
     e.preventDefault();
     tabicon();
@@ -294,6 +297,10 @@ document.addEventListener("keydown", (e) => {
     e.preventDefault();
     window.open("/docs/index.html");
   } else if (e.key === "b" && e.altKey) {
-    aboutblank_home();
+    e.preventDefault();
+    aboutblank();
+  } else if (e.key === "b" && e.ctrlKey) {
+    e.preventDefault();
+    aboutblank_window();
   }
 });
