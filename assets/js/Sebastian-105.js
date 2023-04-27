@@ -52,7 +52,7 @@ function settings() {
 }
 var version = "v2.12.10";
 $("#currentverisonasdf").html(version);
-$("body").append("<script src='assets/js/about-blank.js'>");
+$("body").append("<script src='/assets/js/about-blank.js'>");
 
 //FUNCTIONS
 function blocked() {

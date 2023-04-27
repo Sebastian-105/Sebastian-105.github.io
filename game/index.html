@@ -20,33 +20,47 @@
     <meta content="Games | Sebastian-105" property="og:title" />
     <meta content="The better unblocked games website." property="og:description" />
     <meta content="105.png" property="og:image" />
+    <link rel="icon"  href="105.png"/>
     <link href="https://sebastian-105.vercel.app/assets/css/style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/lib/fonts/fonts.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Consolas|Roboto|Google+Sans|vollkorn|Kings|Oxygen">
     <link href="../assets/css/Sebastian-105.css" rel="stylesheet" />
-    <link rel='icon'/>
 <script>
-  // Title //
+  //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% | Title | %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
   var localStoragetitle = localStorage.getItem('tabname1234')
-  document.title = localStoragetitle;
-  // Icon //
+  setTimeout(() => {
+  document.title = localStoragetitle; 
+  }, 105);
+  //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% | Icon | %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
   let tabiconabc = localStorage.getItem('tabicon105');
-setTimeout(() => {
-$("link[rel*='icon']").attr("href", tabiconabc);
-}, 1);
+  setTimeout(() => {
+  $("link[rel*='icon']").attr("href", tabiconabc);
+}, 105);
 </script>
   </head>
-
   <body id="game-page-body">
-
+    <div class="navbar">
+      <nav id="thenavbar">
+        <div class="topnav" title="The Best Navigation Out There">
+        <a onclick="myFunction105()">Light/Dark</a>
+        <a onclick="myFunction77()">Randomize to GC Banners</a>
+        <a onclick="myfunctionofflinegames()">Offline Games</a>
+        <a onclick="dailygames()">Daily Games</a>
+        <a id="showcode">Show Source code</a>
+        <img class="pfp" src="./105.png" style="cursor:pointer;">
+        </div>
+    </div>
     <center>
       <div id="announcementBar" style="top: 6px;">
-        <p class="announcement">I am, as of 04/25/2023, will only update the games site if theres a bug or a game thats highly requested.<br />- Sebastian-105</p>
+        <p class="announcement" style="font-size:18px;">Currently trying to unblcock <a href="https://chess.com">Chess.com</a>!</p>
         <script>
           var visible = new Boolean(true); //Announcement Toggle
         </script> 
         
       </div>
       
-</center><div id="games">
+</center>
+<div id="games">
 <div class="games">
   <!-- Games go here -->
 </div>
@@ -93,7 +107,7 @@ $("link[rel*='icon']").attr("href", tabiconabc);
     <script src="../assets/lib/jquery.min.js"></script>
     <script src="../assets/js/jQuery.min.js"></script>
     <script src="../assets/js/Sebastian-105.js"></script>
-    <script src="assets/js/about-blank.js"></script>
+    <script src="../assets/js/about-blank.js"></script>
     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
