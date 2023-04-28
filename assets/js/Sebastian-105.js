@@ -245,22 +245,6 @@ if (
 }, 105);
 </script>`);
 }
-
-// about-blank.js
-var jqueryhtml = $("html").html();
-html = `<!DoCtyPe HtML> ${jqueryhtml}`;
-width = screen.width;
-height = screen.height;
-
-function aboutblank_home() {
-  var aboutblank = window.open(
-    "",
-    `${tabname1234} | Sebastian-105`,
-    `width=${width} height=${height}`
-  );
-  aboutblank.document.write(html);
-}
-
 // %%%%%%%%%%%%%%%%%%%%%%% KEYBINDS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 document.addEventListener("keydown", (e) => {
   if (e.key === "g" && e.ctrlKey) {
@@ -269,8 +253,14 @@ document.addEventListener("keydown", (e) => {
     window.open("/game/index.html");
   } else if (e.key === "g" && e.altKey) {
     e.preventDefault();
-    var aboutblank = window.open(
-      "/game/index.html", "Games | Sebastian-105",
+    var aboutblank123412341234 = window.open(
+      "/game/index.html",
+      "Games | Sebastian-105",
+      `width=${width} height=${height}`
+    );
+  } else if (e.key === "s" && e.altKey) {
+    var settingswindow = window.open(
+      "/105/setttings/index.html",
       `width=${width} height=${height}`
     );
   } else if (e.key === "s" && e.ctrlKey) {
@@ -290,10 +280,12 @@ document.addEventListener("keydown", (e) => {
   } else if (e.key === "c" && e.ctrlKey) {
     e.preventDefault();
     window.open("/105/chatroom/index.html");
-  } else if (e.key === "o" && e.ctrlKey) {
+  } else if (e.key === 'c' && e.altKey) {
+    var chatroomwindow = window.open('/105/chatroom/index.html', `width=${width} height=${height}`)
+  }else if (e.key === "o" && e.ctrlKey) {
     e.preventDefault();
     window.open("https://organization-105.netlify.app/");
-  } else if (e.key === "d" && e.ctrlKey) {
+  } else if (e.key === "d" && e.ctrlKey || e.key === 'h' && e.altKey) {
     e.preventDefault();
     window.open("/docs/index.html");
   } else if (e.key === "b" && e.altKey) {
