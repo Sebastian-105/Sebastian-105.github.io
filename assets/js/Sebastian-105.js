@@ -58,7 +58,7 @@ function blocked() {
     "width=500,height=400,resizable=yes,left=500,top=200,toolbar=yes"
   );
 }
-function openlink(link) {
+function openlink(link, type) {
   var myWindow = window.open(
     link,
     "_blank",
