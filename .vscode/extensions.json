@@ -1,20 +1,21 @@
 {
   "recommendations": [
     "ritwickdey.liveserver",
-    "Hridoy.jquery-snippets",
+    "hridoy.jquery-snippets",
     "donjayamanne.jquerysnippets",
     "esbenp.prettier-vscode",
     "abusaidm.html-snippets",
     "joy-yu.css-snippets",
     "akamud.vscode-javascript-snippet-pack",
-    "xabikos.JavaScriptSnippets",
+    "xabikos.javascriptsnippets",
     "nathanchapman.javascriptsnippets",
     "ms-vscode.remote-server",
-    "GitHub.remotehub",
-    "Tyriar.luna-paint",
-    "BinaryBytes.snippets",
+    "github.remotehub",
+    "tyriar.luna-paint",
+    "binarybytes.snippets",
     "piyushvscode.nodejs-snippets",
-    "Temir.JavaScriptSnippets",
-    "boundarystudio.html-extentions-pack"
+    "temir.javascriptsnippets",
+    "boundarystudio.html-extentions-pack",
+    "eamodio.gitlens"
   ]
 }
