@@ -70,13 +70,6 @@
     "id": "cr"
   },
   {
-    "name": "Cut The Rope",
-    "root": "CutTheRope",
-    "sub": "Is this thing a frog?",
-    "img": "./105.png",
-    "id": ""
-  },
-  {
     "name": "Doctor Acorn 3",
     "root": "DoctorAcorn3",
     "sub": "Other 2 dr. acorns are dead (maybe)",
