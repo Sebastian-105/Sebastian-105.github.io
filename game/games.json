@@ -35,6 +35,13 @@
     "id": "ai"
   },
   {
+    "name": "aquapark slide",
+    "root": "aquapark",
+    "sub": "S L I D E!",
+    "img": "./105.png",
+    "id": "aps"
+  },
+  {
     "name": "Bitlife",
     "root": "bitlife",
     "sub": "Bitlife, thats all",
@@ -106,7 +113,7 @@
   },
   {
     "name": "EaglercraftX [1.8.8]",
-    "root": "eaglercraft-1.8",
+    "root": "eaglercraftX",
     "sub": "Minecraft 1.8.8",
     "img": "./105.png",
     "id": "eagler188"
@@ -119,18 +126,11 @@
     "id": "flappybirb"
   },
   {
-    "name": "First Person Tetris",
+    "name": "Flash Tetris",
     "root": "FPTetris",
     "sub": "Tetris but first person",
     "img": "./105.png",
     "id": "fpt"
-  },
-  {
-    "name": "Game Boy Emulator",
-    "root": "gba",
-    "sub": "Emulatar? Emalator? huh?",
-    "img": "./105.png",
-    "id": "gameboyemulator"
   },
   {
     "name": "Geometry Dash",
