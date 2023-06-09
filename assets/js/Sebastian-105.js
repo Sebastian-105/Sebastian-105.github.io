@@ -46,7 +46,7 @@ function settings() {
     console.log("stayed at homepage \n-Sebastian-105");
   }
 }
-var version = "v2.13.10";
+var version = "v3.14.10";
 $("#currentverisonasdf").html(version);
 $("body").append("<script src='/assets/js/about-blank.js'>");
 
