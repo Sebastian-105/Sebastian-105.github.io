@@ -68,7 +68,7 @@ var pJS = function(tag_id, params){
         enable: true,
         distance: 100,
         color: '#fff',
-        opacity: 1,
+        opacity: 1000000000000000,
         width: 1
       },
       move: {
