@@ -33,6 +33,11 @@ function copytoclipboard(copiedcrap) {
   notification.css("background-color", "#04AA6D");
   notification.innerText = "Successfully copied: " + copiedcrap;
 }
+function closesidenav() {
+  $('.sidenav').hide('fast');
+  $('#time').hide('slow');
+  console.log('Closed sidenav');
+}
 
 function settings() {
   if (
@@ -263,6 +268,9 @@ document.addEventListener("keydown", (e) => {
       "/105/setttings/index.html",
       `width=${width} height=${height}`
     );
+  } else if (e.key === "Escape") {
+    e.preventDefault();
+   closesidenav()
   } else if (e.key === "s" && e.ctrlKey) {
     e.preventDefault();
     window.open("/105/settings/index.html");
