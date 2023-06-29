@@ -25,7 +25,62 @@ var notification = notification;
 
 var examplelink = location;
 var author = "Sebastian-105";
-
+// %%%%%%%%%%%%%%%%%%%%%%% KEYBINDS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+document.addEventListener("keydown", (e) => {
+  if (e.key === "g" && e.ctrlKey) {
+    e.preventDefault();
+    console.log("game page opened");
+    window.open("/game/index.html");
+  } else if (e.key === "g" && e.altKey) {
+    e.preventDefault();
+    var aboutblank123412341234 = window.open(
+      "/game/index.html",
+      "Games | Sebastian-105",
+      `width=${width} height=${height}`
+    );
+  } else if (e.key === "s" && e.altKey) {
+    var settingswindow = window.open(
+      "/105/setttings/index.html",
+      `width=${width} height=${height}`
+    );
+  } else if (e.key === "Escape") {
+    e.preventDefault();
+   closesidenav()
+  } else if (e.key === "s" && e.ctrlKey) {
+    e.preventDefault();
+    window.open("/105/settings/index.html");
+    console.log("settings page opened");
+  } else if (e.key === "h" && e.ctrlKey) {
+    e.preventDefault();
+    window.open("/index.html");
+    console.log("settings page opened");
+  } else if (e.key === "," && e.altKey) {
+    e.preventDefault();
+    tabname();
+  } else if (e.key === "." && e.altKey) {
+    e.preventDefault();
+    tabicon();
+  } else if (e.key === "c" && e.ctrlKey) {
+    e.preventDefault();
+    window.open("/105/chatroom/index.html");
+  } else if (e.key === 'c' && e.altKey) {
+    var chatroomwindow = window.open('/105/chatroom/index.html', `width=${width} height=${height}`)
+  }else if (e.key === "o" && e.ctrlKey) {
+    e.preventDefault();
+    window.open("https://organization-105.netlify.app/");
+  } else if (e.key === "d" && e.ctrlKey || e.key === 'h' && e.altKey) {
+    e.preventDefault();
+    window.open("/docs/index.html");
+  } else if (e.key === "b" && e.altKey) {
+    e.preventDefault();
+    aboutblank();
+  } else if (e.key === "b" && e.ctrlKey) {
+    e.preventDefault();
+    aboutblank_window();
+  } else if (e.key === "m" && e.ctrlKey) {
+    $(".menupopup").show("fast");
+  }
+});
 function copytoclipboard(copiedcrap) {
   navigator.clipboard.writeText(copiedcrap);
   console.log(`${copiedcrap} has been copied.`);
@@ -52,8 +107,6 @@ function settings() {
   }
 }
 var version = "v3.14.10";
-$("#currentverisonasdf").html(version);
-$("body").append("<script src='/assets/js/about-blank.js'>");
 
 //FUNCTIONS
 function blocked() {
@@ -123,20 +176,7 @@ function dailygames() {
 function downloadlink() {
   var myWindow = window.open("105/download/index.html");
 }
-function RunMyFunction() {
-  if (Enabled == false) {
-    alert("Keybinds have been disabled. \n-Sebastian-105");
-  } else {
-    $(window).on("keypress", function (event) {
-      if (event.key == "s") {
-        window.open("https://sebastian105.repl.co/105/settings/index.html");
-      }
-    });
-  }
-}
-function keybinds() {
-  var myWindow = window.open("105/keybinds/index.html");
-}
+
 function tabname() {
   var tabnameforrealz = prompt("New Tab title:", "Example: " + document.title);
   var tabnameforrealz123 = (document.title = tabnameforrealz);
@@ -147,30 +187,7 @@ function tabname() {
     "copyalertcorner"
   ).innerHTML = `Successfully Changed tab title to: ${document.title}`;
 }
-function tabicon() {
-  var thetabicon = prompt(
-    "URL for image: \nMust include https:// or http://",
-    examplelink
-  );
-  $("link[rel*='icon']").attr("href", thetabicon);
-  localStorage.setItem("tabicon105", thetabicon);
-  if (
-    thetabicon.includes("https://") ||
-    thetabicon.includes("http://") ||
-    thetabicon.includes("file://") ||
-    thetabicon.includes("localhost")
-  ) {
-    notification.fadeIn("fast").delay(1500).fadeOut("fast");
-    notification.css("background-color", "#04AA6D");
-    document.getElementById("copyalertcorner").innerHTML =
-      "Successfully Changed tab icon " + thetabicon;
-  } else {
-    notification.fadeIn("fast").delay(1500).fadeOut("fast");
-    notification.css("background-color", "#04AA6D");
-    document.getElementById("copyalertcorner").innerHTML =
-      "Fail to Change tab icon. Check to see if it includes https://";
-  }
-}
+
 function resettabname() {
   document.title = "Sebastian-105";
   localStorage.setItem("tabname1234", "Sebastian-105");
@@ -191,116 +208,4 @@ function time() {
   } else {
     thetime = `Good Evening`;
   }
-  var gradenumber = localStorage.getItem("grade");
-  setInterval(() => {
-    document.getElementById("therealtime").innerHTML = thetime + " " + name;
-    document.getElementById(
-      "timedropdown"
-    ).innerHTML = `${name}'s account settings`;
-    document.getElementsByClassName(
-      "grade"
-    )[0].innerHTML = `${gradenumber}<sup>th</sup> Grade`;
-  }, 1);
-}
-function username() {
-  var usernames = prompt(
-    "What should we call you?\nWarning: this reloads your page"
-  );
-  localStorage.setItem("personname", usernames);
-  window.location.reload();
-}
-function grade() {
-  var gradelevel = prompt(
-    `What grade are you in? This will affect your recomendation based on your grade \nNote: Don't add the "th".\nWarning: this reloads your page`
-  );
-  localStorage.setItem("grade", gradelevel);
-  window.location.reload();
-}
-setInterval(time, 1);
-/* var lastKnownScrollPosition = 0;
-      var ticking = false;
-      document.addEventListener('scroll', function (e) {
-        lastKnownScrollPosition = window.scrollY;
-        if (!ticking) {
-          window.requestAnimationFrame(function () {
-            if (lastKnownScrollPosition == 0) {
-              document.getElementsByClassName("navbar").style.boxShadow = "";
-            } else {
-              document.getElementsByClassName("navbar").style.boxShadow = "0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%)";
-            }
-            ticking = false;
-					});
-          ticking = true;
-        }
-      }); */
-if (
-  document.location.href.includes("game/c") ||
-  document.location.href.includes("game/p")
-) {
-  $("body").append(`<script>
-  //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% | Title | %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
-  var localStoragetitle = localStorage.getItem('tabname1234')
-  setTimeout(() => { 
-  document.title = localStoragetitle; 
-  }, 105);
-  //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% | Icon | %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
-  var tabiconabc = localStorage.getItem('tabicon105');
-  setTimeout(() => {
-  $("link[rel*='icon']").attr("href", tabiconabc);
-}, 105);
-</script>`);
-}
-// %%%%%%%%%%%%%%%%%%%%%%% KEYBINDS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-document.addEventListener("keydown", (e) => {
-  if (e.key === "g" && e.ctrlKey) {
-    e.preventDefault();
-    console.log("game page opened");
-    window.open("/game/index.html");
-  } else if (e.key === "g" && e.altKey) {
-    e.preventDefault();
-    var aboutblank123412341234 = window.open(
-      "/game/index.html",
-      "Games | Sebastian-105",
-      `width=${width} height=${height}`
-    );
-  } else if (e.key === "s" && e.altKey) {
-    var settingswindow = window.open(
-      "/105/setttings/index.html",
-      `width=${width} height=${height}`
-    );
-  } else if (e.key === "Escape") {
-    e.preventDefault();
-   closesidenav()
-  } else if (e.key === "s" && e.ctrlKey) {
-    e.preventDefault();
-    window.open("/105/settings/index.html");
-    console.log("settings page opened");
-  } else if (e.key === "h" && e.ctrlKey) {
-    e.preventDefault();
-    window.open("/index.html");
-    console.log("settings page opened");
-  } else if (e.key === "," && e.altKey) {
-    e.preventDefault();
-    tabname();
-  } else if (e.key === "." && e.altKey) {
-    e.preventDefault();
-    tabicon();
-  } else if (e.key === "c" && e.ctrlKey) {
-    e.preventDefault();
-    window.open("/105/chatroom/index.html");
-  } else if (e.key === 'c' && e.altKey) {
-    var chatroomwindow = window.open('/105/chatroom/index.html', `width=${width} height=${height}`)
-  }else if (e.key === "o" && e.ctrlKey) {
-    e.preventDefault();
-    window.open("https://organization-105.netlify.app/");
-  } else if (e.key === "d" && e.ctrlKey || e.key === 'h' && e.altKey) {
-    e.preventDefault();
-    window.open("/docs/index.html");
-  } else if (e.key === "b" && e.altKey) {
-    e.preventDefault();
-    aboutblank();
-  } else if (e.key === "b" && e.ctrlKey) {
-    e.preventDefault();
-    aboutblank_window();
   }
-});
