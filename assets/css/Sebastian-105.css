@@ -48,7 +48,7 @@ Here is most of the CSS for the "sebastian-105" website
 }
 
 .menupopup {
-  /* display:none; */
+  display:none;
   padding: 20px;
   border-radius: 15px;
   border-color: black;
@@ -69,12 +69,25 @@ Here is most of the CSS for the "sebastian-105" website
   color: white;
   font-size: 25px;
 }
-
+.menuspace {
+  width:100%;
+  margin-bottom:25px;
+  margin-top:10px;
+  border:solid white 2px;
+}
 .menucontenttext {
   color: white;
   font-size: 15px;
 }
-
+.menulist {
+  margin-top:10px;
+  border:dashed black 2px;
+  background-color: #10034323;
+  padding:2px;
+}
+leftmenu {
+  float: right;
+}
 .opennav {
   position: fixed;
   font-size: 25px;
@@ -82,7 +95,12 @@ Here is most of the CSS for the "sebastian-105" website
   cursor: pointer;
   top: 15px;
 }
-
+.fadeoutbackground {
+  background-color: #969696;
+  opacity: .75;
+  width:100%;
+  height:100%;
+}
 .opennav:hover {
   color: grey;
   transform: scale(1.05);
@@ -172,6 +190,17 @@ Sebastian105 {
   border-color: grey;
   border-width: 1px;
   background: lightgrey;
+}
+code {
+  border-radius: 5px;
+  font-family: var(--font-family);
+  padding: 2.8px;
+  margin: 3px;
+  text-align: center;
+  border:solid black 1px;
+  border-width: 1px;
+  color:black;
+  background: darkgray;
 }
 
 .subtitle {

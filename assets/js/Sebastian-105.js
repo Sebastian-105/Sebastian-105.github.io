@@ -38,14 +38,6 @@ document.addEventListener("keydown", (e) => {
       "Games | Sebastian-105",
       `width=${width} height=${height}`
     );
-  } else if (e.key === "s" && e.altKey) {
-    var settingswindow = window.open(
-      "/105/setttings/index.html",
-      `width=${width} height=${height}`
-    );
-  } else if (e.key === "Escape") {
-    e.preventDefault();
-   closesidenav()
   } else if (e.key === "s" && e.ctrlKey) {
     e.preventDefault();
     window.open("/105/settings/index.html");
@@ -63,12 +55,15 @@ document.addEventListener("keydown", (e) => {
   } else if (e.key === "c" && e.ctrlKey) {
     e.preventDefault();
     window.open("/105/chatroom/index.html");
-  } else if (e.key === 'c' && e.altKey) {
-    var chatroomwindow = window.open('/105/chatroom/index.html', `width=${width} height=${height}`)
-  }else if (e.key === "o" && e.ctrlKey) {
+  } else if (e.key === "c" && e.altKey) {
+    var chatroomwindow = window.open(
+      "/105/chatroom/index.html",
+      `width=${width} height=${height}`
+    );
+  } else if (e.key === "o" && e.ctrlKey) {
     e.preventDefault();
     window.open("https://organization-105.netlify.app/");
-  } else if (e.key === "d" && e.ctrlKey || e.key === 'h' && e.altKey) {
+  } else if ((e.key === "d" && e.ctrlKey) || (e.key === "h" && e.altKey)) {
     e.preventDefault();
     window.open("/docs/index.html");
   } else if (e.key === "b" && e.altKey) {
@@ -78,8 +73,11 @@ document.addEventListener("keydown", (e) => {
     e.preventDefault();
     aboutblank_window();
   } else if (e.key === "m" && e.ctrlKey) {
-    $(".menupopup").show("fast");
+    $(".menupopup").fadeToggle("fast");
   }
+});
+$("#menuclose").click(function (e) {
+  $(".menupopup").fadeOut("fast");
 });
 function copytoclipboard(copiedcrap) {
   navigator.clipboard.writeText(copiedcrap);
@@ -89,9 +87,9 @@ function copytoclipboard(copiedcrap) {
   notification.innerText = "Successfully copied: " + copiedcrap;
 }
 function closesidenav() {
-  $('.sidenav').hide('fast');
-  $('#time').hide('slow');
-  console.log('Closed sidenav');
+  $(".sidenav").hide("fast");
+  $("#time").hide("slow");
+  console.log("Closed sidenav");
 }
 
 function settings() {
@@ -208,4 +206,4 @@ function time() {
   } else {
     thetime = `Good Evening`;
   }
-  }
+}
