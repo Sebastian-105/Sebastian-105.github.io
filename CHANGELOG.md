@@ -110,8 +110,10 @@
     <th>Added Stickman hook</th><!-- Thing changed-->
     <th>Game Add</th><!-- Update type-->
   </tr>
+  </table>
   <h1> Major Update!!! v2</h1>
   <hr>
+  <table>
   <tr>
     <th>v2.6.8</th><!-- Update version-->
     <th>03/11/2023</th><!-- Date changed (mm/dd/yyyy)-->
@@ -166,9 +168,11 @@
     <th>I am, as of 04/25/2023, will only update the games site if theres a bug or a game thats highly requested</th><!-- Thing changed-->
     <th>Update</th><!-- Update type-->
   </tr>
+  </table>
     <h1> Major Update!!! v3</h1>
   <hr>
   <p>I'm Back!! Sorry I left :(</p>
+  <table>
   <tr>
     <th>v3.12.10</th><!-- Update version-->
     <th>06/09/2023</th><!-- Date changed (mm/dd/yyyy)-->
@@ -176,10 +180,10 @@
     <th>If you see any bugs <a href="https://forms.gle/7HRXRmFUnAN8KRDfA">Contact me!</a></th><!-- Update type-->
   </tr>
   <tr>
-    <th></th><!-- Update version-->
-    <th></th><!-- Date changed (mm/dd/yyyy)-->
-    <th></th><!-- Thing changed-->
-    <th></th><!-- Update type-->
+    <th>v3.15.11</th><!-- Update version-->
+    <th>06/29/2023</th><!-- Date changed (mm/dd/yyyy)-->
+    <th>Fixed JS path & added menu screen on Ctrl + M</th><!-- Thing changed-->
+    <th><a href="https://github.com/Sebastian-105/sebastian-105.github.io/releases">Full release log here</a></th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
