@@ -185,11 +185,14 @@
     <th>Fixed JS path & added menu screen on Ctrl + M</th><!-- Thing changed-->
     <th><a href="https://github.com/Sebastian-105/sebastian-105.github.io/releases">Full release log here</a></th><!-- Update type-->
   </tr>
+  </table>
+  <h1>Major Update - v4</h1>
+  <table>
   <tr>
-    <th></th><!-- Update version-->
-    <th></th><!-- Date changed (mm/dd/yyyy)-->
-    <th></th><!-- Thing changed-->
-    <th></th><!-- Update type-->
+    <th>v4.15.11</th><!-- Update version-->
+    <th>07/01/2023</th><!-- Date changed (mm/dd/yyyy)-->
+    <th>Added Node.js</th><!-- Thing changed-->
+    <th><a href="https://github.com/Sebastian-105/sebastian-105.github.io/releases">Full release log here</a></th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
