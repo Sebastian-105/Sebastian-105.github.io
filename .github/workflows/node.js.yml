@@ -2,7 +2,7 @@ on: push
 jobs:
   build-node:
     runs-on: unbuntu-latest
-    container: node:20
+    container: node:16
     steps:
       - run: node --version
       - run: npm --version
