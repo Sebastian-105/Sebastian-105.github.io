@@ -15,7 +15,7 @@ const HOST = '0.0.0.0';
 
 // App
 const app = express();
-app.use(express.static('./docs'));
+app.use(express.static('./'));
 
 
 app.listen(PORT, HOST);
