@@ -41,7 +41,8 @@ Made by @Sebastian-105 and by @DanyangXu77.
   <meta property="og:image" content="./105.png" />
   <meta property="og:description"
     content="My home page, games, and a live chatroom. | Sebastian-105 | Made with https://github.com">
-  <link rel="manifest" href="manifest.json" />
+  <!-- causing a error in console -->
+  <!-- <link rel="manifest" href="manifest.json" /> -->
   <link rel="stylesheet" href="assets/css/Sebastian-105.css" />
   <link rel="stylesheet" href="assets/lib/font-awesome.min.css" />
   <link rel="help" href="105/help/index.html" />
@@ -60,6 +61,9 @@ Made by @Sebastian-105 and by @DanyangXu77.
         <div class="iconcorner"></div>
         <id id="cornercontent"></id>
       </div>
+      <copyalertcorner1 class="alertcorner" id="copyalertcorner">aasdfasd</copyalertcorner1>
+
+      <!-- ─────────────── End Of Little alert in corner ─────────────── -->
       <div class="menupopup">
         <div class="menuicon"><img src="/105.png" width="25" height="25" style="border-radius: 50%;">
           <author style="font-size:18px;"> By: Sebastian-105</author>
@@ -70,17 +74,39 @@ Made by @Sebastian-105 and by @DanyangXu77.
         <div class="menuspace"></div>
         <div class="menucontenttext">
           <ul>
-            <li class="menulist"><code>Ctrl + G</code><leftmenu>opens games page</leftmenu></li>
-            <li class="menulist"><code>Alt + G</code><leftmenu>opens games page as a new window</leftmenu></li>
-            <li class="menulist"><code>Ctrl + S</code><leftmenu> Open settings page</leftmenu></li>
-            <li class="menulist"><code>Ctrl + H</code><leftmenu> opens homepage</leftmenu></li>
-            <li class="menulist"><code>Alt + ,</code><leftmenu>Change tab name</leftmenu></li>
-            <li class="menulist"><code>Ctrl + C</code><leftmenu> opens chatroom</leftmenu></li>
-            <li class="menulist"><code>Ctrl + O</code><leftmenu> Opens Organization-105.github.io</leftmenu></li>
-            <li class="menulist"><code>Ctrl + D</code><leftmenu> Opens Docs</leftmenu></li>
-            <li class="menulist"><code>Alt + B</code><leftmenu>Opens the current on <code>about:blank</code> <i>window</i></leftmenu></li>
-            <li class="menulist"><code>Ctrl + B</code><leftmenu>opens current page on <code>about:blank</code> tab</leftmenu></li>
-            <li class="menulist"><code>Ctrl + M</code><leftmenu>opens & closes this menu</leftmenu></li>
+            <li class="menulist"><code>Ctrl + G</code>
+              <leftmenu>opens games page</leftmenu>
+            </li>
+            <li class="menulist"><code>Alt + G</code>
+              <leftmenu>opens games page as a new window</leftmenu>
+            </li>
+            <li class="menulist"><code>Ctrl + S</code>
+              <leftmenu> Open settings page</leftmenu>
+            </li>
+            <li class="menulist"><code>Ctrl + H</code>
+              <leftmenu> opens homepage</leftmenu>
+            </li>
+            <li class="menulist"><code>Alt + ,</code>
+              <leftmenu>Change tab name</leftmenu>
+            </li>
+            <li class="menulist"><code>Ctrl + C</code>
+              <leftmenu> opens chatroom</leftmenu>
+            </li>
+            <li class="menulist"><code>Ctrl + O</code>
+              <leftmenu> Opens Organization-105.github.io</leftmenu>
+            </li>
+            <li class="menulist"><code>Ctrl + D</code>
+              <leftmenu> Opens Docs</leftmenu>
+            </li>
+            <li class="menulist"><code>Alt + B</code>
+              <leftmenu>Opens the current on <code>about:blank</code> <i>window</i></leftmenu>
+            </li>
+            <li class="menulist"><code>Ctrl + B</code>
+              <leftmenu>opens current page on <code>about:blank</code> tab</leftmenu>
+            </li>
+            <li class="menulist"><code>Ctrl + M</code>
+              <leftmenu>opens & closes this menu</leftmenu>
+            </li>
           </ul>
         </div>
 
@@ -178,7 +204,7 @@ Made by @Sebastian-105 and by @DanyangXu77.
           <div class="hr"></div>
 
           <div class="sidenav">
-            <div id="closesidenav" title="close sidenav" style="position:absolute;" onclick="closesidenav()">×</div>
+            <div id="closesidenav" title="close sidenav" style="position:absolute;">×</div>
             <space></space>
             <h1></h1>
             <div class="update" title="Whats New?">Version: <version onload="versionname()" id="currentverisonasdf"
@@ -190,6 +216,7 @@ Made by @Sebastian-105 and by @DanyangXu77.
             </div>
             <a onclick="openlink('game/index.html')" target="_blank">Games Site</a>
             <a onclick="openlink('105/chatroom/index.html')" target="_blank">The Chatroom</a>
+            <a onclick="menuopen()" target="_blank">Open up keybinds menu</a>
             <a onclick="openlink('105/blocked/index.html')" target="_blank" title="click this in advance">Blocked?</a>
             <button class="dropdown-btn" title="all my forms">
               Forms
@@ -251,15 +278,13 @@ Made by @Sebastian-105 and by @DanyangXu77.
             <hr />
           </h3>
           <h2>Sebastian's Stuff</h2>
-          <a class="contact" href="https://github.com/Sebastian-105/" target="_blank">Github</a>
+          <a class="contact" href="https://github.com/Sebastian-105/" target="_blank">My Github</a>
           <br />
           Discord: <br />
-          <p onclick="copytoclipboard('Sebastian105#3143')" title="Copy username"
-            style="cursor: pointer;font-family: var(--font-family);">Sebastian105#3143</p>
-          <copyalertcorner style="  display:none;" class="alertcorner" id="copyalertcorner">aasdfasd</copyalertcorner>
+          <p onclick="copytoclipboard('Sebastian_105')" title="Copy username"
+            style="cursor: pointer;font-family: var(--font-family);">Sebastian_105</p>
 
           <br />
-          <a class="contact" id="myemail" href="mailto:28stu216@lexingtonma.org">My email</a>
           <br />
           <hr />
           <danyang>
@@ -267,11 +292,11 @@ Made by @Sebastian-105 and by @DanyangXu77.
               <danyang>Danyang's Stuff</danyang>
             </h2>
             <a class="contact" href="https://github.com/DanyangXu77/" target="_blank">
-              <danyang>Github</danyang>
+              <danyang>Danyang's Github</danyang>
             </a><br />
             Discord: <br />
-            <p onclick="copytoclipboard('dx#0500')" title="Copy username" style="cursor: pointer;">
-              <danyang>dx#0500</danyang>
+            <p onclick="copytoclipboard('dy&#46;x')" title="Copy username" style="cursor: pointer;">
+              <danyang>dy.x</danyang>
             </p>
             <br />
             Email:
@@ -285,6 +310,10 @@ Made by @Sebastian-105 and by @DanyangXu77.
             School Email:
             <a class='contact' href='mailto:28stu076@lexingtonma.org'>
               <danyang>28stu076@lexingtonma.org</danyang>
+            </a><br />
+            Personal Email:
+            <a class='contact' href='mailto:28schapfel1@gmail.com'>
+              <danyang>28schapfel1@gmail.com</danyang>
             </a>
             <div class="social-media"></div>
         </div>
@@ -292,7 +321,7 @@ Made by @Sebastian-105 and by @DanyangXu77.
       </danyang>
       <footer id="copyright" class="footer">
         © 2023
-        <a href="https://github.com/Sebastian-105 target=" _blank">
+        <a href="https://github.com/Sebastian-105" target="_blank">
           Sebastian-105</a>
         &
         <a href="https://github.com/Danyang/" target="_blank">
@@ -300,11 +329,7 @@ Made by @Sebastian-105 and by @DanyangXu77.
         </a> ~ <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
           style="width:25px; height:25px; margin-bottom:-6px; cursor:pointer;"
           onclick="window.open(`https://github.com/Sebastian-105/Sebastian-105.github.io`)"> <a
-          href="https://github.com/Sebastian-105/Sebastian-105.github.io">Github</a> <img> ~ <img
-          src="https://replit.com/public/icons/favicon-prompt-192.png"
-          style="width:25px; height:25px; margin-bottom:-6px; cursor:pointer;"
-          onclick='window.open("https://replit.com/@Sebastian105/Sebastian105")'> <a
-          href="https://replit.com/@Sebastian105/Sebastian105">Replit</a> <img>
+          href="https://github.com/Sebastian-105/Sebastian-105.github.io">Github</a> <img>
       </footer>
   </div>
   </main>

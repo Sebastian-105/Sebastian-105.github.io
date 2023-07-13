@@ -21,8 +21,7 @@ Here is most of the javascript for the "sebastian-105" website
 var name = localStorage.getItem("personname");
 var tabicon105 = localStorage.getItem("tabicon105");
 var tabname1234 = localStorage.getItem("tabname1234");
-var notification = notification;
-
+var notification = document.getElementsByClassName("copyalertcorner");
 var examplelink = location;
 var author = "Sebastian-105";
 // %%%%%%%%%%%%%%%%%%%%%%% KEYBINDS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -76,21 +75,14 @@ document.addEventListener("keydown", (e) => {
     $(".menupopup").fadeToggle("fast");
   }
 });
-$("#menuclose").click(function (e) {
-  $(".menupopup").fadeOut("fast");
-});
+
 function copytoclipboard(copiedcrap) {
   navigator.clipboard.writeText(copiedcrap);
   console.log(`${copiedcrap} has been copied.`);
-  notification.fadeIn("slow").delay(1500).fadeOut("fast");
-  notification.css("background-color", "#04AA6D");
+  $("#copyalertcorner").fadeIn('slow').delay(1500).fadeOut("fast");
   notification.innerText = "Successfully copied: " + copiedcrap;
 }
-function closesidenav() {
-  $(".sidenav").hide("fast");
-  $("#time").hide("slow");
-  console.log("Closed sidenav");
-}
+
 
 function settings() {
   if (
@@ -179,9 +171,8 @@ function tabname() {
   var tabnameforrealz = prompt("New Tab title:", "Example: " + document.title);
   var tabnameforrealz123 = (document.title = tabnameforrealz);
   localStorage.setItem("tabname1234", tabnameforrealz);
-  notification.fadeIn("fast").delay(1500).fadeOut("fast");
-  notification.css("background-color", "#04AA6D");
-  document.getElementById(
+  $("#copyalertcorner").fadeIn('slow').delay(1500).fadeOut("fast");
+    document.getElementById(
     "copyalertcorner"
   ).innerHTML = `Successfully Changed tab title to: ${document.title}`;
 }
@@ -189,8 +180,7 @@ function tabname() {
 function resettabname() {
   document.title = "Sebastian-105";
   localStorage.setItem("tabname1234", "Sebastian-105");
-  notification.fadeIn("fast").delay(1500).fadeOut("fast");
-  notification.css("background-color", "#04AA6D");
+  $("#copyalertcorner").fadeIn('slow').delay(1500).fadeOut("fast");
   document.getElementById(
     "copyalertcorner"
   ).innerHTML = `Successfully Reset tab name back to ${document.title}`;
