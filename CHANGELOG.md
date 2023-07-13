@@ -195,10 +195,10 @@
     <th><a href="https://github.com/Sebastian-105/sebastian-105.github.io/releases">Full release log here</a></th><!-- Update type-->
   </tr>
   <tr>
-    <th></th><!-- Update version-->
-    <th></th><!-- Date changed (mm/dd/yyyy)-->
-    <th></th><!-- Thing changed-->
-    <th></th><!-- Update type-->
+    <th>v4.15.12.0</th><!-- Update version-->
+    <th>07/13/2023</th><!-- Date changed (mm/dd/yyyy)-->
+    <th>Added a 4<sup>th</sup>number to version, this new updates are not very big and will only appear in the commits and changelog, but it will not be a new release.</th><!-- Thing changed-->
+    <th><a href="https://github.com/Sebastian-105/sebastian-105.github.io/releases">Full release log here</a></th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
