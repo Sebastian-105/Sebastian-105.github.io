@@ -2,10 +2,10 @@
   "name": "sebastian-105",
   "version": "1.0.0",
   "description": "https://sebastian-105.github.io/",
-  "main": "app.js",
+  "main": "index.js",
   "private": true,
   "scripts": {
-    "start": "node app.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "express": "^4.16.1",
