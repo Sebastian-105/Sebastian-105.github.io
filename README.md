@@ -47,20 +47,12 @@ Once you find all these stuff you are free to go! :)
 [![Deploy to Render](https://binbashbanana.github.io/deploy-buttons/buttons/remade/render.svg)](https://render.com/deploy?repo=https://github.com/Sebastian-105/Sebastian-105.github.io)
 [![Deploy with Vercel](https://binbashbanana.github.io/deploy-buttons/buttons/remade/vercel.svg)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSebastian-105%2FSebastian-105.github.io)
 [![Remix on Glitch](https://binbashbanana.github.io/deploy-buttons/buttons/remade/glitch.svg)](https://glitch.com/edit/#!/import/github/Sebastian-105/Sebastian-105.github.io)
-# Versions:
-
-<a style="font-size:25px;" href="https://github.com/Sebastian-105/Website-v1">Sebastian-105/Website-v1</a><br>
-<a style="font-size:25px;" href="https://github.com/Sebastian-105/Website-v2">Sebastian-105/Website-v2</a>
-<br>
-Just for reference this is v3
-
 # Contributers:
 ![Contrib](https://contrib.rocks/image?repo=Sebastian-105/Sebastian-105.github.io#)
 
 # Info/Stats
-![Stargazers repo roster for @3kh0/3kh0.github.io](https://bytecrank.com/nastyox/reporoster/php/stargazersSVG.php?theme=light&user=Sebastian-105&repo=Sebastian-105.github.io)<br />
-![Stargazers repo roster for @3kh0/3kh0.github.io](https://bytecrank.com/nastyox/reporoster/php/forkersSVG.php?theme=light&user=Sebastian-105&repo=Sebastian-105.github.io)
-
+[![Stargazers repo roster for @Sebastian-105/Sebastian-105.github.io](https://reporoster.com/stars/dark/Sebastian-105/Sebastian-105.github.io)](https://github.com/Sebastian-105/Sebastian-105.github.io/stargazers)
+[![Forkers repo roster for @Sebastian-105/Sebastian-105.github.io](https://reporoster.com/forks/dark/Sebastian-105/Sebastian-105.github.io)](https://github.com/Sebastian-105/Sebastian-105.github.io/network/members)
 # Other 
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/859bbfb3-435a-4cc4-8feb-b9b6d55cc80b/deploy-status)](https://app.netlify.com/sites/sebastian-105/deploys)
