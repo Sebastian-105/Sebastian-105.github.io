@@ -1,4 +1,5 @@
-[![Sebastian-105](./Sebastian-105.png)](./index.html)
+[![Sebastian-105](./Sebastian-105.gif)](./index.html)<br>
+[![Website](./Sebastian-105.github.io.gif)](https://sebastian-105.github.io)<br>
 
 # Using my Website
   You have to press `run` (only on replit) This website took a lot of time to make so I would apprecite if you could not copy off me and plagiarize this code.  <br> If you want to open my website on github than go here [here (github.io)](https://sebastian-105.github.io).
