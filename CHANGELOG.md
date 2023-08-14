@@ -12,7 +12,7 @@
     <th>Update version v(.major.minor.small/bug fix)</th>
     <th>Date changed (mm/dd/yyyy)</th>
     <th>Thing Changed</th>
-    <th>Update type</th>
+    <th>extra</th>
   </tr>
   <tr>
     <th>v1.0.0</th><!-- Update version-->
@@ -201,153 +201,153 @@
     <th><a href="https://github.com/Sebastian-105/sebastian-105.github.io/releases">Full release log here</a></th><!-- Update type-->
   </tr>
   <tr>
-    <th></th><!-- Update version-->
-    <th></th><!-- Date changed (mm/dd/yyyy)-->
-    <th></th><!-- Thing changed-->
-    <th></th><!-- Update type-->
+    <th>v4.15.12.1</th><!-- Update version-->
+    <th>08/14/2023</th><!-- Date changed (mm/dd/yyyy)-->
+    <th>bug fix</th><!-- Thing changed-->
+    <th><a href="https://github.com/Sebastian-105/sebastian-105.github.io/releases">Full release log here</a></</th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Update type-->
+    <th><a href="https://github.com/Sebastian-105/sebastian-105.github.io/releases">Full release log here</a></</th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Update type-->
+    <th><a href="https://github.com/Sebastian-105/sebastian-105.github.io/releases">Full release log here</a></</th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Update type-->
+    <th><a href="https://github.com/Sebastian-105/sebastian-105.github.io/releases">Full release log here</a></</th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Update type-->
+    <th><a href="https://github.com/Sebastian-105/sebastian-105.github.io/releases">Full release log here</a></</th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Update type-->
+    <th><a href="https://github.com/Sebastian-105/sebastian-105.github.io/releases">Full release log here</a></</th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Update type-->
+    <th><a href="https://github.com/Sebastian-105/sebastian-105.github.io/releases">Full release log here</a></</th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Update type-->
+    <th><a href="https://github.com/Sebastian-105/sebastian-105.github.io/releases">Full release log here</a></</th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Update type-->
+    <th><a href="https://github.com/Sebastian-105/sebastian-105.github.io/releases">Full release log here</a></</th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Update type-->
+    <th><a href="https://github.com/Sebastian-105/sebastian-105.github.io/releases">Full release log here</a></</th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Update type-->
+    <th><a href="https://github.com/Sebastian-105/sebastian-105.github.io/releases">Full release log here</a></</th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Update type-->
+    <th><a href="https://github.com/Sebastian-105/sebastian-105.github.io/releases">Full release log here</a></</th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Update type-->
+    <th><a href="https://github.com/Sebastian-105/sebastian-105.github.io/releases">Full release log here</a></</th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Update type-->
+    <th><a href="https://github.com/Sebastian-105/sebastian-105.github.io/releases">Full release log here</a></</th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Update type-->
+    <th><a href="https://github.com/Sebastian-105/sebastian-105.github.io/releases">Full release log here</a></</th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Update type-->
+    <th><a href="https://github.com/Sebastian-105/sebastian-105.github.io/releases">Full release log here</a></</th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Update type-->
+    <th><a href="https://github.com/Sebastian-105/sebastian-105.github.io/releases">Full release log here</a></</th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Update type-->
+    <th><a href="https://github.com/Sebastian-105/sebastian-105.github.io/releases">Full release log here</a></</th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Update type-->
+    <th><a href="https://github.com/Sebastian-105/sebastian-105.github.io/releases">Full release log here</a></</th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Update type-->
+    <th><a href="https://github.com/Sebastian-105/sebastian-105.github.io/releases">Full release log here</a></</th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Update type-->
+    <th><a href="https://github.com/Sebastian-105/sebastian-105.github.io/releases">Full release log here</a></</th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Update type-->
+    <th><a href="https://github.com/Sebastian-105/sebastian-105.github.io/releases">Full release log here</a></</th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Update type-->
+    <th><a href="https://github.com/Sebastian-105/sebastian-105.github.io/releases">Full release log here</a></</th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Update type-->
+    <th><a href="https://github.com/Sebastian-105/sebastian-105.github.io/releases">Full release log here</a></</th><!-- Update type-->
   </tr>
   <tr>
     <th></th><!-- Update version-->
     <th></th><!-- Date changed (mm/dd/yyyy)-->
     <th></th><!-- Thing changed-->
-    <th></th><!-- Update type-->
+    <th><a href="https://github.com/Sebastian-105/sebastian-105.github.io/releases">Full release log here</a></</th><!-- Update type-->
   </tr>
   </table>
