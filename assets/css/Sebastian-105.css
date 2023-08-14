@@ -46,6 +46,44 @@ Here is most of the CSS for the "sebastian-105" website
   background-color: #111;
   color: white;
 }
+.menupopup {
+  display:none;
+  padding: 20px;
+  border-radius: 15px;
+  border-color: black;
+  border-width: 2px;
+  border: solid;
+  position: fixed;
+  width: 80%;
+  left: 10%;
+  height: 80%;
+  top: 10%;
+  background-color: #262626;
+  z-index: 6;
+
+}
+
+.menucontent {
+  text-align: center;
+  color: white;
+  font-size: 25px;
+}
+.menuspace {
+  width:100%;
+  margin-bottom:25px;
+  margin-top:10px;
+  border:solid white 2px;
+}
+.menucontenttext {
+  color: white;
+  font-size: 15px;
+}
+.menulist {
+  margin-top:10px;
+  border:dashed black 2px;
+  background-color: #10034323;
+  padding:2px;
+}
 
 .opennav {
   position: fixed;
@@ -858,20 +896,20 @@ h3 {
 .card {
   flex-direction: column;
   margin: 20px;
-  color: #111;
-  margin-left: -20px;
+  color:#111;
+  margin-left:-20px;
   width: 225px;
-  border: solid 1px white;
+  border:solid 1px white;
   height: 28px;
   border-radius: 12px;
   background: var(--decoration);
 }
 
 .card a {
-  color: black;
-  font-size: 20px;
+  color:black;
+  font-size:20px;
   text-align: center;
-  margin-top: -10px;
+  margin-top:-10px;
   vertical-align: middle;
 }
 
@@ -962,7 +1000,7 @@ copyalertcorner {
   vertical-align: bottom;
   bottom: 10px;
   right: 10px;
-  color: black;
+  color:black;
   font-size: 15px;
   border-radius: 10px;
   background-color: #04AA6D;

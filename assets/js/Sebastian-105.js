@@ -21,7 +21,7 @@ Here is most of the javascript for the "sebastian-105" website
 var name = localStorage.getItem("personname");
 var tabicon105 = localStorage.getItem("tabicon105");
 var tabname1234 = localStorage.getItem("tabname1234");
-var notification = $("#copyalertcorner123");
+var notification =  $("#copyalertcorner123");
 
 var examplelink = location;
 var author = "Sebastian-105";
@@ -34,9 +34,9 @@ function copytoclipboard(copiedcrap) {
   notification.html("Successfully copied: " + copiedcrap);
 }
 function closesidenav() {
-  $(".sidenav").hide("fast");
-  $("#time").hide("slow");
-  console.log("Closed sidenav");
+  $('.sidenav').hide('fast');
+  $('#time').hide('slow');
+  console.log('Closed sidenav');
 }
 
 function settings() {
@@ -141,10 +141,8 @@ function keybinds() {
 function tabname() {
   var tabnameforrealz = prompt("New Tab title:", "Example: " + document.title);
   var tabnameforrealz123 = (document.title = tabnameforrealz);
-  $("#copyalertcorner123").fadeIn("fast").delay(1500).fadeOut("fast");
-  $("#copyalertcorner123").html(
-    `Successfully Changed tab title to: ${document.title}`
-  );
+   $("#copyalertcorner123").fadeIn("fast").delay(1500).fadeOut("fast");
+  $("#copyalertcorner123").html(`Successfully Changed tab title to: ${document.title}`);
   localStorage.setItem("tabname1234", tabnameforrealz);
   return;
 }
@@ -161,27 +159,21 @@ function tabicon() {
     thetabicon.includes("file://") ||
     thetabicon.includes("localhost")
   ) {
-    $("#copyalertcorner123").fadeIn("fast").delay(1500).fadeOut("fast");
-    $("#copyalertcorner123").css("background-color", "#04AA6D");
-    $("#copyalertcorner123").html(
-      "Successfully Changed tab icon " + thetabicon
-    );
+     $("#copyalertcorner123").fadeIn("fast").delay(1500).fadeOut("fast");
+     $("#copyalertcorner123").css("background-color", "#04AA6D");
+    $("#copyalertcorner123").html("Successfully Changed tab icon " + thetabicon);
   } else {
-    $("#copyalertcorner123").fadeIn("fast").delay(1500).fadeOut("fast");
-    $("#copyalertcorner123").css("background-color", "#f44336");
-    $("#copyalertcorner123").html(
-      "Failed to Change tab icon. Check to see if it's a real link'"
-    );
+     $("#copyalertcorner123").fadeIn("fast").delay(1500).fadeOut("fast");
+     $("#copyalertcorner123").css("background-color", "#f44336");
+    $("#copyalertcorner123").html("Failed to Change tab icon. Check to see if it's a real link'");
   }
 }
 function resettabname() {
   document.title = "Sebastian-105";
   localStorage.setItem("tabname1234", "Sebastian-105");
-  $("#copyalertcorner123").fadeIn("fast").delay(1500).fadeOut("fast");
-  $("#copyalertcorner123").css("background-color", "#04AA6D");
-  $("#copyalertcorner123").html(
-    `Successfully Reset tab name back to ${document.title}`
-  );
+   $("#copyalertcorner123").fadeIn("fast").delay(1500).fadeOut("fast");
+   $("#copyalertcorner123").css("background-color", "#04AA6D");
+  $("#copyalertcorner123").html(`Successfully Reset tab name back to ${document.title}`);
 }
 
 function time() {
@@ -252,6 +244,7 @@ if (
   $("link[rel*='icon']").attr("href", tabiconabc);
 }, 105);
 </script>`);
+
 }
 // %%%%%%%%%%%%%%%%%%%%%%% KEYBINDS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 document.addEventListener("keydown", (e) => {
@@ -273,7 +266,7 @@ document.addEventListener("keydown", (e) => {
     );
   } else if (e.key === "Escape") {
     e.preventDefault();
-    closesidenav();
+   closesidenav()
   } else if (e.key === "s" && e.ctrlKey) {
     e.preventDefault();
     window.open("/105/settings/index.html");
@@ -285,7 +278,7 @@ document.addEventListener("keydown", (e) => {
   } else if (e.key === "," && e.altKey) {
     e.preventDefault();
     tabname();
-  } else if (e.key === "," && e.ctrlKey) {
+  }else if (e.key === "," && e.ctrlKey) {
     e.preventDefault();
     resettabname();
   } else if (e.key === "." && e.altKey) {
@@ -294,15 +287,12 @@ document.addEventListener("keydown", (e) => {
   } else if (e.key === "c" && e.ctrlKey) {
     e.preventDefault();
     window.open("/105/chatroom/index.html");
-  } else if (e.key === "c" && e.altKey) {
-    var chatroomwindow = window.open(
-      "/105/chatroom/index.html",
-      `width=${width} height=${height}`
-    );
-  } else if (e.key === "o" && e.ctrlKey) {
+  } else if (e.key === 'c' && e.altKey) {
+    var chatroomwindow = window.open('/105/chatroom/index.html', `width=${width} height=${height}`)
+  }else if (e.key === "o" && e.ctrlKey) {
     e.preventDefault();
     window.open("https://organization-105.netlify.app/");
-  } else if ((e.key === "d" && e.ctrlKey) || (e.key === "h" && e.altKey)) {
+  } else if (e.key === "d" && e.ctrlKey || e.key === 'h' && e.altKey) {
     e.preventDefault();
     window.open("/docs/index.html");
   } else if (e.key === "b" && e.altKey) {
@@ -311,8 +301,13 @@ document.addEventListener("keydown", (e) => {
   } else if (e.key === "b" && e.ctrlKey) {
     e.preventDefault();
     aboutblank_window();
+  } else if (e.key === "m" && e.ctrlKey) {
+    $(".menupopup").fadeToggle("fast");
   }
 });
-$(function () {
-  $("#sortable").sortable();
+$("#menuclose").click(function (e) {
+  $(".menupopup").fadeOut("fast");
 });
+ $( function() {
+    $( "#sortable" ).sortable();
+  } );
