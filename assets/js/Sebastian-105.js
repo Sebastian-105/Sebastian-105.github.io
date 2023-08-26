@@ -23,11 +23,19 @@ Here is most of the javascript for the "sebastian-105" website
 var name = localStorage.getItem("personname");
 var tabicon105 = localStorage.getItem("tabicon105");
 var tabname1234 = localStorage.getItem("tabname1234");
-var notification =  $("#copyalertcorner123");
+var notification = $("#copyalertcorner123");
 
 var examplelink = location;
 var author = "Sebastian-105";
-
+function homepage() {
+  window.open('/');
+}
+function games() {
+  window.open('/game/');
+}
+function docs() {
+  window.open('/docs/');
+}
 function copytoclipboard(copiedcrap) {
   navigator.clipboard.writeText(copiedcrap);
   console.log(`${copiedcrap} has been copied.`);
@@ -35,15 +43,58 @@ function copytoclipboard(copiedcrap) {
   notification.css("background-color", "#04AA6D");
   notification.html("Successfully copied: " + copiedcrap);
 }
-function closesidenav() {
-  $('.sidenav').hide('fast');
-  $('#time').hide('slow');
-  console.log('Closed sidenav');
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+//Right Click Stuff         %%%%%
+//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+const menu = document.querySelector(".menurightclick");
+// add an event listener for the right-click event on the document
+document.addEventListener("contextmenu", (e) => {
+  // prevent the default browser behavior
+  e.preventDefault();
+  // show the menu element
+  menu.style.display = "block";
+  // position the menu element near the cursor horizontally
+  menu.style.left = `${event.clientX}px`;
+  // position the menu element near the cursor vertically
+  menu.style.top = `${event.clientY}px`;
+});
+
+// add an event listener for the click event on the document
+document.addEventListener("click", hideMenu);
+function hideMenu() {
+  menu.style.display = "none";
 }
-       
-      setTimeout(() => {
-        $(".loader-wrapper").fadeOut(105);
-      }, 1050);
+
+// select all the option elements
+const options = document.querySelectorAll(".menurightclick>div");
+
+// add an event listener for the click event on each option element
+options.forEach((ea) => {
+  ea.addEventListener("click", (event) => {
+    // get the text content of the clicked option
+    const act = event.target.getAttribute("actions");
+    if (act === "a") {
+      // do something for option 1
+      alert("a");
+    } else if (act === "") {
+      // do something for option 2
+      alert("");
+    } else if (act === "") {
+      // do something for option 3
+      console.log("");
+    }
+  });
+});
+
+function closesidenav() {
+  $(".sidenav").hide("fast");
+  $("#time").hide("slow");
+  console.log("Closed sidenav");
+}
+
+setTimeout(() => {
+  $(".loader-wrapper").fadeOut(105);
+}, 1000);
 function settings() {
   if (
     confirm(
@@ -146,8 +197,10 @@ function keybinds() {
 function tabname() {
   var tabnameforrealz = prompt("New Tab title:", "Example: " + document.title);
   var tabnameforrealz123 = (document.title = tabnameforrealz);
-   $("#copyalertcorner123").fadeIn("fast").delay(1500).fadeOut("fast");
-  $("#copyalertcorner123").html(`Successfully Changed tab title to: ${document.title}`);
+  $("#copyalertcorner123").fadeIn("fast").delay(1500).fadeOut("fast");
+  $("#copyalertcorner123").html(
+    `Successfully Changed tab title to: ${document.title}`
+  );
   localStorage.setItem("tabname1234", tabnameforrealz);
   return;
 }
@@ -164,44 +217,29 @@ function tabicon() {
     thetabicon.includes("file://") ||
     thetabicon.includes("localhost")
   ) {
-     $("#copyalertcorner123").fadeIn("fast").delay(1500).fadeOut("fast");
-     $("#copyalertcorner123").css("background-color", "#04AA6D");
-    $("#copyalertcorner123").html("Successfully Changed tab icon " + thetabicon);
+    $("#copyalertcorner123").fadeIn("fast").delay(1500).fadeOut("fast");
+    $("#copyalertcorner123").css("background-color", "#04AA6D");
+    $("#copyalertcorner123").html(
+      "Successfully Changed tab icon " + thetabicon
+    );
   } else {
-     $("#copyalertcorner123").fadeIn("fast").delay(1500).fadeOut("fast");
-     $("#copyalertcorner123").css("background-color", "#f44336");
-    $("#copyalertcorner123").html("Failed to Change tab icon. Check to see if it's a real link'");
+    $("#copyalertcorner123").fadeIn("fast").delay(1500).fadeOut("fast");
+    $("#copyalertcorner123").css("background-color", "#f44336");
+    $("#copyalertcorner123").html(
+      "Failed to Change tab icon. Check to see if it's a real link'"
+    );
   }
 }
 function resettabname() {
   document.title = "Sebastian Schapfel";
   localStorage.setItem("tabname1234", "Sebastian Schapfel");
-   $("#copyalertcorner123").fadeIn("fast").delay(1500).fadeOut("fast");
-   $("#copyalertcorner123").css("background-color", "#04AA6D");
-  $("#copyalertcorner123").html(`Successfully Reset tab name back to ${document.title}`);
+  $("#copyalertcorner123").fadeIn("fast").delay(1500).fadeOut("fast");
+  $("#copyalertcorner123").css("background-color", "#04AA6D");
+  $("#copyalertcorner123").html(
+    `Successfully Reset tab name back to ${document.title}`
+  );
 }
 
-function time() {
-  const hour = new Date().getHours();
-  var thetime;
-  if (hour < 12) {
-    thetime = `Good Morning`;
-  } else if (hour < 17) {
-    thetime = `Good Afternoon`;
-  } else {
-    thetime = `Good Evening`;
-  }
-  var gradenumber = localStorage.getItem("grade");
-  setInterval(() => {
-    document.getElementById("therealtime").innerHTML = thetime + " " + name;
-    document.getElementById(
-      "timedropdown"
-    ).innerHTML = `${name}'s account settings`;
-    document.getElementsByClassName(
-      "grade"
-    )[0].innerHTML = `${gradenumber}<sup>th</sup> Grade`;
-  }, 1);
-}
 function username() {
   var usernames = prompt(
     "What should we call you?\nWarning: this reloads your page"
@@ -249,7 +287,6 @@ if (
   $("link[rel*='icon']").attr("href", tabiconabc);
 }, 105);
 </script>`);
-
 }
 // %%%%%%%%%%%%%%%%%%%%%%% KEYBINDS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 document.addEventListener("keydown", (e) => {
@@ -271,7 +308,7 @@ document.addEventListener("keydown", (e) => {
     );
   } else if (e.key === "Escape") {
     e.preventDefault();
-   closesidenav()
+    closesidenav();
   } else if (e.key === "s" && e.ctrlKey) {
     e.preventDefault();
     window.open("/105/settings/index.html");
@@ -283,7 +320,7 @@ document.addEventListener("keydown", (e) => {
   } else if (e.key === "," && e.altKey) {
     e.preventDefault();
     tabname();
-  }else if (e.key === "," && e.ctrlKey) {
+  } else if (e.key === "," && e.ctrlKey) {
     e.preventDefault();
     resettabname();
   } else if (e.key === "." && e.altKey) {
@@ -292,12 +329,15 @@ document.addEventListener("keydown", (e) => {
   } else if (e.key === "c" && e.ctrlKey) {
     e.preventDefault();
     window.open("/105/chatroom/index.html");
-  } else if (e.key === 'c' && e.altKey) {
-    var chatroomwindow = window.open('/105/chatroom/index.html', `width=${width} height=${height}`)
-  }else if (e.key === "o" && e.ctrlKey) {
+  } else if (e.key === "c" && e.altKey) {
+    var chatroomwindow = window.open(
+      "/105/chatroom/index.html",
+      `width=${width} height=${height}`
+    );
+  } else if (e.key === "o" && e.ctrlKey) {
     e.preventDefault();
     window.open("https://organization-105.netlify.app/");
-  } else if (e.key === "d" && e.ctrlKey || e.key === 'h' && e.altKey) {
+  } else if ((e.key === "d" && e.ctrlKey) || (e.key === "h" && e.altKey)) {
     e.preventDefault();
     window.open("/docs/index.html");
   } else if (e.key === "b" && e.altKey) {
@@ -313,6 +353,6 @@ document.addEventListener("keydown", (e) => {
 $("#menuclose").click(function (e) {
   $(".menupopup").fadeOut("fast");
 });
- $( function() {
-    $( "#sortable" ).sortable();
-  } );
+$(function () {
+  $("#sortable").sortable();
+});

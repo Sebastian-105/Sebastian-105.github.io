@@ -20,21 +20,23 @@ Here is most of the CSS for the "sebastian-105" website
 */
 /* Varibles */
 :root {
-  --background: #27262b;
   /*Background-color*/
-  --font-color: #fff;
   --decoration: #00a9e2;
   --font-family: 'Consolas', monospace;
   --font-family2nd: 'Vollkorn', serif;
   --font-family3rd: 'Roboto', serif;
   --secondary-font-color: #fff;
   --font-size: 15px;
-  --sub-font-color: lightgrey;
   --theme: #111;
   --font-color2nd: white;
   --danyang-font-family: 'Google Sans';
   --main-border-color: rebeccapurple;
+  /*Themes*/
+  --mainmenucolor: #262626;
+  --font-color: #fff;
+  --background: #27262b;
   --main-border-color2: white;
+  --sub-font-color: lightgrey;
 }
 
 /* Imports */
@@ -47,65 +49,151 @@ Here is most of the CSS for the "sebastian-105" website
 .dark {
   background-color: #111;
   color: white;
-}        .loader-wrapper {
-          width: 100%;
-          z-index: 999999999999999;
-          height: 100%;
-          position: absolute;
-          top: 0;
-          left: 0;
-          border-radius:5px;
-          background-color: #242f3f;
-          display:flex;
-          justify-content: center;
-          align-items: center;
-      }
-      .loader {
-          display: inline-block;
-          width: 100px;
-          height: 100px;
-          position: relative;
-          border: 5px solid #111;
-          border-radius:5px;
-          box-shadow: 0px 0px 50px  rebeccapurple;
-          animation: loader 1.5s infinite ease;
-      }
-      .loader-inner {
-          vertical-align: top;
-          display: inline-block;
-          width: 100%;
-          border-radius:5px;
-          background-color: #111;
-          animation: loader-inner 1.5s infinite ease-in;
-      }
-      @keyframes loader {
-          0% { transform: rotate(0deg);border-radius:5px;}
-          25% { transform: rotate(180deg);border-radius:5px;}
-          50% { transform: rotate(180deg);border-radius:5px;}
-          75% { transform: rotate(360deg);border-radius:5px;}
-          100% { transform: rotate(360deg);border-radius:5px;}
-      }
-      @keyframes loader-inner {
-          0% { height: 0%;border-radius:5px;}
-          25% { height: 0%;border-radius:5px;}
-          50% { height: 100%;border-radius:5px;}
-          75% { height: 100%;border-radius:5px;}
-          100% { height: 0%;border-radius:5px;}
-      }
+}
 
-.loginForm {
-  /* display: none; */
-  padding: 20px;
-  border-radius: 15px;
-  border: solid rebeccapurple 2px;
+.loader-wrapper {
   position: fixed;
-  width: 80%;
-  left: 10%;
-  height: 80%;
-  top: 10%;
-  background-color: #262626;
-  z-index: 6;
+  width: 100%;
+  z-index: 106;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+  background-color: #242f3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#loaDing {
+  transform:translateX(-87px);
+  animation: words 1.5s infinite ease;
+}
+.loader {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border: 5px solid #111;
+  border-radius: 5px;
+  box-shadow: 0px 0px 50px rebeccapurple;
+  animation: loader 1.5s infinite ease;
+}
 
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #111;
+  animation: loader-inner 1.5s infinite ease-in;
+}
+@keyframes words {
+  0% {
+    content:"Loading";
+  }
+  25% {
+    content:"Loading .";
+  }
+  50% {
+    content:"Loading . .";
+  }
+  75% {
+    content:"Loading . . ."
+  }
+  100% {
+    content:"Loading";
+  }
+}
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+    border-radius: 5px;
+  }
+
+  25% {
+    transform: rotate(180deg);
+    border-radius: 5px;
+  }
+
+  50% {
+    transform: rotate(180deg);
+    border-radius: 5px;
+  }
+
+  75% {
+    transform: rotate(360deg);
+    border-radius: 5px;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    border-radius: 5px;
+  }
+}
+
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+    border-radius: 5px;
+  }
+
+  25% {
+    height: 0%;
+    border-radius: 5px;
+  }
+
+  50% {
+    height: 100%;
+    border-radius: 5px;
+  }
+
+  75% {
+    height: 100%;
+    border-radius: 5px;
+  }
+
+  100% {
+    height: 0%;
+    border-radius: 5px;
+  }
+}
+
+.menurightclick {
+  display: none;
+  border-radius: 10px;
+  background-color: #252525;
+  position: fixed;
+  width: 250px;
+  border: 1px solid white;
+  color: white;
+  z-index: 105;
+  box-shadow: 0px 0px 15px rebeccapurple;
+
+}
+
+.menurightclick>div.moreoptions {
+  border: solid 1px white;
+}
+
+
+
+/* style menu items */
+.menurightclick>div {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 10px;
+  margin: 10px;
+  border-radius: 6px;
+  border: solid 1px white;
+  cursor: pointer;
+}
+
+.menurightclick>div:hover {
+  background-color: #696969;
+}
+
+.linksicons:hover {
+  animation: .5s infinite shake;
 }
 
 .menupopup {
@@ -300,34 +388,6 @@ badge {
 
 }
 
-#thetimeinexacttime {
-  text-align: center;
-  position: fixed;
-  z-index: 1001;
-}
-
-.exacttime {
-  border-width: 5px;
-  border-color: #fff;
-  background-color: #111;
-  color: var(--font-color);
-  border-radius: 15px;
-  z-index: 1000;
-  position: fixed;
-  margin: 60%;
-  margin-top: 25px;
-  width: 500px;
-  height: 300px;
-  display: none;
-}
-
-#exittime {
-  float: right;
-  margin-top: 16px;
-  margin-right: 16px;
-  color: var(--font-color);
-}
-
 #currentverisonasdf {
   font-family: var(--font-family2nd);
 }
@@ -433,21 +493,6 @@ badge {
   border-radius: 0%;
 }
 
-#time {
-  background-color: gray;
-  border-radius: 7px;
-  padding: 10px;
-  color: var(--font-color);
-  font-size: 18px;
-  z-index: 105;
-  font-style: italic;
-  margin: 0px;
-  width: 100%;
-  left: 75%;
-  font-weight: bold;
-  border-color: white;
-}
-
 .grade {
   margin-top: 20px;
   background-color: black;
@@ -492,10 +537,11 @@ p {
 .sidenav {
   resize: both;
   height: 100%;
-  width: 15%;
+  width: 100%;
   position: fixed;
   z-index: 105;
   top: 0;
+  opacity: .80;
   font-family: var(--font-family);
   left: 0;
   background-color: black;
@@ -631,6 +677,11 @@ p {
   font-family: var(--font-family);
 }
 
+#headerh1:hover {
+  animation: .5s infinite shake;
+
+}
+
 .callout-header {
   opacity: 1;
   padding: 25px 20px;
@@ -649,6 +700,8 @@ p {
   z-index: 2;
 
 }
+
+
 
 .closecallout {
   position: absolute;
@@ -731,17 +784,6 @@ h3 {
   transform: scale(1.05);
 }
 
-.sidenav {
-  height: 100%;
-  width: 15%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 10px;
-}
 
 /* Style the sidenav links and the dropdown button */
 .sidenav a {
@@ -1023,7 +1065,7 @@ h3 {
   text-indent: 10px;
   font-size: 18px;
   display: show;
-  z-index: 1000000000000000;
+  z-index: auto;
   vertical-align: center;
   align-self: center;
   color: var(--font-color);
@@ -1222,15 +1264,6 @@ hr {
     transform: translatex(100%);
     transition: transform 0.5s ease-in;
     z-index: -1;
-  }
-
-  .hamburger {
-    position: absolute;
-    top: 17px;
-    right: 25%;
-    display: block;
-    cursor: pointer;
-    z-index: 5;
   }
 
   .nav-bar li {
@@ -2032,36 +2065,6 @@ html {
   }
 }
 
-.navbar {
-  height: 56px;
-  box-shadow: 0 5px 200px var(--theme);
-  position: sticky;
-  top: 0;
-  z-index: 9999;
-  animation: breathing 5s ease-out infinite normal;
-}
-
-.navbar.noshadow {
-  box-shadow: 0 0 0 var(--background);
-  animation: none;
-}
-
-.navitems {
-  display: flex;
-  justify-content: center;
-  height: 100%;
-  align-items: center;
-  gap: 10px;
-  background: var(--background);
-}
-
-.navlogo {
-  height: 45px;
-  border-radius: 15px;
-  position: absolute;
-  left: 5px;
-  user-select: none;
-}
 
 @keyframes shake {
   0% {

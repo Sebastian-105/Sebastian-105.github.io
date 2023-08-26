@@ -43,7 +43,6 @@ Made by @Sebastian-105 (Sebastian S)
   <meta property="og:image" content="./105.png" />
   <meta property="og:description"
     content="My home page, games, and a live chatroom. | Sebastian-105 | Made with https://github.com">
-  <link rel="manifest" href="manifest.json" />
   <link rel="stylesheet" href="assets/css/Sebastian-105.css" />
   <link rel="stylesheet" href="assets/lib/font-awesome.min.css" />
   <link href="assets/css/jquery-ui.css" rel="stylesheet">
@@ -53,7 +52,19 @@ Made by @Sebastian-105 (Sebastian S)
   <title class="title">Sebastian S</title>
 </head>
 
-<body onload="Sebastian105()">
+<body>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                      Stuff that floats/is hidden at first
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div>
+  <div class="menurightclick" class="rightclick">
+    <div onclick="games()" actions="games">Games Page</div>
+    <div onclick="homepage()" actions="homepage">Homepage</div>
+    <div onclick="docs()" actions="docs">Docs</div>
+  </div>
+  </div>
   <copyalertcorner class="alertcorner" id="copyalertcorner123"></copyalertcorner>
   <div class="opennav" title="menu/sidenav">&#9776;</div>
   <div class="container" onload="Sebastian105()">
@@ -103,7 +114,7 @@ Made by @Sebastian-105 (Sebastian S)
         </ul>
       </div>
     </div>
-  
+
     <main>
       <!-- ─────────────── Little alert in corner ─────────────── -->
       <div class="corner">
@@ -149,15 +160,16 @@ Made by @Sebastian-105 (Sebastian S)
             Currently on website v3
           <p id="versionssssss"><a href="https://github.com/Sebastian-105/Website-v1">[v1]</a>~<a
               href="https://github.com/Sebastian-105/sebastian-105.github.io/releases/tag/v2.14.10">[v2]</a></p>
-          <p><a href="https://github.com/Sebastian-105" target="_blank"><img
+          <p><a class="linksicons" href="https://github.com/Sebastian-105" target="_blank"><img class="linksicons"
                 style="width:50px;height:50px;margin-right:10px"
                 src="https://static-00.iconduck.com/assets.00/github-icon-256x249-eb1fu3cu.png" alt="Github"></a>
-            <a style="width:50px;height:50px;" href="https://open.spotify.com/user/xgejalgtp9rurdpiic5ysyrju"
-              target="_blank"><img style="width:50px;height:50px;margin-right:10px"
+            <a class="linksicons" style="width:50px;height:50px;"
+              href="https://open.spotify.com/user/xgejalgtp9rurdpiic5ysyrju" target="_blank"><img class="linksicons"
+                style="width:50px;height:50px;margin-right:10px"
                 src="https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico" alt="Spotify"></a>
-            <a style="width:50px;height:50px;
-" href="https://Sebastian-105.vercel.app" target="_blank"><img style="width:50px;height:50px; border-radius:50%;"
-                src="./105.png" alt="Sebastian-105"></a>
+            <a class="linksicons" style="width:50px;height:50px;
+" href="https://Sebastian-105.vercel.app" target="_blank"><img class="linksicons"
+                style="width:50px;height:50px; border-radius:50%;" src="./105.png" alt="Sebastian-105"></a>
           </p>
           </p>
           <!--───────────────social media links───────────────-->
@@ -177,8 +189,8 @@ Made by @Sebastian-105 (Sebastian S)
         <ul id="sortable">
           <li class="card"></span><a href="game/">Games page</a></li>
           <li class="card"></span><a href="https://Organization-105.github.io" target="_blank">Organization-105</a></li>
-          <li class="card"></span><a href="105/chatroom/index.html">Chatroom</a< /li>
-          <li class="card"></span><a href="https://discord.gg/hGzm2drjan">Discord</a< /li>
+          <li class="card"></span><a href="105/chatroom/index.html">Chatroom</a></li>
+          <li class="card"></span><a href="https://discord.gg/hGzm2drjan">Discord</a></li>
         </ul>
         </p>
         <!--───────────────Sidenav───────────────-->
@@ -295,9 +307,7 @@ Made by @Sebastian-105 (Sebastian S)
           <div class="social-media"></div>
       </div>
   </div>
-  <div class="loader-wrapper">
-    <span class="loader"><span class="loader-inner"></span></span>
-  </div>
+
   </danyang>
   <footer id="copyright" class="footer">
     © 2023
