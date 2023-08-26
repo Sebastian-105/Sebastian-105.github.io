@@ -111,6 +111,7 @@
           position: absolute;
           top: 0;
           left: 0;
+          border-radius:5px;
           background-color: #242f3f;
           display:flex;
           justify-content: center;
@@ -121,47 +122,41 @@
           width: 100px;
           height: 100px;
           position: relative;
-          border: 5px solid  #111;
+          border: 5px solid #111;
+          border-radius:5px;
           box-shadow: 0px 0px 50px  rebeccapurple;
-          animation: loader 2s infinite ease;
+          animation: loader 1.5s infinite ease;
       }
       .loader-inner {
           vertical-align: top;
           display: inline-block;
           width: 100%;
+          border-radius:5px;
           background-color: #111;
-          animation: loader-inner 2s infinite ease-in;
+          animation: loader-inner 1.5s infinite ease-in;
       }
       @keyframes loader {
-          0% { transform: rotate(0deg);}
-          25% { transform: rotate(180deg);}
-          50% { transform: rotate(180deg);}
-          75% { transform: rotate(360deg);}
-          100% { transform: rotate(360deg);}
+          0% { transform: rotate(0deg);border-radius:5px;}
+          25% { transform: rotate(180deg);border-radius:5px;}
+          50% { transform: rotate(180deg);border-radius:5px;}
+          75% { transform: rotate(360deg);border-radius:5px;}
+          100% { transform: rotate(360deg);border-radius:5px;}
       }
       @keyframes loader-inner {
-          0% { height: 0%;}
-          25% { height: 0%;}
-          50% { height: 100%;}
-          75% { height: 100%;}
-          100% { height: 0%;}
+          0% { height: 0%;border-radius:5px;}
+          25% { height: 0%;border-radius:5px;}
+          50% { height: 100%;border-radius:5px;}
+          75% { height: 100%;border-radius:5px;}
+          100% { height: 0%;border-radius:5px;}
       }
 
-      img {
-          width: 100%;
-          margin: 0;
-          padding: 0;
-          position: absolute;
-          top: 0;
-          left: 0;
-      }
     </style>
  
   
   <title>404 Error | Sebastian S
   </title>
   <script type="text/javascript" src="assets/js/Sebastian105.js"></script>
-  <link rel="icon" type="image/png" src="105.png/">
+  <link rel="icon" type="image/png" src="105.png/"></head><body>
   <!-- <right style="float:right;" onclick="darktheme404()"><svg style="color: var(--mainstrokecolor)"
       xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-sun"
       viewBox="0 0 16 16">
@@ -200,13 +195,13 @@
     <span class="loader"><span class="loader-inner"></span></span>
   </div>
   <script>
-    function loader() {
+      
       setTimeout(() => {
         $(".loader-wrapper").fadeOut(105);
-      }, 105);
-    }
-  </script>
+      }, 1050);
+   </script>
   <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
-</head>
+  
+</body>
 
 </html>

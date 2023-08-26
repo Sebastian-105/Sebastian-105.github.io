@@ -40,7 +40,10 @@ function closesidenav() {
   $('#time').hide('slow');
   console.log('Closed sidenav');
 }
-
+       
+      setTimeout(() => {
+        $(".loader-wrapper").fadeOut(105);
+      }, 1050);
 function settings() {
   if (
     confirm(
