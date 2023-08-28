@@ -2,7 +2,7 @@
     "githubPullRequests.ignoredPullRequestBranches": [
         "Sebastian-105"
     ],
-    "editor.fontSize": 15,
+    "editor.fontSize": 16,
     "editor.tabSize": 2,
     "editor.accessibilityPageSize": 1,
     "editor.codeActionWidget.showHeaders": false,
