@@ -8,6 +8,8 @@ on:
     branches: [ "Sebastian-105" ]
   pull_request:
     branches: [ "Sebastian-105" ]
+  schedule:
+  - cron: "0 12 * * 1-5" 
 
 jobs:
   build:
@@ -28,4 +30,4 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm run build --if-present
-    - run: npm test
+    - run: node script.js
