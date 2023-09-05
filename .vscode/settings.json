@@ -2,7 +2,7 @@
     "githubPullRequests.ignoredPullRequestBranches": [
         "Sebastian-105"
     ],
-    "editor.fontSize": 15,
+    "editor.fontSize": 16,
     "editor.tabSize": 2,
     "editor.accessibilityPageSize": 1,
     "editor.codeActionWidget.showHeaders": false,
@@ -28,5 +28,14 @@
     },
     "[github-actions-workflow]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
+    "workbench.preferredDarkColorTheme": "Default Dark+",
+    "workbench.colorTheme": "Default Dark+",
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "editor.defaultColorDecorators": true,
+    "editor.guides.bracketPairs": false,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+    "prettier.bracketSameLine": true,
+    "editor.autoClosingDelete": "always"
 }

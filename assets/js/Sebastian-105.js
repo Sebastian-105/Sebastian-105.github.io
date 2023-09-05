@@ -239,55 +239,6 @@ function resettabname() {
     `Successfully Reset tab name back to ${document.title}`
   );
 }
-
-function username() {
-  var usernames = prompt(
-    "What should we call you?\nWarning: this reloads your page"
-  );
-  localStorage.setItem("personname", usernames);
-  window.location.reload();
-}
-function grade() {
-  var gradelevel = prompt(
-    `What grade are you in? This will affect your recomendation based on your grade \nNote: Don't add the "th".\nWarning: this reloads your page`
-  );
-  localStorage.setItem("grade", gradelevel);
-  window.location.reload();
-}
-setInterval(time, 1);
-/* var lastKnownScrollPosition = 0;
-      var ticking = false;
-      document.addEventListener('scroll', function (e) {
-        lastKnownScrollPosition = window.scrollY;
-        if (!ticking) {
-          window.requestAnimationFrame(function () {
-            if (lastKnownScrollPosition == 0) {
-              document.getElementsByClassName("navbar").style.boxShadow = "";
-            } else {
-              document.getElementsByClassName("navbar").style.boxShadow = "0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%)";
-            }
-            ticking = false;
-					});
-          ticking = true;
-        }
-      }); */
-if (
-  document.location.href.includes("game/c") ||
-  document.location.href.includes("game/p")
-) {
-  $("body").html(`<script>
-  //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% | Title | %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
-  var localStoragetitle = localStorage.getItem('tabname1234')
-  setTimeout(() => { 
-  document.title = localStoragetitle; 
-  }, 105);
-  //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% | Icon | %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
-  var tabiconabc = localStorage.getItem('tabicon105');
-  setTimeout(() => {
-  $("link[rel*='icon']").attr("href", tabiconabc);
-}, 105);
-</script>`);
-}
 // %%%%%%%%%%%%%%%%%%%%%%% KEYBINDS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 document.addEventListener("keydown", (e) => {
   if (e.key === "g" && e.ctrlKey) {
@@ -306,9 +257,6 @@ document.addEventListener("keydown", (e) => {
       "/105/setttings/index.html",
       `width=${width} height=${height}`
     );
-  } else if (e.key === "Escape") {
-    e.preventDefault();
-    closesidenav();
   } else if (e.key === "s" && e.ctrlKey) {
     e.preventDefault();
     window.open("/105/settings/index.html");
@@ -347,6 +295,8 @@ document.addEventListener("keydown", (e) => {
     e.preventDefault();
     aboutblank_window();
   } else if (e.key === "m" && e.ctrlKey) {
+    $(".menupopup").fadeToggle("fast");
+  } else if (e.key === "?") {
     $(".menupopup").fadeToggle("fast");
   }
 });
