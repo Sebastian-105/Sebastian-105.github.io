@@ -175,6 +175,13 @@
     "id": ""
   },
   {
+    "name": "Magic Keyboard",
+    "root": "c/mkb",
+    "sub": "Hocus Pocus!",
+    "img": "./105.png",
+    "id": ""
+  },
+  {
     "name": "Ping pong but bad",
     "root": "c/nerd",
     "sub": "kinda bad",
