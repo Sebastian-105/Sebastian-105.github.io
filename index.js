@@ -9,7 +9,6 @@ const express = require('express');
 const http = require('http');
 var mongo = require('mongodb');
 
-
 // Constants
 const PORT = 1050;
 const HOST = '0.0.0.0';
