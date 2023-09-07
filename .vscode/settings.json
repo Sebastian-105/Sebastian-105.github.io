@@ -37,5 +37,6 @@
     "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
     "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
     "prettier.bracketSameLine": true,
-    "editor.autoClosingDelete": "always"
+    "editor.autoClosingDelete": "always",
+    "editor.fontFamily": "Consolas, monospace"
 }
