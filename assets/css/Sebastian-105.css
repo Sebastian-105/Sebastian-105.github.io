@@ -122,7 +122,20 @@ Here is most of the CSS for the "sebastian-105" website
   background-color: #fff;
   transform-origin: 0 0;
 }
-
+.questiongames {
+  margin-left:15px;
+}
+.aboutthis {
+  float:right;
+  margin-right: 15px;
+  margin-top:80px;
+  border-radius: 50%;
+  border:solid 2px white;
+  font-size: 50px;
+  text-align: center;
+  width: 50px;
+  height:50px;
+}
 .ml1 .line1 { top: 0; }
 .ml1 .line2 { bottom: 0; }
 .loader-wrapper {
