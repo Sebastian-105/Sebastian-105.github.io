@@ -17,11 +17,9 @@ fetch('./games.json')
       const game105 = document.createElement('div');
       game105.className = 'game-box';
       game105.innerHTML = `<!-- ${game.name} -->
-        <div class="a"><div class="banner" style='background-image:var(--)'><seb><a class="classText" href="${game.root}/" style="color:white;" target="_blank" rel="noopener noreferrer" onclick='console.log("Clicked on ${game.name}")'><div class="main">${game.name}</div><div class="sub">${game.sub}</div></a></div></seb></div><div class="b"><div class="icon"></div><div class="icon"></div></div>`;
+        <div class="a"><div class="banner" style='background-image:var(--)'><seb><aclass="classText" href="${game.root}/" style="color:white;" target="_blank" rel="noopener noreferrer" onclick='console.log("Clicked on ${game.name}")'><div class="main">${game.name}</div><div class="sub">${game.sub}</div></a></div><div class="aboutthis">?</div><div></div></seb></div></div>`;
       gamesContainer.appendChild(game105);
       // Add click event listener to the game element to show the game in the game container
-      game105.onclick = (e) => {
-      };
 
       // Add click event listener to the back button in the game container to go back to the games list
       gameNav.querySelector('#back').addEventListener('click', (e) => {
