@@ -4,91 +4,104 @@
     "root": "",
     "sub": "Homepage",
     "img": "./105.png",
-    "id": "Sebastian-105"
+    "id": "Sebastian-105",
+    "desc":""
   },
   {
     "name": "1v1.lol",
     "root": "c/1v1lol",
     "sub": "Fortnite but bad",
     "img": "./105.png",
-    "id": "1v1"
+    "id": "1v1",
+    "desc":""
   },
   {
     "name": "Slope",
     "root": "c/Slope",
     "sub": "S P E E D",
     "img": "./105.png",
-    "id": "slope"
+    "id": "slope",
+    "desc":""
   },
   {
     "name": "2048",
     "root": "c/2048",
     "sub": "Can you get the 2048?",
     "img": "./105.png",
-    "id": "twentyfortyeight"
+    "id": "twentyfortyeight",
+    "desc":""
   },
   {
     "name": "iAsk.ai",
     "root": "c/https://iask.ai",
     "sub": "Like ChatGPT",
     "img": "./105.png",
-    "id": "ai"
+    "id": "ai",
+    "desc":""
   },
   {
     "name": "aquapark slide",
     "root": "c/aquapark",
     "sub": "S L I D E!",
     "img": "./105.png",
-    "id": "aps"
+    "id": "aps",
+    "desc":""
   },
   {
     "name": "Bitlife",
     "root": "c/bitlife",
     "sub": "Bitlife, thats all",
     "img": "./105.png",
-    "id": "bitlife"
+    "id": "bitlife",
+    "desc":""
   },
   {
     "name": "Chess",
     "root": "c/chess",
     "sub": "Impossible mode",
     "img": "./105.png",
-    "id": "chess"
+    "id": "chess",
+    "desc":""
   },
   {
     "name": "Cookie Clicker",
     "root": "c/CookieClicker",
     "sub": "Buy those grandmas",
     "img": "./105.png",
-    "id": "cc"
+    "id": "cc",
+    "desc":""
   },
   {
     "name": "Copter.io",
     "root": "c/copter",
     "sub": "Only works at home",
     "img": "./105.png",
-    "id": "cio"
+    "id": "cio",
+    "desc":""
   },
   {
     "name": "Crossy Road",
     "root": "c/CrossyRoad",
     "sub": "Cross the road.",
     "img": "./105.png",
-    "id": "cr"
+    "id": "cr",
+    "desc":""
   },
   {
     "name": "Doctor Acorn 3",
     "root": "c/DoctorAcorn3",
     "sub": "Other 2 dr. acorns are dead (maybe)",
     "img": "./105.png",
-    "id": "da3"
+    "id": "da3",
+    "desc":""
   },
   {
     "name": "Doodle Jump",
     "root": "c/DoodleJump",
     "sub": "I have no idea what this is",
     "img": "./105.png",
-    "id": "dj"
+    "id": "dj",
+    "desc":""
   },
   {
     "name": "DriftBoss",
@@ -102,168 +115,192 @@
     "root": "c/DuckLife4",
     "sub": "That one duck game",
     "img": "./105.png",
-    "id": "dl4"
+    "id": "dl4",
+    "desc":""
   },
   {
     "name": "Eaglercraft [1.5.2 & 1.8.8]",
     "root": "https://eaglercraft-105.vercel.app/",
     "sub": "Minecraft but old",
     "img": "./105.png",
-    "id": "eagler188"
+    "id": "eagler188",
+    "desc":""
   },
   {
     "name": "Flappy Bird",
     "root": "c/FlappyBird",
     "sub": "B I R B",
     "img": "./105.png",
-    "id": "flappybirb"
+    "id": "flappybirb",
+    "desc":""
   },
   {
     "name": "Flash Tetris",
     "root": "c/FPTetris",
     "sub": "Tetris but first person",
     "img": "./105.png",
-    "id": "fpt"
+    "id": "fpt",
+    "desc":""
   },
   {
     "name": "Geometry Dash",
     "root": "c/GeometryDash",
     "sub": "Stratch Version",
     "img": "./105.png",
-    "id": ""
+    "id": "gd",
+    "desc":""
   },
   {
     "name": "Getting Over It",
     "root": "c/GettingOverIt",
     "sub": "${game desc. here}",
     "img": "./105.png",
-    "id": ""
+    "id": "goi",
+    "desc":""
   },
   {
     "name": "Happy Wheels",
     "root": "c/HappyWheels",
     "sub": "An old game",
     "img": "./105.png",
-    "id": ""
+    "id": "hw",
+    "desc":""
   },
   {
     "name": "Hextris",
     "root": "c/hextris",
     "sub": "hexagon",
     "img": "./105.png",
-    "id": ""
+    "id": "hxts",
+    "desc":""
   },
   {
     "name": "Jetpack Joyride",
     "root": "c/JetpackJoyride",
     "sub": "green little shooter flying",
     "img": "./105.png",
-    "id": ""
+    "id": "jj",
+    "desc":""
   },
   {
     "name": "Krunker.io",
     "root": "c/krunker",
     "sub": "doesn't work anymore",
     "img": "./105.png",
-    "id": ""
+    "id": "kio",
+    "desc":""
   },
   {
     "name": "Lows Adventures 2",
     "root": "c/LowsAdventures2",
     "sub": "wheres #1?",
     "img": "./105.png",
-    "id": ""
+    "id": "la2",
+    "desc":""
   },
   {
     "name": "Magic Keyboard",
     "root": "c/mkb",
     "sub": "Hocus Pocus!",
     "img": "./105.png",
-    "id": ""
+    "id": "mkb",
+    "desc":""
   },
   {
     "name": "Ping pong but bad",
     "root": "c/nerd",
     "sub": "kinda bad",
     "img": "./105.png",
-    "id": ""
+    "id": "ppbd",
+    "desc":""
   },
   {
     "name": "Pacman",
     "root": "c/pacman",
     "sub": "Nom Nom eat em up!",
     "img": "./105.png",
-    "id": ""
+    "id": "pm",
+    "desc":""
   },
   {
     "name": "Paper.io",
     "root": "c/paperio",
     "sub": "bots",
     "img": "./105.png",
-    "id": ""
+    "id": "ppio",
+    "desc":""
   },
   {
     "name": "proxy",
     "root": "c/proxy",
     "sub": "Used to unblock stuff",
     "img": "./105.png",
-    "id": ""
+    "id": "prxy",
+    "desc":""
   },
   {
     "name": "RetroBowl",
     "root": "c/retrobowl",
     "sub": "Pixelated (american) football",
     "img": "./105.png",
-    "id": ""
+    "id": "bowl",
+    "desc":""
   },
   {
     "name": "Relic Runway",
     "root": "c/RR",
     "sub": "Subway Surfers but different",
     "img": "./105.png",
-    "id": ""
+    "id": "rr",
+    "desc":""
   },
   {
     "name": "Rocket Bot Royale",
     "root": "c/rocket",
     "sub": "2d battle royale with rocket-tanks",
     "img": "./105.png",
-    "id": ""
+    "id": "rbr",
+    "desc":""
   },
   {
     "name": "Run 3",
     "root": "c/Run3",
     "sub": "RUN! Little gray dude RUN!",
     "img": "./105.png",
-    "id": ""
+    "id": "run3",
+    "desc":""
   },
   {
     "name": "Slinguin",
     "root": "c/Slinguin",
     "sub": "what is this?",
     "img": "./105.png",
-    "id": ""
+    "id": "sling",
+    "desc":""
   },
   {
     "name": "Solitaire",
     "root": "c/solitaire",
     "sub": "Your depressed?",
     "img": "./105.png",
-    "id": ""
+    "id": "sole",
+    "desc":""
   },
   {
     "name": "Stack",
     "root": "c/stack",
     "sub": "A mobile game",
     "img": "./105.png",
-    "id": ""
+    "id": "stack",
+    "desc":""
   },
   {
     "name": "Stickman Hook",
     "root": "c/stickman",
     "sub": "Test ur skills, are you spider-man.",
     "img": "./105.png",
-    "id": ""
+    "id": "smh",
+    "desc":""
   },
 
   {
@@ -271,69 +308,79 @@
     "root": "c/StickNinja",
     "sub": "A stickman thats a ninja",
     "img": "./105.png",
-    "id": ""
+    "id": "stcknnja",
+    "desc":""
   },
   {
     "name": "Subway Surfers",
     "root": "c/SubwaySurfers",
     "sub": "A mobile game",
     "img": "./105.png",
-    "id": ""
+    "id": "subsurf",
+    "desc":""
   },
   {
     "name": "Sugar Sugar 3",
     "root": "c/SugarSugar3",
     "sub": "wht is this?",
     "img": "./105.png",
-    "id": ""
+    "id": "sugsug3",
+    "desc":""
   },
   {
     "name": "T-rex game",
     "root": "c/t-rex",
     "sub": "made by google",
     "img": "./105.png",
-    "id": ""
+    "id": "rexy",
+    "desc":""
   },
   {
     "name": "Temple Run",
     "root": "c/TempleRun",
     "sub": "It's subway surfers, that's it",
     "img": "./105.png",
-    "id": ""
+    "id": "temple",
+    "desc":""
   },
   {
     "name": "Trimps",
     "root": "c/trimps",
     "sub": "idk what this is",
     "img": "./105.png",
-    "id": ""
+    "id": "trimps",
+    "desc":""
   },
   {
     "name": "Wordle",
     "root": "c/Wordle",
     "sub": "Changes daily",
     "img": "./105.png",
-    "id": ""
+    "id": "word",
+    "desc":""
   },
   {
     "name": "Worlds Hardest Game",
     "root": "c/worlds-hardest-game",
     "sub": "YOU WILL RAGE QUIT",
     "img": "./105.png",
-    "id": ""
+    "id": "whg",
+    "desc":""
   },
   {
     "name": "Worlds Hardest Game ×2",
     "root": "c/worlds-hardest-game-2",
     "sub": "YOU WILL RAGE QUIT ×2",
     "img": "./105.png",
-    "id": ""
+    "id": "whg2",
+    "desc":""
   },
   {
     "name": "Zombsroyale.io",
     "root": "c/Zombsroyale-multiplayer",
     "sub": "100 Player 2D Real-Time Battle Royale",
     "img": "./105.png",
-    "id": ""
+    "id": "zr",
+    "desc":""
   }
 ]

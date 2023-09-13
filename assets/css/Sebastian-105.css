@@ -99,7 +99,19 @@ Here is most of the CSS for the "sebastian-105" website
   font-weight: 900;
   font-size: 3.5em;
 }
-
+.desc {
+  font-size: 16px;
+  margin-top: 33%;
+  margin-right: 90px;
+  display: none;
+  color: var(--font-color);
+  text-align: center;
+  z-index: 1000000000000000;
+  border-width: 4px;
+  border-radius: 5px;
+  border-color: white;
+  background-color: #111;
+}
 .ml1 .letter {
   display: inline-block;
   line-height: 1em;
