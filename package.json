@@ -1,0 +1,22 @@
+{
+  "name": "sebastian-105.github.io",
+  "version": "1.0.0",
+  "description": "[![Sebastian-105](./Sebastian-105.gif)](./index.html)<br> [![Website](./Sebastian-105.github.io.gif)](https://sebastian-105.github.io)<br>",
+  "main": "gatsby-config.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Sebastian",
+  "license": "ISC",
+  "dependencies": {
+    "anime": "^0.1.2",
+    "animejs": "^3.2.1",
+    "express": "^4.18.2",
+    "jquery": "^3.7.1",
+    "jsdom": "^22.1.0"
+  }
+}
