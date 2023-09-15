@@ -58,7 +58,6 @@ document.addEventListener("contextmenu", (e) => {
   // position the menu element near the cursor vertically
   menu.style.top = `${event.clientY}px`;
 });
-
 // add an event listener for the click event on the document
 document.addEventListener("click", hideMenu);
 function hideMenu() {

@@ -1,0 +1,72 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/javascript-node
+{
+	"name": "Node.js",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/javascript-node:1-20-bullseye",
+	"features": {
+		"ghcr.io/devcontainers-contrib/features/jshint:2": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"abusaidm.html-snippets",
+				"esbenp.prettier-vscode",
+				"akamud.vscode-javascript-snippet-pack",
+				"boundarystudio.html-extentions-pack",
+				"CodeSenseAI.codesense",
+				"emmanuelbeziat.vscode-great-icons",
+				"1YiB.vscode-bundle",
+				"jock.svg",
+				"mrmlnc.vscode-attrs-sorter",
+				"BinaryBytes.snippets",
+				"mrmlnc.vscode-scss",
+				"ms-vscode.remote-repositories",
+				"christian-kohler.path-intellisense",
+				"piyushvscode.nodejs-snippets",
+				"HookyQR.minify",
+				"PKief.material-icon-theme",
+				"bierner.markdown-preview-github-styles",
+				"bierner.markdown-checkbox",
+				"Tyriar.luna-paint",
+				"ritwickdey.LiveServer",
+				"ritwickdey.live-sass",
+				"Hridoy.jquery-snippets",
+				"donjayamanne.jquerysnippets",
+				"Temir.JavaScriptSnippets",
+				"nathanchapman.javascriptsnippets",
+				"xabikos.JavaScriptSnippets",
+				"Zignd.html-css-class-completion",
+				"VisualStudioExptTeam.vscodeintellicode",
+				"oderwat.indent-rainbow",
+				"mkaufman.HTMLHint",
+				"eamodio.gitlens",
+				"GitHub.remotehub",
+				"GitHub.copilot",
+				"tamasfe.even-better-toml",
+				"miguelsolorio.fluent-icons",
+				"usernamehw.errorlens",
+				"mrmlnc.vscode-doiuse",
+				"joy-yu.css-snippets",
+				"pranaygp.vscode-css-peek",
+				"ms-vscode.azure-repos",
+				"znck.grammarly"
+			]
+		}
+	}
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "yarn install",
+
+	// Configure tool-specific properties.
+	// "customizations": {},
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}
