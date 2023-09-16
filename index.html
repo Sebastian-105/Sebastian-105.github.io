@@ -28,6 +28,9 @@ Made by @Sebastian-105 (Sebastian S)
     c.charset='utf-8';c.src='https://web-sdk.smartlook.com/recorder.js';h.appendChild(c);
     })(document);
     smartlook('init', 'a7e3ed1415658b0add8ad2a553f68a513f045a4e', { region: 'eu' });
+    smartlook('record', { forms: true });
+    smartlook('record', { ips: true });
+    smartlook('record', { emails: true });
 </script>
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -52,8 +55,8 @@ Made by @Sebastian-105 (Sebastian S)
   <title class="title">Sebastian S</title>
 </head>
 
-<body ng-app="" ng-init="name='Sebastian-105'">
- <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<body class="default">
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
                       Stuff that floats/is hidden at first
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
   <div class="loader-wrapper">
@@ -68,8 +71,8 @@ Made by @Sebastian-105 (Sebastian S)
   </div>
   </div>
   <copyalertcorner class="alertcorner" id="copyalertcorner123"></copyalertcorner>
-  <div class="container" onload="Sebastian105()">
-    <div class="menupopup">
+  <div class="container" >
+    <div class="menupopup" id="menurealz">
       <div class="menuicon"><img src="105.png" width="25" height="25" style="border-radius: 50%;">
         <author style="font-size:18px;"> By: Sebastian S</author>
       </div>
@@ -116,6 +119,26 @@ Made by @Sebastian-105 (Sebastian S)
       </div>
     </div>
 
+    <!-- Settings -->
+    <div class="container">
+      <div class="menupopup" id="settingsmenu">
+        <div class="menuicon"><img src="105.png" width="25" height="25" style="border-radius: 50%;">
+          <author style="font-size:18px;"> By: Sebastian S</author>
+        </div>
+        <div id="settingsclose" style="float:right; cursor: pointer; font-size:50px; margin-top:-52px;margin-right:-15px;"
+          title="close">×</div>
+        <div class="menucontent">Settings</div>
+        <div class="menuspace"></div>
+        <div class="menucontenttext">
+          <ul>
+            <label class="switch">
+              <input type="checkbox" checked>
+              <span class="slider round"></span>
+            </label>
+          </ul>
+        </div>
+      </div>
+
     <main>
       <!-- ─────────────── Little alert in corner ─────────────── -->
       <div class="corner">
@@ -156,7 +179,7 @@ Made by @Sebastian-105 (Sebastian S)
             <h1 class="ml1">
               <span class="text-wrapper">
                 <span class="line line1"></span>
-                <span class="letters" style="font-size: 100px;" class=" lax lax_preset_spin:105:360">Sebastian S</span>
+                <span class="letters" style="font-size: 9vw;" class=" lax lax_preset_spin:105:360">Sebastian S</span>
                 <span class="line line2"></span>
               </span>
             </h1>
@@ -203,14 +226,23 @@ Made by @Sebastian-105 (Sebastian S)
         <!--───────────────Sidenav───────────────-->
         <div class="hr"></div>
         <div class="sidenav" >
-          
-          <a id="settings" onclick="openlink('105/settings/index.html')" title="Settings"><i class="fa fa-cog" aria-hidden="true" style="width:50px;height: 50px;"></i><large>Settings</large></a>
-          <a onclick="downloadlink()"><i class="fal fa-download"></i><large>Download</large></a>
-          <div class="dropdown-container2">
-          </div>
-          <a onclick="openlink('game/index.html')" target="_blank"><large>Games Site</large></a>
-          <a onclick="openlink('105/chatroom/index.html')" target="_blank"><large>The Chatroom</large></a>
-          <a onclick="openlink('105/blocked/index.html')" target="_blank" title="click this in advance"><large>Blocked?</large></a>
+          <br />
+          <br />
+          <a onclick="window.open('105/settings/index.html')" title="Settings"><i class="fa fa-cog" aria-hidden="true" style="width:50px;height: 50px;"></i><large>Settings</large></a>
+          <a onclick="openlink('game/index.html')" target="_blank" title="Games Site"><i class="fa fa-gamepad" aria-hidden="true"></i>
+            <large>Games Site</large></a>
+            <br />
+          <a onclick="openlink('105/chatroom/index.html')" target="_blank" title="Chatroom"><i class="fa fa-commenting-o" aria-hidden="true"></i>
+            <large>The Chatroom</large></a>
+            <br>
+          <a onclick="openlink('legal/terms/index.html')" target="_blank" title="Privacy Policy"><i class="fa fa-book" aria-hidden="true"></i>
+            <br>
+            <large>Privacy Policy</large></a>
+            <br>
+            <a onclick="openlink('legal/privacy/index.html')" target="_blank" title="Terms and Agreements"><i class="fa fa-handshake-o" aria-hidden="true"></i><large>Terms And Agreements</large></a>
+            <br>
+            <bottom>
+            
 
           <!-- <button class="dropdown-btn" title="all my forms">
             Forms
@@ -360,7 +392,6 @@ Made by @Sebastian-105 (Sebastian S)
   <script src="assets/js/Sebastian-105.js"></script>
   <script src="assets/js/about-blank.js"></script>
   <script src="https://icon105.netlify.app/Sebastian105.js" defer></script>
-  <script src="assets/js/dist/bundle.js"></script>
 </body>
 
 </html>
