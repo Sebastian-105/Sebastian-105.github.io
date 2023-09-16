@@ -26,12 +26,15 @@ Here is most of the CSS for the "sebastian-105" website
   --font-family2nd: "Vollkorn", serif;
   --font-family3rd: "Roboto", serif;
   --secondary-font-color: #fff;
+  --main-background-color: #696969;
   --font-size: 16px;
   --theme: #111;
+  --bordercontrast:solid 1px white;
   --font-color2nd: white;
   --danyang-font-family: "Google Sans";
   --main-border-color: rebeccapurple;
   /*Themes*/
+  --main-gradient: linear-gradient(#555, #111);
   --mainmenucolor: #262626;
   --font-color: #fff;
   --background: #27262b;
@@ -43,14 +46,20 @@ Here is most of the CSS for the "sebastian-105" website
 body.default {
   --font-family: "Consolas", monospace;
   --font-color: #fff;
+  --contrast:white;
   --background: #27262b;
   --font-size: 16px;
   --theme: #111;
   --decoration: #00a9e2;
   margin: 0px;
 }
-body.dark {
-  margin: 50px;
+body.light {
+  --bordercontrast:black;
+  --font-color:black;
+  --main-background-color:#979797;
+  --background: #dadada;
+  --theme: #b1b1b1;
+  --main-gradient:  linear-gradient(#414141, #b1b1b1);
 }
 
 /* Imports */
@@ -61,11 +70,18 @@ body.dark {
 
 /* Good classes */
 .dark {
-  background-color: #111;
-  color: white;
+  background-color:var(--theme);
+
+  color: var(--font-color);
+
 }
 
 /* %%%%%%%%%%%%%%%%%%%--- Settings ---%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+#dark-mode {
+  width: 10px;;
+  height: 10px;
+}
 .switch {
   position: relative;
   display: inline-block;
@@ -98,7 +114,8 @@ body.dark {
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: white;
+  background-color: var(--font-color);
+
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -190,8 +207,10 @@ input:checked + .slider:before {
   z-index: 1000000000000000;
   border-width: 4px;
   border-radius: 5px;
-  border-color: white;
-  background-color: #111;
+  border-color: var(--font-color);
+
+  background-color:var(--theme);
+
 }
 .ml1 .letter {
   display: inline-block;
@@ -269,7 +288,8 @@ input:checked + .slider:before {
   display: inline-block;
   width: 100%;
   border-radius: 5px;
-  background-color: #111;
+  background-color:var(--theme);
+
   animation: loader-inner 1.5s infinite ease-in;
 }
 @keyframes words {
@@ -346,11 +366,12 @@ input:checked + .slider:before {
 .menurightclick {
   display: none;
   border-radius: 10px;
-  background-color: #252525;
+  background-color:var(--background);
   position: fixed;
   width: 250px;
   border: 1px solid white;
-  color: white;
+  color: var(--font-color);
+
   z-index: 105;
   box-shadow: 0px 0px 15px rebeccapurple;
 }
@@ -371,7 +392,7 @@ input:checked + .slider:before {
 }
 
 .menurightclick > div:hover {
-  background-color: #696969;
+  background-color: var(--main-background-color);
 }
 
 .linksicons:hover {
@@ -390,13 +411,14 @@ input:checked + .slider:before {
   left:8%;
   height: 80%;
   top: 10%;
-  background-color: #262626;
+  background-color:var(--background);
   z-index: 6;
 }
 
 .menucontent {
   text-align: center;
-  color: white;
+  color: var(--font-color);
+
   font-size: 25px;
 }
 
@@ -408,7 +430,8 @@ input:checked + .slider:before {
 }
 
 .menucontenttext {
-  color: white;
+  color: var(--font-color);
+
   font-size: 15px;
 }
 
@@ -462,7 +485,8 @@ danyang {
   bottom: 16px;
   border-radius: 10px;
   font-family: var(--font-family);
-  color: white;
+  color: var(--font-color);
+
   background-color: #04aa6d;
   display: none;
 }
@@ -546,7 +570,8 @@ ribbon {
   border-radius: 25px;
   transform: rotate(20deg);
   background-color: #ff9800;
-  color: white;
+  color: var(--font-color);
+
 }
 badge {
   margin-left: 5px;
@@ -567,8 +592,10 @@ badge {
   z-index: 1000000000000000;
   border-width: 4px;
   border-radius: 5px;
-  border-color: white;
-  background-color: #111;
+  border-color: var(--font-color);
+
+  background-color:var(--theme);
+
 }
 
 .menuoptions {
@@ -624,7 +651,8 @@ badge {
 }
 
 #tacbox {
-  color: white;
+  color: var(--font-color);
+
   display: block;
   padding: 1em;
   border: 3px solid #2196f3;
@@ -716,13 +744,16 @@ p {
 .navbar a {
   float: left;
   font-size: 16px;
-  color: white;
+  color: var(--font-color);
+
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 .sidenav {
+  border:var(--bordercontrast);
+  border-style: solid solid solid none;
   height: 100%;
   width: 50px;
   position: fixed;
@@ -731,7 +762,7 @@ p {
   opacity: 1;
   left: 0px;
   font-family: var(--font-family);
-  background-color: #262626;
+  background-color:var(--background);
   display: block;
 }
 large {
@@ -764,7 +795,7 @@ large {
 /* .dropdown-container {
 display: none;
 cursor: pointer;
-background-color: #262626;
+  background-color:var(--background);
 padding-left: 8px;
 margin-left: 8px;
 } */
@@ -788,7 +819,8 @@ margin-left: 8px;
 }
 
 .twilight-mode {
-  --font-color: white;
+  --font-color: var(--font-color);
+
   background-color: #070180;
 }
 
@@ -797,7 +829,8 @@ margin-left: 8px;
   resize: horizontal;
   padding: 0px;
   background-color: black;
-  color: white;
+  color: var(--font-color);
+
   opacity: 1;
   transition: opacity 0.6s;
   margin-bottom: 0px;
@@ -823,7 +856,8 @@ margin-left: 8px;
 
 .closealert {
   margin-left: 15px;
-  color: white;
+  color: var(--font-color);
+
   float: right;
   font-style: italic;
   font-size: 18px;
@@ -862,7 +896,8 @@ margin-left: 8px;
   padding: 25px 20px;
   background: #333333;
   font-size: 30px;
-  color: white;
+  color: var(--font-color);
+
   text-align: center;
   z-index: 2;
 }
@@ -921,7 +956,8 @@ h3 {
 /* Body/html */
 /* Fixed sidenav, full height */
 #opensidenav {
-  color: white;
+  color: var(--font-color);
+
   font-size: 18px;
   margin-bottom: 16px;
   margin-left: 16px;
@@ -960,7 +996,8 @@ h3 {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 18px;
-  color: white;
+  color: var(--font-color);
+
   display: block;
   border: none;
   background: none;
@@ -976,13 +1013,14 @@ h3 {
 /* Add an active class to the active dropdown button */
 .active {
   background-color: #30c032;
-  color: white;
+  color: var(--font-color);
+
 }
 
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
 .dropdown-container {
   display: none;
-  background-color: #262626;
+  background-color:var(--background);
   padding-left: 8px;
   border-radius: 5px;
 }
@@ -1006,7 +1044,8 @@ h3 {
 }
 
 .link105 {
-  color: white;
+  color: var(--font-color);
+
   font-family: var(--font-family);
   text-decoration: none;
 }
@@ -1024,14 +1063,15 @@ h3 {
 .link:visited {
   text-decoration: italic;
   font-weight: bold;
-  color: white;
+  color: var(--font-color);
+
 }
 
 main {
   padding: 0;
   width: 100%;
   height: 100%;
-  background-color: #111;
+  background-color:var(--theme);
 }
 
 /*──────────────────
@@ -1060,7 +1100,7 @@ header {
   color: var(--font-color);
   font-family: var(--font-family);
   display: flex;
-  background-image: linear-gradient(#555, #111);
+  background-image: var(--main-gradient);
   background-position: center;
   background-size: 100%;
 }
@@ -1239,17 +1279,7 @@ h3 {
      footer
 ──────────────────*/
 
-.footer.offline {
-  background-color: #f44336;
-}
 
-.footer.offline::before {
-  content: "| Offline Mode |─> ";
-}
-
-.footer.offline::after {
-  content: " <─| Offline Mode |";
-}
 
 copyalertcorner {
   display: none;
@@ -1272,7 +1302,6 @@ copyalertcorner .offline {
 .footer a {
   color: var(--font-color);
   font-size: 1rem;
-  letter-spacing: 1px;
   text-decoration: none;
 }
 
@@ -1295,7 +1324,7 @@ hr {
 }
 
 .hr {
-  background: white;
+  background:var(--decoration);
   margin: 2px;
   height: 3px;
   width: 75%;
@@ -1470,12 +1499,13 @@ GAME STYLE/CSS
 .gamenavbar {
   width: 100%;
   height: 60px;
-  background-color: #111;
+  background-color:var(--theme);
 }
 
 .open {
   float: right;
-  color: white;
+  color: var(--font-color);
+
   width: 50px;
   height: 50px;
 }
@@ -1512,7 +1542,7 @@ GAME STYLE/CSS
   border-bottom-width: 1px;
   border-color: black;
   z-index: 2;
-  background-color: #111;
+  background-color:var(--theme);
   position: fixed;
 }
 
@@ -1520,9 +1550,10 @@ GAME STYLE/CSS
   width: 80%;
   height: 50px;
   overflow: hidden;
-  background-color: #111;
-  color: white;
-  color: white;
+  background-color:var(--theme);
+  color: var(--font-color);
+  color: var(--font-color);
+
   font-family: var(--font-family);
   margin-top: 10px;
 }
@@ -1534,12 +1565,14 @@ GAME STYLE/CSS
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  background-color: #111;
+  background-color:var(--theme);
+
 }
 
 .topnav a.active {
-  background-color: #111;
-  color: white;
+  background-color:var(--theme);
+  color: var(--font-color);
+
 }
 
 .topnav a:hover {
@@ -1558,7 +1591,8 @@ GAME STYLE/CSS
   position: fixed;
   display: flex;
   flex-direction: row;
-  background-color: #111;
+  background-color:var(--theme);
+
 }
 
 .hamburger {
@@ -1592,7 +1626,8 @@ GAME STYLE/CSS
   margin: 0;
   -webkit-align-items: center;
   align-items: center;
-  background-color: white;
+  background-color: var(--font-color);
+
   border-bottom: 0.0625rem solid #dadce0;
   display: flex;
   flex-wrap: wrap;
@@ -1750,13 +1785,15 @@ nav a:hover {
 
 nav a.active {
   background-color: #4c24ff;
-  color: white;
+  color: var(--font-color);
+
   border-radius: 10px;
 }
 
 nav a.active:hover {
   background-color: #2f00ff;
-  color: white;
+  color: var(--font-color);
+
   transition: 1.5s;
 }
 
@@ -1802,7 +1839,8 @@ body {
   floating: center;
   width: 5.5%;
   height: 150px;
-  color: white;
+  color: var(--font-color);
+
   padding: 4.5rem;
   border-radius: 5.5px;
   transition: 0.5s;
@@ -1823,8 +1861,10 @@ body {
   padding: 5px;
   border-radius: 5px;
   background-color: #333;
-  border-color: white;
-  color: white;
+  border-color: var(--font-color);
+
+  color: var(--font-color);
+
   margin-top: 1.5rem;
   margin-left: 47%;
 }
@@ -2095,34 +2135,6 @@ input[type="submit"] {
   margin: 50px;
 }
 
-.footer {
-  top: 50px;
-  color: var(--font-color);
-  font-size: 1.2rem;
-  line-height: 40px;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  background-color: var(--background);
-  color: white;
-  border: solid;
-  border-left-width: 0px;
-  border-bottom-width: 0px;
-  border-right-width: 0px;
-  border-top-width: 3px;
-  border-top-color: white;
-  margin-bottom: 0px;
-  height: 75px;
-  margin-top: 100px;
-  text-align: center;
-  background-color: var(--background);
-  font-family: var(--font-family);
-}
-
-.footer img {
-  margin-top: 25px;
-  text-align: center;
-}
 
 .fbModalContent::after {
   content: "";
@@ -2258,7 +2270,8 @@ footer {
 }
 
 .btntop {
-  color: white;
+  color: var(--font-color);
+
   padding: 5px 5px;
   margin-top: 6px;
   font-family: var(--font-family);
@@ -2748,7 +2761,8 @@ footer {
 
 .changelog-type[added] {
   background: #21bd01;
-  color: white;
+  color: var(--font-color);
+
 }
 
 .changelog-type[added]::before {
@@ -2757,7 +2771,8 @@ footer {
 
 .changelog-type[removed] {
   background: #ff0000;
-  color: white;
+  color: var(--font-color);
+
 }
 
 .changelog-type[removed]::before {
@@ -2766,7 +2781,8 @@ footer {
 
 .changelog-type[changed] {
   background: #ff7b00;
-  color: white;
+  color: var(--font-color);
+
 }
 
 .changelog-type[changed]::before {
@@ -2817,8 +2833,10 @@ footer {
   width: fit-content;
   padding: 0.5em;
   cursor: pointer;
-  color: white;
-  background-color: white;
+  color: var(--font-color);
+
+  background-color: var(--font-color);
+
 }
 
 .gamecontainer > .nav > span {
@@ -2835,7 +2853,8 @@ footer {
   cursor: pointer;
   right: auto;
   position: fixed;
-  background-color: white;
+  background-color: var(--font-color);
+
   border-radius: 999999999999999999999px;
 }
 

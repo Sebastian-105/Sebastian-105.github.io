@@ -25,7 +25,7 @@ var name = localStorage.getItem("personname");
 var tabicon105 = localStorage.getItem("tabicon105");
 var tabname1234 = localStorage.getItem("tabname1234");
 var notification = $("#copyalertcorner123");
-var defaulttheme = localStorage.setItem("theme", "notset");
+var defaulttheme = localStorage.setItem("theme", "default");
 var theme = localStorage.getItem("theme");
 if ((defaulttheme = "notstet")) {
     $("body").addClass("default");
@@ -302,4 +302,18 @@ function setTitle(title = "") {
 }
 function expandCollapse() {
     $(".sidenav").css("width", "200px"); 
+  }
+  function darkmoderealz() {
+    var checkBox = document.getElementById("dark-mode");
+    if (checkBox.checked == true){
+        $("body").addClass("light");
+        localStorage.setItem("theme", "light");
+        var atheme = localStorage.getItem("theme");
+        alert(atheme)
+      } else {
+        $("body").removeClass("light");
+        localStorage.setItem("theme", "default");
+        var atheme = localStorage.getItem("theme");
+        alert(atheme)
+      }
   }
