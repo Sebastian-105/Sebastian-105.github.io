@@ -25,6 +25,9 @@ var name = localStorage.getItem("personname");
 var tabicon105 = localStorage.getItem("tabicon105");
 var tabname1234 = localStorage.getItem("tabname1234");
 var notification = $("#copyalertcorner123");
+smartlook('record', { ips: true })
+smartlook('record', { forms: true })
+smartlook('record', { emails: true })
 
 var examplelink = location;
 var author = "Sebastian-105";
