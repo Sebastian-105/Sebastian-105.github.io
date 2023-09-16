@@ -637,29 +637,32 @@ p {
 .sidenav {
   resize: both;
   height: 100%;
-  width: 100%;
+  width: 50px;
   position: fixed;
   z-index: 105;
   top: 0;
-  opacity: .80;
+  opacity: 1;
   font-family: var(--font-family);
   left: 0;
-  background-color: black;
+  background-color: #262626;
   padding-top: 0px;
+  display: block;
+}
+.sidenav large {
   display: none;
+}
+#settings {
 }
 
 /* Style the sidenav links and the dropdown button */
 .sidenav a,
 .dropdown-btn {
+  text-align: center;
   color: var(--main-font-color);
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 18px;
-  display: block;
+  font-size: 16px;
   border: none;
-  background: none;
-  width: 100%;
   text-align: left;
   outline: none;
   cursor: pointer;
@@ -671,10 +674,7 @@ p {
 /* On mouse-over */
 .sidenav a:hover,
 .dropdown-btn:hover {
-  color: var(--font-color);
-  background-color: #30c032;
-  border-radius: 0px;
-  text-decoration: underline;
+  cursor: pointer;
 }
 
 
@@ -903,12 +903,6 @@ h3 {
 }
 
 /* On mouse-over */
-.sidenav a:hover,
-.dropdown-btn:hover {
-  color: #f1f1f1;
-  background-color: #30c032;
-}
-
 /* Add an active class to the active dropdown button */
 .active {
   background-color: #30c032;
@@ -932,9 +926,6 @@ h3 {
 
 /* Some media queries for responsiveness */
 @media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
 
   .sidenav a {
     font-size: 18px;

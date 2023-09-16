@@ -20,6 +20,7 @@ Made by @Sebastian-105
 ───────────────────────────────────────────────────────────────────────────────────────────────────|-->
 Here is most of the javascript for the "sebastian-105" website
 */
+
 var name = localStorage.getItem("personname");
 var tabicon105 = localStorage.getItem("tabicon105");
 var tabname1234 = localStorage.getItem("tabname1234");
@@ -28,13 +29,13 @@ var notification = $("#copyalertcorner123");
 var examplelink = location;
 var author = "Sebastian-105";
 function homepage() {
-  window.open('/');
+  window.open("/");
 }
 function games() {
-  window.open('/game/');
+  window.open("/game/");
 }
 function docs() {
-  window.open('/docs/');
+  window.open("/docs/");
 }
 function copytoclipboard(copiedcrap) {
   navigator.clipboard.writeText(copiedcrap);
@@ -90,6 +91,10 @@ function closesidenav() {
   $("#time").hide("slow");
   console.log("Closed sidenav");
 }
+function opensidenav() {
+  $('.sidenav').show('fast');
+  console.log('opened sidenav');
+}
 
 setTimeout(() => {
   $(".loader-wrapper").fadeOut(105);
@@ -111,32 +116,38 @@ $("#currentverisonasdf").html(version);
 $("body").append("<script src='/assets/js/about-blank.js'>");
 
 // Wrap every letter in a span
-var textWrapper = document.querySelector('.ml1 .letters');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+var textWrapper = document.querySelector(".ml1 .letters");
+textWrapper.innerHTML = textWrapper.textContent.replace(
+  /\S/g,
+  "<span class='letter'>$&</span>"
+);
 
-anime.timeline({loop: true})
+anime
+  .timeline({ loop: true })
   .add({
-    targets: '.ml1 .letter',
-    scale: [0.3,1],
-    opacity: [0,1],
+    targets: ".ml1 .letter",
+    scale: [0.3, 1],
+    opacity: [0, 1],
     translateZ: 0,
     easing: "easeOutExpo",
     duration: 600,
-    delay: (el, i) => 70 * (i+1)
-  }).add({
-    targets: '.ml1 .line',
-    scaleX: [0,1],
-    opacity: [0.5,1],
+    delay: (el, i) => 70 * (i + 1),
+  })
+  .add({
+    targets: ".ml1 .line",
+    scaleX: [0, 1],
+    opacity: [0.5, 1],
     easing: "easeOutExpo",
     duration: 700,
-    offset: '-=875',
-    delay: (el, i, l) => 80 * (l - i)
-  }).add({
-    targets: '.ml1',
+    offset: "-=875",
+    delay: (el, i, l) => 80 * (l - i),
+  })
+  .add({
+    targets: ".ml1",
     opacity: 0,
     duration: 1000,
     easing: "easeOutExpo",
-    delay: 1000
+    delay: 1000,
   });
 //FUNCTIONS
 function blocked() {
