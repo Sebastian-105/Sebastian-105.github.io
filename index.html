@@ -161,7 +161,7 @@ Made by @Sebastian-105 (Sebastian S)
             <h1 class="ml1">
               <span class="text-wrapper">
                 <span class="line line1"></span>
-                <span class="letters" style="font-size: 100px;">Sebastian S</span>
+                <span class="letters" style="font-size: 100px;" class=" lax lax_preset_spin:105:360">Sebastian S</span>
                 <span class="line line2"></span>
               </span>
             </h1>
@@ -323,7 +323,7 @@ Made by @Sebastian-105 (Sebastian S)
   <footer id="copyright" class="footer">
     © 2023
     <a href="https://github.com/Sebastian-105 target=" _blank">
-      {{name}}</a>
+     Sebastian-105</a>
     &
     <a href="https://github.com/Danyang/" target="_blank">
       <danyang>DanyangXu77</danyang>
@@ -336,6 +336,26 @@ Made by @Sebastian-105 (Sebastian S)
       onclick='window.open("https://replit.com/@Sebastian105/Sebastian105")'> <a
       href="https://replit.com/@Sebastian105/Sebastian105">Replit</a> <img>
   </footer>
+  <script>
+    window.onload = function () {
+    lax.init()
+
+    // Add a driver that we use to control our animations
+    lax.addDriver('scrollY', function () {
+      return window.scrollY
+    })
+
+    // Add animation bindings to elements
+    lax.addElements('.selector', {
+      scrollY: {
+        translateX: [
+          ["elInY", "elCenterY", "elOutY"],
+          [0, 'screenWidth/2', 'screenWidth'],
+        ]
+      }
+    })
+  }
+  </script>
   <!--JS Libarys-->
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
