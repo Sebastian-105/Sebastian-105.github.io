@@ -84,6 +84,24 @@ body[theme="green & black"]{
   --font-size: 16px;
   --theme: black;
 }
+body[theme="dark blue"] {
+  --decoration: #2C74B3;
+  --element-bg: #2C74B3;
+  --border:black;
+  --font-color:white;
+  --dd2ndDecor: #67e120;
+  --main-background-color:#fff;
+  --main-gradient: linear-gradient(#9ccaff, #0A2647);
+  --font-family: "Consolas", monospace;
+  --font-color: #fff;
+  --contrast:white;
+  --background: #144272;
+  --font-size: 16px;
+  --theme: #0A2647;
+}
+
+
+
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Themes End
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
@@ -225,9 +243,23 @@ Settings End
       transform: translate(1px, -2px) rotate(-1deg);
   }
 }
-.ml1 {
+.ml7 {
+  position: relative;
   font-weight: 900;
-  font-size: 3.5em;
+  font-size: 15vh;
+}
+.ml7 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+.ml7 .letter {
+  transform-origin: 0 100%;
+  display: inline-block;
+  line-height: 1em;
 }
 .desc {
   font-size: 16px;
@@ -243,28 +275,6 @@ Settings End
 
   background-color:var(--theme);
 
-}
-.ml1 .letter {
-  display: inline-block;
-  line-height: 1em;
-}
-
-.ml1 .text-wrapper {
-  position: relative;
-  display: inline-block;
-  padding-top: 0.1em;
-  padding-right: 0.05em;
-  padding-bottom: 0.15em;
-}
-
-.ml1 .line {
-  opacity: 0;
-  position: absolute;
-  left: 0;
-  height: 3px;
-  width: 100%;
-  background-color: #fff;
-  transform-origin: 0 0;
 }
 .questiongames {
   margin-left: 15px;
@@ -1948,7 +1958,7 @@ input[type="submit"] {
 }
 
 .game-box {
-  background-color: #282828;
+  background-color:var(--background);
   border-radius: 0.6rem;
   width: 15rem;
   margin-right: 50px;
@@ -1956,9 +1966,9 @@ input[type="submit"] {
   border: 0.0625rem solid #dadce0;
   margin-bottom: 25px;
   cursor: pointer;
-
   font-family: var(--font-family);
   left: 15px;
+  
 }
 
 .game-box:hover {
@@ -2296,7 +2306,7 @@ footer {
 }
 
 .copyright a {
-  color: #fff;
+  color: var(--element-bg);
   font-size: 1rem;
   letter-spacing: 1px;
   text-decoration: none;

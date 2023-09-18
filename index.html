@@ -137,8 +137,17 @@ Made by @Sebastian-105 (Sebastian S)
           <ul>
             <h2>Themes:</h2>
             <button class="setthemebuttons" onclick="setThemes('default')" style="background-color:#111;color:white;">Default</button>
+
             <button class="setthemebuttons" style="background-color:rgba(255, 255, 255, 0.75); color:black;" onclick="setThemes('light')" >Light</button>
+            
             <button class="setthemebuttons" style="background-color:#6df320;color:black;"onclick="setThemes('green & black')">Green & Black</button>
+            
+            <button class="setthemebuttons" style="background-color:#0A2647;color:white;"onclick="setThemes('dark blue')">Dark Blue</button>
+            <h2>Tab settings</h2>
+            <div>
+              <h4>Tab Name:</h4>
+              <input id="setTitle"  style="color:var(--font-color); padding:15px; border-radius:15px; background-color:var(--background); border:solid 3px white;font-size:16px;" type="textbox">  <button class="setthemebuttons" onclick="setTitleButton()">Set Title!</button>
+            </div>
           </ul>
         </div>
       </div>
@@ -178,20 +187,20 @@ Made by @Sebastian-105 (Sebastian S)
 
       <!--──────────────── HEADER────────────────-->
       <div id="home">
-        <script>
+        <script type="text/javascript ">
           // Wrap every letter in a span
 var textWrapper = document.querySelector(".ml1 .letters");
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
         </script>
         <section class="intro">
           <h3 id="headerh1" title="The best website out there!!" class="title">
-            <h1 class="ml1">
+            <h1 class="ml7">
               <span class="text-wrapper">
-                <span class="line line1"></span>
-                <span class="letters" style="font-size: 9vw;" class=" lax lax_preset_spin:105:360">Sebastian S</span>
-                <span class="line line2"></span>
+                <span class="letters">Sebastian S</span>
               </span>
             </h1>
+            
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
           </h3>
           <p style="font-size:23px;" class="subtitledesc">
             Currently on website v3
@@ -238,17 +247,17 @@ textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='let
           <br />
           <br />
           <a onclick="window.open('105/settings/index.html')" title="Settings"><i class="fa fa-cog" aria-hidden="true" style="width:50px;height: 50px;"></i><large>Settings</large></a>
-          <a onclick="openlink('game/index.html')" target="_blank" title="Games Site"><i class="fa fa-gamepad" aria-hidden="true"></i>
+          <a onclick="window.open('game/index.html')" target="_blank" title="Games Site"><i class="fa fa-gamepad" aria-hidden="true"></i>
             <large>Games Site</large></a>
             <br />
-          <a onclick="openlink('105/chatroom/index.html')" target="_blank" title="Chatroom"><i class="fa fa-commenting-o" aria-hidden="true"></i>
+          <a onclick="window.open('105/chatroom/index.html')" target="_blank" title="Chatroom"><i class="fa fa-commenting-o" aria-hidden="true"></i>
             <large>The Chatroom</large></a>
             <br>
-          <a onclick="openlink('legal/terms/index.html')" target="_blank" title="Privacy Policy"><i class="fa fa-book" aria-hidden="true"></i>
+          <a onclick="window.open('legal/terms/index.html')" target="_blank" title="Privacy Policy"><i class="fa fa-book" aria-hidden="true"></i>
             <br>
             <large>Privacy Policy</large></a>
             <br>
-            <a onclick="openlink('legal/privacy/index.html')" target="_blank" title="Terms and Agreements"><i class="fa fa-handshake-o" aria-hidden="true"></i><large>Terms And Agreements</large></a>
+            <a onclick="window.openwindow.open('legal/privacy/index.html')" target="_blank" title="Terms and Agreements"><i class="fa fa-handshake-o" aria-hidden="true"></i><large>Terms And Agreements</large></a>
             <br>
             <bottom>
             

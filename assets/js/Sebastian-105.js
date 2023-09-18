@@ -244,6 +244,10 @@ function expandCollapse() {
         alert(atheme)
       }
   }
+  function setTitleButton() {
+    let setTitleButton1 = document.getElementById("setTitle").value
+    setTitle(setTitleButton1);
+  }
   function setThemes(setThemetheme) {
     $("body").attr("theme", "");
     $("body").attr("theme", setThemetheme);
