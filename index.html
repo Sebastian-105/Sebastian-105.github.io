@@ -55,7 +55,7 @@ Made by @Sebastian-105 (Sebastian S)
   <title class="title">Sebastian S</title>
 </head>
 
-<body class="default">
+<body theme="default">
   <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
                       Stuff that floats/is hidden at first
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
@@ -133,9 +133,13 @@ Made by @Sebastian-105 (Sebastian S)
           <ul>
             Light Mode (Toggle):
             <input type="checkbox" id="dark-mode" onclick="darkmoderealz()">
-          </ul><script>
-             
-          </script>
+          </ul> 
+          <ul>
+            <h2>Themes:</h2>
+            <button class="setthemebuttons" onclick="setThemes('default')" style="background-color:#111;color:white;">Default</button>
+            <button class="setthemebuttons" style="background-color:rgba(255, 255, 255, 0.75); color:black;" onclick="setThemes('light')" >Light</button>
+            <button class="setthemebuttons" style="background-color:#6df320;color:black;"onclick="setThemes('green & black')">Green & Black</button>
+          </ul>
         </div>
       </div>
 
@@ -174,6 +178,11 @@ Made by @Sebastian-105 (Sebastian S)
 
       <!--──────────────── HEADER────────────────-->
       <div id="home">
+        <script>
+          // Wrap every letter in a span
+var textWrapper = document.querySelector(".ml1 .letters");
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+        </script>
         <section class="intro">
           <h3 id="headerh1" title="The best website out there!!" class="title">
             <h1 class="ml1">
@@ -323,7 +332,7 @@ Made by @Sebastian-105 (Sebastian S)
           </a><br />
           Discord: <br />
           <p onclick="copytoclipboard('dy.x')" title="Copy username" style="cursor: pointer;">
-            <danyang>dx#0500</danyang>
+            <danyang>dy.x</danyang>
           </p>
           <br />
           Email:
@@ -361,6 +370,8 @@ Made by @Sebastian-105 (Sebastian S)
     })
   }
   </script>
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+Scripts  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
   <!--JS Libarys-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 

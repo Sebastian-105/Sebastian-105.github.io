@@ -25,13 +25,13 @@ var name = localStorage.getItem("personname");
 var tabicon105 = localStorage.getItem("tabicon105");
 var tabname1234 = localStorage.getItem("tabname1234");
 var notification = $("#copyalertcorner123");
-var defaulttheme = localStorage.setItem("theme", "default");
 var theme = localStorage.getItem("theme");
 if ((defaulttheme = "notstet")) {
     $("body").addClass("default");
 } else {
     $("body").addClass(theme);
 }
+let defaultThemetext = $("#TheCurrentTheme");
 const defaulttab = {
   title: "Sebastian S",
   icon: "/105.png"
@@ -111,23 +111,12 @@ function opensidenav() {
 }
 
 setTimeout(() => {
+    
     $(".loader-wrapper").fadeOut(105);
 }, 1000);
-function settings() {
-    if (confirm("This page is still a work in progress, are you sure you want to go here? \n-Sebastian") === true) {
-        var myWindow = window.open("105/settings/index.html");
-        console.log("Opened Settings");
-    } else {
-        console.log("stayed at homepage \n-Sebastian");
-    }
-}
-var version = "v3.14.10";
-$("#currentverisonasdf").html(version);
-$("body").append("<script src='/assets/js/about-blank.js'>");
 
-// Wrap every letter in a span
-var textWrapper = document.querySelector(".ml1 .letters");
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+
 
 anime
 .timeline({loop: true})
@@ -157,72 +146,8 @@ anime
     delay: 1000,
 });
 //FUNCTIONS
-function blocked() {
-    var myWindow = window.open(
-        "105/blocked/index.html",
-        "_blank",
-        "width=500,height=400,resizable=yes,left=500,top=200,toolbar=yes"
-    );
-}
 function openlink(link, type) {
     var myWindow = window.open(link, "_blank", `width=${screen.width} height=${screen.height}`);
-}
-function code() {
-    var myWindow = window.open("105/code/index.html", "_blank");
-
-    function feedback() {
-        var myWindow = window.open("https://forms.gle/xmRta2vvGCLsrKUC8", "_blank");
-    }
-}
-function suggestions() {
-    var myWindow = window.open("https://forms.gle/X82sK1epn5Y1Rqj66", "_blank");
-}
-function myFunctionTwilight() {
-    var element = document.body;
-    element.classList.toggle("dark-mode");
-}
-function myFunctionDarkMode() {
-    var elemenwt = document.body;
-    elemenwt.classlist.toggle("twilight-mode");
-}
-function myFunctiongame() {
-    var myWindow = window.open("game/index.html", "_blank");
-}
-function ack() {
-    var myWindow = window.open("105/acknowledgements/index.html", "_blank");
-}
-
-function myFunction12345() {
-    var myWindow = window.open("", "MsgWindow", "width=500,height=500");
-    myWindow.document.write(
-        "Email:<p>28stu216@lexingtonma.org</p><p><strong>Note:</strong> you can only email me if you have a lexington account</p><p>I will get a email account shortly</p>"
-    );
-}
-function bio() {
-    var myWindow = window.open("ReadMe.md", "_blank", "width=500,height=500");
-}
-function changelog() {
-    var myWindow = window.open("105/changelog/index.html", "_blank");
-}
-function myFunctionspotify() {
-    var myWindow = window.open("105/spotify/index.html", "_blank");
-}
-
-function Chatroom() {
-    var myWindow = window.open("105/chatroom/index.html", "_blank");
-}
-function myfunctionofflinegames() {
-    var myWindow = window.open("p/offline/index.html");
-}
-function dailygames() {
-    var myWindow = window.open("p/daily/index.html");
-}
-function downloadlink() {
-    var myWindow = window.open("105/download/index.html");
-}
-
-function keybinds() {
-    var myWindow = window.open("105/keybinds/index.html");
 }
 function reseteverything() {
     document.title = "Sebastian S";
@@ -310,10 +235,26 @@ function expandCollapse() {
         localStorage.setItem("theme", "light");
         var atheme = localStorage.getItem("theme");
         alert(atheme)
+        jQuery("#TheCurrentTheme").text("Default light")
       } else {
         $("body").removeClass("light");
         localStorage.setItem("theme", "default");
         var atheme = localStorage.getItem("theme");
+        jQuery("#TheCurrentTheme").text("Default Dark")
         alert(atheme)
       }
   }
+  function setThemes(setThemetheme) {
+    $("body").attr("theme", "");
+    $("body").attr("theme", setThemetheme);
+    localStorage.setItem("theme", setThemetheme);
+    var atheme = localStorage.getItem("theme");
+    jQuery("#TheCurrentTheme").text(theme)
+    notification.fadeIn("slow").delay(1500).fadeOut("fast");
+    notification.css("background-color", "#04AA6D");
+    notification.html(`Successfully to "${atheme}" theme`);
+  }
+  $("body").attr("theme", "");
+  $("body").attr("theme", theme);
+  //Theme Set
+
