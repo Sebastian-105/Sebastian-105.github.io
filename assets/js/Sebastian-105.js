@@ -153,15 +153,6 @@ document.addEventListener("keydown", (e) => {
     e.preventDefault();
     window.open("/index.html");
     console.log("settings page opened");
-  } else if (e.key === "," && e.altKey) {
-    e.preventDefault();
-    tabname();
-  } else if (e.key === "," && e.ctrlKey) {
-    e.preventDefault();
-    reseteverything();
-  } else if (e.key === "." && e.altKey) {
-    e.preventDefault();
-    tabicon();
   } else if (e.key === "c" && e.ctrlKey) {
     e.preventDefault();
     window.open("/105/chatroom/index.html");

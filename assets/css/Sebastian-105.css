@@ -1884,7 +1884,7 @@ body {
 #card1 {
   outline: 3.5px solid #004be0;
   text-align: center;
-  floating: center;
+  float: center;
   width: 5.5%;
   height: 150px;
   color: var(--font-color);

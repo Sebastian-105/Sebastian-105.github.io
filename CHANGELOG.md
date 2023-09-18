@@ -207,9 +207,9 @@
     <th><a href="https://github.com/Sebastian-105/sebastian-105.github.io/releases">Full release log here</a></</th><!-- Update type-->
   </tr>
   <tr>
-    <th></th><!-- Update version-->
-    <th></th><!-- Date changed (mm/dd/yyyy)-->
-    <th></th><!-- Thing changed-->
+    <th>v4.16.12.1</th><!-- Update version-->
+    <th>09/18/2023</th><!-- Date changed (mm/dd/yyyy)-->
+    <th>Added bunch of stuff</th><!-- Thing changed-->
     <th><a href="https://github.com/Sebastian-105/sebastian-105.github.io/releases">Full release log here</a></</th><!-- Update type-->
   </tr>
   <tr>
