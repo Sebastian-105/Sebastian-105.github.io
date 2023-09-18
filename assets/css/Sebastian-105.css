@@ -37,7 +37,7 @@ Here is most of the CSS for the "sebastian-105" website
   --main-gradient: linear-gradient(#555, #111);
   --mainmenucolor: #262626;
   --font-color: #fff;
-  --background: #27262b;
+  --secondtheme: #27262b;
   --main-border-color2: white;
   --sub-font-color: lightgrey;
   --bordercolor: white;
@@ -50,7 +50,7 @@ body[theme="default"] {
   --font-color: #fff;
   --contrast:white;
   --d2ndDecor: rebeccapurple;
-  --background: #27262b;
+  --secondtheme: #27262b;
   --font-size: 16px;
   --theme: #111;
   --decoration: #00a9e2;
@@ -62,30 +62,45 @@ body[theme="light"] {
   --dd2ndDecor: rebeccapurple;
   --border:black;
   --font-color:black;
-  --background: #DEE4E7;
+  --secondtheme: #DEE4E7;
   --contrast:rgb(56, 56, 56);
   --theme: #fafafa;
   --bordercolor: black;
   --main-gradient:  linear-gradient(#eee, #8d8d8d);
 }
 body[theme="green & black"]{
-  --decoration: #67e120;
-  --element-bg: #4da918;
-  --border:black;
+  --decoration: #79e739;
+  --element-bg: #3cc911;
+  --border:solid 1px white;
   --font-color:white;
   --dd2ndDecor: #67e120;
   --main-gradient: linear-gradient(#555, black);
   --font-family: "Consolas", monospace;
   --font-color: #fff;
   --contrast:white;
-  --background: #262626;
+  --secondtheme: #002f06;
   --font-size: 16px;
   --theme: black;
 }
-body[theme="dark blue"] {
+body[theme="midnight"] {
   --decoration: #2C74B3;
   --element-bg: #2C74B3;
-  --border:black;
+  --border:solid 1px black;
+  --font-color:white;
+  --dd2ndDecor: #67e120;
+  --main-background-color:#fff;
+  --main-gradient: linear-gradient(#9ccaff, #040622);
+  --font-family: "Consolas", monospace;
+  --font-color: #fff;
+  --contrast:white;
+  --secondtheme: #151345;
+  --font-size: 16px;
+  --theme: #040622;
+}
+body[theme="dark blue"] {
+  --decoration: #121619;
+  --element-bg: #0031A3;
+  --border:1px solid black;
   --font-color:white;
   --dd2ndDecor: #67e120;
   --main-background-color:#fff;
@@ -93,9 +108,25 @@ body[theme="dark blue"] {
   --font-family: "Consolas", monospace;
   --font-color: #fff;
   --contrast:white;
-  --background: #144272;
+  --secondtheme: #144272;
   --font-size: 16px;
   --theme: #0A2647;
+}
+body[theme="halloween"] {
+  --decoration: #c900ff;
+  --element-bg: #a102cd;
+  --border:black;
+  --font-color:white;
+  --dd2ndDecor: #67e120;
+  --main-background-color:#fff;
+  --main-gradient: linear-gradient(#ff9a00, black);
+  --font-family: "Consolas", monospace;
+  --font-color: #fff;
+  --contrast:white;
+  --border:1px solid white;
+  --secondtheme: #ff9a00;
+  --font-size: 16px;
+  --theme: black;
 }
 
 
@@ -105,7 +136,7 @@ Themes End
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 .setthemebuttons {
   color: var(--font-color);
-  background-color: var(--background);
+  background-color: var(--secondtheme);
   border:solid 3px var(--bordercolor) ;
   padding:15px;
   border-radius:15px;
@@ -414,7 +445,7 @@ Settings End
 .menurightclick {
   display: none;
   border-radius: 10px;
-  background-color:var(--background);
+  background-color:var(--secondtheme);
   position: fixed;
   width: 250px;
   border: 1px solid white;
@@ -439,7 +470,7 @@ Settings End
 }
 
 .menurightclick > div:hover {
-  background-color: var(--background);
+  background-color: var(--secondtheme);
 }
 
 .linksicons:hover {
@@ -451,14 +482,13 @@ Settings End
   overflow: auto;
   padding: 20px;
   border-radius: 15px;
-  border: solid rebeccapurple 2px;
-  border: solid;
+  border: solid var(--decoration) 2px;
   position: fixed;
   width: 84%;
   left:8%;
   height: 80%;
   top: 10%;
-  background-color:var(--background);
+  background-color:var(--secondtheme);
   z-index: 6;
 }
 
@@ -473,7 +503,7 @@ Settings End
   width: 100%;
   margin-bottom: 25px;
   margin-top: 10px;
-  border: solid white 2px;
+  border: solid var(--decoration) 2px;
 }
 
 .menucontenttext {
@@ -557,7 +587,7 @@ html {
   font-family: var(--main-fonts-family);
   color: var(--font-color);
   font-size: var(--font-size);
-  background-color: var(--background);
+  background-color: var(--secondtheme);
   margin: 0px;
 }
 
@@ -809,7 +839,7 @@ p {
   opacity: 1;
   left: 0px;
   font-family: var(--font-family);
-  background-color:var(--background);
+  background-color:var(--secondtheme);
   display: block;
 }
 large {
@@ -842,7 +872,7 @@ large {
 /* .dropdown-container {
 display: none;
 cursor: pointer;
-  background-color:var(--background);
+  background-color:var(--secondtheme);
 padding-left: 8px;
 margin-left: 8px;
 } */
@@ -1067,7 +1097,7 @@ h3 {
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
 .dropdown-container {
   display: none;
-  background-color:var(--background);
+  background-color:var(--secondtheme);
   padding-left: 8px;
   border-radius: 5px;
 }
@@ -1464,7 +1494,7 @@ hr {
   }
 
   header {
-      background-color: var(--background);
+      background-color: var(--secondtheme);
   }
 
   .logo {
@@ -1487,7 +1517,7 @@ hr {
       flex-direction: column;
       align-items: center;
       justify-content: space-evenly;
-      background: var(--background);
+      background: var(--secondtheme);
       transform: translatex(100%);
       transition: transform 0.5s ease-in;
       z-index: -1;
@@ -1576,7 +1606,7 @@ GAME STYLE/CSS
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background: var(--background);
+  background: var(--secondtheme);
 }
 
 #thenavbar {
@@ -2298,7 +2328,7 @@ input[type="submit"] {
 footer {
   width: 100%;
   height: 100%;
-  background-color: var(--background);
+  background-color: var(--secondtheme);
 }
 
 .copyright {
