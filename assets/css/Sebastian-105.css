@@ -30,7 +30,7 @@ Here is most of the CSS for the "sebastian-105" website
   --font-size: 16px;
   --d2ndDecor: rebeccapurple;
   --theme: #111;
-  --border:solid 1px white;
+  --border: solid 1px white;
   --font-color2nd: white;
   --danyang-font-family: "Google Sans";
   --main-border-color: rebeccapurple;
@@ -48,7 +48,7 @@ Themes
 body[theme="default"] {
   --font-family: "Consolas", monospace;
   --font-color: #fff;
-  --contrast:white;
+  --contrast: white;
   --d2ndDecor: rebeccapurple;
   --background: #27262b;
   --font-size: 16px;
@@ -60,45 +60,43 @@ body[theme="light"] {
   --decoration: #00975b;
   --element-bg: #00975b;
   --dd2ndDecor: rebeccapurple;
-  --border:black;
-  --font-color:black;
-  --background: #DEE4E7;
-  --contrast:rgb(56, 56, 56);
+  --border: black;
+  --font-color: black;
+  --background: #dee4e7;
+  --contrast: rgb(56, 56, 56);
   --theme: #fafafa;
   --bordercolor: black;
-  --main-gradient:  linear-gradient(#eee, #8d8d8d);
+  --main-gradient: linear-gradient(#eee, #8d8d8d);
 }
-body[theme="green & black"]{
+body[theme="green & black"] {
   --decoration: #67e120;
   --element-bg: #4da918;
-  --border:black;
-  --font-color:white;
+  --border: black;
+  --font-color: white;
   --dd2ndDecor: #67e120;
   --main-gradient: linear-gradient(#555, black);
   --font-family: "Consolas", monospace;
   --font-color: #fff;
-  --contrast:white;
+  --contrast: white;
   --background: #262626;
   --font-size: 16px;
   --theme: black;
 }
 body[theme="dark blue"] {
-  --decoration: #2C74B3;
-  --element-bg: #2C74B3;
-  --border:black;
-  --font-color:white;
+  --decoration: #2c74b3;
+  --element-bg: #2c74b3;
+  --border: black;
+  --font-color: white;
   --dd2ndDecor: #67e120;
-  --main-background-color:#fff;
-  --main-gradient: linear-gradient(#9ccaff, #0A2647);
+  --main-background-color: #fff;
+  --main-gradient: linear-gradient(#9ccaff, #0a2647);
   --font-family: "Consolas", monospace;
   --font-color: #fff;
-  --contrast:white;
+  --contrast: white;
   --background: #144272;
   --font-size: 16px;
-  --theme: #0A2647;
+  --theme: #0a2647;
 }
-
-
 
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Themes End
@@ -106,9 +104,9 @@ Themes End
 .setthemebuttons {
   color: var(--font-color);
   background-color: var(--background);
-  border:solid 3px var(--bordercolor) ;
-  padding:15px;
-  border-radius:15px;
+  border: solid 3px var(--bordercolor);
+  padding: 15px;
+  border-radius: 15px;
 }
 /* Imports */
 @import url("themes.css");
@@ -118,17 +116,16 @@ Themes End
 
 /* Good classes */
 .dark {
-  background-color:var(--theme);
+  background-color: var(--theme);
 
   color: var(--font-color);
-
 }
 
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Settings
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 #dark-mode {
-  width: 10px;;
+  width: 10px;
   height: 10px;
 }
 .switch {
@@ -138,7 +135,7 @@ Settings
   height: 34px;
 }
 
-.switch input { 
+.switch input {
   opacity: 0;
   width: 0;
   height: 0;
@@ -152,8 +149,8 @@ Settings
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .slider:before {
@@ -165,16 +162,16 @@ Settings
   bottom: 4px;
   background-color: var(--font-color);
 
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #2196f3;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px #2196f3;
 }
 
 input:checked + .slider:before {
@@ -193,52 +190,53 @@ input:checked + .slider:before {
 }
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Settings End
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */.Collapse {
-  margin-top:45vh
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+.Collapse {
+  margin-top: 45vh;
 }
 @keyframes shake {
   0% {
-      transform: translate(1px, 1px) rotate(0deg);
+    transform: translate(1px, 1px) rotate(0deg);
   }
 
   10% {
-      transform: translate(-1px, -2px) rotate(-1deg);
+    transform: translate(-1px, -2px) rotate(-1deg);
   }
 
   20% {
-      transform: translate(-3px, 0px) rotate(1deg);
+    transform: translate(-3px, 0px) rotate(1deg);
   }
 
   30% {
-      transform: translate(3px, 2px) rotate(0deg);
+    transform: translate(3px, 2px) rotate(0deg);
   }
 
   40% {
-      transform: translate(1px, -1px) rotate(1deg);
+    transform: translate(1px, -1px) rotate(1deg);
   }
 
   50% {
-      transform: translate(-1px, 2px) rotate(-1deg);
+    transform: translate(-1px, 2px) rotate(-1deg);
   }
 
   60% {
-      transform: translate(-3px, 1px) rotate(0deg);
+    transform: translate(-3px, 1px) rotate(0deg);
   }
 
   70% {
-      transform: translate(3px, 1px) rotate(-1deg);
+    transform: translate(3px, 1px) rotate(-1deg);
   }
 
   80% {
-      transform: translate(-1px, -1px) rotate(1deg);
+    transform: translate(-1px, -1px) rotate(1deg);
   }
 
   90% {
-      transform: translate(1px, 2px) rotate(0deg);
+    transform: translate(1px, 2px) rotate(0deg);
   }
 
   100% {
-      transform: translate(1px, -2px) rotate(-1deg);
+    transform: translate(1px, -2px) rotate(-1deg);
   }
 }
 .ml7 {
@@ -271,8 +269,7 @@ Settings End
   border-radius: 5px;
   border-color: var(--font-color);
 
-  background-color:var(--theme);
-
+  background-color: var(--theme);
 }
 .questiongames {
   margin-left: 15px;
@@ -328,91 +325,90 @@ Settings End
   display: inline-block;
   width: 100%;
   border-radius: 5px;
-  background-color:var(--theme);
+  background-color: var(--theme);
 
   animation: loader-inner 1.5s infinite ease-in;
 }
 @keyframes words {
   0% {
-      content: "Loading";
+    content: "Loading";
   }
   25% {
-      content: "Loading .";
+    content: "Loading .";
   }
   50% {
-      content: "Loading . .";
+    content: "Loading . .";
   }
   75% {
-      content: "Loading . . .";
+    content: "Loading . . .";
   }
   100% {
-      content: "Loading";
+    content: "Loading";
   }
 }
 @keyframes loader {
   0% {
-      transform: rotate(0deg);
-      border-radius: 5px;
-      box-shadow: 0px 0px 50px red;
+    transform: rotate(0deg);
+    border-radius: 5px;
+    box-shadow: 0px 0px 50px red;
   }
 
   25% {
-      transform: rotate(180deg);
-      border-radius: 5px;
-      box-shadow: 0px 0px 50px orange;
+    transform: rotate(180deg);
+    border-radius: 5px;
+    box-shadow: 0px 0px 50px orange;
   }
 
   50% {
-      transform: rotate(180deg);
-      border-radius: 5px;
-      box-shadow: 0px 0px 50px yellow;
+    transform: rotate(180deg);
+    border-radius: 5px;
+    box-shadow: 0px 0px 50px yellow;
   }
 
   75% {
-      transform: rotate(360deg);
-      border-radius: 5px;
-      box-shadow: 0px 0px 50px green;
+    transform: rotate(360deg);
+    border-radius: 5px;
+    box-shadow: 0px 0px 50px green;
   }
 
   100% {
-      transform: rotate(360deg);
-      border-radius: 5px;
-      box-shadow: 0px 0px 50px blue;
-
+    transform: rotate(360deg);
+    border-radius: 5px;
+    box-shadow: 0px 0px 50px blue;
   }
 }
 
 @keyframes loader-inner {
   0% {
-      height: 0%;
-      border-radius: 5px;
+    height: 0%;
+    border-radius: 5px;
   }
 
   25% {
-      height: 0%;
-      border-radius: 5px;
+    height: 0%;
+    border-radius: 5px;
   }
 
   50% {
-      height: 100%;
-      border-radius: 5px;
+    height: 100%;
+    border-radius: 5px;
   }
 
   75% {
-      height: 100%;
-      border-radius: 5px;
+    height: 100%;
+    border-radius: 5px;
   }
 
   100% {
-      height: 0%;
-      border-radius: 5px;
+    height: 0%;
+    border-radius: 5px;
   }
 }
 
 .menurightclick {
   display: none;
   border-radius: 10px;
-  background-color:var(--background);
+  background-color: var(--background);
   position: fixed;
   width: 250px;
   border: 1px solid white;
@@ -453,10 +449,10 @@ Settings End
   border: solid;
   position: fixed;
   width: 84%;
-  left:8%;
+  left: 8%;
   height: 80%;
   top: 10%;
-  background-color:var(--background);
+  background-color: var(--background);
   z-index: 6;
 }
 
@@ -616,7 +612,6 @@ ribbon {
   transform: rotate(20deg);
   background-color: #ff9800;
   color: var(--font-color);
-
 }
 badge {
   margin-left: 5px;
@@ -639,8 +634,7 @@ badge {
   border-radius: 5px;
   border-color: var(--font-color);
 
-  background-color:var(--theme);
-
+  background-color: var(--theme);
 }
 
 .menuoptions {
@@ -681,7 +675,7 @@ badge {
 }
 
 .contact {
-  color:var(--decoration);
+  color: var(--decoration);
   font-size: 14px;
 }
 
@@ -797,7 +791,7 @@ p {
 }
 
 .sidenav {
-  border:var(--border);
+  border: var(--border);
   border-style: solid solid solid none;
   height: 100%;
   width: 50px;
@@ -807,7 +801,7 @@ p {
   opacity: 1;
   left: 0px;
   font-family: var(--font-family);
-  background-color:var(--background);
+  background-color: var(--background);
   display: block;
 }
 large {
@@ -1059,13 +1053,12 @@ h3 {
 .active {
   background-color: #30c032;
   color: var(--font-color);
-
 }
 
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
 .dropdown-container {
   display: none;
-  background-color:var(--background);
+  background-color: var(--background);
   padding-left: 8px;
   border-radius: 5px;
 }
@@ -1079,7 +1072,7 @@ h3 {
 /* Some media queries for responsiveness */
 @media screen and (max-height: 450px) {
   .sidenav a {
-      font-size: 18px;
+    font-size: 18px;
   }
 }
 
@@ -1109,15 +1102,14 @@ h3 {
   text-decoration: italic;
   font-weight: bold;
   color: var(--font-color);
-
 }
 
 main {
   padding: 0;
   width: 100%;
-  color:var(--font-color);
+  color: var(--font-color);
   height: 100%;
-  background-color:var(--theme);
+  background-color: var(--theme);
 }
 
 /*──────────────────
@@ -1325,8 +1317,6 @@ h3 {
      footer
 ──────────────────*/
 
-
-
 copyalertcorner {
   display: none;
   position: fixed;
@@ -1370,7 +1360,7 @@ hr {
 }
 
 .hr {
-  background:var(--decoration);
+  background: var(--decoration);
   margin: 2px;
   height: 3px;
   width: 75%;
@@ -1428,13 +1418,13 @@ hr {
 
 @keyframes navLinkFade {
   from {
-      opacity: 0;
-      transform: translatex(50px);
+    opacity: 0;
+    transform: translatex(50px);
   }
 
   to {
-      opacity: 1;
-      transform: translatex(0px);
+    opacity: 1;
+    transform: translatex(0px);
   }
 }
 
@@ -1444,13 +1434,13 @@ hr {
 
 @media only screen and (max-width: 1484px) and (min-width: 1214px) {
   .work {
-      padding: 20px 20%;
+    padding: 20px 20%;
   }
 }
 
 @media only screen and (max-width: 1214px) and (min-width: 1000px) {
   .work {
-      padding: 20px 12%;
+    padding: 20px 12%;
   }
 }
 
@@ -1458,41 +1448,41 @@ hr {
   #home,
   #projects,
   #contact {
-      overflow-x: hidden;
+    overflow-x: hidden;
   }
 
   header {
-      background-color: var(--background);
+    background-color: var(--background);
   }
 
   .logo {
-      position: absolute;
-      top: 2px;
-      left: 30px;
+    position: absolute;
+    top: 2px;
+    left: 30px;
   }
 
   .nav-show {
-      opacity: 1;
+    opacity: 1;
   }
 
   .nav-bar {
-      position: fixed;
-      top: 0px;
-      right: 0;
-      width: 60%;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-evenly;
-      background: var(--background);
-      transform: translatex(100%);
-      transition: transform 0.5s ease-in;
-      z-index: -1;
+    position: fixed;
+    top: 0px;
+    right: 0;
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: var(--background);
+    transform: translatex(100%);
+    transition: transform 0.5s ease-in;
+    z-index: -1;
   }
 
   .nav-bar li {
-      opacity: 0;
+    opacity: 0;
   }
 }
 
@@ -1545,7 +1535,7 @@ GAME STYLE/CSS
 .gamenavbar {
   width: 100%;
   height: 60px;
-  background-color:var(--theme);
+  background-color: var(--theme);
 }
 
 .open {
@@ -1588,7 +1578,7 @@ GAME STYLE/CSS
   border-bottom-width: 1px;
   border-color: black;
   z-index: 2;
-  background-color:var(--theme);
+  background-color: var(--theme);
   position: fixed;
 }
 
@@ -1596,7 +1586,7 @@ GAME STYLE/CSS
   width: 80%;
   height: 50px;
   overflow: hidden;
-  background-color:var(--theme);
+  background-color: var(--theme);
   color: var(--font-color);
   color: var(--font-color);
 
@@ -1611,14 +1601,12 @@ GAME STYLE/CSS
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  background-color:var(--theme);
-
+  background-color: var(--theme);
 }
 
 .topnav a.active {
-  background-color:var(--theme);
+  background-color: var(--theme);
   color: var(--font-color);
-
 }
 
 .topnav a:hover {
@@ -1637,8 +1625,7 @@ GAME STYLE/CSS
   position: fixed;
   display: flex;
   flex-direction: row;
-  background-color:var(--theme);
-
+  background-color: var(--theme);
 }
 
 .hamburger {
@@ -1707,13 +1694,13 @@ GAME STYLE/CSS
 
 @keyframes dismissed {
   from {
-      top: 65;
-      opacity: 0;
+    top: 65;
+    opacity: 0;
   }
 
   to {
-      top: 12px;
-      opacity: 0;
+    top: 12px;
+    opacity: 0;
   }
 }
 
@@ -1855,27 +1842,27 @@ body {
 
 @media screen and (max-width: 555px) {
   nav a:not(:first-child) {
-      display: none;
+    display: none;
   }
   nav a.icon {
-      float: right;
-      display: block;
+    float: right;
+    display: block;
   }
 }
 
 @media screen and (max-width: 555px) {
   nav.responsive {
-      position: relative;
+    position: relative;
   }
   nav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
   nav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
+    float: none;
+    display: block;
+    text-align: left;
   }
 }
 
@@ -1957,7 +1944,7 @@ input[type="submit"] {
 }
 
 .game-box {
-  background:var(--main-gradient);
+  background: var(--main-gradient);
   border-radius: 0.6rem;
   width: 15rem;
   margin-right: 50px;
@@ -1967,7 +1954,6 @@ input[type="submit"] {
   cursor: pointer;
   font-family: var(--font-family);
   left: 15px;
-  
 }
 
 .game-box:hover {
@@ -1994,8 +1980,7 @@ input[type="submit"] {
 
 .classText {
   position: relative;
-  color:var(--font-color);
-
+  color: var(--font-color);
 }
 
 .main {
@@ -2003,7 +1988,7 @@ input[type="submit"] {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.75rem;
-  color:var(--font-color);
+  color: var(--font-color);
   width: auto;
 }
 
@@ -2018,7 +2003,7 @@ input[type="submit"] {
 
 .sub {
   font-family: var(--font-family);
-  color:var(--font-color);
+  color: var(--font-color);
   font-size: 0.95rem;
   font-weight: 400;
   line-height: 1.75rem;
@@ -2183,7 +2168,6 @@ input[type="submit"] {
   margin: 50px;
 }
 
-
 .fbModalContent::after {
   content: "";
   clear: both;
@@ -2192,25 +2176,25 @@ input[type="submit"] {
 
 @-webkit-keyframes animatetop {
   from {
-      top: -300px;
-      opacity: 0;
+    top: -300px;
+    opacity: 0;
   }
 
   to {
-      top: -90px;
-      opacity: 1;
+    top: -90px;
+    opacity: 1;
   }
 }
 
 @keyframes animatetop {
   from {
-      top: -300px;
-      opacity: 0;
+    top: -300px;
+    opacity: 0;
   }
 
   to {
-      top: -90px;
-      opacity: 1;
+    top: -90px;
+    opacity: 1;
   }
 }
 
@@ -2357,7 +2341,7 @@ footer {
 
 * {
   font-family: var(--font-family);
-  color:var(--font-color)
+  color: var(--font-color);
 }
 
 html {
@@ -2386,37 +2370,37 @@ html {
 
 @keyframes breathing {
   0% {
-      box-shadow: 0 5px 170px var(--theme);
+    box-shadow: 0 5px 170px var(--theme);
   }
 
   25% {
-      box-shadow: 0 5px 200px var(--theme);
+    box-shadow: 0 5px 200px var(--theme);
   }
 
   60% {
-      box-shadow: 0 5px 170px var(--theme);
+    box-shadow: 0 5px 170px var(--theme);
   }
 
   100% {
-      box-shadow: 0 5px 170px var(--theme);
+    box-shadow: 0 5px 170px var(--theme);
   }
 }
 
 @-webkit-keyframes breathing {
   0% {
-      box-shadow: 0 5px 170px var(--theme);
+    box-shadow: 0 5px 170px var(--theme);
   }
 
   25% {
-      box-shadow: 0 5px 200px var(--theme);
+    box-shadow: 0 5px 200px var(--theme);
   }
 
   60% {
-      box-shadow: 0 5px 170px var(--theme);
+    box-shadow: 0 5px 170px var(--theme);
   }
 
   100% {
-      box-shadow: 0 5px 170px var(--theme);
+    box-shadow: 0 5px 170px var(--theme);
   }
 }
 
@@ -2764,11 +2748,11 @@ footer {
 
 @keyframes animation-61bdi0 {
   0% {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 
   100% {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -2811,7 +2795,6 @@ footer {
 .changelog-type[added] {
   background: #21bd01;
   color: var(--font-color);
-
 }
 
 .changelog-type[added]::before {
@@ -2821,7 +2804,6 @@ footer {
 .changelog-type[removed] {
   background: #ff0000;
   color: var(--font-color);
-
 }
 
 .changelog-type[removed]::before {
@@ -2831,7 +2813,6 @@ footer {
 .changelog-type[changed] {
   background: #ff7b00;
   color: var(--font-color);
-
 }
 
 .changelog-type[changed]::before {
@@ -2885,7 +2866,6 @@ footer {
   color: var(--font-color);
 
   background-color: var(--font-color);
-
 }
 
 .gamecontainer > .nav > span {
