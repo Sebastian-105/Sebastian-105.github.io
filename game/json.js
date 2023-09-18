@@ -20,12 +20,11 @@ fetch("./games.json")
       <div class="a">
       <div class="banner">
          <seb>
-            <aclass="classText" href="${game.root}/" style="color:white;" target="_blank" rel="noopener noreferrer" onclick='console.log("Clicked on ${game.name}")'>
+            <a class="classText" href="${game.root}/" style="color:white;" target="_blank" rel="noopener noreferrer" onclick='console.log("Clicked on ${game.name}")'>
             <div class="main">${game.name}</div>
             <div class="sub">${game.sub}</div>
             </a>
-      </div>
-      <div class="aboutthis" onclick="">?</div><div></div><div class="desc" id="${game.id}">${game.desc}</div></seb>
+    </seb>
    </div>
    </div>`;
    game105.onclick = (e) => {

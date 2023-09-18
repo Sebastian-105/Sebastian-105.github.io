@@ -27,7 +27,6 @@ Here is most of the CSS for the "sebastian-105" website
   --font-family2nd: "Vollkorn", serif;
   --font-family3rd: "Roboto", serif;
   --secondary-font-color: #fff;
-  --main-background-color: #696969;
   --font-size: 16px;
   --d2ndDecor: rebeccapurple;
   --theme: #111;
@@ -63,11 +62,11 @@ body[theme="light"] {
   --dd2ndDecor: rebeccapurple;
   --border:black;
   --font-color:black;
-  --main-background-color:#fafafa;
-  --background: #fafafa;
+  --background: #DEE4E7;
+  --contrast:rgb(56, 56, 56);
   --theme: #fafafa;
   --bordercolor: black;
-  --main-gradient:  linear-gradient(#414141, #eee);
+  --main-gradient:  linear-gradient(#eee, #8d8d8d);
 }
 body[theme="green & black"]{
   --decoration: #67e120;
@@ -75,7 +74,6 @@ body[theme="green & black"]{
   --border:black;
   --font-color:white;
   --dd2ndDecor: #67e120;
-  --main-background-color:#fff;
   --main-gradient: linear-gradient(#555, black);
   --font-family: "Consolas", monospace;
   --font-color: #fff;
@@ -439,7 +437,7 @@ Settings End
 }
 
 .menurightclick > div:hover {
-  background-color: var(--main-background-color);
+  background-color: var(--background);
 }
 
 .linksicons:hover {
@@ -1117,6 +1115,7 @@ h3 {
 main {
   padding: 0;
   width: 100%;
+  color:var(--font-color);
   height: 100%;
   background-color:var(--theme);
 }
@@ -1958,12 +1957,12 @@ input[type="submit"] {
 }
 
 .game-box {
-  background-color:var(--background);
+  background:var(--main-gradient);
   border-radius: 0.6rem;
   width: 15rem;
   margin-right: 50px;
   height: 16.375rem;
-  border: 0.0625rem solid #dadce0;
+  border: 1px solid var(--contrast);
   margin-bottom: 25px;
   cursor: pointer;
   font-family: var(--font-family);
@@ -1995,6 +1994,8 @@ input[type="submit"] {
 
 .classText {
   position: relative;
+  color:var(--font-color);
+
 }
 
 .main {
@@ -2002,7 +2003,7 @@ input[type="submit"] {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.75rem;
-  color: #fff;
+  color:var(--font-color);
   width: auto;
 }
 
@@ -2017,10 +2018,10 @@ input[type="submit"] {
 
 .sub {
   font-family: var(--font-family);
+  color:var(--font-color);
   font-size: 0.95rem;
   font-weight: 400;
   line-height: 1.75rem;
-  color: #fff;
   margin-top: 0.35rem;
   width: auto;
 }
@@ -2516,7 +2517,7 @@ footer {
   grid-template-columns: repeat(auto-fill, 250px);
   justify-content: center;
   padding: 10px;
-  margin-left: 0%;
+  margin-left: 50px;
   margin-right: 0%;
   grid-gap: 10px;
 }

@@ -25,6 +25,10 @@
     <link href="/assets/css/style.css" rel="stylesheet"/>
     <link rel="stylesheet" href="/assets/lib/fonts/fonts.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Consolas|Roboto|Google+Sans|vollkorn|Kings|Oxygen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assets/lib/font-awesome.min.css" />
+
+
     <link href="../assets/css/Sebastian-105.css" rel="stylesheet" />
 <script>
   //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% | Title | %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
@@ -92,24 +96,101 @@
     <div onclick="homepage()" actions="homepage">Homepage</div>
     <div onclick="docs()" actions="docs">Docs</div>
   </div>
-  <div class="sidenav" >
-    <br />
-    <br />
-    <a onclick="window.open('../105/settings/index.html')" title="Settings"><i class="fa fa-cog" aria-hidden="true" style="width:50px;height: 50px;"></i><large>Settings</large></a>
-    <a onclick="window.open('./index.html')" target="_blank" title="Games Site"><i class="fa fa-gamepad" aria-hidden="true"></i>
-      <large>Games Site</large></a>
-      <br />
-    <a onclick="window.open('../105/chatroom/index.html')" target="_blank" title="Chatroom"><i class="fa fa-commenting-o" aria-hidden="true"></i>
-      <large>The Chatroom</large></a>
-      <br>
-    <a onclick="window.open('../legal/terms/index.html')" target="_blank" title="Privacy Policy"><i class="fa fa-book" aria-hidden="true"></i>
-      <br>
-      <large>Privacy Policy</large></a>
-      <br>
-      <a onclick="window.open('../legal/privacy/index.html')" target="_blank" title="Terms and Agreements"><i class="fa fa-handshake-o" aria-hidden="true"></i><large>Terms And Agreements</large></a>
-      <br>
-      <bottom>
+    <div class="menupopup" id="settingsmenu">
+      <div class="menuicon"><img src="105.png" width="25" height="25" style="border-radius: 50%;">
+        <author style="font-size:18px;"> By: Sebastian S</author>
       </div>
+      <div id="settingsclose" style="float:right; cursor: pointer; font-size:50px; margin-top:-52px;margin-right:-15px;"
+        title="close">×</div>
+      <div class="menucontent">Settings</div>
+      <div class="menuspace"></div>
+      <div class="menucontenttext">
+        <ul>
+          <h2>Themes:</h2>
+          <button class="setthemebuttons" onclick="setThemes('default')" style="background-color:#111;color:white;">Default</button>
+
+          <button class="setthemebuttons" style="background-color:rgba(255, 255, 255, 0.75); color:black;" onclick="setThemes('light')" >Light</button>
+          
+          <button class="setthemebuttons" style="background-color:#6df320;color:black;"onclick="setThemes('green & black')">Green & Black</button>
+          
+          <button class="setthemebuttons" style="background-color:#0A2647;color:white;"onclick="setThemes('dark blue')">Dark Blue</button>
+          <h2>Tab settings</h2>
+          <div>
+            <h4>Tab Name:</h4>
+            <input id="setTitle"  style="color:var(--font-color); padding:15px; border-radius:15px; background-color:var(--background); border:solid 3px white;font-size:16px;" type="textbox">  <button class="setthemebuttons" onclick="setTitleButton()">Set Title!</button>
+          </div>
+        </ul>
+      </div>
+    </div>
+    <div class="sidenav" >
+      <br />
+      <br />
+      <a onclick="window.open('105/settings/index.html')" title="Settings"><i class="fa fa-cog" aria-hidden="true" style="width:50px;height: 50px;"></i><large>Settings</large></a>
+      <a onclick="window.open('game/index.html')" target="_blank" title="Games Site"><i class="fa fa-gamepad" aria-hidden="true"></i>
+        <large>Games Site</large></a>
+        <br />
+      <a onclick="window.open('105/chatroom/index.html')" target="_blank" title="Chatroom"><i class="fa fa-commenting-o" aria-hidden="true"></i>
+        <large>The Chatroom</large></a>
+        <br>
+      <a onclick="window.open('legal/terms/index.html')" target="_blank" title="Privacy Policy"><i class="fa fa-book" aria-hidden="true"></i>
+        <br>
+        <large>Privacy Policy</large></a>
+        <br>
+        <a onclick="window.openwindow.open('legal/privacy/index.html')" target="_blank" title="Terms and Agreements"><i class="fa fa-handshake-o" aria-hidden="true"></i><large>Terms And Agreements</large></a>
+        <br>
+        <bottom>
+        
+
+      <!-- <button class="dropdown-btn" title="all my forms">
+        Forms
+        <div class="list">~</div>
+      </button>
+      <div class="dropdown-container">
+        <a class="jQuerytest" href="https://forms.gle/hR1MggYi3tDUGgzKA" target="_bank">Registration form</a>
+        <a class="jQuerytest" href="https://forms.gle/br2Nd426yGBtuHVB6" target="_bank">Help form</a>
+        <a class="jQuerytest" href="https://forms.gle/mb2QFzE9WVeiRB2h9" target="_blank">Addgame form</a>
+        <a class="jQuerytest" href="https://forms.gle/TVqtqGoFw7u2EpZq7" target="_blank">Suggestions</a>
+        <a class="jQuerytest" href="https://forms.gle/7HRXRmFUnAN8KRDfA" target="_blank">Feedback</a>
+      </div>
+      <button class="dropdown-btn" title="all my forms">
+        Backup Links
+        <div class="list">~</div>
+      </button>
+      <div class="dropdown-container">
+        <a class="jQuerytest" onclick='openlink("https://forms.gle/hR1MggYi3tDUGgzKA")'
+          target="_bank">.vercel.app</a>
+        <a class="jQuerytest" href="https://forms.gle/br2Nd426yGBtuHVB6" target="_bank">Help form</a>
+        <a class="jQuerytest" href="https://forms.gle/mb2QFzE9WVeiRB2h9" target="_blank">Addgame form</a>
+        <a class="jQuerytest" href="https://forms.gle/TVqtqGoFw7u2EpZq7" target="_blank">Suggestions</a>
+        <a class="jQuerytest" href="https://forms.gle/7HRXRmFUnAN8KRDfA" target="_blank">Feedback</a>
+      </div>
+      <button class="dropdown-btn" title="all my forms">
+        <div class="list">~</div>
+        Extra links
+      </button>
+      <div class="dropdown-container">
+        <a class="jQuerytest"
+          href="https://github.com/Sebastian-105/Sebastian-105.github.io/blob/main/CODE_OF_CONDUCT.md"
+          target="_blank" title="Code of conduct">CODE OF CONDUCT.md</a>
+        <a class="jQuerytest"
+          href="https://github.com/Sebastian-105/Sebastian-105.github.io/blob/main/CONTRIBUTING.md"
+          target="_blank">CONTRIBUTING.md</a>
+        <a class="jQuerytest" href="https://github.com/Sebastian-105/Sebastian-105.github.io/blob/main/CHANGELOG.md"
+          title="Outdated">changelog.md</a>
+        <a class="jQuerytest"
+          href="https://github.com/Sebastian-105/Sebastian-105.github.io/blob/main/SECURITY.md">Security.md</a>
+      </div>
+      <button class="dropdown-btn" title="all my forms">
+        <div class="list">~</div>
+        Tutorials
+      </button>
+      <div class="dropdown-container">
+        <a class="jQuerytest" href="105/tutorial/index.html" target="_blank" title="Tutorial">Tutorials</a>
+        <a class="jQuerytest" href="105/tutorial/code/index.html" target="_blank" title="Tutorial">Download
+          Locally</a>
+      </div>-->
+
+    </div>
     <footer class="footer" style="text-align: center;">  <hr style="width:100%;height:3px;">
       <img src="./105.png" style="width:35px; height:35px;border-radius: 50%;"><seb style="color:var(--font-color)">  &copy; 2022 - 2023 Sebastian-105, DanyangXu77. </seb><a style="padding-left: 50px;" href="https://github.com/Sebastian-105">@Sebastian-105</a> ~ <a href="https://github.com/DanyangXu77">@DanyangXu77</a> ~ </footer>
     <copyalertcorner  style="  display:none;" class="alertcorner" id="copyalertcorner">copyalertcorner</copyalertcorner>
