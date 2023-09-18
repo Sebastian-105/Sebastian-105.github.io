@@ -27,11 +27,11 @@ fetch("./games.json")
     </seb>
    </div>
    </div>`;
-      game105.onclick = (e) => {
-        let desca = "#" + game.id;
-        $(desca).fadeIn(105);
-        // (game.name)
-      };
+   game105.onclick = (e) => {
+    let desca = '#'+game.id
+   $(desca).fadeIn(105);
+  // (game.name)
+  };
       gamesContainer.appendChild(game105);
       // Add click event listener to the game element to show the game in the game container
 

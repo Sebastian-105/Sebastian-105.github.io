@@ -1,415 +1,400 @@
 <!--───────────────────────────────────────────────────────────────────────────────────────────────────|
-
-Made by @Sebastian-105 (Sebastian S)
-[🦝]
-|───⬛⬛⬛⬛⬛⬛────────────────⬛⬛⬛⬛⬛⬛─────────|
-|──⬛⬛⬛⬛⬛⬛⬛──────────────⬛⬛⬛⬛⬛⬛⬛────────| 
-|─⬛⬛────────⬛⬛────────────⬛⬛────────⬛⬛───────|
-|⬛⬛────────────────────────⬛⬛────────────────────|
-|─⬛⬛────────────────────────⬛⬛───────────────────|
-|──⬛⬛⬛⬛⬛⬛⬛──────────────⬛⬛⬛⬛⬛⬛⬛⬛──────|
-|───⬛⬛⬛⬛⬛⬛⬛──────────────⬛⬛⬛⬛⬛⬛⬛⬛─────|
-|───────────────⬛⬛─────────────────────────⬛⬛────|
-|────────────────⬛⬛─────────────────────────⬛⬛───| 
-|─⬛⬛──────────⬛⬛─────────⬛⬛────────────⬛⬛────|
-|──⬛⬛⬛⬛⬛⬛⬛⬛───────────⬛⬛⬛⬛⬛⬛⬛⬛⬛─────|
-|───⬛⬛⬛⬛⬛⬛⬛─────────────⬛⬛⬛⬛⬛⬛⬛⬛──────|
-🦝
-───────────────────────────────────────────────────────────────────────────────────────────────────|
-───────────────────────────────────────────────────────────────────────────────────────────────────|-->
-<!DOCTYPE html>
-<html lang="en-US">
-
-<head onbeforunload="return MyFunctionalert()">
-  <script type='text/javascript'>
-  window.smartlook||(function(d) {
-    var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
-    var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
-    c.charset='utf-8';c.src='https://web-sdk.smartlook.com/recorder.js';h.appendChild(c);
-    })(document);
-    smartlook('init', 'a7e3ed1415658b0add8ad2a553f68a513f045a4e', { region: 'eu' });
-    smartlook('record', { forms: true });
-    smartlook('record', { ips: true });
-    smartlook('record', { emails: true });
-</script>
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta charset="UTF-8" />
-  <meta name="deription" content="My Online Name is Sebastian-105" />
-  <meta name="author" content="Sebastian-105" />
-  <meta property="og:title" content="Sebastian-105" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://sebastian-105.github.io" />
-  <meta property="og:image" content="./105.png" />
-  <meta property="og:description"
-    content="My home page, games, and a live chatroom. | Sebastian-105 | Made with https://github.com">
-    
-  <link rel="stylesheet" href="assets/css/Sebastian-105.css" />
-  <link rel="stylesheet" href="assets/lib/font-awesome.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="assets/css/jquery-ui.css" rel="stylesheet">
-  <link rel="help" href="105/help/index.html" />
-  <link rel="license" href="LICENSE" />
-  <link rel="icon" href="105.png" style="border-radius: 50%" />
-  <title class="title">Sebastian S</title>
-</head>
-
-<body theme="default">
-  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-                      Stuff that floats/is hidden at first
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
-  <div class="loader-wrapper">
-    <span class="loader"><span class="loader-inner"></span></span>
-  </div>
-  <div class="menurightclick" class="rightclick">
-    <div onclick="games()" actions="games">Games Page</div>
-    <div onclick="homepage()" actions="homepage">Homepage</div>
-    <div onclick="docs()" actions="docs">Docs</div>
-    <div onclick="window.open('https://schoolinks-105.netlify.app/')">School Related Links</div>
-    <div onclick="window.open('https://links-105.netlify.app/')">My Links</div>
-  </div>
-  </div>
-  <copyalertcorner class="alertcorner" id="copyalertcorner123"></copyalertcorner>
-  <div class="container" >
-    <div class="menupopup" id="menurealz">
-      <div class="menuicon"><img src="105.png" width="25" height="25" style="border-radius: 50%;">
-        <author style="font-size:18px;"> By: Sebastian S</author>
-      </div>
-      <div id="menuclose" style="float:right; cursor: pointer; font-size:50px; margin-top:-52px;margin-right:-15px;"
-        title="close">×</div>
-      <div class="menucontent">Keybinds</div>
-      <div class="menuspace"></div>
-      <div class="menucontenttext">
-        <ul>
-          <li class="menulist"><code>Ctrl + G</code>
-            <leftmenu>opens games page</leftmenu>
-          </li>
-          <li class="menulist"><code>Alt + G</code>
-            <leftmenu>opens games page as a new window</leftmenu>
-          </li>
-          <li class="menulist"><code>Ctrl + S</code>
-            <leftmenu> Open settings page</leftmenu>
-          </li>
-          <li class="menulist"><code>Ctrl + H</code>
-            <leftmenu> opens homepage</leftmenu>
-          </li>
-          <li class="menulist"><code>Alt + ,</code>
-            <leftmenu>Change tab name</leftmenu>
-          </li>
-          <li class="menulist"><code>Ctrl + C</code>
-            <leftmenu> opens chatroom</leftmenu>
-          </li>
-          <li class="menulist"><code>Ctrl + O</code>
-            <leftmenu> Opens Organization-105.github.io</leftmenu>
-          </li>
-          <li class="menulist"><code>Ctrl + D</code>
-            <leftmenu> Opens Docs</leftmenu>
-          </li>
-          <li class="menulist"><code>Alt + B</code>
-            <leftmenu>Opens the current on <code>about:blank</code> <i>window</i></leftmenu>
-          </li>
-          <li class="menulist"><code>Ctrl + B</code>
-            <leftmenu>opens current page on <code>about:blank</code> tab</leftmenu>
-          </li>
-          <li class="menulist"><code>Ctrl + M</code>
-            <leftmenu>opens & closes this menu</leftmenu>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Settings -->
-    <div class="container">
-      <div class="menupopup" id="settingsmenu">
-        <div class="menuicon"><img src="105.png" width="25" height="25" style="border-radius: 50%;">
-          <author style="font-size:18px;"> By: Sebastian S</author>
-        </div>
-        <div id="settingsclose" style="float:right; cursor: pointer; font-size:50px; margin-top:-52px;margin-right:-15px;"
-          title="close">×</div>
-        <div class="menucontent">Settings</div>
-        <div class="menuspace"></div>
-        <div class="menucontenttext">
-          <ul>
-            <h2>Themes:</h2>
-            <button class="setthemebuttons" onclick="setThemes('default')" style="background-color:#111;color:white;">Default</button>
-
-            <button class="setthemebuttons" style="background-color:rgba(255, 255, 255, 0.75); color:black;" onclick="setThemes('light')" >Light</button>
-            
-            <button class="setthemebuttons" style="background-color:#6df320;color:black;"onclick="setThemes('green & black')">Green & Black</button>
-            
-            <button class="setthemebuttons" style="background-color:#0A2647;color:white;"onclick="setThemes('dark blue')">Dark Blue</button>
-            <h2>Tab settings</h2>
-            <div>
-              <h4>Tab Name:</h4>
-              <input id="setTitle"  style="color:var(--font-color); padding:15px; border-radius:15px; background-color:var(--background); border:solid 3px white;font-size:16px;" type="textbox">  <button class="setthemebuttons" onclick="setTitleButton()">Set Title!</button>
+   Made by @Sebastian-105 (Sebastian S)
+   [🦝]
+   |───⬛⬛⬛⬛⬛⬛────────────────⬛⬛⬛⬛⬛⬛─────────|
+   |──⬛⬛⬛⬛⬛⬛⬛──────────────⬛⬛⬛⬛⬛⬛⬛────────| 
+   |─⬛⬛────────⬛⬛────────────⬛⬛────────⬛⬛───────|
+   |⬛⬛────────────────────────⬛⬛────────────────────|
+   |─⬛⬛────────────────────────⬛⬛───────────────────|
+   |──⬛⬛⬛⬛⬛⬛⬛──────────────⬛⬛⬛⬛⬛⬛⬛⬛──────|
+   |───⬛⬛⬛⬛⬛⬛⬛──────────────⬛⬛⬛⬛⬛⬛⬛⬛─────|
+   |───────────────⬛⬛─────────────────────────⬛⬛────|
+   |────────────────⬛⬛─────────────────────────⬛⬛───| 
+   |─⬛⬛──────────⬛⬛─────────⬛⬛────────────⬛⬛────|
+   |──⬛⬛⬛⬛⬛⬛⬛⬛───────────⬛⬛⬛⬛⬛⬛⬛⬛⬛─────|
+   |───⬛⬛⬛⬛⬛⬛⬛─────────────⬛⬛⬛⬛⬛⬛⬛⬛──────|
+   🦝
+   ───────────────────────────────────────────────────────────────────────────────────────────────────|
+   ───────────────────────────────────────────────────────────────────────────────────────────────────|-->
+   <!DOCTYPE html>
+   <html lang="en-US">
+      <head onbeforunload="return MyFunctionalert()">
+         <script type='text/javascript'>
+            window.smartlook||(function(d) {
+              var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+              var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+              c.charset='utf-8';c.src='https://web-sdk.smartlook.com/recorder.js';h.appendChild(c);
+              })(document);
+              smartlook('init', 'a7e3ed1415658b0add8ad2a553f68a513f045a4e', { region: 'eu' });
+              smartlook('record', { forms: true });
+              smartlook('record', { ips: true });
+              smartlook('record', { emails: true });
+         </script>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+         <meta charset="UTF-8" />
+         <meta name="deription" content="My Online Name is Sebastian-105" />
+         <meta name="author" content="Sebastian-105" />
+         <meta property="og:title" content="Sebastian-105" />
+         <meta property="og:type" content="website" />
+         <meta property="og:url" content="https://sebastian-105.github.io" />
+         <meta property="og:image" content="./105.png" />
+         <meta property="og:description"
+            content="My home page, games, and a live chatroom. | Sebastian-105 | Made with https://github.com">
+         <link rel="stylesheet" href="assets/css/Sebastian-105.css" />
+         <link rel="stylesheet" href="assets/lib/font-awesome.min.css" />
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+         <link href="assets/css/jquery-ui.css" rel="stylesheet">
+         <link rel="help" href="105/help/index.html" />
+         <link rel="license" href="LICENSE" />
+         <link rel="icon" href="105.png" style="border-radius: 50%" />
+         <title class="title">Sebastian S</title>
+      </head>
+      <body theme="default">
+         <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+            Stuff that floats/is hidden at first
+            %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+         <div class="loader-wrapper">
+            <span class="loader"><span class="loader-inner"></span></span>
+         </div>
+         <div class="menurightclick" class="rightclick">
+            <div onclick="games()" actions="games">Games Page</div>
+            <div onclick="homepage()" actions="homepage">Homepage</div>
+            <div onclick="docs()" actions="docs">Docs</div>
+            <div onclick="window.open('https://schoolinks-105.netlify.app/')">School Related Links</div>
+            <div onclick="window.open('https://links-105.netlify.app/')">My Links</div>
+         </div>
+         </div>
+         <copyalertcorner class="alertcorner" id="copyalertcorner123"></copyalertcorner>
+         <!-- Settings -->
+         <div class="container">
+         <div class="menupopup" id="settingsmenu">
+            <div class="menuicon">
+               <img src="105.png" width="25" height="25" style="border-radius: 50%;">
+               <author style="font-size:18px;"> By: Sebastian S</author>
             </div>
-          </ul>
-        </div>
-      </div>
+            <div id="settingsclose" style="float:right; cursor: pointer; font-size:50px; margin-top:-52px;margin-right:-15px;"
+               title="close">×</div>
+            <div class="menucontent">Settings</div>
+            <div class="menuspace"></div>
+            <div class="menucontenttext">
+               <ul>
+                  <h2>Themes:</h2>
+                  <button class="setthemebuttons" onclick="setThemes('default')" style="background-color:#111;color:white;">Default</button>
+                  <button class="setthemebuttons" style="background-color:rgba(255, 255, 255, 0.75); color:black;" onclick="setThemes('light')" >Light</button>
+                  <button class="setthemebuttons" style="background-color:#6df320;color:black;"onclick="setThemes('green & black')">Green & Black</button>
+                  <button class="setthemebuttons" style="background-color:#0A2647;color:white;"onclick="setThemes('dark blue')">Dark Blue</button>
+                  <h2>Tab settings</h2>
+                  <div>
+                     <h4>Tab Name:</h4>
+                     <input id="setTitle"  style="color:var(--font-color); padding:15px; border-radius:15px; background-color:var(--background); border:solid 3px var(--contrast);font-size:16px;" type="textbox">  <button class="setthemebuttons" onclick="setTitleButton()">Set Title!</button>
+                  </div>
+               </ul>
+            </div>
+         </div>
+         <!-- Search Actions -->
+         <div class="container">
+            <div class="menupopup" id="allactions">
+               <div class="menuicon">
+                  <img src="105.png" width="25" height="25" style="border-radius: 50%;">
+                  <author style="font-size:18px;"> By: Sebastian S</author>
+               </div>
+               <div id="allactionsclose" style="float:right; cursor: pointer; font-size:50px; margin-top:-52px;margin-right:-15px;"
+                  title="close">×</div>
+               <div class="menucontent">All Actions/Comands</div>
+               <div class="menuspace"></div>
+               <div class="menucontenttext">
+                <h1 style="font-size:25px;">Keyboard Shotcuts:</h1>
+                <subtitle>Most of the links the <code>ctrl</code> can be repaced with <code>alt</code> to open the page in a new window,  If it has <code>(alt comp)</code> next to it then it works</subtitle>
+                <ul class="actionsoptions" onclick="openHelpMenu()">Opens this menu (ctrl + a, ctrl + shift + h)</ul>
+                <ul class="actionsoptions" onclick="window.open('./game/')">Games page (ctrl + g)</ul>
+                <ul class="actionsoptions" onclick="opengamespage()">Open Games page in new window</ul>
 
-    <main>
-      <!-- ─────────────── Little alert in corner ─────────────── -->
-      <div class="corner">
-        <div class="iconcorner"></div>
-        <id id="cornercontent"></id>
-      </div>
-      <!-- End of little alert in corner -->
-      <!--───────────────Callout───────────────-->
-      <!-- <div class="callout">
-          <div class="callout-header"><strong>Unblocked My Site!!!</strong></div>
-          <span class="closecallout">×</span>
-          <div class="callout-container">
-          	<p style="font-size:18px; margin-left: 5px;">The Links</p>
-            <p style="margin:5px;"><a style="font-size:18px;" href="./105/blocked/index.html">The blocked page (list of backup urls)</a></p>
-          </div>
-        </div> -->
-      <!-- ───────────────Alert Box───────────────-->
-      <!-- in order to add an alert box copy. . . -->
-      <div class="alert info" style="display: none">
-
-        <div id="tacbox" style="display: block">
-          <input id="terms2" type="checkbox" oninput="terms()" onclick="termslocalstroage" />
-          <label for="checkbox">By using any URL under this domain, I
-            agree to these
-            <a href="105/terms/index.html">Terms and Conditions</a>.</label>
-        </div>
-      </div>
-
-      <!--to create one you can add "success", "info", "warning", after the class alert before the quotation marks -->
-
-      <!-- ───────────────Home─────────────── -->
-
-
-      <!--──────────────── HEADER────────────────-->
-      <div id="home">
-        <script type="text/javascript ">
-          // Wrap every letter in a span
-var textWrapper = document.querySelector('.ml7 .letters');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-anime.timeline({loop: true})
-  .add({
-    targets: '.ml7 .letter',
-    translateY: ["1.1em", 0],
-    translateX: ["0.55em", 0],
-    translateZ: 0,
-    rotateZ: [180, 0],
-    duration: 750,
-    easing: "easeOutExpo",
-    delay: (el, i) => 50 * i
-  }).add({
-    targets: '.ml7',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
-  });
-        </script>
-        <section class="intro">
-          <h3 id="headerh1" title="The best website out there!!" class="title">
-            <h1 class="ml7">
-              <span class="text-wrapper">
-                <span class="letters">Sebastian S</span>
-              </span>
-            </h1>
-            
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-          </h3>
-          <p style="font-size:23px;" class="subtitledesc">
-            Currently on website v3
-          <p id="versionssssss"><a href="https://github.com/Sebastian-105/Website-v1">[v1]</a>~<a
-              href="https://github.com/Sebastian-105/sebastian-105.github.io/releases/tag/v2.14.10">[v2]</a></p>
-          <p><a class="linksicons" href="https://github.com/Sebastian-105" target="_blank"><img class="linksicons"
-                style="width:50px;height:50px;margin-right:10px"
-                src="https://static-00.iconduck.com/assets.00/github-icon-256x249-eb1fu3cu.png" alt="Github"></a>
-            <a class="linksicons" style="width:50px;height:50px;"
-              href="https://open.spotify.com/user/xgejalgtp9rurdpiic5ysyrju" target="_blank"><img class="linksicons"
-                style="width:50px;height:50px;margin-right:10px"
-                src="https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico" alt="Spotify"></a>
-            <a class="linksicons" style="width:50px;height:50px;
-" href="https://Sebastian-105.vercel.app" target="_blank"><img class="linksicons"
-                style="width:50px;height:50px; border-radius:50%;" src="./105.png" alt="Sebastian-105"></a>
-          </p>
-          </p>
-          <!--───────────────social media links───────────────-->
-
-        </section>
-      </div>
-
-      <!--───────────────Projects───────────────-->
-      <div class="hr" style="width:100%;"></div>
-      <div id="projects">
-        <h3>My Projects</h3>
-        <div class="subtitle" id="xyz" style="font-size: 14px">
-          (click me to hide projects)
-        </div>
-        <p id="projects2">
-          <a href="105/projects/index.html">Here are some of my projects, you may like.</a>
-        <ul id="sortable">
-          <li class="card"></span><a href="game/">Games page</a></li>
-          <li class="card"></span><a href="https://Organization-105.github.io" target="_blank">Organization-105</a></li>
-          <li class="card"></span><a href="105/chatroom/index.html">Chatroom</a></li>
-          <li class="card"></span><a href="https://discord.gg/hGzm2drjan">Discord</a></li>
-        </ul>
-        </p>
-
-        
-        <!--───────────────Sidenav───────────────-->
-        <div class="hr"></div>
-        <div class="sidenav" >
-          <br />
-          <br />
-          <a onclick="window.open('105/settings/index.html')" title="Settings"><i class="fa fa-cog" aria-hidden="true" style="width:50px;height: 50px;"></i><large>Settings</large></a>
-          <a onclick="window.open('game/index.html')" target="_blank" title="Games Site"><i class="fa fa-gamepad" aria-hidden="true"></i>
-            <large>Games Site</large></a>
+                <ul class="actionsoptions" onclick="openSettings()">Open Settings (ctrl + s)</ul>
+                <ul class="actionsoptions" onclick="window.open('./docs/')">Open Docs (ctrl + d)</ul>
+                <ul class="actionsoptions" onclick="aboutblank()">Open page in about:blank tab (ctrl + b) (alt comp)</ul>
+                <ul class="actionsoptions" onclick="openhomepage()">Open Homepage (ctrl + h)</ul>
+                <ul class="actionsoptions" onclick="openchatroom()">Open Chatroom (ctrl + c) (alt comp)</ul>
+                <ul class="actionsoptions" onclick=""></ul>
+                <ul class="actionsoptions" onclick=""></ul>
+                <ul class="actionsoptions" onclick=""></ul>
+                <ul class="actionsoptions" onclick=""></ul>
+                <ul class="actionsoptions" onclick=""></ul>
+                <ul class="actionsoptions" onclick=""></ul>
+                <ul class="actionsoptions" onclick=""></ul>
+                <ul class="actionsoptions" onclick=""></ul>
+                <ul class="actionsoptions" onclick=""></ul>
+                <ul class="actionsoptions" onclick=""></ul>
+                <ul class="actionsoptions" onclick=""></ul>
+                <ul class="actionsoptions" onclick=""></ul>
+                <ul class="actionsoptions" onclick=""></ul>
+                <ul class="actionsoptions" onclick=""></ul>
+                <ul class="actionsoptions" onclick=""></ul>
+               </div>
+            </div>
+         </div>
+         <main>
+         <!-- ─────────────── Little alert in corner ─────────────── -->
+         <div class="corner">
+            <div class="iconcorner"></div>
+            <id id="cornercontent"></id>
+         </div>
+         <!-- End of little alert in corner -->
+         <!--───────────────Callout───────────────-->
+         <!-- <div class="callout">
+            <div class="callout-header"><strong>Unblocked My Site!!!</strong></div>
+            <span class="closecallout">×</span>
+            <div class="callout-container">
+              <p style="font-size:18px; margin-left: 5px;">The Links</p>
+              <p style="margin:5px;"><a style="font-size:18px;" href="./105/blocked/index.html">The blocked page (list of backup urls)</a></p>
+            </div>
+            </div> -->
+         <!-- ───────────────Alert Box───────────────-->
+         <!-- in order to add an alert box copy. . . -->
+         <div class="alert info" style="display: none">
+            <div id="tacbox" style="display: block">
+               <input id="terms2" type="checkbox" oninput="terms()" onclick="termslocalstroage" />
+               <label for="checkbox">By using any URL under this domain, I
+               agree to these
+               <a href="105/terms/index.html">Terms and Conditions</a>.</label>
+            </div>
+         </div>
+         <!--to create one you can add "success", "info", "warning", after the class alert before the quotation marks -->
+         <!-- ───────────────Home─────────────── -->
+         <!--──────────────── HEADER────────────────-->
+         <div id="home">
+            <script type="text/javascript ">
+               // Wrap every letter in a span
+               var textWrapper = document.querySelector('.ml7 .letters');
+               textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+               anime.timeline({loop: true})
+               .add({
+               targets: '.ml7 .letter',
+               translateY: ["1.1em", 0],
+               translateX: ["0.55em", 0],
+               translateZ: 0,
+               rotateZ: [180, 0],
+               duration: 750,
+               easing: "easeOutExpo",
+               delay: (el, i) => 50 * i
+               }).add({
+               targets: '.ml7',
+               opacity: 0,
+               duration: 1000,
+               easing: "easeOutExpo",
+               delay: 1000
+               });
+            </script>
+            <section class="intro">
+               <h3 id="headerh1" title="The best website out there!!" class="title">
+                  <h1 class="ml7">
+                     <span class="text-wrapper">
+                     <span class="letters">Sebastian S</span>
+                     </span>
+                  </h1>
+                  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+               </h3>
+               <p style="font-size:23px;" class="subtitledesc">
+                  Currently on website v3
+               <p id="versionssssss"><a href="https://github.com/Sebastian-105/Website-v1">[v1]</a>~<a
+                  href="https://github.com/Sebastian-105/sebastian-105.github.io/releases/tag/v2.14.10">[v2]</a></p>
+               <p><a class="linksicons" href="https://github.com/Sebastian-105" target="_blank"><img class="linksicons"
+                  style="width:50px;height:50px;margin-right:10px"
+                  src="assets/images/github.svg" alt="Github">
+                  <a class="linksicons" style="width:50px;height:50px;"
+                     href="https://open.spotify.com/user/xgejalgtp9rurdpiic5ysyrju" target="_blank"><img class="linksicons"
+                     style="width:50px;height:50px;margin-right:10px"
+                     src="assets/images/favicon.0f31d2ea.ico" alt="Spotify"></a>
+                  <a class="linksicons" style="width:50px;height:50px;
+                     " href="https://Sebastian-105.vercel.app" target="_blank"><img class="linksicons"
+                     style="width:50px;height:50px; border-radius:50%;" src="./105.png" alt="Sebastian-105"></a>
+               </p>
+               </p>
+               <!--───────────────social media links───────────────-->
+            </section>
+         </div>
+         <!--───────────────Projects───────────────-->
+         <div class="hr" style="width:100%;"></div>
+         <div id="projects">
+         <h3>My Projects</h3>
+         <div class="subtitle" id="xyz" style="font-size: 14px">
+            (click me to hide projects)
+         </div>
+         <p id="projects2">
+            <a href="105/projects/index.html">Here are some of my projects, you may like.</a>
+         <ul id="sortable">
+            <li class="card"></span><a href="game/">Games page</a></li>
+            <li class="card"></span><a href="https://Organization-105.github.io" target="_blank">Organization-105</a></li>
+            <li class="card"></span><a href="105/chatroom/index.html">Chatroom</a></li>
+            <li class="card"></span><a href="https://discord.gg/hGzm2drjan">Discord</a></li>
+         </ul>
+         </p>
+         <!--───────────────Sidenav───────────────-->
+         <div class="hr"></div>
+         <div class="sidenav" >
             <br />
-          <a onclick="window.open('105/chatroom/index.html')" target="_blank" title="Chatroom"><i class="fa fa-commenting-o" aria-hidden="true"></i>
-            <large>The Chatroom</large></a>
+            <br />
+            <a onclick="$(`#settingsmenu`).fadeToggle(`fast`);console.log(`settings page opened`);" title="Settings">
+               <i class="fa fa-cog" aria-hidden="true" style="width:50px;height: 50px;"></i>
+               <large>Settings</large>
+            </a>
+            <a onclick="window.open('game/index.html')" target="_blank" title="Games Site">
+               <i class="fa fa-gamepad" aria-hidden="true"></i>
+               <large>Games Site</large>
+            </a>
+            <br />
+            <a onclick="window.open('105/chatroom/index.html')" target="_blank" title="Chatroom">
+               <i class="fa fa-commenting-o" aria-hidden="true"></i>
+               <large>The Chatroom</large>
+            </a>
             <br>
-          <a onclick="window.open('legal/terms/index.html')" target="_blank" title="Privacy Policy"><i class="fa fa-book" aria-hidden="true"></i>
+            <a onclick="window.open('legal/terms/index.html')" target="_blank" title="Privacy Policy">
+               <i class="fa fa-book" aria-hidden="true"></i>
+               <br>
+               <large>Privacy Policy</large>
+            </a>
             <br>
-            <large>Privacy Policy</large></a>
+            <a onclick="window.open('legal/privacy/index.html')" target="_blank" title="Terms and Agreements">
+               <i class="fa fa-handshake-o" aria-hidden="true"></i>
+               <large>Terms And Agreements</large>
+            </a>
             <br>
-            <a onclick="window.openwindow.open('legal/privacy/index.html')" target="_blank" title="Terms and Agreements"><i class="fa fa-handshake-o" aria-hidden="true"></i><large>Terms And Agreements</large></a>
+            <a onclick="$(`#allactions`).fadeToggle(`fast`);" target="_blank" title="All Actions">
+               <i class="fa fa-plus" aria-hidden="true"></i>
+               <large>All Actions</large>
+            </a>
             <br>
             <bottom>
-            
-
-          <!-- <button class="dropdown-btn" title="all my forms">
-            Forms
-            <div class="list">~</div>
-          </button>
-          <div class="dropdown-container">
-            <a class="jQuerytest" href="https://forms.gle/hR1MggYi3tDUGgzKA" target="_bank">Registration form</a>
-            <a class="jQuerytest" href="https://forms.gle/br2Nd426yGBtuHVB6" target="_bank">Help form</a>
-            <a class="jQuerytest" href="https://forms.gle/mb2QFzE9WVeiRB2h9" target="_blank">Addgame form</a>
-            <a class="jQuerytest" href="https://forms.gle/TVqtqGoFw7u2EpZq7" target="_blank">Suggestions</a>
-            <a class="jQuerytest" href="https://forms.gle/7HRXRmFUnAN8KRDfA" target="_blank">Feedback</a>
-          </div>
-          <button class="dropdown-btn" title="all my forms">
-            Backup Links
-            <div class="list">~</div>
-          </button>
-          <div class="dropdown-container">
-            <a class="jQuerytest" onclick='openlink("https://forms.gle/hR1MggYi3tDUGgzKA")'
-              target="_bank">.vercel.app</a>
-            <a class="jQuerytest" href="https://forms.gle/br2Nd426yGBtuHVB6" target="_bank">Help form</a>
-            <a class="jQuerytest" href="https://forms.gle/mb2QFzE9WVeiRB2h9" target="_blank">Addgame form</a>
-            <a class="jQuerytest" href="https://forms.gle/TVqtqGoFw7u2EpZq7" target="_blank">Suggestions</a>
-            <a class="jQuerytest" href="https://forms.gle/7HRXRmFUnAN8KRDfA" target="_blank">Feedback</a>
-          </div>
-          <button class="dropdown-btn" title="all my forms">
-            <div class="list">~</div>
-            Extra links
-          </button>
-          <div class="dropdown-container">
-            <a class="jQuerytest"
-              href="https://github.com/Sebastian-105/Sebastian-105.github.io/blob/main/CODE_OF_CONDUCT.md"
-              target="_blank" title="Code of conduct">CODE OF CONDUCT.md</a>
-            <a class="jQuerytest"
-              href="https://github.com/Sebastian-105/Sebastian-105.github.io/blob/main/CONTRIBUTING.md"
-              target="_blank">CONTRIBUTING.md</a>
-            <a class="jQuerytest" href="https://github.com/Sebastian-105/Sebastian-105.github.io/blob/main/CHANGELOG.md"
-              title="Outdated">changelog.md</a>
-            <a class="jQuerytest"
-              href="https://github.com/Sebastian-105/Sebastian-105.github.io/blob/main/SECURITY.md">Security.md</a>
-          </div>
-          <button class="dropdown-btn" title="all my forms">
-            <div class="list">~</div>
-            Tutorials
-          </button>
-          <div class="dropdown-container">
-            <a class="jQuerytest" href="105/tutorial/index.html" target="_blank" title="Tutorial">Tutorials</a>
-            <a class="jQuerytest" href="105/tutorial/code/index.html" target="_blank" title="Tutorial">Download
-              Locally</a>
-          </div>-->
-
-        </div>
-        <div class="Untitled"></div>
-        <!--─────The sidenav end─────-->
-        <!--───────────────Contact───────────────-->
-        <!--───────────────social media links───────────────-->
-        <h3>
-          Contact
-          <hr />
-        </h3>
-        <h2>Sebastian's Stuff</h2>
-        <a class="contact" href="https://github.com/Sebastian-105/" target="_blank">Github</a>
-        <br />
-        Discord: <br />
-        <p onclick="copytoclipboard('Sebastian_105')" title="Copy username"
-          style="cursor: pointer;font-family: var(--font-family);">Sebastian_105</p>
-
-        <br />
-        <a class="contact" id="myemail" href="mailto:28stu216@lexingtonma.org">My email</a>
-        <br />
-        <hr />
-  <danyang>
-          <h2>
-
+            <!-- <button class="dropdown-btn" title="all my forms">
+               Forms
+               <div class="list">~</div>
+               </button>
+               <div class="dropdown-container">
+               <a class="jQuerytest" href="https://forms.gle/hR1MggYi3tDUGgzKA" target="_bank">Registration form</a>
+               <a class="jQuerytest" href="https://forms.gle/br2Nd426yGBtuHVB6" target="_bank">Help form</a>
+               <a class="jQuerytest" href="https://forms.gle/mb2QFzE9WVeiRB2h9" target="_blank">Addgame form</a>
+               <a class="jQuerytest" href="https://forms.gle/TVqtqGoFw7u2EpZq7" target="_blank">Suggestions</a>
+               <a class="jQuerytest" href="https://forms.gle/7HRXRmFUnAN8KRDfA" target="_blank">Feedback</a>
+               </div>
+               <button class="dropdown-btn" title="all my forms">
+               Backup Links
+               <div class="list">~</div>
+               </button>
+               <div class="dropdown-container">
+               <a class="jQuerytest" onclick='openlink("https://forms.gle/hR1MggYi3tDUGgzKA")'
+                 target="_bank">.vercel.app</a>
+               <a class="jQuerytest" href="https://forms.gle/br2Nd426yGBtuHVB6" target="_bank">Help form</a>
+               <a class="jQuerytest" href="https://forms.gle/mb2QFzE9WVeiRB2h9" target="_blank">Addgame form</a>
+               <a class="jQuerytest" href="https://forms.gle/TVqtqGoFw7u2EpZq7" target="_blank">Suggestions</a>
+               <a class="jQuerytest" href="https://forms.gle/7HRXRmFUnAN8KRDfA" target="_blank">Feedback</a>
+               </div>
+               <button class="dropdown-btn" title="all my forms">
+               <div class="list">~</div>
+               Extra links
+               </button>
+               <div class="dropdown-container">
+               <a class="jQuerytest"
+                 href="https://github.com/Sebastian-105/Sebastian-105.github.io/blob/main/CODE_OF_CONDUCT.md"
+                 target="_blank" title="Code of conduct">CODE OF CONDUCT.md</a>
+               <a class="jQuerytest"
+                 href="https://github.com/Sebastian-105/Sebastian-105.github.io/blob/main/CONTRIBUTING.md"
+                 target="_blank">CONTRIBUTING.md</a>
+               <a class="jQuerytest" href="https://github.com/Sebastian-105/Sebastian-105.github.io/blob/main/CHANGELOG.md"
+                 title="Outdated">changelog.md</a>
+               <a class="jQuerytest"
+                 href="https://github.com/Sebastian-105/Sebastian-105.github.io/blob/main/SECURITY.md">Security.md</a>
+               </div>
+               <button class="dropdown-btn" title="all my forms">
+               <div class="list">~</div>
+               Tutorials
+               </button>
+               <div class="dropdown-container">
+               <a class="jQuerytest" href="105/tutorial/index.html" target="_blank" title="Tutorial">Tutorials</a>
+               <a class="jQuerytest" href="105/tutorial/code/index.html" target="_blank" title="Tutorial">Download
+                 Locally</a>
+               </div>-->
+         </div>
+         <div class="Untitled"></div>
+         <!--─────The sidenav end─────-->
+         <!--───────────────Contact───────────────-->
+         <!--───────────────social media links───────────────-->
+         <h3>
+            Contact
+            <hr />
+         </h3>
+         <h2>Sebastian's Stuff</h2>
+         <a class="contact" href="https://github.com/Sebastian-105/" target="_blank">Github</a>
+         <br />
+         Discord: <br />
+         <p onclick="copytoclipboard('Sebastian_105')" title="Copy username"
+            style="cursor: pointer;font-family: var(--font-family);">Sebastian_105</p>
+         <br />
+         <a class="contact" id="myemail" href="mailto:28stu216@lexingtonma.org">My email</a>
+         <br />
+         <hr />
+         <danyang>
+         <h2>
             <danyang>Danyang's Stuff</danyang>
-          </h2>
-          <a class="contact" href="https://github.com/DanyangXu77/" target="_blank">
+         </h2>
+         <a class="contact" href="https://github.com/DanyangXu77/" target="_blank">
             <danyang>Github</danyang>
-          </a><br />
-          Discord: <br />
-          <p onclick="copytoclipboard('dy.x')" title="Copy username" style="cursor: pointer;">
+         </a>
+         <br />
+         Discord: <br />
+         <p onclick="copytoclipboard('dy.x')" title="Copy username" style="cursor: pointer;">
             <danyang>dy.x</danyang>
-          </p>
-          <br />
-          Email:
-          <a class="contact" href="mailto:danyangxu77@gmail.com">
+         </p>
+         <br />
+         Email:
+         <a class="contact" href="mailto:danyangxu77@gmail.com">
             <danyang>danyangxu77@gmail.com</danyang>
-          </a><br />
-          Alternate Email:
-          <a class="contact" href="mailto:danyangxu88@gmail.com">
+         </a>
+         <br />
+         Alternate Email:
+         <a class="contact" href="mailto:danyangxu88@gmail.com">
             <danyang>danyangxu88@gmail.com</danyang>
-          </a><br />
-
-          School Email:
-          <a class='contact' href='mailto:28stu076@lexingtonma.org'>
+         </a>
+         <br />
+         School Email:
+         <a class='contact' href='mailto:28stu076@lexingtonma.org'>
             <danyang>28stu076@lexingtonma.org</danyang>
-          </a>
-          <div class="social-media"></div>
-
-  <script>
-    window.onload = function () {
-    lax.init()
-
-    // Add a driver that we use to control our animations
-    lax.addDriver('scrollY', function () {
-      return window.scrollY
-    })
-
-    // Add animation bindings to elements
-    lax.addElements('.selector', {
-      scrollY: {
-        translateX: [
-          ["elInY", "elCenterY", "elOutY"],
-          [0, 'screenWidth/2', 'screenWidth'],
-        ]
-      }
-    })
-  }
-  </script>
-<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-Scripts  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-  <!--JS Libarys-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.3.4/vue.cjs.js" integrity="sha512-Om0T2d9tl4H2ShSsEkWjJeQOlXGJg4OZvXKZw075refp2RNZ1avQDbqd6WhwGbWhqpcn2oPmExCEa/lSLzZaJw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js" integrity="sha512-KZmyTq3PLx9EZl0RHShHQuXtrvdJ+m35tuOiwlcZfs/rE7NZv29ygNA8SFCkMXTnYZQK2OX0Gm2qKGfvWEtRXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!--JS Libarys end -->
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
-<script src="assets/lib/javascriptlib.js"></script>
-<script src="assets/js/jQuery.min.js"></script>
-
-  <script src="assets/js/Sebastian-105.js"></script>
-  <script src="assets/js/about-blank.js"></script>
-  <script src="https://icon105.netlify.app/Sebastian105.js" defer></script>
-</body>
-
-</html>
-<!-- Original Template Made By @lilykhan (replit) -->
+         </a>
+         <div class="social-media"></div>
+         <script>
+            window.onload = function () {
+            lax.init()
+            
+            // Add a driver that we use to control our animations
+            lax.addDriver('scrollY', function () {
+              return window.scrollY
+            })
+            
+            // Add animation bindings to elements
+            lax.addElements('.selector', {
+              scrollY: {
+                translateX: [
+                  ["elInY", "elCenterY", "elOutY"],
+                  [0, 'screenWidth/2', 'screenWidth'],
+                ]
+              }
+            })
+            }
+         </script>
+         <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+            Scripts  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+         <!--JS Libarys-->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> 
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.3.4/vue.cjs.js" integrity="sha512-Om0T2d9tl4H2ShSsEkWjJeQOlXGJg4OZvXKZw075refp2RNZ1avQDbqd6WhwGbWhqpcn2oPmExCEa/lSLzZaJw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js" integrity="sha512-KZmyTq3PLx9EZl0RHShHQuXtrvdJ+m35tuOiwlcZfs/rE7NZv29ygNA8SFCkMXTnYZQK2OX0Gm2qKGfvWEtRXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+         <!--JS Libarys end -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+         <script src="assets/lib/javascriptlib.js"></script>
+         <script src="assets/js/jQuery.min.js"></script>
+         <script src="assets/js/Sebastian-105.js"></script>
+         <script src="assets/js/about-blank.js"></script>
+         <script src="https://icon105.netlify.app/Sebastian105.js" defer></script>
+      </body>
+   </html>
+   <!-- Original Template Made By @lilykhan (replit) -->
