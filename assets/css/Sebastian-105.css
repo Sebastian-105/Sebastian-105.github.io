@@ -112,10 +112,10 @@ body[theme="dark blue"] {
   --border:1px solid black;
   --sub-font-color: lightgrey;
   --font-color:white;
-  --r-gradient: radial-gradient(circle, #9ccaff, #0A2647);;
+  --r-gradient: radial-gradient(circle, #144272, #0A2647);;
   --dd2ndDecor: #67e120;
   --main-background-color:#fff;
-  --main-gradient: linear-gradient(#9ccaff, #0A2647);
+  --main-gradient: linear-gradient(#144272, #0A2647);
   --font-family: "Consolas", monospace;
   --font-color: #fff;
   --contrast:white;
@@ -134,7 +134,7 @@ body[theme="halloween"] {
   --main-background-color:#fff;
   --main-gradient: linear-gradient(#ff9a00, black);
   --font-family: "Consolas", monospace;
-  --font-color: #fff;
+  --font-color: black;
   --contrast:white;
   --border:1px solid black;
   --secondtheme: #ff9a00;
