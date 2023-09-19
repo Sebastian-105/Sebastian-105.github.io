@@ -20,7 +20,6 @@ Made by @Sebastian-105
 ───────────────────────────────────────────────────────────────────────────────────────────────────|-->
 Here is most of the javascript for the "sebastian-105" website
 */
-
 var name = localStorage.getItem("personname");
 var tabicon105 = localStorage.getItem("tabicon105");
 var tabname1234 = localStorage.getItem("tabname1234");
@@ -196,6 +195,7 @@ $("#allactionsclose").click(function (e) {
 function setTitle(title = "") {
   if (title) {
     document.title = title;
+    tabname1234 = title;
   } else {
     document.title = "Sebastian-105";
   }

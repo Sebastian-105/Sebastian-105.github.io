@@ -123,7 +123,7 @@ body[theme="halloween"] {
   --font-family: "Consolas", monospace;
   --font-color: #fff;
   --contrast:white;
-  --border:1px solid white;
+  --border:1px solid black;
   --secondtheme: #ff9a00;
   --font-size: 16px;
   --theme: black;
@@ -306,6 +306,9 @@ Settings End
 
   background-color:var(--theme);
 
+}
+#game-page-body {
+  background-color: var(--theme);
 }
 .questiongames {
   margin-left: 15px;
