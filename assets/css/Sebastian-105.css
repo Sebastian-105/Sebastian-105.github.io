@@ -54,6 +54,7 @@ body[theme="default"] {
   --font-size: 16px;
   --theme: #111;
   --decoration: #00a9e2;
+  --sub-font-color: lightgrey;
   margin: 0px;
 }
 body[theme="light"] {
@@ -63,6 +64,7 @@ body[theme="light"] {
   --border:black;
   --font-color:black;
   --secondtheme: #DEE4E7;
+  --sub-font-color: rgb(88, 88, 88);
   --contrast:rgb(56, 56, 56);
   --theme: #fafafa;
   --bordercolor: black;
@@ -72,6 +74,7 @@ body[theme="green & black"]{
   --decoration: #79e739;
   --element-bg: #3cc911;
   --border:solid 1px white;
+  --sub-font-color: lightgrey;
   --font-color:white;
   --dd2ndDecor: #67e120;
   --main-gradient: linear-gradient(#555, black);
@@ -88,6 +91,7 @@ body[theme="midnight"] {
   --border:solid 1px black;
   --font-color:white;
   --dd2ndDecor: #67e120;
+  --sub-font-color: lightgrey;
   --main-background-color:#fff;
   --main-gradient: linear-gradient(#9ccaff, #040622);
   --font-family: "Consolas", monospace;
@@ -101,6 +105,7 @@ body[theme="dark blue"] {
   --decoration: #121619;
   --element-bg: #0031A3;
   --border:1px solid black;
+  --sub-font-color: lightgrey;
   --font-color:white;
   --dd2ndDecor: #67e120;
   --main-background-color:#fff;
@@ -115,6 +120,7 @@ body[theme="dark blue"] {
 body[theme="halloween"] {
   --decoration: #c900ff;
   --element-bg: #a102cd;
+  --sub-font-color: lightgrey;
   --border:black;
   --font-color:white;
   --dd2ndDecor: #67e120;
