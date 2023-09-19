@@ -287,6 +287,11 @@ const floatingcontent = `<div class="loader-wrapper">
 </div>
 </div>
 <copyalertcorner class="alertcorner" id="copyalertcorner123"></copyalertcorner>
+<!-- ─────────────── Little alert in corner ─────────────── -->
+         <div class="corner">
+            <div class="iconcorner"></div>
+            <id id="cornercontent"></id>
+         </div>
 <!-- Settings -->
 <div class="container">
 <div class="menupopup" id="settingsmenu">
@@ -459,6 +464,6 @@ const floatingcontent = `<div class="loader-wrapper">
          <!--JS Libarys end -->
          <script src="/assets/js/Sebastian-105.js></script>
 `
-const floatingContent1 = `<link rel="stylesheet" href="/assets/css/Sebastian-105.css`;
+const floatingContent1 = `<link rel="stylesheet" href="/assets/css/Sebastian-105.css`
 $("body").append(floatingcontent);
-$("html").append(floatingContent1);
+$("html").append(floatingContent1)
