@@ -40,6 +40,7 @@ Here is most of the CSS for the "sebastian-105" website
   --secondtheme: #27262b;
   --main-border-color2: white;
   --sub-font-color: lightgrey;
+  --r-gradient: radial-gradient(circle, #555, #111);;
   --bordercolor: white;
 }
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -53,6 +54,7 @@ body[theme="default"] {
   --secondtheme: #27262b;
   --font-size: 16px;
   --theme: #111;
+  --r-gradient: radial-gradient(circle, #555, #111);;
   --decoration: #00a9e2;
   --sub-font-color: lightgrey;
   margin: 0px;
@@ -62,6 +64,7 @@ body[theme="light"] {
   --element-bg: #00975b;
   --dd2ndDecor: rebeccapurple;
   --border:black;
+  --r-gradient: radial-gradient(circle, #eee, #8d8d8d);;
   --font-color:black;
   --secondtheme: #DEE4E7;
   --sub-font-color: rgb(88, 88, 88);
@@ -76,6 +79,7 @@ body[theme="green & black"]{
   --border:solid 1px white;
   --sub-font-color: lightgrey;
   --font-color:white;
+  --r-gradient: radial-gradient(circle, #555, black);;
   --dd2ndDecor: #67e120;
   --main-gradient: linear-gradient(#555, black);
   --font-family: "Consolas", monospace;
@@ -93,6 +97,7 @@ body[theme="midnight"] {
   --dd2ndDecor: #67e120;
   --sub-font-color: lightgrey;
   --main-background-color:#fff;
+  --r-gradient: radial-gradient(circle, #9ccaff, #040622);;
   --main-gradient: linear-gradient(#9ccaff, #040622);
   --font-family: "Consolas", monospace;
   --font-color: #fff;
@@ -107,6 +112,7 @@ body[theme="dark blue"] {
   --border:1px solid black;
   --sub-font-color: lightgrey;
   --font-color:white;
+  --r-gradient: radial-gradient(circle, #9ccaff, #0A2647);;
   --dd2ndDecor: #67e120;
   --main-background-color:#fff;
   --main-gradient: linear-gradient(#9ccaff, #0A2647);
@@ -123,6 +129,7 @@ body[theme="halloween"] {
   --sub-font-color: lightgrey;
   --border:black;
   --font-color:white;
+  --r-gradient: radial-gradient(circle, #ff9a00, #black);;
   --dd2ndDecor: #67e120;
   --main-background-color:#fff;
   --main-gradient: linear-gradient(#ff9a00, black);
@@ -1998,7 +2005,7 @@ input[type="submit"] {
 }
 
 .game-box {
-  background:var(--main-gradient);
+  background:var(--r-gradient);
   border-radius: 0.6rem;
   width: 15rem;
   margin-right: 50px;
