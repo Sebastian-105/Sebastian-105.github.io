@@ -47,8 +47,12 @@ fetch("./games.json")
     });
   })
   .catch((e) => {
-    alert("Could not load games\n-Sebastian-105");
-    alert(e + "\n-Sebastian-105");
+    swal({
+      title: "Good job!",
+      text: "The error was " + e,
+      icon: "error",
+      button: "Continue",
+    });
   });
 
 // Hide the spinner element after the page is loaded
