@@ -33,7 +33,7 @@
   },
   {
     "name": "iAsk.ai",
-    "root": "c/https://iask.ai",
+    "root": "https://iask.ai",
     "sub": "Like ChatGPT",
     "img": "./105.png",
     "id": "ai",
@@ -145,7 +145,7 @@
   {
     "name": "Geometry Dash",
     "root": "c/GeometryDash",
-    "sub": "Stratch Version",
+    "sub": "Little square go boing",
     "img": "./105.png",
     "id": "gd",
     "desc":""
@@ -180,14 +180,6 @@
     "sub": "green little shooter flying",
     "img": "./105.png",
     "id": "jj",
-    "desc":""
-  },
-  {
-    "name": "Krunker.io",
-    "root": "c/krunker",
-    "sub": "doesn't work anymore",
-    "img": "./105.png",
-    "id": "kio",
     "desc":""
   },
   {
