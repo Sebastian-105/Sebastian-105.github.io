@@ -168,7 +168,7 @@
   },
   {
     "name": "Hextris",
-    "root": "c/hextris",
+    "root": "c/hxtrs",
     "sub": "hexagon",
     "img": "./105.png",
     "id": "hxts",
