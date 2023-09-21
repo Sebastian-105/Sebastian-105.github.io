@@ -310,8 +310,10 @@ const floatingcontent = `<div class="loader-wrapper">
       <button class="setthemebuttons" style="background-color:rgba(255, 255, 255, 0.75); color:black;" onclick="setThemes('light')" >Light</button>
       <button class="setthemebuttons" style="background-color:#6df320;color:black;"onclick="setThemes('green & black')">Green & Black</button>
       <button class="setthemebuttons" style="background-color:#0A2647;color:white;"onclick="setThemes('dark blue')">Dark Blue</button>
-      <button class="setthemebuttons" style="background-color:#040622;color:white;"onclick="setThemes('midnight')">Midnight</button>
+      <button class="setthemebuttons" style="background-color:#040622;color:white;"onclick="setThemes('blue')">Blue</button>
        <button class="setthemebuttons" style="background-color:#ff9a00;color:white;"onclick="setThemes('halloween')">Halloween</button>
+       <button class="setthemebuttons" style="background:linear-gradient(180deg, #FE0000 16.66%,#FD8C00 16.66%, 33.32%,#FFE500 33.32%, 49.98%,#119F0B 49.98%, 66.64%,#0644B3 66.64%, 83.3%,#C22EDC 83.3%);color:white;"onclick="setThemes('LGBTQ+')">LGBTQ+</button>
+       <button class="setthemebuttons" style="background:linear-gradient(0, rgba(255,215,0,1) 0%, rgba(255,215,0,1) 50%, rgba(0, 87, 183,1) 50%, rgba(0, 87, 183,1) 100%);"onclick="setThemes('Ukraine')">Ukraine</button>
       <h2>Tab settings</h2>
       <div>
          <h4>Tab Name:</h4>

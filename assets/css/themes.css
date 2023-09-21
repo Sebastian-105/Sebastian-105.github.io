@@ -1,17 +1,158 @@
-/*-------------------- Themes --------------------*/
-
 body[theme="default"] {
-  --background: #1c1c1c;
-  --theme: #4caf50;
-  --font-color: white;
-  --font-color2nd: black;
-  font-family: var(--main-fonts-family);
-  color: var(--font-color);
-  font-size: var(--font-size);
-  background-color: var(--background);
-  margin: 0px;
-  
+  --decoration: #00a9e2;
+  --font-family: "Consolas", monospace;
+  --font-family2nd: "Vollkorn", serif;
+  --font-family3rd: "Roboto", serif;
+  --secondary-font-color: #fff;
+  --font-size: 16px;
+  --elementbackground: #00a9e2;
+  --theme: #111;
+  --border:solid 1px white;
+  --font-color2nd: white;
+  --danyang-font-family: "Google Sans";
+  --main-border-color: rebeccapurple;
+  --main-gradient: linear-gradient(#555, #111);
+  --mainmenucolor: #262626;
+  --font-color: #fff;
+  --theme2: #27262b;
+  --main-border-color2: white;
+  --sub-font-color: lightgrey;
+  --r-gradient: radial-gradient(circle, #555, #111);;
+  --bordercolor: white;
+  margin:0px;
 }
-body[theme="dark"] {
-  background-color: white;
+body[theme="light"] {
+  --decoration: #00975b;
+  --elementbackground: rebeccapurple;
+  --border:black;
+  --r-gradient: radial-gradient(circle, #eee, #8d8d8d);
+  --font-color:black;
+  --theme2: #DEE4E7;
+  --sub-font-color: rgb(88, 88, 88);
+  --contrast:rgb(56, 56, 56);
+  --theme: #fafafa;
+  --bordercolor: black;
+  --main-gradient:  linear-gradient(#eee, #8d8d8d);
+}
+body[theme="green & black"]{
+  --decoration: #79e739;
+  --border:solid 1px white;
+  --sub-font-color: lightgrey;
+  --font-color:white;
+  --r-gradient: radial-gradient(circle, #555, black);
+  --elementbackground: #67e120;
+  --main-gradient: linear-gradient(#555, black);
+  --font-family: "Consolas", monospace;
+  --font-color: #fff;
+  --contrast:white;
+  --theme2: #002f06;
+  --font-size: 16px;
+  --theme: black;
+}
+body[theme="blue"] {
+  --decoration: #2C74B3;
+  --border:solid 1px black;
+  --font-color:white;
+  --elementbackground: #2050e1;
+  --sub-font-color: lightgrey;
+  --r-gradient: radial-gradient(circle, #9ccaff, #0f1681);
+  --main-gradient: linear-gradient(#9ccaff, #0f1681);
+  --font-family: "Consolas", monospace;
+  --font-color: #fff;
+  --contrast:white;
+  --theme2: #151345;
+  --font-size: 16px;
+  --theme: #0f1681;
+}
+body[theme="LGBTQ+"] {
+  --decoration: #C22EDC;
+  --border:solid 1px black;
+  --font-color:white;
+  --elementbackground: #C22EDC;
+  --sub-font-color: lightgrey;
+  --r-gradient:linear-gradient(180deg, #FE0000 16.66%,
+  #FD8C00 16.66%, 33.32%,
+  #FFE500 33.32%, 49.98%,
+  #119F0B 49.98%, 66.64%,
+  #0644B3 66.64%, 83.3%,
+  #C22EDC 83.3%);
+  --main-gradient: linear-gradient(180deg, #FE0000 16.66%,
+  #FD8C00 16.66%, 33.32%,
+  #FFE500 33.32%, 49.98%,
+  #119F0B 49.98%, 66.64%,
+  #0644B3 66.64%, 83.3%,
+  #C22EDC 83.3%);
+  --font-family: "Consolas", monospace;
+  --font-color: #fff;
+  --contrast:white;
+  --theme2: #0644B3;
+  --font-size: 16px;
+  --theme: #119F0B;
+}
+body[theme="BLM"] {
+  --decoration: #00a9e2;
+  --elementbackground: rebeccapurple;
+  --font-family: "Consolas", monospace;
+  --font-family2nd: "Vollkorn", serif;
+  --font-family3rd: "Roboto", serif;
+  --secondary-font-color: #fff;
+  --font-size: 16px;
+  --theme: #111;
+  --border:solid 1px white;
+  --font-color2nd: white;
+  --danyang-font-family: "Google Sans";
+  --main-border-color: rebeccapurple;
+  --main-gradient: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fburlingtonpress.com%2Fblm%2F&psig=AOvVaw0AffrqxLJJuG_Y0xEQREPp&ust=1695392986621000&source=images&cd=vfe&opi=89978449&ved=0CA0QjRxqFwoTCPi9r9X1u4EDFQAAAAAdAAAAABAD');
+  --mainmenucolor: #262626;
+  --font-color: #fff;
+  --theme2: #27262b;
+  --main-border-color2: white;
+  --sub-font-color: lightgrey;
+  --r-gradient: radial-gradient(circle, #555, #111);;
+  --bordercolor: white;
+}
+body[theme="Ukraine"] {
+  --decoration: rgb(255, 217, 0);
+  --elementbackground: rgb(255, 217, 0);
+  --border:1px solid  rgb(255, 217, 0);
+  --sub-font-color: lightgrey;
+  --font-color:white;
+  --r-gradient: linear-gradient(0, rgba(255,215,0,1) 0%, rgba(255,215,0,1) 50%, rgba(0, 87, 183,1) 50%, rgba(0, 87, 183,1) 100%);
+  --main-gradient: linear-gradient(0, rgba(255,215,0,1) 0%, rgba(255,215,0,1) 50%, rgba(0, 87, 183,1) 50%, rgba(0, 87, 183,1) 100%);;
+  --font-family: "Consolas", monospace;
+  --font-color: #fff;
+  --contrast:white;
+  --theme2:rgba(0, 87, 183,1);
+  --font-size: 16px;
+  --theme: rgba(0, 87, 183,1);
+}
+body[theme="dark blue"] {
+  --decoration: #121619;
+  --border:1px solid black;
+  --sub-font-color: lightgrey;
+  --font-color:white;
+  --r-gradient: radial-gradient(circle, #144272, #0A2647);
+  --elementbackground: #2d20e1;
+  --main-gradient: linear-gradient(#050640, #0A2647);
+  --font-family: "Consolas", monospace;
+  --font-color: #fff;
+  --contrast:white;
+  --theme2: #144272;
+  --font-size: 16px;
+  --theme: #0A2647;
+}
+body[theme="halloween"] {
+  --decoration: #c900ff;
+  --sub-font-color: lightgrey;
+  --border:black;
+  --font-color:white;
+  --r-gradient: radial-gradient(circle, #ff9a00, #black);
+  --elementbackground: #67e120;
+  --main-gradient: linear-gradient(#ff9a00, black);
+  --font-family: "Consolas", monospace;
+  --contrast:white;
+  --border:1px solid black;
+  --theme2: #ff9a00;
+  --font-size: 16px;
+  --theme: black;
 }

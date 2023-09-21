@@ -19,16 +19,16 @@ Made by @Sebastian-105 (https://github.com).
 Here is most of the CSS for the "sebastian-105" website
 */
 /* Varibles */
+@import url("themes.css");
 :root {
   /*Background-color*/
   --decoration: #00a9e2;
-  --element-bg: #00a9e2;
   --font-family: "Consolas", monospace;
   --font-family2nd: "Vollkorn", serif;
   --font-family3rd: "Roboto", serif;
   --secondary-font-color: #fff;
   --font-size: 16px;
-  --d2ndDecor: rebeccapurple;
+  --elementbackground: rebeccapurple;
   --theme: #111;
   --border:solid 1px white;
   --font-color2nd: white;
@@ -37,7 +37,7 @@ Here is most of the CSS for the "sebastian-105" website
   --main-gradient: linear-gradient(#555, #111);
   --mainmenucolor: #262626;
   --font-color: #fff;
-  --secondtheme: #27262b;
+  --theme2: #27262b;
   --main-border-color2: white;
   --sub-font-color: lightgrey;
   --r-gradient: radial-gradient(circle, #555, #111);;
@@ -46,110 +46,12 @@ Here is most of the CSS for the "sebastian-105" website
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Themes 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-body[theme="default"] {
-  --font-family: "Consolas", monospace;
-  --font-color: #fff;
-  --contrast:white;
-  --d2ndDecor: rebeccapurple;
-  --secondtheme: #27262b;
-  --font-size: 16px;
-  --theme: #111;
-  --r-gradient: radial-gradient(circle, rgb(39, 38, 43), #555);
-  --decoration: #00a9e2;
-  --sub-font-color: lightgrey;
-  margin: 0px;
-}
-body[theme="light"] {
-  --decoration: #00975b;
-  --element-bg: #00975b;
-  --dd2ndDecor: rebeccapurple;
-  --border:black;
-  --r-gradient: radial-gradient(circle, #eee, #8d8d8d);
-  --font-color:black;
-  --secondtheme: #DEE4E7;
-  --sub-font-color: rgb(88, 88, 88);
-  --contrast:rgb(56, 56, 56);
-  --theme: #fafafa;
-  --bordercolor: black;
-  --main-gradient:  linear-gradient(#eee, #8d8d8d);
-}
-body[theme="green & black"]{
-  --decoration: #79e739;
-  --element-bg: #3cc911;
-  --border:solid 1px white;
-  --sub-font-color: lightgrey;
-  --font-color:white;
-  --r-gradient: radial-gradient(circle, #555, black);
-  --dd2ndDecor: #67e120;
-  --main-gradient: linear-gradient(#555, black);
-  --font-family: "Consolas", monospace;
-  --font-color: #fff;
-  --contrast:white;
-  --secondtheme: #002f06;
-  --font-size: 16px;
-  --theme: black;
-}
-body[theme="midnight"] {
-  --decoration: #2C74B3;
-  --element-bg: #2C74B3;
-  --border:solid 1px black;
-  --font-color:white;
-  --dd2ndDecor: #67e120;
-  --sub-font-color: lightgrey;
-  --main-background-color:#fff;
-  --r-gradient: radial-gradient(circle, #9ccaff, #040622);
-  --main-gradient: linear-gradient(#9ccaff, #040622);
-  --font-family: "Consolas", monospace;
-  --font-color: #fff;
-  --contrast:white;
-  --secondtheme: #151345;
-  --font-size: 16px;
-  --theme: #040622;
-}
-body[theme="dark blue"] {
-  --decoration: #121619;
-  --element-bg: #0031A3;
-  --border:1px solid black;
-  --sub-font-color: lightgrey;
-  --font-color:white;
-  --r-gradient: radial-gradient(circle, #144272, #0A2647);
-  --dd2ndDecor: #67e120;
-  --main-background-color:#fff;
-  --main-gradient: linear-gradient(#144272, #0A2647);
-  --font-family: "Consolas", monospace;
-  --font-color: #fff;
-  --contrast:white;
-  --secondtheme: #144272;
-  --font-size: 16px;
-  --theme: #0A2647;
-}
-body[theme="halloween"] {
-  --decoration: #c900ff;
-  --element-bg: #a102cd;
-  --sub-font-color: lightgrey;
-  --border:white;
-  --font-color:white;
-  --r-gradient: radial-gradient(circle, #ff9a00, #black);
-  --dd2ndDecor: #67e120;
-  --main-background-color:#fff;
-  --main-gradient: linear-gradient(#ff9a00, black);
-  --font-family: "Consolas", monospace;
-  --font-color: white;
-  --contrast:white;
-  --border:1px solid black;
-  --secondtheme: #ff9a00;
-  --font-size: 16px;
-  --theme: black;
-}
-
-
-
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Themes End
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 .setthemebuttons {
   color: var(--font-color);
-  background-color: var(--secondtheme);
+  background-color: var(--theme2);
   border:solid 3px var(--bordercolor) ;
   padding:15px;
   border-radius:15px;
@@ -173,10 +75,6 @@ Themes End
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Settings
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
-#dark-mode {
-  width: 10px;;
-  height: 10px;
-}
 .switch {
   position: relative;
   display: inline-block;
@@ -368,7 +266,7 @@ Settings End
   position: relative;
   border: 5px solid var(--theme);
   border-radius: 5px;
-  box-shadow: 0px 0px 50px var(--d2ndDecor);
+  box-shadow: 0px 0px 50px var(--elementbackground);
   animation: loader 1.5s infinite ease;
 }
 
@@ -461,13 +359,13 @@ Settings End
 .menurightclick {
   display: none;
   border-radius: 10px;
-  background-color:var(--secondtheme);
+  background-color:var(--theme2);
   position: fixed;
   width: 250px;
   border: 1px solid white;
   color: var(--font-color);
   z-index: 105;
-  box-shadow: 0px 0px 15px var(--d2ndDecor);
+  box-shadow: 0px 0px 15px var(--elementbackground);
 }
 
 .menurightclick > div.moreoptions {
@@ -486,7 +384,7 @@ Settings End
 }
 
 .menurightclick > div:hover {
-  background-color: var(--secondtheme);
+  background-color: var(--theme2);
 }
 
 .linksicons:hover {
@@ -504,7 +402,7 @@ Settings End
   left:8%;
   height: 80%;
   top: 10%;
-  background-color:var(--secondtheme);
+  background-color:var(--theme2);
   z-index: 6;
 }
 
@@ -603,7 +501,7 @@ html {
   font-family: var(--main-fonts-family);
   color: var(--font-color);
   font-size: var(--font-size);
-  background-color: var(--secondtheme);
+  background-color: var(--theme);
   margin: 0px;
 }
 
@@ -855,7 +753,7 @@ p {
   opacity: 1;
   left: 0px;
   font-family: var(--font-family);
-  background-color:var(--secondtheme);
+  background-color:var(--theme2);
   display: block;
 }
 large {
@@ -888,7 +786,7 @@ large {
 /* .dropdown-container {
 display: none;
 cursor: pointer;
-  background-color:var(--secondtheme);
+  background-color:var(--theme2);
 padding-left: 8px;
 margin-left: 8px;
 } */
@@ -1113,7 +1011,7 @@ h3 {
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
 .dropdown-container {
   display: none;
-  background-color:var(--secondtheme);
+  background-color:var(--theme2);
   padding-left: 8px;
   border-radius: 5px;
 }
@@ -1194,7 +1092,7 @@ header {
   color: var(--font-color);
   font-family: var(--font-family);
   display: flex;
-  background-image: var(--main-gradient);
+  background: var(--main-gradient);
   background-position: center;
   background-size: 100%;
 }
@@ -1294,7 +1192,7 @@ h3 {
   border: solid 1px white;
   height: 28px;
   border-radius: 12px;
-  background: var(--element-bg);
+  background: var(--elementbackground);
 }
 
 .card a {
@@ -1510,7 +1408,7 @@ hr {
   }
 
   header {
-      background-color: var(--secondtheme);
+      background-color: var(--theme2);
   }
 
   .logo {
@@ -1533,7 +1431,7 @@ hr {
       flex-direction: column;
       align-items: center;
       justify-content: space-evenly;
-      background: var(--secondtheme);
+      background: var(--theme2);
       transform: translatex(100%);
       transition: transform 0.5s ease-in;
       z-index: -1;
@@ -1622,7 +1520,7 @@ GAME STYLE/CSS
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background: var(--secondtheme);
+  background: var(--theme2);
 }
 
 #thenavbar {
@@ -2344,7 +2242,7 @@ input[type="submit"] {
 footer {
   width: 100%;
   height: 100%;
-  background-color: var(--secondtheme);
+  background-color: var(--theme2);
 }
 
 .copyright {
