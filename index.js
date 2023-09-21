@@ -6,8 +6,7 @@
 'use strict';
 
 const express = require('express');
-const http = require('http');
-
+const anime = require('animejs');
 
 // Constants
 const PORT = 1050;
