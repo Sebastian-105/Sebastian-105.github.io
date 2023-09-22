@@ -280,7 +280,7 @@
   },
   {
     "name": "Stack",
-    "root": "c/stack",
+    "root": "c/Stack",
     "sub": "A mobile game",
     "img": "./105.png",
     "id": "stack",
