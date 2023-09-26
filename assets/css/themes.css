@@ -10,7 +10,7 @@ body[theme="default"] {
   --border:solid 1px white;
   --font-color2nd: white;
   --danyang-font-family: "Google Sans";
-  --main-border-color: 1px solid white;
+  --main-border-color: rebeccapurple;
   --main-gradient: linear-gradient(#555, #111);
   --mainmenucolor: #262626;
   --font-color: #fff;
