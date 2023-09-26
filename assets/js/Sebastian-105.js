@@ -275,7 +275,9 @@ function openHelpMenu() {
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
 // Useless stuff but also helpful don't mess with this %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
-const floatingcontent = `<div class="loader-wrapper">
+const floatingcontent = `
+<link rel="stylesheet" href="/assets/css/Sebastian-105.css">
+<div class="loader-wrapper">
 <span class="loader"><span class="loader-inner"></span></span>
 </div>
 <div class="menurightclick" class="rightclick">
@@ -293,7 +295,7 @@ const floatingcontent = `<div class="loader-wrapper">
             <id id="cornercontent"></id>
          </div>
 <!-- Settings -->
-<div class="container">
+<div class="container" style="display:none;">
 <div class="menupopup" id="settingsmenu">
 <div class="menuicon">
    <img src="105.png" width="25" height="25" style="border-radius: 50%;">
@@ -466,6 +468,4 @@ const floatingcontent = `<div class="loader-wrapper">
          <!--JS Libarys end -->
          <script src="/assets/js/Sebastian-105.js></script>
 `
-const floatingContent1 = `<link rel="stylesheet" href="/assets/css/Sebastian-105.css`
 $("body").append(floatingcontent);
-$("html").append(floatingContent1)
