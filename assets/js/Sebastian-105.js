@@ -295,7 +295,7 @@ const floatingcontent = `
             <id id="cornercontent"></id>
          </div>
 <!-- Settings -->
-<div class="container" style="display:none;">
+<div class="container">
 <div class="menupopup" id="settingsmenu">
 <div class="menuicon">
    <img src="105.png" width="25" height="25" style="border-radius: 50%;">
