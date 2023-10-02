@@ -300,4 +300,4 @@ const searchMenu = `
     </div>
    
 `
-$("body").append(searchMenu);
+// $("body").append(searchMenu);
