@@ -1913,7 +1913,7 @@ input[type="submit"] {
   border: 1px solid var(--contrast);
   margin-bottom: 25px;
   cursor: pointer;
-  font-size: auto;
+  font-size: 15px;
   font-family: var(--font-family);
   left: 15px;
   
@@ -1949,8 +1949,8 @@ input[type="submit"] {
 
 .main {
   font-family: var(--font-family);
-  font-size: 1.6rem;
-  font-weight: 400;
+  font-size:  auto;
+  font-weight: bold;
   line-height: 1.75rem;
   color:var(--font-color);
   width: auto;
