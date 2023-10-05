@@ -9,7 +9,7 @@ const gameFrame = gameContainer.querySelector(".frame");
 const gameNav = gameContainer.querySelector(".nav");
 
 // Fetch the games data from a JSON file
-fetch("/assets/json/games.json")
+fetch("/assets/json/games2.json")
   .then((res) => res.json())
   .then((games) => {
     // Loop through each game and create a new game element for it
