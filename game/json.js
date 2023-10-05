@@ -22,7 +22,7 @@ fetch("./games2.json")
          <seb>
             <a class="classText" href="${game.root}/${game.file}" style="color:white;" target="_blank" rel="noopener noreferrer" onclick='console.log("Clicked on ${game.name}")'>
             <div class="main">${game.name}</div>
-            <div class="sub">${game.sub}</div>
+           <!-- <div class="sub">${game.sub}</div>-->
             </a>
     </seb>
    </div>
