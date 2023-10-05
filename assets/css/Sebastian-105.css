@@ -747,8 +747,8 @@ p {
 .sidenav {
   border:var(--border);
   border-style: solid solid solid none;
-  height: 100%;
-  width: 50px;
+  height: 50px;
+  width: 100%;
   position: fixed;
   z-index: 105;
   top: 0;
@@ -756,7 +756,7 @@ p {
   left: 0px;
   font-family: var(--font-family);
   background-color:var(--theme2);
-  display: block;
+  display: flex;
 }
 large {
   display: none;
@@ -764,18 +764,11 @@ large {
 /* Style the sidenav links and the dropdown button */
 .sidenav a,
 .dropdown-btn {
-  text-align: center;
   color: var(--main-font-color);
   padding: 6px 8px 6px 16px;
-  text-decoration: none;
+  margin: top 15px;;
   font-size: 16px;
-  border: none;
-  text-align: left;
-  outline: none;
-  cursor: pointer;
-  outline: none;
-  font-family: var(--font-family2nd);
-  border-radius: 0px;
+  font-family: var(--font-family);
 }
 
 /* On mouse-over */
@@ -970,7 +963,14 @@ h3 {
   color: grey;
   transform: scale(1.05);
 }
-
+straight {
+  left: 5px;
+  right: 5px;
+  width: 1px;
+  height:49px;
+  background-color: var(--font-color);
+  border: 1px solid var(--font-color);
+}
 #closesidenav {
   font-size: 25px;
   top: 16px;
@@ -985,22 +985,6 @@ h3 {
 }
 
 /* Style the sidenav links and the dropdown button */
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 18px;
-  color: var(--font-color);
-
-  display: block;
-  border: none;
-  background: none;
-  width: 100%;
-  text-align: left;
-  cursor: pointer;
-  outline: none;
-  font-family: var(--font-family);
-  border-radius: 0px;
-}
 
 /* On mouse-over */
 /* Add an active class to the active dropdown button */
@@ -1588,7 +1572,9 @@ GAME STYLE/CSS
   background-color:var(--theme);
 
 }
-
+fontAwesomeIcon {
+  display: inline-flex;
+}
 .hamburger {
   width: 48px;
   height: 48px;
