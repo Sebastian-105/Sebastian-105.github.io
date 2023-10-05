@@ -26,7 +26,7 @@ fetch("/assets/json/games.json")
     </seb>
    </div>
    </div>`;
-      document.getElementById("games").appendChild(game105);
+      document.querySelector(".games").appendChild(game105);
       // Add click event listener to th e game element to show the game in the game container
       game105.onclick = (e) => {
         width = screen.width;
