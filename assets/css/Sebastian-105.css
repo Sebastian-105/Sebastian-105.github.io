@@ -1913,6 +1913,7 @@ input[type="submit"] {
   border: 1px solid var(--contrast);
   margin-bottom: 25px;
   cursor: pointer;
+  font-size: auto;
   font-family: var(--font-family);
   left: 15px;
   
