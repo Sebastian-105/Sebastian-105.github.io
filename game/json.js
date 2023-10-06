@@ -83,7 +83,16 @@ html, body{
       button: "Continue",
     });
   });
-
+  fetch("./games2.json")
+  .then((res) => res.json())
+  .then((games) => {
+    // Loop through each game and create a new game element for it
+    games.forEach((game) => {
+      const gameSearch105 = document.createElement("div");
+      gameSearch105.className = "menupopup";
+      gameSearch105.innerHTML = `<div class=\"menuicon\">\n   <img src=\"/105.png\" width=\"25\" height=\"25\" style=\"border-radius: 50%;\">\n   <author style=\"font-size:18px;\"> By: Sebastian S</author>\n</div>\n<div id=\"settingsclose\" onclick=\"settingsclose()\"style=\"float:right; cursor: pointer; font-size:50px; margin-top:-52px;margin-right:-15px;\"\n   title=\"close\">×</div>\n<div class=\"menucontent\">Settings</div>\n<div class=\"menuspace\"></div>\n<div class=\"menucontenttext\">\n   <ul id=\"gameSearchItem\"></ul>\n\n   </div>\n</div>\n`
+    })
+  })
 // Hide the spinner element after the page is loaded
 document.querySelector(".spinner").style.display = "none";
 

@@ -20,6 +20,13 @@ Made by @Sebastian-105
 ───────────────────────────────────────────────────────────────────────────────────────────────────|-->
 Here is most of the javascript for the "sebastian-105" website
 */
+$(window).scroll(function() {
+  if ($(this).scrollTop() >= 50) {
+    $(".sidenav").addClass("box-shadow");
+ } else {
+  $(".sidenav").removeClass("box-shadow");
+}
+});
 var name = localStorage.getItem("personname");
 var tabicon105 = localStorage.getItem("tabicon105");
 var tabname1234 = localStorage.getItem("tabname1234");

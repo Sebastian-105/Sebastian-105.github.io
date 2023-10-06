@@ -15,6 +15,7 @@ body[theme="default"] {
   --mainmenucolor: #262626;
   --font-color: #fff;
   --theme2: #27262b;
+  --contrast:white;
   --main-border-color2: white;
   --sub-font-color: lightgrey;
   --r-gradient: radial-gradient(circle, #555, #111);;
@@ -24,13 +25,14 @@ body[theme="default"] {
 body[theme="light"] {
   --decoration: #00975b;
   --elementbackground: rebeccapurple;
-  --border:black;
+  --border:solid 1px black;
   --r-gradient: radial-gradient(circle, #eee, #8d8d8d);
   --font-color:black;
   --theme2: #DEE4E7;
   --sub-font-color: rgb(88, 88, 88);
   --contrast:rgb(56, 56, 56);
   --theme: #fafafa;
+  --font-color:black;
   --bordercolor: black;
   --main-gradient:  linear-gradient(#eee, #8d8d8d);
 }
