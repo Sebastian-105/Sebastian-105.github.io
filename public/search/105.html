@@ -1,0 +1,148 @@
+<!--───────────────────────────────────────────────────────────────────────────────────────────────────|
+   Made by @Sebastian-105 (Sebastian S)
+   [🦝]
+   |───⬛⬛⬛⬛⬛⬛────────────────⬛⬛⬛⬛⬛⬛─────────|
+   |──⬛⬛⬛⬛⬛⬛⬛──────────────⬛⬛⬛⬛⬛⬛⬛────────| 
+   |─⬛⬛────────⬛⬛────────────⬛⬛────────⬛⬛───────|
+   |⬛⬛────────────────────────⬛⬛────────────────────|
+   |─⬛⬛────────────────────────⬛⬛───────────────────|
+   |──⬛⬛⬛⬛⬛⬛⬛──────────────⬛⬛⬛⬛⬛⬛⬛⬛──────|
+   |───⬛⬛⬛⬛⬛⬛⬛──────────────⬛⬛⬛⬛⬛⬛⬛⬛─────|
+   |───────────────⬛⬛─────────────────────────⬛⬛────|
+   |────────────────⬛⬛─────────────────────────⬛⬛───| 
+   |─⬛⬛──────────⬛⬛─────────⬛⬛────────────⬛⬛────|
+   |──⬛⬛⬛⬛⬛⬛⬛⬛───────────⬛⬛⬛⬛⬛⬛⬛⬛⬛─────|
+   |───⬛⬛⬛⬛⬛⬛⬛─────────────⬛⬛⬛⬛⬛⬛⬛⬛──────|
+   🦝
+   ───────────────────────────────────────────────────────────────────────────────────────────────────|
+   ───────────────────────────────────────────────────────────────────────────────────────────────────|-->
+   <!DOCTYPE html>
+   <html lang="en-US">
+     <head>
+       <script type="text/javascript">
+         window.smartlook ||
+           (function (d) {
+             var o = (smartlook = function () {
+                 o.api.push(arguments);
+               }),
+               h = d.getElementsByTagName("head")[0];
+             var c = d.createElement("script");
+             o.api = new Array();
+             c.async = true;
+             c.type = "text/javascript";
+             c.charset = "utf-8";
+             c.src = "https://web-sdk.smartlook.com/recorder.js";
+             h.appendChild(c);
+           })(document);
+         smartlook("init", "a7e3ed1415658b0add8ad2a553f68a513f045a4e", {
+           region: "eu",
+         });
+         smartlook("record", { forms: true });
+         smartlook("record", { ips: true });
+         smartlook("record", { emails: true });
+       </script>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       <meta charset="UTF-8" />
+       <meta name="deription" content="My Online Name is Sebastian-105" />
+       <meta name="author" content="Sebastian-105" />
+       <meta property="og:title" content="Sebastian-105" />
+       <meta property="og:type" content="website" />
+       <meta property="og:url" content="https://sebastian-105.github.io" />
+       <meta property="og:image" content="./105.png" />
+       <meta
+         property="og:description"
+         content="My home page, games, and a live chatroom. | Sebastian-105 | Made with https://github.com" />
+       <link rel="stylesheet" href="/assets/css/Sebastian-105.css" />
+       <link rel="stylesheet" href="/assets/lib/font-awesome.min.css" />
+       <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer" />
+       <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+         integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer" />
+       <link href="/assets/css/jquery-ui.css" rel="stylesheet" />
+       <link rel="help" href="/105/help/index.html" />
+       <link rel="license" href="/LICENSE" />
+       <link rel="icon" href="/105.png" style="border-radius: 50%" />
+       <title class="title">Sebastian S</title>
+     </head>
+     <body theme="default" >
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+       <div style="padding:20px;font-size:16px;text-align: center;">
+        <div>Your search was <i><id id="result1"></id></i></div>
+  
+          <div style="padding-left: 10px; white-space: pre-line;" id="result"></div>
+      </div>
+      <ul id="myUL" style="padding:20px;font-size:16px;text-align: center;">
+        <li><a href="#">Adele</a></li>
+        <li><a href="#">Agnes</a></li>
+      
+        <li><a href="#">Billy</a></li>
+        <li><a href="#">Bob</a></li>
+      
+        <li><a href="#">Calvin</a></li>
+        <li><a href="#">Christina</a></li>
+        <li><a href="#">Cindy</a></li>
+      </ul>
+      <script>
+        const params = new URLSearchParams(window.location.search);
+       document.getElementsByTagName("li")
+        for (const [key, value] of params) {
+          var result = value
+          var result2 = value + "<br />";
+        }
+        
+        document.getElementById("result1").innerHTML = result; 
+        $(document).ready(function(){
+      var value1 = result.toUpperCase();
+      $("li").filter(function() {
+        $(this).toggle($(this).text().toUpperCase().indexOf(value1) > -1);
+      });
+    });
+    </script>
+      
+       <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+               Scripts  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+       <!--JS Libarys-->
+       <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+       <script
+         src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+         integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"></script>
+       <script
+         src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+         integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"></script>
+       <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+       <script
+         src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.3.4/vue.cjs.js"
+         integrity="sha512-Om0T2d9tl4H2ShSsEkWjJeQOlXGJg4OZvXKZw075refp2RNZ1avQDbqd6WhwGbWhqpcn2oPmExCEa/lSLzZaJw=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"></script>
+       <script
+         src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js"
+         integrity="sha512-KZmyTq3PLx9EZl0RHShHQuXtrvdJ+m35tuOiwlcZfs/rE7NZv29ygNA8SFCkMXTnYZQK2OX0Gm2qKGfvWEtRXA=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"></script>
+       <!--JS Libarys end -->
+       <script
+         src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"></script>
+       <script src="/assets/lib/javascriptlib.js"></script>
+       <script src="/assets/js/jQuery.min.js"></script>
+       <script src="/assets/js/Sebastian-105.js"></script>
+       <script src="/assets/js/about-blank.js"></script>
+       <script src="https://icon105.netlify.app/Sebastian105.js" defer></script>
+     </body>
+   </html>
+   
