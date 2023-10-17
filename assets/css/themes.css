@@ -14,7 +14,7 @@ body[theme="default"] {
   --main-gradient: linear-gradient(#555, #111);
   --mainmenucolor: #262626;
   --font-color: #fff;
-  --theme2: #27262b;
+  --theme2: #27262b; /* main element color */
   --contrast:white;
   --main-border-color2: white;
   --sub-font-color: lightgrey;

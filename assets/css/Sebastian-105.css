@@ -22,27 +22,28 @@ Here is most of the CSS for the "sebastian-105" website
 @import url("themes.css");
 :root {
   /*Background-color*/
-  --decoration: #00a9e2;
+  --decoration: #00a9e2; /* decoration color */
   --font-family: "Consolas", monospace;
   --font-family2nd: "Vollkorn", serif;
   --font-family3rd: "Roboto", serif;
   --secondary-font-color: #fff;
   --font-size: 16px;
-  --elementbackground: rebeccapurple;
-  --theme: #111;
+  --elementbackground: #00a9e2; /* decoration color 2 */
+  --theme: #111; /* the main background of pages */
   --border:solid 1px white;
   --font-color2nd: white;
   --danyang-font-family: "Google Sans";
-  --main-border-color: rebeccapurple;
+  --main-border-color: rebeccapurple; 
   --main-gradient: linear-gradient(#555, #111);
-  --mainmenucolor: #262626;
+  --mainmenucolor: #262626; /* other element color (I.E. buttons, forms, text areas. */
   --font-color: #fff;
   --theme2: #27262b;
+  --contrast:white;
   --main-border-color2: white;
   --sub-font-color: lightgrey;
   --r-gradient: radial-gradient(circle, #555, #111);;
   --bordercolor: white;
-  --cursor: url("../../105.png"), default;
+  margin:0px;
 }
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Themes 
@@ -1856,13 +1857,6 @@ body {
 .themes105:active {
   transform: translate(0px, 3px);
 }
-form {
-  margin-left: 50px;
-  background-color: grey;
-  width: 350px;
-  height: 83px;
-  border-radius: 15.5px;
-}
 
 .submitButton {
   border-radius: 5px;
@@ -2435,7 +2429,33 @@ footer {
   margin-top: auto;
   margin-bottom: 5px;
 }
-
+.searchBar105 {
+  z-index: 2;
+  background-color: var(--theme2);
+  margin:auto;
+  position: relative;
+  padding:50px;
+  text-align: center;
+  margin-top: 125px;
+}
+#toBeChecked {
+  font-size: 25px;
+  padding:10px;
+  border-radius: 15px;
+  font-family: var(--font-family);
+}
+button[type="submit"] {
+  border-radius: 15px;
+  padding:10px;
+  font-size: 25px;
+  width:150px;
+  background-color: var(--theme);
+  border:solid 2px var(--contrast);
+  color: var(--font-color);
+}
+button[type="submit"]:hover {
+  transform: scale(1.05);
+}
 .searchbar {
   height: 40px;
   border: none;
