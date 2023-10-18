@@ -327,12 +327,6 @@
 		"img": "EC4B216C-B637-41A3-A3D9-79D4048DD7A3.jpeg"
 	},
 	{
-		"name": "CS:GO Clicker",
-		"root": "https://raw.githack.com/Sebastian-105/Sebastian-105-assets/main/csgo-clicker",
-		"file": "index.html",
-		"img": "images/vanguard.png"
-	},
-	{
 		"name": "Cannon Basketball 4",
 		"root": "https://raw.githack.com/Sebastian-105/Sebastian-105-assets/main/cannon-basketball-4",
 		"file": "index.html",
@@ -436,12 +430,6 @@
 		"root": "https://raw.githack.com/Sebastian-105/Sebastian-105-assets/main/core-ball",
 		"file": "index.html",
 		"img": "pr_source.png"
-	},
-	{
-		"name": "CraftMine",
-		"root": "https://raw.githack.com/Sebastian-105/Sebastian-105-assets/main/craftmine",
-		"file": "index.html",
-		"img": "images/craftmine.png"
 	},
 	{
 		"name": "Creative Kill Chamber",
@@ -1575,13 +1563,7 @@
 		"file": "index.html",
 		"img": "splash.png"
 	},
-	{
-		"name": "Robux clicker",
-		"root": "https://raw.githack.com/Sebastian-105/Sebastian-105-assets/main/robuxclicker",
-		"file": "robuxclicker.html",
-		"img": "1517CE7D-1708-489E-9C51-E52887A13855.jpeg"
-	},
-	{
+		{
 		"name": "Rocket Bot Royale",
 		"root": "c/rocket",
 		"sub": "2d battle royale with rocket-tanks",
