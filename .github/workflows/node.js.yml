@@ -10,4 +10,8 @@ jobs:
         with:
           node-version: '14'
       - name: Install dependencies
-        run: npm ci -y
+        run: npm ci
+      - name: npm run start
+        run: npm start
+        env:
+          CI: true
