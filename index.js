@@ -14,7 +14,11 @@ router.get('/about', function(req, res) {
 router.get('/search-result', function(req, res) { 
     res.sendFile(path.join(__dirname + '/search/105.html')); 
 }); 
-//add the router 
-app.use('/', router); 
-app.listen(process.env.port || 8080); 
-console.log('Running at Port 8080'); 
+
+router.get('/assets/*', function(req, res) { 
+      res.sendFile(path.join(__dirname + '/401.html')); 
+  }); 
+//add the router f
+// app.use('/', router); 
+app.listen(process.env.port || 8180); 
+console.log("working"); 
