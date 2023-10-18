@@ -9,9 +9,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '14'
-      - name: Install dependencies
-        run: npm i
-      - name: running with npm
-        run: npm run start
+      - run: npm i
+      - run: npm run build --if-present 
+      - run: npm run start
         env:
-          CI: true
+          CI: false
