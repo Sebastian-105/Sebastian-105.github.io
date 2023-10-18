@@ -2,7 +2,7 @@ name: Main node.js workflow
 run-name: ${{ github.actor }}s Main node.js workflow
 on: [push]
 jobs:
-  check-bats-version:
+  running-nodejs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
