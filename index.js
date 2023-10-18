@@ -1,22 +1,20 @@
-/*---------------------------------------------------------------------------------------------
- *  Copyright (c) Microsoft Corporation. All rights reserved.
- *  Licensed under the MIT License. See License.txt in the project root for license information.
- *--------------------------------------------------------------------------------------------*/
-
-
-const express = require('express');
-const http = require('http');
-
-
-// Constants
-const PORT = 1050;
-const HOST = '0.0.0.0';
-
-// App
-const app = express();
-app.use(express.static('./'));
-
-
-app.listen(PORT, HOST);
-console.log(`Running on http://${HOST}:${PORT}`);
-console.log(`Node.js is working\n- Sebastian-105`)
+// Import essential libraries 
+const express = require('express'); 
+const app = express(); 
+const path = require('path'); 
+const router = express.Router(); 
+app.use(express.static(__dirname + '/'));
+// Setup essential routes 
+router.get('/', function(req, res) { 
+    res.sendFile(path.join(__dirname + '/index.html')); 
+}); 
+router.get('/about', function(req, res) { 
+    res.sendFile(path.join(__dirname + '/105/about-me/index.html')); 
+}); 
+router.get('/search-result', function(req, res) { 
+    res.sendFile(path.join(__dirname + '/search/105.html')); 
+}); 
+//add the router 
+app.use('/', router); 
+app.listen(process.env.port || 8080); 
+console.log('Running at Port 8080'); 

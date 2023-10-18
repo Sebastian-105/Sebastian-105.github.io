@@ -333,7 +333,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index"
+    "start": "node index",
+    "build":"node index.js"
   },
   "repository": {
     "type": "git",
@@ -342,7 +343,10 @@
   "keywords": [
     "games",
     "profile",
-    "home"
+    "home",
+    "html",
+    "javascript",
+    "css"
   ],
   "author": "Sebastian Schapfel",
   "license": "ISC",
