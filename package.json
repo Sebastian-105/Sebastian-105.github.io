@@ -331,9 +331,9 @@
     "xtend": "^4.0.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index",
-    "build": "node index.js"
+    "test": "jest index.test.js"
+
   },
   "repository": {
     "type": "git",
