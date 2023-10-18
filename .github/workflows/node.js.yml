@@ -1,5 +1,5 @@
 name: Main node.js workflow
-run-name: ${{ github.actor }}\'s Main node.js workflow
+run-name: ${{ github.actor }}s Main node.js workflow
 on: [push]
 jobs:
   check-bats-version:
@@ -10,4 +10,4 @@ jobs:
         with:
           node-version: '14'
       - run: npm install --save
-      - run: node index
+      - run: npm run start
