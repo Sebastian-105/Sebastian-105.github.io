@@ -100,6 +100,7 @@
     "duplexer2": "^0.1.4",
     "ecc-jsbn": "^0.1.2",
     "ee-first": "^1.1.1",
+    "eiows": "^6.7.0",
     "ejs": "^3.1.9",
     "elliptic": "^6.5.4",
     "encodeurl": "^1.0.2",
@@ -276,6 +277,7 @@
     "shell-quote": "^1.8.1",
     "side-channel": "^1.0.4",
     "simple-concat": "^1.0.1",
+    "socket.io": "^4.7.2",
     "source-map": "^0.5.7",
     "sshpk": "^1.17.0",
     "stack-trace": "^0.0.10",
@@ -379,5 +381,9 @@
   "bugs": {
     "url": "https://github.com/Sebastian-105/Sebastian-105.github.io/issues"
   },
-  "homepage": "https://github.com/Sebastian-105/Sebastian-105.github.io#readme"
+  "homepage": "https://github.com/Sebastian-105/Sebastian-105.github.io#readme",
+  "optionalDependencies": {
+    "bufferutil": "^4.0.8",
+    "utf-8-validate": "^5.0.10"
+  }
 }
