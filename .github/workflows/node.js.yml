@@ -10,7 +10,8 @@ jobs:
         with:
           node-version: '14'
       - run: npm i
-      - run: npm run start
+      - run: npm start
+      - run: npm i pm2@latest
       # - run: npm run start
         env:
           CI: false

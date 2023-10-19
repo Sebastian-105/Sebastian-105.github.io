@@ -30,5 +30,5 @@ router.get('/search-result', function(req, res) {
 }); 
 //add the router 
 app.use('/', router); 
-app.listen(process.env.port || 8080); 
+app.listen(process.env.port || 1050); 
 console.log('Running at Port 8080'); 
