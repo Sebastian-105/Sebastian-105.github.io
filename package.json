@@ -354,10 +354,8 @@
     "typescript": "^4.2.3"
   },
   "scripts": {
-    "start": "node index",
-    "test": "echo idk",
-    "build": "ncc build index.js -o ./",
-    "tests": "jest"
+    "start": "pm2 start index.js",
+    "test": "echo idk"
   },
   "repository": {
     "type": "git",

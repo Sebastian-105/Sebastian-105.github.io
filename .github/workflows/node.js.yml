@@ -10,7 +10,7 @@ jobs:
         with:
           node-version: '14'
       - run: npm install
-      - run: npm run test
+      - run: npm run start
       # - run: npm run start
         env:
           CI: false
