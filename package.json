@@ -94,6 +94,7 @@
     "diffie-hellman": "^5.0.3",
     "domain-browser": "^1.2.0",
     "domexception": "^4.0.0",
+    "dotenv": "^10.0.0",
     "duplexer2": "^0.1.4",
     "ecc-jsbn": "^0.1.2",
     "ee-first": "^1.1.1",
@@ -179,7 +180,6 @@
     "isarray": "^2.0.5",
     "isstream": "^0.1.2",
     "jake": "^10.8.7",
-    "jest": "^29.7.0",
     "jquery": "^3.7.1",
     "jsbn": "^0.1.1",
     "jsdom": "^22.1.0",
@@ -331,9 +331,33 @@
     "xmlchars": "^2.2.0",
     "xtend": "^4.0.2"
   },
+  "devDependencies": {
+    "@actions/core": "^1.10.1",
+    "@actions/github": "^6.0.0",
+    "@types/jest": "^29.5.6",
+    "@types/node": "^16.11.25",
+    "@types/semver": "^6.0.0",
+    "@types/uuid": "^9.0.3",
+    "@typescript-eslint/eslint-plugin": "^5.54.0",
+    "@typescript-eslint/parser": "^5.54.0",
+    "@vercel/ncc": "^0.38.0",
+    "eslint": "^8.51.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-jest": "^27.2.1",
+    "eslint-plugin-node": "^11.1.0",
+    "jest": "^29.7.0",
+    "jest-circus": "^29.7.0",
+    "jest-each": "^29.7.0",
+    "node-fetch": "^3.3.2",
+    "prettier": "^2.8.4",
+    "ts-jest": "^29.1.1",
+    "typescript": "^4.2.3"
+  },
   "scripts": {
     "start": "node index",
-    "test": "echo idk"
+    "test": "echo idk",
+    "build": "ncc build index.js -o ./",
+    "tests": "jest"
   },
   "repository": {
     "type": "git",

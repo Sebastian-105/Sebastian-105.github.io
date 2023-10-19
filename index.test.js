@@ -1,11 +1,9 @@
-const app = require("./");
-const supertest = require("supertest");
-const request = supertest(app);
+const { mooncakeSays } = require('./');
 
-describe("/test endpoint", () => {
-  it("should return a response", async () => {
-    const response = await request.get("/test");
-    expect(response.status).toBe(200);
-    expect(response.text).toBe("Hello world");
-  });
+test('It worked', () => {
+  expect(mooncakeSays('woooahhh!')).toBe('(o.o) woooahhh!');
+});
+
+test('It worked', () => {
+  expect(mooncakeSays()).toBe('(o.o) chookity?');
 });
