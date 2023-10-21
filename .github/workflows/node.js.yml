@@ -9,8 +9,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '14'
-      - run: npm install netlify-cli -g
-      - run: npm i
+      - run: npm ci
       - run: npm start
       - run: npm i pm2@latest
       # - run: npm run start
