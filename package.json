@@ -35,7 +35,7 @@
   },
   "scripts": {
     "start": "pm2 start index.js --watch -i max -f",
-    "test":"echo asdf",
+    "test":"echo this is a test",
     "stop": "pm2 stop 0"
   },
   "repository": {
