@@ -1,5 +1,0 @@
-require('jquery')
-require('jsdom')
-require('http')
-require('animejs')
-require('anime')
