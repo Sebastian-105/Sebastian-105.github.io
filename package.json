@@ -272,7 +272,6 @@
     "shell-quote": "^1.8.1",
     "side-channel": "^1.0.4",
     "simple-concat": "^1.0.1",
-    "socket.io": "^4.7.2",
     "source-map": "^0.5.7",
     "sshpk": "^1.17.0",
     "stack-trace": "^0.0.10",
