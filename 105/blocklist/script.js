@@ -1,4 +1,4 @@
-let URLBlocklist = [
+let URLBlockList = [
   "accounts.google.com/Logout",
   "accounts.google.com/AddSession",
   "youtube.com/logout",
@@ -514,5 +514,9 @@ let URLBlocklist = [
   "zlap.io",
   "zombs.io",
   "zombsroyale.com"
-];
+]
+// Varibles
+    
+let queryURL = document.querySelector(".mainButton");
+let submitButton = document.querySelector("#submitButton");
 

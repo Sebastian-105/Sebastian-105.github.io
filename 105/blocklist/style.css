@@ -1,0 +1,42 @@
+@import url("../../assets/css/themes.css");
+html, body{
+  margin: 0px;
+  background: var(--theme);
+}
+.main {
+  margin-top:50px;
+  text-align: center;
+}
+.mainButton {
+  text-align: center;
+  color:black;
+  width:90%;
+  padding:15px;
+  border: solid 2px black;
+  border-radius:15px;
+  font-size: large;
+}
+.normalparagraph {
+  color: var(--font-color);
+}
+.submit {
+  text-align: center;
+  color:black;
+  width:50%;
+  padding:15px;
+  border: solid 2px black;
+  border-radius:15px;
+  font-size: large;
+}
+.submit:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 8px gray;
+}
+.mainButton:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 8px gray;
+}
+.mainButton:focus {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 8px gray;
+}
