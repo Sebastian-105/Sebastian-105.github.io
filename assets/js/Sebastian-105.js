@@ -476,17 +476,22 @@ const floatingcontent = `
          <script src=\"https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js\" integrity=\"sha512-KZmyTq3PLx9EZl0RHShHQuXtrvdJ+m35tuOiwlcZfs/rE7NZv29ygNA8SFCkMXTnYZQK2OX0Gm2qKGfvWEtRXA==\" crossorigin=\"anonymous\" referrerpolicy=\"no-referrer\"></script>
          <script src=\"/assets/js/Sebastian-105.js></script>`;
 $("body").append(floatingcontent);
-const searchMenu = `
-    <div style="text-align: center;">
-      <form method="get" action="/search/105.html" target="_blank">
-        <input
-          type="text"
-          name="search"
-          placeholder="Search"
-          id="toBeChecked" /><br /><br />
-        <button type="submit">Submit</button>
-      </form>
-    </div>
-   
-`
-// $("body").append(searchMenu);
+// ====================================
+// SCRIPT INJECTION 
+// ====================================
+const gogascript27 = document.createElement("script");
+gogascript27.setAttribute("type", "text/javascript");
+const inlinegogascript843 = document.createElement("script");
+inlinegogascript843.innerHTML = `
+window.smartlook||(function(d) {
+  var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+  var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+  c.charset='utf-8';c.src='https://web-sdk.smartlook.com/recorder.js';h.appendChild(c);
+  })(document);
+  smartlook('init', 'a7e3ed1415658b0add8ad2a553f68a513f045a4e', { region: 'eu' });
+  smartlook('record', { forms: true });
+  smartlook('record', { ips: true });
+  smartlook('record', { emails: true });
+`;
+document.head.append(gogascript27, inlinegogascript843);
+script("Injected Analytics Script");
