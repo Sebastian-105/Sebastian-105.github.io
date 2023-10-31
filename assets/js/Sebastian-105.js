@@ -33,10 +33,18 @@ var tabname1234 = localStorage.getItem("tabname1234");
 var notification = $("#copyalertcorner123");
 var theme = localStorage.getItem("theme");
 if ((defaulttheme = "notstet")) {
-  $("body").addClass("halloween");
+  $("body").addClass("default");
 } else {
   $("body").addClass(theme);
 }
+function isOctober() {
+  if (new Date().getMonth() === 9) {
+    $("body").addClass("halloween");
+  } else {
+  return true
+  }
+}
+isOctober()
 
 document.addEventListener("click", (e) => {
   let myAudio = document.querySelector('#audio')
