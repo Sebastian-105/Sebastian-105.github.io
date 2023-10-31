@@ -38,7 +38,7 @@ if ((defaulttheme = "notstet")) {
   $("body").addClass(theme);
 }
 function isOctober() {
-  if (new Date().getMonth() === 9) {
+  if (new Date().getMonth() === 9 || new Date().getMonth() === 10  ) {
     $("body").addClass("halloween");
   } else {
   return true
