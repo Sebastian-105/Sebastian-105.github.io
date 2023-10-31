@@ -33,7 +33,7 @@ var tabname1234 = localStorage.getItem("tabname1234");
 var notification = $("#copyalertcorner123");
 var theme = localStorage.getItem("theme");
 if ((defaulttheme = "notstet")) {
-  $("body").addClass("default");
+  $("body").addClass("halloween");
 } else {
   $("body").addClass(theme);
 }
