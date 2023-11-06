@@ -431,7 +431,7 @@ const floatingcontent = `
    <a class=\"jQuerytest\" href=\"https://forms.gle/br2Nd426yGBtuHVB6\" target=\"_bank\">Help form</a>
    <a class=\"jQuerytest\" href=\"https://forms.gle/mb2QFzE9WVeiRB2h9\" target=\"_blank\">Addgame form</a>
    <a class=\"jQuerytest\" href=\"https://forms.gle/TVqtqGoFw7u2EpZq7\" target=\"_blank\">Suggestions</a>
-   <a class=\"jQuerytest\" href=\"https://forms.gle/7HRXRmFUnAN8KRDfA\" target=\"_blank\">Feedback</a>
+   <a class=\"jQuerytest\" href=\"./105/feedback\" target=\"_blank\">Feedback</a>
    </div>
    <button class=\"dropdown-btn\" title=\"all my forms\">
    Backup Links
