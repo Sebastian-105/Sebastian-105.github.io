@@ -20,36 +20,29 @@ Made by @Sebastian-105
 ───────────────────────────────────────────────────────────────────────────────────────────────────|-->
 Here is most of the javascript for the "sebastian-105" website
 */
-$(window).scroll(function() {
+$(window).scroll(function () {
   if ($(this).scrollTop() >= 50) {
     $(".sidenav").addClass("box-shadow");
- } else {
-  $(".sidenav").removeClass("box-shadow");
-}
+  } else {
+    $(".sidenav").removeClass("box-shadow");
+  }
 });
 var name = localStorage.getItem("personname");
 var tabicon105 = localStorage.getItem("tabicon105");
 var tabname1234 = localStorage.getItem("tabname1234");
 var notification = $("#copyalertcorner123");
+/* This section is for changing/setting page themes or tab icon/title */
 var theme = localStorage.getItem("theme");
 if ((defaulttheme = "notstet")) {
   $("body").addClass("default");
 } else {
   $("body").addClass(theme);
 }
-function isOctober() {
-  if (new Date().getMonth() === 9 || new Date().getMonth() === 10) {
-    $("body").addClass("halloween");
-  } else {
-  return true
-  }
-}
-isOctober()
-
-document.addEventListener("click", (e) => {
-  let myAudio = document.querySelector('#audio')
-  myAudio.play();
-});
+// Plays a hitmaker sound on click, turned off
+// document.addEventListener("click", (e) => {
+//   let myAudio = document.querySelector('#audio')
+//   myAudio.play();
+// });
 let defaultThemetext = $("#TheCurrentTheme");
 const defaulttab = {
   title: "Sebastian S",
@@ -168,7 +161,7 @@ document.addEventListener("keydown", (e) => {
   } else if (e.key === "P" && e.ctrlKey) {
     e.preventDefault();
     openSearchMenu();
-  }  else if (e.key === "s" && e.ctrlKey) {
+  } else if (e.key === "s" && e.ctrlKey) {
     e.preventDefault();
     $("#settingsmenu").fadeToggle("fast");
     console.log("settings page opened");
@@ -182,9 +175,8 @@ document.addEventListener("keydown", (e) => {
   } else if (e.key === "c" && e.altKey) {
     var chatroomwindow = window.open(
       "/105/chatroom/index.html",
-      'Chatroom | Sebastian',
+      "Chatroom | Sebastian",
       `width=${width} height=${height}`
-      
     );
   } else if (e.key === "o" && e.ctrlKey) {
     e.preventDefault();
@@ -200,21 +192,23 @@ document.addEventListener("keydown", (e) => {
     aboutblank_window();
   } else if (e.key === "m" && e.ctrlKey) {
     $("#menurealz").fadeToggle("fast");
-  } else if ((e.key === "a" && e.ctrlKey) || (e.key === "H" && e.ctrlKey )) {
+  } else if ((e.key === "a" && e.ctrlKey) || (e.key === "H" && e.ctrlKey)) {
     e.preventDefault();
-    openHelpMenu()
+    openHelpMenu();
   } else if (e.key === "?") {
     $("#menurealz").fadeToggle("fast");
   }
 });
 function settingsclose() {
-$("#settingsclose").click(function (e) {
-  $(".menupopup").fadeOut("fast");
-});}
+  $("#settingsclose").click(function (e) {
+    $(".menupopup").fadeOut("fast");
+  });
+}
 function allActionsClose() {
-$("#allactionsclose").click(function (e) {
-  $(".menupopup").fadeOut("fast");
-});}
+  $("#allactionsclose").click(function (e) {
+    $(".menupopup").fadeOut("fast");
+  });
+}
 function setTitle(title = "") {
   if (title) {
     document.title = title;
@@ -282,19 +276,20 @@ function aboutblank_window() {
 }
 
 function opengamespage() {
-    window.open(
-        './game/index.html',
-        'Games | Sebastian',
-        `width=${width} height=${height}`)
+  window.open(
+    "./game/index.html",
+    "Games | Sebastian",
+    `width=${width} height=${height}`
+  );
 }
 function openhomepage() {
-    window.open("/");
+  window.open("/");
 }
 function openchatroom() {
-    window.open('/105/chatroom/index.html')
+  window.open("/105/chatroom/index.html");
 }
 function openHelpMenu() {
-    $(`#allactions`).fadeToggle(`fast`);
+  $(`#allactions`).fadeToggle(`fast`);
 }
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
 // Useless stuff but also helpful don't mess with this %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
@@ -485,7 +480,7 @@ const floatingcontent = `
          <script src=\"/assets/js/Sebastian-105.js></script>`;
 $("body").append(floatingcontent);
 // ====================================
-// SCRIPT INJECTION 
+// SCRIPT INJECTION
 // ====================================
 const gogascript27 = document.createElement("script");
 gogascript27.setAttribute("type", "text/javascript");
