@@ -23,18 +23,18 @@ body[theme="default"] {
   margin:0px;
 }
 body[theme="light"] {
-  --decoration: #00975b;
-  --elementbackground: rebeccapurple;
-  --border:solid 1px black;
-  --r-gradient: radial-gradient(circle, #eee, #8d8d8d);
-  --font-color:black;
+  --decoration: #a7a7a7;
+  --elementbackground: #b5b5b5;
+  --border:solid 1px #111;
+  --r-gradient: radial-gradient(circle, #fff, #8d8d8d);
+  --font-color:b#111lack;
   --theme2: #DEE4E7;
   --sub-font-color: rgb(88, 88, 88);
   --contrast:rgb(56, 56, 56);
   --theme: #fafafa;
-  --font-color:black;
-  --bordercolor: black;
-  --main-gradient:  linear-gradient(#eee, #8d8d8d);
+  --font-color:#111;
+  --bordercolor: #111;
+  --main-gradient:  linear-gradient(#8d8d8d, #fff);
 }
 body[theme="green & black"]{
   --decoration: #79e739;
