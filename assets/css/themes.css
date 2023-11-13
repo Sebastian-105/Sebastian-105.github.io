@@ -143,18 +143,3 @@ body[theme="dark blue"] {
   --font-size: 16px;
   --theme: #0A2647;
 }
-body[theme="halloween"] {
-  --decoration: #c900ff;
-  --sub-font-color: lightgrey;
-  --border:black;
-  --font-color:white;
-  --r-gradient: radial-gradient(circle, #ff9a00, #black);
-  --elementbackground: #67e120;
-  --main-gradient: linear-gradient(#ff9a00, black);
-  --font-family: "Consolas", monospace;
-  --contrast:white;
-  --border:1px solid black;
-  --theme2: #ff9a00;
-  --font-size: 16px;
-  --theme: black;
-}
