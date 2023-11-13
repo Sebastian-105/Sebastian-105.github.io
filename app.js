@@ -17,4 +17,10 @@ router.get("/about", function (req, res) {
 router.get("/search-result", function (req, res) {
   res.sendFile(path.join(__dirname + "/search/105.html"));
 });
+app.get('/hello', (req, res) => {
+  res.status(200).json({
+    message: "Hello World!"
+  });
+});
+
 module.exports = { app };
