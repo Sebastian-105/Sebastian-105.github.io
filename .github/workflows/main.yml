@@ -2,9 +2,9 @@ name: main
 
 on:
   push:
-    branches: [ main ]
+    branches: [ Sebastian-105 ]
   pull_request:
-    branches: [ main ]
+    branches: [ Sebastian-105 ]
 
 jobs:
   build:
