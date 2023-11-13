@@ -57,6 +57,8 @@ Once you find all these stuff you are free to go! :)
 # Other 
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/859bbfb3-435a-4cc4-8feb-b9b6d55cc80b/deploy-status)](https://app.netlify.com/sites/sebastian-105/deploys)
+![Main Workflow](https://github.com/Sebastian-105/Sebastian-105.github.io/actions/workflows/main.yml/badge.svg)
+
 ## REMEMBER TO CITE ME IN THE CODE AND THE FOOTER
 
 # By ***Sebastian-105***
