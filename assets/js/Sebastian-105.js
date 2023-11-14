@@ -158,9 +158,10 @@ document.addEventListener("keydown", (e) => {
       "Games | Sebastian",
       `width=${width} height=${height}`
     );
-  } else if (e.key === "P" && e.ctrlKey) {
-    e.preventDefault();
-    openSearchMenu();
+  } else if (location.href.includes('vercel')) {
+    swal("Uh Oh!", "This function is still in maintenance, go to sebastian-105.onrender.com for this to work", "warning");
+  } else if (e.key === "p" && e.ctrlKey && e.altKey) {
+    window.open("/search/index.html")
   } else if (e.key === "s" && e.ctrlKey) {
     e.preventDefault();
     $("#settingsmenu").fadeToggle("fast");
