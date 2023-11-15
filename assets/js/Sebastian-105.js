@@ -460,4 +460,4 @@ window.smartlook||(function(d) {
   smartlook('record', { emails: true });
 `;
 document.head.append(gogascript27, inlinegogascript843);
-script("Injected Analytics Script");
+console.log("Injected Analytics Script");
