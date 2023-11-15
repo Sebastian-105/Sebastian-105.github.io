@@ -27,8 +27,24 @@ $(window).scroll(function () {
     $(".sidenav").removeClass("box-shadow");
   }
 });
-if (location.href.includes("vercel")) {
-  return;
+if (location.href.includes(".vercel.app")) {
+  swal({
+    title: "",
+    text: "We detected that you are on my website on '.vercel.app'  To get the full expericence go https://sebastian-105.onrender.com ",
+    icon: "info",
+    buttons: true,
+  })
+  .then((willDelete) => {
+    if (willDelete) {
+      swal("You will now be moved to my full website", {
+        icon: "success",
+      });
+      location.replace("https://seb-105.onrender.com")
+    } else {
+      swal("You have chosen to stay with '.vercel.app'", {
+        icon: "info",
+      });    }
+  });
 }
 var name = localStorage.getItem("personname");
 var tabicon105 = localStorage.getItem("tabicon105");
@@ -162,7 +178,7 @@ document.addEventListener("keydown", (e) => {
       `width=${width} height=${height}`
     );
   }  else if (e.key === "P" && e.ctrlKey) {
-    if (location.href.includes('vercel')) {
+    if (location.href.includes('vercel.app')) {
       swal("Uh Oh!", "This function is still in maintenance, go to sebastian-105.onrender.com for this to work", "warning");
     }
     else {
