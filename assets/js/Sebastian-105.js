@@ -20,7 +20,6 @@ Made by @Sebastian-105
 ───────────────────────────────────────────────────────────────────────────────────────────────────|-->
 Here is most of the javascript for the "sebastian-105" website
 */
-swal("a");
 $(window).scroll(function () {
   if ($(this).scrollTop() >= 50) {
     $(".sidenav").addClass("box-shadow");
