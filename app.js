@@ -17,6 +17,10 @@ app.get("/about", function (req, res) {
 app.get("/search-result", function (req, res) {
   res.sendFile(path.join(__dirname + "/search/result/index.html"));
 });
-
+app.get('/hello', function (req, res) {
+  res.status(200).json({
+    message: "Hello World!"
+  });
+});
 
 module.exports = { app };

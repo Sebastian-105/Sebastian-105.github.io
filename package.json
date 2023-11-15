@@ -8,7 +8,7 @@
     "browserify": "^17.0.0",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
-    "jQuery": "^1.7.4",
+    "jquery": "^1.7.4",
     "nodemailer": "^6.9.7",
     "nodemon": "^3.0.1",
     "online": "^0.0.1",
