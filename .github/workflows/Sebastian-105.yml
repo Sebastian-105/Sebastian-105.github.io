@@ -1,25 +1,28 @@
 name: Sebastian-105
 
 on:
-  push:
-    branches: [ Sebastian-105 ]
   pull_request:
-    branches: [ Sebastian-105 ]
+    branches: [Sebastian-105]
+
+  push:
+    branches: [Sebastian-105]
 
 jobs:
-  build:
-
+  ci:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js 14
-      uses: actions/setup-node@v3
-      with:
-        node-version: 14
-        cache: 'npm'
+      - uses: actions/checkout@v3
+      - name: Test
+        run: |
+          npm install
+          npm run test
 
-    - run: npm install
-    - run: npm test
+      - name: Deploy
+        # Only run this step if the branch is main
+        if: github.ref == 'refs/heads/main'
+        env:
+          deploy_url: ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
+        run: |
+          curl "$deploy_url"
 
     
