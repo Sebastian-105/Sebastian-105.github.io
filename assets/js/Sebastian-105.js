@@ -27,6 +27,9 @@ $(window).scroll(function () {
     $(".sidenav").removeClass("box-shadow");
   }
 });
+if (location.href.includes("vercel")) {
+  return;
+}
 var name = localStorage.getItem("personname");
 var tabicon105 = localStorage.getItem("tabicon105");
 var tabname1234 = localStorage.getItem("tabname1234");
@@ -158,10 +161,13 @@ document.addEventListener("keydown", (e) => {
       "Games | Sebastian",
       `width=${width} height=${height}`
     );
-  } else if (location.href.includes('vercel')) {
-    swal("Uh Oh!", "This function is still in maintenance, go to sebastian-105.onrender.com for this to work", "warning");
-  } else if (e.key === "p" && e.ctrlKey && e.altKey) {
-    window.open("/search/index.html")
+  }  else if (e.key === "p" && e.ctrlKey && e.altKey) {
+    if (location.href.includes('vercel')) {
+      swal("Uh Oh!", "This function is still in maintenance, go to sebastian-105.onrender.com for this to work", "warning");
+    }
+    else {
+      window.open("/search/index.html")
+    }
   } else if (e.key === "s" && e.ctrlKey) {
     e.preventDefault();
     $("#settingsmenu").fadeToggle("fast");
