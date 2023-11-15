@@ -20,6 +20,7 @@ Made by @Sebastian-105
 ───────────────────────────────────────────────────────────────────────────────────────────────────|-->
 Here is most of the javascript for the "sebastian-105" website
 */
+swal("a")
 $(window).scroll(function () {
   if ($(this).scrollTop() >= 50) {
     $(".sidenav").addClass("box-shadow");
@@ -161,7 +162,7 @@ document.addEventListener("keydown", (e) => {
       "Games | Sebastian",
       `width=${width} height=${height}`
     );
-  }  else if (e.key === "p" && e.ctrlKey && e.altKey) {
+  }  else if (e.key === "P" && e.ctrlKey) {
     if (location.href.includes('vercel')) {
       swal("Uh Oh!", "This function is still in maintenance, go to sebastian-105.onrender.com for this to work", "warning");
     }
