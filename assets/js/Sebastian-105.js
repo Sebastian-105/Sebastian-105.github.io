@@ -15,7 +15,7 @@ Made by @Sebastian-105
 |─⬛⬛──────────⬛⬛─────────⬛⬛────────────⬛⬛────|
 |──⬛⬛⬛⬛⬛⬛⬛⬛───────────⬛⬛⬛⬛⬛⬛⬛⬛⬛─────|
 |───⬛⬛⬛⬛⬛⬛⬛─────────────⬛⬛⬛⬛⬛⬛⬛⬛──────|
-🦝
+
 ───────────────────────────────────────────────────────────────────────────────────────────────────|
 ───────────────────────────────────────────────────────────────────────────────────────────────────|-->
 Here is most of the javascript for the "sebastian-105" website
@@ -27,25 +27,25 @@ $(window).scroll(function () {
     $(".sidenav").removeClass("box-shadow");
   }
 });
-if (location.href.includes(".vercel.app")) {
-  swal({
-    title: "",
-    text: "We detected that you are on my website on '.vercel.app'  To get the full expericence go https://sebastian-105.onrender.com ",
-    icon: "info",
-    buttons: true,
-  })
-  .then((willDelete) => {
-    if (willDelete) {
-      swal("You will now be moved to my full website", {
-        icon: "success",
-      });
-      location.replace("https://seb-105.onrender.com")
-    } else {
-      swal("You have chosen to stay with '.vercel.app'", {
-        icon: "info",
-      });    }
-  });
-}
+// if (location.href.includes(".vercel.app")) {
+//   swal({
+//     title: "",
+//     text: "We detected that you are on my website on '.vercel.app'  To get the full expericence go https://sebastian-105.onrender.com ",
+//     icon: "info",
+//     buttons: true,
+//   })
+//   .then((willDelete) => {
+//     if (willDelete) {
+//       swal("You will now be moved to my full website", {
+//         icon: "success",
+//       });
+//       location.replace("https://seb-105.onrender.com")
+//     } else {
+//       swal("You have chosen to stay with '.vercel.app'", {
+//         icon: "info",
+//       });    }
+//   });
+// }
 var name = localStorage.getItem("personname");
 var tabicon105 = localStorage.getItem("tabicon105");
 var tabname1234 = localStorage.getItem("tabname1234");
