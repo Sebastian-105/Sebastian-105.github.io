@@ -408,8 +408,9 @@ const floatingcontent = `
 </div><div class="sidenav" position="top">
 <straight style="width:5px;"></straight>
 
-<a onclick="window.open('/index.html')" target="_blank" title="Sebastian-105" style="padding:0px;color:black; text-align:center;background:var(--font-color)"><img src="/105.png" alt="105" style="width:50px; height:50px;border-radius:15px;">
-</a>
+<a onclick="window.open('/index.html')" target="_blank" title="Sebastian-105" style="padding:0px; text-align:center;"><img src="/105.png" alt="105" style="width:48px; height:48px;border-radius:50%;border:solid 1px var(--font-color);background-color:var(--theme2);">
+</a><a onclick="window.open('/105/about-me/index.html')" target="_blank" title="Games Site" style="padding:15px; text-align:center;">
+<i class="fa-solid fa-user" style="font-size:12px;"> Sebastian Schapfel</i></a>
 
    <straight></straight>
 <a onclick="window.open('game/index.html')" target="_blank" title="Games Site" style="padding:15px; text-align:center;">
