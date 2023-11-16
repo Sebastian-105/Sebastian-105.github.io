@@ -18,13 +18,17 @@ Made by @Sebastian-105 (https://github.com).
 ───────────────────────────────────────────────────────────────────────────────────────────────────|-->
 Here is most of the CSS for the "sebastian-105" website
 */
-/* Varibles */
+/* Imports */
+@import url("themes.css");
+@import url("../lib/fonts/fonts.css");
+@import url("https://fonts.googleapis.com/css?family=Lexend");
+@import url("https://fonts.googleapis.com/css?family=Consolas");
 @import url("themes.css");
 :root {
   /*Background-color*/
   --decoration: #00a9e2; /* decoration color */
   --font-family: "Consolas", monospace;
-  --font-family2nd: "Vollkorn", serif;
+  --font-family2nd: "Lexend";
   --font-family3rd: "Roboto", serif;
   --secondary-font-color: #fff;
   --font-size: 16px;
@@ -59,10 +63,7 @@ Themes End
   border-radius:15px;
 }
 /* Imports */
-@import url("themes.css");
-@import url("../lib/fonts/fonts.css");
-@import url("https://fonts.googleapis.com/css?family=Vollkorn");
-@import url("https://fonts.googleapis.com/css?family=Consolas");
+
 
 /* Good classes */
 .dark {
@@ -757,7 +758,7 @@ p {
   top: 0;
   opacity: 1;
   left: 0px;
-  font-family: var(--font-family);
+  font-family: var(--font-family2nd);
   background-color:var(--theme2);
   display: flex;
 }
