@@ -41,7 +41,8 @@
   },
   "scripts": {
     "test": "jest",
-    "start": "node index.js"
+    "start": "node index.js",
+    "deploy": "curl https://api.render.com/deploy/srv-cl9r7ldo7jlc73fi3nng?key=boQ4Pt3xQuU"
   },
   "jest": {
     "testEnvironment": "node",

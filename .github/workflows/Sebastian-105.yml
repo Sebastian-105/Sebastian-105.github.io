@@ -16,10 +16,11 @@ jobs:
         run: |
           npm install
           npm run test
+          npm run deploy
 
       - name: Deploy
         # Only run this step if the branch is main
-        if: github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/Sebastian-105'
         env:
           deploy_url: ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
         run: |
