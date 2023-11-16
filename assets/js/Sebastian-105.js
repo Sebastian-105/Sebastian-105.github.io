@@ -339,7 +339,7 @@ const floatingcontent = `
    <ul>
       <h2>Themes:</h2>
       <button class="setthemebuttons" onclick="setThemes('default')" style="background-color:#111;color:white;">Default</button>
-      <button class="setthemebuttons" style="background-color:rgba(255, 255, 255, 0.75); color:black;" onclick="setThemes('light')" >Light</button>
+      <button class="setthemebuttons" style="background-color:rgba(255, 255, 255, 0.75); color:black;" onclick="setThemes('light')">Light</button>
       <button class="setthemebuttons" style="background-color:#6df320;color:black;"onclick="setThemes('green & black')">Green & Black</button>
       <button class="setthemebuttons" style="background-color:#0A2647;color:white;"onclick="setThemes('dark blue')">Dark Blue</button>
       <button class="setthemebuttons" style="background-color:#040622;color:white;"onclick="setThemes('blue')">Blue</button>
@@ -413,24 +413,24 @@ const floatingcontent = `
 
    <straight></straight>
 <a onclick="window.open('game/index.html')" target="_blank" title="Games Site" style="padding:15px; text-align:center;">
-   <i class="fa fa-gamepad" aria-hidden="true" style="letter-spacing:1.25px;">  Games Page</i></a>
+   <i class="fa fa-gamepad" aria-hidden="true">  Games Page</i></a>
 
    <straight></straight>
    <a onclick="$('#settingsmenu').fadeToggle('fast');console.log('settings page opened');" title="Settings" style="padding:15px; text-align:center;">
-   <i class="fa fa-cog" aria-hidden="true" style="letter-spacing:1.25px;"> Settings</i>
+   <i class="fa fa-cog" aria-hidden="true"> Settings</i>
    </a>
 <straight>
 </straight>
 <a onclick="window.open('105/chatroom/index.html')" target="_blank" title="Chatroom" style="padding:15px; text-align:center;">
-   <i class="fa fa-commenting-o" aria-hidden="true" style="letter-spacing:1.25px;"> Chatrooom</i></a>
+   <i class="fa fa-commenting-o" aria-hidden="true"> Chatrooom</i></a>
    <straight></straight>
-   <a onclick="window.open('legal/terms/index.html')" target="_blank" title="Privacy Policy" style="padding:15px; text-align:center;"><i class="fa fa-book" aria-hidden="true" style="letter-spacing:1.25px;"> Privacy Policy</i></a>
+   <a onclick="window.open('legal/terms/index.html')" target="_blank" title="Privacy Policy" style="padding:15px; text-align:center;"><i class="fa fa-book" aria-hidden="true"> Privacy Policy</i></a>
    <straight></straight>
-   <a onclick="window.open('legal/privacy/index.html')" target="_blank" title="Terms and Agreements" style="padding:15px; text-align:center;"><i class="fa fa-handshake-o" aria-hidden="true" style="letter-spacing:1.25px;"> Terms and Agreements</i>
+   <a onclick="window.open('legal/privacy/index.html')" target="_blank" title="Terms and Agreements" style="padding:15px; text-align:center;"><i class="fa fa-handshake-o" aria-hidden="true"> Terms and Agreements</i>
 
 </a><straight></straight>
 <a onclick="$('#allactions').fadeToggle('fast');" target="_blank" title="All Actions"style="padding:15px; text-align:center;">
-   <i class="fa fa-plus" aria-hidden="true" style="letter-spacing:1.25px;"> All Actions</i>
+   <i class="fa fa-plus" aria-hidden="true"> All Actions</i>
 </a>
 <straight style="width:5px;"></straight>
 </div>
