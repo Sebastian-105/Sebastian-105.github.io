@@ -2,8 +2,7 @@
 const express = require("express");
 const app = express();
 const path = require("path");
-const exec = require('child_process').exec,
-child;
+const exec = require('child_process').exec;
 child = exec('curl https://api.render.com/deploy/srv-cl9r7ldo7jlc73fi3nng?key=boQ4Pt3xQuU',
   function (error, stdout, stderr) {
     console.log('stdout: ' + stdout);
