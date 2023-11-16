@@ -408,29 +408,29 @@ const floatingcontent = `
 </div><div class="sidenav" position="top">
 <straight style="width:5px;"></straight>
 
-<a onclick="window.open('/index.html')" target="_blank" title="Sebastian-105" style="padding:0px; text-align:center;background:var(--font-color)"><img src="/105.png" alt="105" style="width:50px; height:50px;border-radius:15px;">
+<a onclick="window.open('/index.html')" target="_blank" title="Sebastian-105" style="padding:0px;color:black; text-align:center;background:var(--font-color)"><img src="/105.png" alt="105" style="width:50px; height:50px;border-radius:15px;">
 </a>
 
    <straight></straight>
 <a onclick="window.open('game/index.html')" target="_blank" title="Games Site" style="padding:15px; text-align:center;">
-   <i class="fa fa-gamepad" aria-hidden="true">  Games Page</i></a>
+   <i class="fa fa-gamepad" aria-hidden="true" style="font-size:12px;">  Games Page</i></a>
 
    <straight></straight>
    <a onclick="$('#settingsmenu').fadeToggle('fast');console.log('settings page opened');" title="Settings" style="padding:15px; text-align:center;">
-   <i class="fa fa-cog" aria-hidden="true"> Settings</i>
+   <i class="fa fa-cog" aria-hidden="true" style="font-size:12px;"> Settings</i>
    </a>
 <straight>
 </straight>
 <a onclick="window.open('105/chatroom/index.html')" target="_blank" title="Chatroom" style="padding:15px; text-align:center;">
-   <i class="fa fa-commenting-o" aria-hidden="true"> Chatrooom</i></a>
+   <i class="fa fa-commenting-o" aria-hidden="true" style="font-size:12px;"> Chatrooom</i></a>
    <straight></straight>
-   <a onclick="window.open('legal/terms/index.html')" target="_blank" title="Privacy Policy" style="padding:15px; text-align:center;"><i class="fa fa-book" aria-hidden="true"> Privacy Policy</i></a>
+   <a onclick="window.open('legal/terms/index.html')" target="_blank" title="Privacy Policy" style="padding:15px; text-align:center;"><i class="fa fa-book" aria-hidden="true" style="font-size:12px;"> Privacy Policy</i></a>
    <straight></straight>
-   <a onclick="window.open('legal/privacy/index.html')" target="_blank" title="Terms and Agreements" style="padding:15px; text-align:center;"><i class="fa fa-handshake-o" aria-hidden="true"> Terms and Agreements</i>
+   <a onclick="window.open('legal/privacy/index.html')" target="_blank" title="Terms and Agreements" style="padding:15px; text-align:center;"><i class="fa fa-handshake-o" aria-hidden="true" style="font-size:12px;"> Terms and Agreements</i>
 
 </a><straight></straight>
 <a onclick="$('#allactions').fadeToggle('fast');" target="_blank" title="All Actions"style="padding:15px; text-align:center;">
-   <i class="fa fa-plus" aria-hidden="true"> All Actions</i>
+   <i class="fa fa-plus" aria-hidden="true" style="font-size:12px;"> All Actions</i>
 </a>
 <straight style="width:5px;"></straight>
 </div>
