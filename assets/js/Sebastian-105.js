@@ -305,15 +305,6 @@ function openHelpMenu() {
 // Useless stuff but also helpful don't mess with this %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
 const floatingcontent = `
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9YJN0VSQ6G"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-9YJN0VSQ6G');
-</script>
 
 <audio id="audio" src="/assets/sound/hitmarker/click7_0.wav"></audio>
 
@@ -415,7 +406,8 @@ const floatingcontent = `
 
    </div>
 </div>
-</div><div class="sidenav" position="top">
+</div>
+<div class="sidenav" position="top">
 <straight style="width:5px;"></straight>
 
 <a onclick="window.open('/index.html')" target="_blank" title="Sebastian-105" style="padding:0px; text-align:center;"><img src="/105.png" alt="105" style="width:48px; height:48px;border-radius:50%;border:solid 1px var(--font-color);background-color:var(--theme2);">
@@ -429,6 +421,13 @@ const floatingcontent = `
    <straight></straight>
    <a onclick="$('#settingsmenu').fadeToggle('fast');console.log('settings page opened');" title="Settings" style="padding:15px; text-align:center;">
    <i class="fa fa-cog" aria-hidden="true" style="font-size:12px;"> Settings</i>
+   </a>
+<straight>
+</straight>
+<a target="_blank" title="Chatroom" style="padding:15px; text-align:center;">
+   <i id="dropdown-sidenav" class="fa-solid fa-angle-down" aria-hidden="true" style="font-size:12px;"> Links</i>
+ <!-- <a class="sidenav-dropdown-options">asdf</a>
+   <a class="sidenav-dropdown-options">asdf</a> -->
    </a>
 <straight>
 </straight>
