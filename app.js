@@ -3,6 +3,7 @@ const express = require("express");
 const app = express();
 const path = require("path");
 app.use(express.static(__dirname + "/"));
+// Setup essential routes
 app.get("/", function (req, res) {
   // eslint-disable-next-line no-undef
   res.sendFile(path.join(__dirname + "/index.html"));
