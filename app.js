@@ -11,10 +11,7 @@ app.get("/", function (req, res) {
   // eslint-disable-next-line no-undef
   res.sendFile(path.join(__dirname + "/index.html"));
 });
-app.get("/assets/*", function (req, res) {
-  // eslint-disable-next-line no-undef
-  res.sendFile(path.join(__dirname + "/401.html"));
-});
+
 app.get("/about", function (req, res) {
 // eslint-disable-next-line no-undef
   res.sendFile(path.join(__dirname + "/105/about-me/index.html"));
