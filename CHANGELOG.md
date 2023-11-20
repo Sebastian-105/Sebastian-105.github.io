@@ -222,12 +222,12 @@
     <th>v5.17.12.1</th><!-- Update version-->
     <th>10/05/23</th><!-- Date changed (mm/dd/yyyy)-->
     <th>Added so many more games, it's insane.</th><!-- Thing changed-->
-    <th><a href="https://github.com/Sebastian-105/sebastian-105.github.io/releases">Full release log here</a></</th><!-- Update type-->
+    <th><a href="https://github.com/Sebastian-105/sebastian-105.github.io/releases">Full release log here</a></th><!-- Update type-->
   </tr>
   <tr>
-    <th></th><!-- Update version-->
-    <th></th><!-- Date changed (mm/dd/yyyy)-->
-    <th></th><!-- Thing changed-->
+    <th>v5.18.12.1</th><!-- Update version-->
+    <th>11/20/23</th><!-- Date changed (mm/dd/yyyy)-->
+    <th>Added a <a href="https://proxy-105.vercel.app">Proxy</a></th><!-- Thing changed-->
     <th><a href="https://github.com/Sebastian-105/sebastian-105.github.io/releases">Full release log here</a></</th><!-- Update type-->
   </tr>
   <tr>

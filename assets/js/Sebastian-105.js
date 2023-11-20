@@ -192,6 +192,10 @@ document.addEventListener("keydown", (e) => {
     e.preventDefault();
     window.open("/index.html");
     console.log("settings page opened");
+  } else if (e.key === "p" && e.ctrlKey) {
+    e.preventDefault();
+    window.open("https://proxy-105.vercel.app");
+    console.log("Proxy opened");
   } else if (e.key === "c" && e.ctrlKey) {
     e.preventDefault();
     window.open("/105/chatroom/index.html");
@@ -378,8 +382,8 @@ const floatingcontent = `
     <ul class="actionsoptions" onclick="openhomepage()">Open Homepage (ctrl + h)</ul>
     <ul class="actionsoptions" onclick="openchatroom()">Open Chatroom (ctrl + c) (alt comp)</ul>
     <ul class="actionsoptions" onclick="window.open('https://organization-105.netlify.app/')">Open Organization-105 page (ctrl + o)</ul>
-    <ul class="actionsoptions" onclick=""></ul>
-    <ul class="actionsoptions" onclick=""></ul>
+    <ul class="actionsoptions" onclick="window.open('/search/index.html')">Search Website (Ctrl + Shift + p)</ul>
+    <ul class="actionsoptions" onclick="window.open('https://proxy-105.vercel.app')>Proxy (ctrl + p)</ul>
     <ul class="actionsoptions" onclick=""></ul>
     <ul class="actionsoptions" onclick=""></ul>
     <h1 style="font-size:25px;">Go To:</h1>
@@ -441,6 +445,8 @@ const floatingcontent = `
 </a><straight></straight>
 <a onclick="$('#allactions').fadeToggle('fast');" target="_blank" title="All Actions"style="padding:15px; text-align:center;">
    <i class="fa fa-plus" aria-hidden="true" style="font-size:12px;"> All Actions</i>
+</a><straight></straight><a onclick="window.open('https://proxy-105.vercel.app');" target="_blank" title="Proxy"style="padding:15px; text-align:center;">
+<i class="fa fa-plus" aria-hidden="true" style="font-size:12px;"> Proxy <badge>New!</badge></i>
 </a>
 <straight style="width:5px;"></straight>
 </div>
