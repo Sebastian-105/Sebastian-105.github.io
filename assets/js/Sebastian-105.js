@@ -445,8 +445,6 @@ const floatingcontent = `
 </a><straight></straight>
 <a onclick="$('#allactions').fadeToggle('fast');" target="_blank" title="All Actions"style="padding:15px; text-align:center;">
    <i class="fa fa-plus" aria-hidden="true" style="font-size:12px;"> All Actions</i>
-</a><straight></straight><a onclick="window.open('https://proxy-105.vercel.app');" target="_blank" title="Proxy"style="padding:15px; text-align:center;">
-<i class="fa fa-plus" aria-hidden="true" style="font-size:12px;"> Proxy <badge>New!</badge></i>
 </a>
 <straight style="width:5px;"></straight>
 </div>
