@@ -4,7 +4,7 @@ const app = express();
 const path = require("path");
 app.use(express.static(__dirname + "/"));
 const routes = [
-  { path: '/', file: '/index.html' },
+  { path: '/', file: 'index.html' },
   { path: '/assets/*', file: '/401.html' },
   { path: '/about', file: '/105/about-me/index.html' },
   { path: '/search-result', file: '/search/result/index.html' },
