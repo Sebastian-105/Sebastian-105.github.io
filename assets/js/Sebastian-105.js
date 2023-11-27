@@ -282,7 +282,6 @@ class Notification {
 // Useless stuff but also helpful don't mess with this %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
 const floatingcontent = `
-<audio id="audio" src="/assets/sound/hitmarker/click7_0.wav"></audio>
 
 <div class="loader-wrapper">
 <span class="loader"><span class="loader-inner"></span></span>
