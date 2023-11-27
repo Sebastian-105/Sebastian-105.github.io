@@ -43,20 +43,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../assets/lib/font-awesome.min.css" />
-
+    <title>Sebastian S | Games</title>
     <link href="../assets/css/Sebastian-105.css" rel="stylesheet" />
-    <script>
-      //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% | Title | %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
-      var localStoragetitle = localStorage.getItem("tabname1234");
-      setTimeout(() => {
-        document.title = localStoragetitle;
-      }, 105);
-      //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% | Icon | %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
-      let tabiconabc = localStorage.getItem("tabicon105");
-      setTimeout(() => {
-        $("link[rel*='icon']").attr("href", tabiconabc);
-      }, 105);
-    </script>
+    <link rel="icon" href="/105.png"> 
   </head>
   <body id="game-page-body">
     <!-- <center>
@@ -81,6 +70,10 @@
         placeholder="Search games . . ."
         onclick="gameSearchFunction()" />
     </div>
+    <!--<h4 style="text-align: center; margin-top:25px; margin-bottom: 0px;">Filters</h4>
+    <div class="filterGamesSection" style="margin: auto; margin-top:25px; border-radius: 25px;">
+      <button style="background-color: var(--theme2);"></button>
+    </div> -->
 
     <div id="games">
       <div class="games">

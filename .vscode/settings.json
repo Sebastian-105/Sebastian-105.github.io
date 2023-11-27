@@ -38,5 +38,6 @@
     "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
     "prettier.bracketSameLine": true,
     "editor.autoClosingDelete": "always",
-    "editor.fontFamily": "Consolas, monospace"
+    "editor.fontFamily": "Consolas, monospace",
+    "liveServer.settings.port": 5501
 }

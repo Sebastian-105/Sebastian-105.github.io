@@ -77,6 +77,15 @@ Themes End
   cursor: pointer;
   
 }
+.filterGamesSection {
+  width:60%;
+  background-color: var(--theme);
+  border: var(--border);
+  margin-top:50px;
+  padding: 15px;
+  text-align: center;
+}
+
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Settings
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
@@ -2453,8 +2462,7 @@ footer {
 #myUL {
   background-color:var(--theme2);
 }
-.sebSearchListItems {
-}
+
 #toBeChecked {
   font-size: 25px;
   padding:10px;
