@@ -1,67 +1,28 @@
 /*
-<!--───────────────────────────────────────────────────────────────────────────────────────────────────|
-
-Made by @Sebastian-105
-[🦝]
-|───⬛⬛⬛⬛⬛⬛────────────────⬛⬛⬛⬛⬛⬛─────────|
-|──⬛⬛⬛⬛⬛⬛⬛──────────────⬛⬛⬛⬛⬛⬛⬛────────| 
-|─⬛⬛────────⬛⬛────────────⬛⬛────────⬛⬛───────|
-|⬛⬛────────────────────────⬛⬛────────────────────|
-|─⬛⬛────────────────────────⬛⬛───────────────────|
-|──⬛⬛⬛⬛⬛⬛⬛──────────────⬛⬛⬛⬛⬛⬛⬛⬛──────|
-|───⬛⬛⬛⬛⬛⬛⬛──────────────⬛⬛⬛⬛⬛⬛⬛⬛─────|
-|───────────────⬛⬛─────────────────────────⬛⬛────|
-|────────────────⬛⬛─────────────────────────⬛⬛───| 
-|─⬛⬛──────────⬛⬛─────────⬛⬛────────────⬛⬛────|
-|──⬛⬛⬛⬛⬛⬛⬛⬛───────────⬛⬛⬛⬛⬛⬛⬛⬛⬛─────|
-|───⬛⬛⬛⬛⬛⬛⬛─────────────⬛⬛⬛⬛⬛⬛⬛⬛──────|
-
-───────────────────────────────────────────────────────────────────────────────────────────────────|
-───────────────────────────────────────────────────────────────────────────────────────────────────|-->
 Here is most of the javascript for the "sebastian-105" website
 */
-$(window).scroll(function () {
+$(window).scroll(function() {
   if ($(this).scrollTop() >= 50) {
     $(".sidenav").addClass("box-shadow");
-  } else {
-    $(".sidenav").removeClass("box-shadow");
-  }
+ } else {
+  $(".sidenav").removeClass("box-shadow");
+}
 });
-// if (location.href.includes(".vercel.app")) {
-//   swal({
-//     title: "",
-//     text: "We detected that you are on my website on '.vercel.app'  To get the full expericence go https://sebastian-105.onrender.com ",
-//     icon: "info",
-//     buttons: true,
-//   })
-//   .then((willDelete) => {
-//     if (willDelete) {
-//       swal("You will now be moved to my full website", {
-//         icon: "success",
-//       });
-//       location.replace("https://seb-105.onrender.com")
-//     } else {
-//       swal("You have chosen to stay with '.vercel.app'", {
-//         icon: "info",
-//       });    }
-//   });
-// }
 var name = localStorage.getItem("personname");
 var tabicon105 = localStorage.getItem("tabicon105");
 var tabname1234 = localStorage.getItem("tabname1234");
 var notification = $("#copyalertcorner123");
-/* This section is for changing/setting page themes or tab icon/title */
 var theme = localStorage.getItem("theme");
 if ((defaulttheme = "notstet")) {
   $("body").addClass("default");
 } else {
   $("body").addClass(theme);
 }
-// Plays a hitmaker sound on click, turned off
-// document.addEventListener("click", (e) => {
-//   let myAudio = document.querySelector('#audio')
-//   myAudio.play();
-// });
+
+document.addEventListener("click", (e) => {
+  let myAudio = document.querySelector('#audio')
+  myAudio.play();
+});
 let defaultThemetext = $("#TheCurrentTheme");
 const defaulttab = {
   title: "Sebastian S",
@@ -177,14 +138,10 @@ document.addEventListener("keydown", (e) => {
       "Games | Sebastian",
       `width=${width} height=${height}`
     );
-  }  else if (e.key === "P" && e.ctrlKey) {
-    if (location.href.includes('vercel.app')) {
-      swal("Uh Oh!", "This function is still in maintenance, go to sebastian-105.onrender.com for this to work", "warning");
-    }
-    else {
-      window.open("/search/index.html")
-    }
-  } else if (e.key === "s" && e.ctrlKey) {
+  } else if (e.key === "P" && e.ctrlKey) {
+    e.preventDefault();
+    openSearchMenu();
+  }  else if (e.key === "s" && e.ctrlKey) {
     e.preventDefault();
     $("#settingsmenu").fadeToggle("fast");
     console.log("settings page opened");
@@ -192,18 +149,15 @@ document.addEventListener("keydown", (e) => {
     e.preventDefault();
     window.open("/index.html");
     console.log("settings page opened");
-  } else if (e.key === "p" && e.ctrlKey) {
-    e.preventDefault();
-    window.open("https://proxy-105.vercel.app");
-    console.log("Proxy opened");
   } else if (e.key === "c" && e.ctrlKey) {
     e.preventDefault();
     window.open("/105/chatroom/index.html");
   } else if (e.key === "c" && e.altKey) {
     var chatroomwindow = window.open(
       "/105/chatroom/index.html",
-      "Chatroom | Sebastian",
+      'Chatroom | Sebastian',
       `width=${width} height=${height}`
+      
     );
   } else if (e.key === "o" && e.ctrlKey) {
     e.preventDefault();
@@ -219,23 +173,21 @@ document.addEventListener("keydown", (e) => {
     aboutblank_window();
   } else if (e.key === "m" && e.ctrlKey) {
     $("#menurealz").fadeToggle("fast");
-  } else if ((e.key === "a" && e.ctrlKey) || (e.key === "H" && e.ctrlKey)) {
+  } else if ((e.key === "a" && e.ctrlKey) || (e.key === "H" && e.ctrlKey )) {
     e.preventDefault();
-    openHelpMenu();
+    openHelpMenu()
   } else if (e.key === "?") {
     $("#menurealz").fadeToggle("fast");
   }
 });
 function settingsclose() {
-  $("#settingsclose").click(function (e) {
-    $(".menupopup").fadeOut("fast");
-  });
-}
+$("#settingsclose").click(function (e) {
+  $(".menupopup").fadeOut("fast");
+});}
 function allActionsClose() {
-  $("#allactionsclose").click(function (e) {
-    $(".menupopup").fadeOut("fast");
-  });
-}
+$("#allactionsclose").click(function (e) {
+  $(".menupopup").fadeOut("fast");
+});}
 function setTitle(title = "") {
   if (title) {
     document.title = title;
@@ -302,14 +254,34 @@ function aboutblank_window() {
   aboutblank.document.write(html);
 }
 
+function opengamespage() {
+    window.open(
+        './game/index.html',
+        'Games | Sebastian',
+        `width=${width} height=${height}`)
+}
+function openhomepage() {
+    window.open("/");
+}
+function openchatroom() {
+    window.open('/105/chatroom/index.html')
+}
 function openHelpMenu() {
-  $(`#allactions`).fadeToggle(`fast`);
+    $(`#allactions`).fadeToggle(`fast`);
+}
+class Notification {
+  constructor(content, status) {
+    this.content = content;
+    this.status = status;
+  $("#copyalertcorner123").fadeIn("fast").delay(2000).fadeOut("fast");
+  $("#copyalertcorner123").css("background-color", `var(--${status})`);
+  $("#copyalertcorner123").html(content);
+  }
 }
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
 // Useless stuff but also helpful don't mess with this %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
 const floatingcontent = `
-
 <audio id="audio" src="/assets/sound/hitmarker/click7_0.wav"></audio>
 
 <div class="loader-wrapper">
@@ -344,10 +316,11 @@ const floatingcontent = `
    <ul>
       <h2>Themes:</h2>
       <button class="setthemebuttons" onclick="setThemes('default')" style="background-color:#111;color:white;">Default</button>
-      <button class="setthemebuttons" style="background-color:rgba(255, 255, 255, 0.75); color:black;" onclick="setThemes('light')">Light</button>
+      <button class="setthemebuttons" style="background-color:rgba(255, 255, 255, 0.75); color:black;" onclick="setThemes('light')" >Light</button>
       <button class="setthemebuttons" style="background-color:#6df320;color:black;"onclick="setThemes('green & black')">Green & Black</button>
       <button class="setthemebuttons" style="background-color:#0A2647;color:white;"onclick="setThemes('dark blue')">Dark Blue</button>
       <button class="setthemebuttons" style="background-color:#040622;color:white;"onclick="setThemes('blue')">Blue</button>
+       <button class="setthemebuttons" style="background-color:#ff9a00;color:white;"onclick="setThemes('halloween')">Halloween</button>
        <button class="setthemebuttons" style="background:linear-gradient(180deg, #FE0000 16.66%,#FD8C00 16.66%, 33.32%,#FFE500 33.32%, 49.98%,#119F0B 49.98%, 66.64%,#0644B3 66.64%, 83.3%,#C22EDC 83.3%);color:white;"onclick="setThemes('LGBTQ+')">LGBTQ+</button>
        <button class="setthemebuttons" style="background:linear-gradient(0, rgba(255,215,0,1) 0%, rgba(255,215,0,1) 50%, rgba(0, 87, 183,1) 50%, rgba(0, 87, 183,1) 100%);"onclick="setThemes('Ukraine')">Ukraine</button>
       <h2>Tab settings</h2>
@@ -382,8 +355,9 @@ const floatingcontent = `
     <ul class="actionsoptions" onclick="openhomepage()">Open Homepage (ctrl + h)</ul>
     <ul class="actionsoptions" onclick="openchatroom()">Open Chatroom (ctrl + c) (alt comp)</ul>
     <ul class="actionsoptions" onclick="window.open('https://organization-105.netlify.app/')">Open Organization-105 page (ctrl + o)</ul>
-    <ul class="actionsoptions" onclick="window.open('/search/index.html')">Search Website (Ctrl + Shift + p)</ul>
-    <ul class="actionsoptions" onclick="window.open('https://proxy-105.vercel.app')>Proxy (ctrl + p)</ul>
+    <ul class="actionsoptions" onclick=""></ul>
+    <ul class="actionsoptions" onclick=""></ul>
+    <ul class="actionsoptions" onclick=""></ul>
     <ul class="actionsoptions" onclick=""></ul>
     <ul class="actionsoptions" onclick=""></ul>
     <h1 style="font-size:25px;">Go To:</h1>
@@ -405,48 +379,84 @@ const floatingcontent = `
     <ul class="actionsoptions" onclick="window.open('mailto:28schapel4@glexingtonma.org')">School Email</ul>
     <ul class="actionsoptions" onclick="window.open('https://discord.gg/hGzm2drjan')">Discord Server</ul>
     <ul class="actionsoptions" onclick="window.open('https://eaglercraft-105.vercel.app')">Eaglercraft-105</ul>
-    <ul class="actionsoptions" onclick="window.open('https://sebastian-105.vercel.app/105/feedback')">Feedback Form</ul>
     <ul class="actionsoptions" onclick="window.open('')"></ul>
 
    </div>
 </div>
-</div>
-<div class="sidenav" position="top">
-<straight style="width:5px;"></straight>
+</div><div class="sidenav" >
 
-<a onclick="window.open('/index.html')" target="_blank" title="Sebastian-105" style="padding:0px; text-align:center;"><img src="/105.png" alt="105" style="width:48px; height:48px;border-radius:50%;border:solid 1px var(--font-color);background-color:var(--theme2);">
-</a><a onclick="window.open('/105/about-me/index.html')" target="_blank" title="About Me" style="padding:15px; text-align:center;">
-<i class="fa-solid fa-user" style="font-size:12px;"> Sebastian Schapfel</i></a>
 
-   <straight></straight>
-<a onclick="window.open('game/index.html')" target="_blank" title="Games Site" style="padding:15px; text-align:center;">
-   <i class="fa fa-gamepad" aria-hidden="true" style="font-size:12px;">  Games Page</i></a>
-
-   <straight></straight>
-   <a onclick="$('#settingsmenu').fadeToggle('fast');console.log('settings page opened');" title="Settings" style="padding:15px; text-align:center;">
-   <i class="fa fa-cog" aria-hidden="true" style="font-size:12px;"> Settings</i>
-   </a>
-<straight>
-</straight>
-<a target="_blank" title="Chatroom" style="padding:15px; text-align:center;">
-   <i id="dropdown-sidenav" class="fa-solid fa-angle-down" aria-hidden="true" style="font-size:12px;"> Links</i>
- <!-- <a class="sidenav-dropdown-options">asdf</a>
-   <a class="sidenav-dropdown-options">asdf</a> -->
-   </a>
-<straight>
-</straight>
-<a onclick="window.open('105/chatroom/index.html')" target="_blank" title="Chatroom" style="padding:15px; text-align:center;">
-   <i class="fa fa-commenting-o" aria-hidden="true" style="font-size:12px;"> Chatrooom</i></a>
-   <straight></straight>
-   <a onclick="window.open('legal/terms/index.html')" target="_blank" title="Privacy Policy" style="padding:15px; text-align:center;"><i class="fa fa-book" aria-hidden="true" style="font-size:12px;"> Privacy Policy</i></a>
-   <straight></straight>
-   <a onclick="window.open('legal/privacy/index.html')" target="_blank" title="Terms and Agreements" style="padding:15px; text-align:center;"><i class="fa fa-handshake-o" aria-hidden="true" style="font-size:12px;"> Terms and Agreements</i>
+<a onclick="window.open('game/index.html')" target="_blank" title="Games Site">
+   <i class="fa fa-gamepad" aria-hidden="true"> Games Page</i>
+   
+</a><straight></straight><a onclick="$('#settingsmenu').fadeToggle('fast');console.log('settings page opened');" title="Settings">
+   <i class="fa fa-cog" aria-hidden="true"> Settings</i>
+  
+</a>
+<straight></straight><a onclick="window.open('105/chatroom/index.html')" target="_blank" title="Chatroom">
+   <i class="fa fa-commenting-o" aria-hidden="true"> Chatrooom</i>
+  
+</a><straight></straight><a onclick="window.open('legal/terms/index.html')" target="_blank" title="Privacy Policy">
+   <i class="fa fa-book" aria-hidden="true"> Privacy Policy</i></a><straight></straight><a onclick="window.open('legal/privacy/index.html')" target="_blank" title="Terms and Agreements">
+   <i class="fa fa-handshake-o" aria-hidden="true"> Terms and Agreements</i>
 
 </a><straight></straight>
-<a onclick="$('#allactions').fadeToggle('fast');" target="_blank" title="All Actions"style="padding:15px; text-align:center;">
-   <i class="fa fa-plus" aria-hidden="true" style="font-size:12px;"> All Actions</i>
+<br>
+<a onclick="$('#allactions').fadeToggle('fast');" target="_blank" title="All Actions">
+   <i class="fa fa-plus" aria-hidden="true"> All Actions</i>
+  
 </a>
-<straight style="width:5px;"></straight>
+
+<br>
+<bottom>
+<!-- <button class="dropdown-btn" title="all my forms">
+   Forms
+   <div class="list">~</div>
+   </button>
+   <div class="dropdown-container">
+   <a class="jQuerytest" href="https://forms.gle/hR1MggYi3tDUGgzKA" target="_bank">Registration form</a>
+   <a class="jQuerytest" href="https://forms.gle/br2Nd426yGBtuHVB6" target="_bank">Help form</a>
+   <a class="jQuerytest" href="https://forms.gle/mb2QFzE9WVeiRB2h9" target="_blank">Addgame form</a>
+   <a class="jQuerytest" href="https://forms.gle/TVqtqGoFw7u2EpZq7" target="_blank">Suggestions</a>
+   <a class="jQuerytest" href="https://forms.gle/7HRXRmFUnAN8KRDfA" target="_blank">Feedback</a>
+   </div>
+   <button class="dropdown-btn" title="all my forms">
+   Backup Links
+   <div class="list">~</div>
+   </button>
+   <div class="dropdown-container">
+   <a class="jQuerytest" onclick='openlink("https://forms.gle/hR1MggYi3tDUGgzKA")'
+     target="_bank">.vercel.app</a>
+   <a class="jQuerytest" href="https://forms.gle/br2Nd426yGBtuHVB6" target="_bank">Help form</a>
+   <a class="jQuerytest" href="https://forms.gle/mb2QFzE9WVeiRB2h9" target="_blank">Addgame form</a>
+   <a class="jQuerytest" href="https://forms.gle/TVqtqGoFw7u2EpZq7" target="_blank">Suggestions</a>
+   <a class="jQuerytest" href="https://forms.gle/7HRXRmFUnAN8KRDfA" target="_blank">Feedback</a>
+   </div>
+   <button class="dropdown-btn" title="all my forms">
+   <div class="list">~</div>
+   Extra links
+   </button>
+   <div class="dropdown-container">
+   <a class="jQuerytest"
+     href="https://github.com/Sebastian-105/Sebastian-105.github.io/blob/main/CODE_OF_CONDUCT.md"
+     target="_blank" title="Code of conduct">CODE OF CONDUCT.md</a>
+   <a class="jQuerytest"
+     href="https://github.com/Sebastian-105/Sebastian-105.github.io/blob/main/CONTRIBUTING.md"
+     target="_blank">CONTRIBUTING.md</a>
+   <a class="jQuerytest" href="https://github.com/Sebastian-105/Sebastian-105.github.io/blob/main/CHANGELOG.md"
+     title="Outdated">changelog.md</a>
+   <a class="jQuerytest"
+     href="https://github.com/Sebastian-105/Sebastian-105.github.io/blob/main/SECURITY.md">Security.md</a>
+   </div>
+   <button class="dropdown-btn" title="all my forms">
+   <div class="list">~</div>
+   Tutorials
+   </button>
+   <div class="dropdown-container">
+   <a class="jQuerytest" href="105/tutorial/index.html" target="_blank" title="Tutorial">Tutorials</a>
+   <a class="jQuerytest" href="105/tutorial/code/index.html" target="_blank" title="Tutorial">Download
+     Locally</a>
+   </div>-->
 </div>
 <!--JS Libarys-->
          <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -456,22 +466,17 @@ const floatingcontent = `
          <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js" integrity="sha512-KZmyTq3PLx9EZl0RHShHQuXtrvdJ+m35tuOiwlcZfs/rE7NZv29ygNA8SFCkMXTnYZQK2OX0Gm2qKGfvWEtRXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
          <script src="/assets/js/Sebastian-105.js></script>`;
 $("body").append(floatingcontent);
-// ====================================
-// SCRIPT INJECTION
-// ====================================
-const gogascript27 = document.createElement("script");
-gogascript27.setAttribute("type", "text/javascript");
-const inlinegogascript843 = document.createElement("script");
-inlinegogascript843.innerHTML = `
-window.smartlook||(function(d) {
-  var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
-  var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
-  c.charset='utf-8';c.src='https://web-sdk.smartlook.com/recorder.js';h.appendChild(c);
-  })(document);
-  smartlook('init', 'a7e3ed1415658b0add8ad2a553f68a513f045a4e', { region: 'eu' });
-  smartlook('record', { forms: true });
-  smartlook('record', { ips: true });
-  smartlook('record', { emails: true });
-`;
-document.head.append(gogascript27, inlinegogascript843);
-console.log("Injected Analytics Script");
+const searchMenu = `
+    <div style="text-align: center;">
+      <form method="get" action="/search/105.html" target="_blank">
+        <input
+          type="text"
+          name="search"
+          placeholder="Search"
+          id="toBeChecked" /><br /><br />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+   
+`
+// $("body").append(searchMenu);

@@ -18,19 +18,7 @@
    ───────────────────────────────────────────────────────────────────────────────────────────────────|-->
    <!DOCTYPE html>  
    <html lang="en-US">
-      <head><!-- Google tag (gtag.js) -->
-         <script async src="https://www.googletagmanager.com/gtag/js?id=G-9YJN0VSQ6G"></script>
-         <script>
-           window.dataLayer = window.dataLayer || [];
-           function gtag(){dataLayer.push(arguments);}
-           gtag('js', new Date());
-         
-           gtag('config', 'G-9YJN0VSQ6G');
-         </script>
-         
-         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6472745311433549"
-     crossorigin="anonymous">
-   </script>
+      <head>
          <script type='text/javascript'>
             window.smartlook||(function(d) {
               var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
@@ -59,70 +47,54 @@
          <link href="assets/css/jquery-ui.css" rel="stylesheet">
          <link rel="help" href="105/help/index.html" />
          <link rel="license" href="LICENSE" />
-         <link rel="icon" href="/105.png"/>
+         <link rel="icon" href="105.png" style="border-radius: 50%" />
          <title class="title">Sebastian S</title>
       </head>
-      <body theme="default"> <!-- <body theme="default"> -->
+      <body theme="default">
       
          <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
             Stuff that floats/is hidden at first
-            %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+            %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
          <main>
          
          <!-- End of little alert in corner -->
          <!--───────────────Callout───────────────-->
-          <div class="callout">
-            <div class="callout-header"><strong>Added Proxy!</strong></div>
+         <!-- <div class="callout">
+            <div class="callout-header"><strong>Unblocked My Site!!!</strong></div>
             <span class="closecallout">×</span>
             <div class="callout-container">
-              <p style="margin:5px;"><a href="https://proxy-105.vercel.app">Proxy (click me)</a></p>
+              <p style="font-size:18px; margin-left: 5px;">The Links</p>
+              <p style="margin:5px;"><a style="font-size:18px;" href="./105/blocked/index.html">The blocked page (list of backup urls)</a></p>
             </div>
-            </div> 
+            </div> -->
          <!-- ───────────────Alert Box───────────────-->
          <!-- in order to add an alert box copy. . . -->
          <div class="alert info" style="display: none">
             <div id="tacbox" style="display: block">
                <input id="terms2" type="checkbox" oninput="terms()" onclick="termslocalstroage" />
-               <label for="checkbox"><!-- Put the info/warning/success here -->
+               <label for="checkbox">By using any URL under this domain, I
+               agree to these
+               <a href="105/terms/index.html">Terms and Conditions</a>.</label>
             </div>
          </div>
          <!--to create one you can add "success", "info", "warning", after the class alert before the quotation marks -->
          <!-- ───────────────Home─────────────── -->
          <!--──────────────── HEADER────────────────-->
          <div id="home">
-            <script type="text/javascript ">
-               // Wrap every letter in a span
-               var textWrapper = document.querySelector('.ml7 .letters');
-               textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-               anime.timeline({loop: true})
-               .add({
-               targets: '.ml7 .letter',
-               translateY: ["1.1em", 0],
-               translateX: ["0.55em", 0],
-               translateZ: 0,
-               rotateZ: [180, 0],
-               duration: 750,
-               easing: "easeOutExpo",
-               delay: (el, i) => 50 * i
-               }).add({
-               targets: '.ml7',
-               opacity: 0,
-               duration: 1000,
-               easing: "easeOutExpo",
-               delay: 1000
-               });
-            </script>
             <section class="intro">
                <h3 style="font-size:8rem;">Sebastian S</h3>
+               <copyalertcorner class="alertcorner" id="copyalertcorner123"></copyalertcorner>
                <p><a class="linksicons" href="https://github.com/Sebastian-105" target="_blank"><img class="linksicons"
-                  style="width:55px;height:55px;margin-right:10px;border-radius:50%;"
-                  src="https://icon.horse/icon/github.com" alt="Github"></a>
+                  style="width:50px;height:50px;margin-right:10px"
+                  src="assets/images/github.svg" alt="Github">
                   <a class="linksicons" style="width:50px;height:50px;"
                      href="https://open.spotify.com/user/xgejalgtp9rurdpiic5ysyrju" target="_blank"><img class="linksicons"
-                     style="width:55px;height:55px;margin-right:10px;border-radius:50%;"
-                     src="https://icon.horse/icon/spotify.com" alt="Spotify"></a>
-                  <a class="linksicons" style="width:50px;height:50px;" href="https://Sebastian-105.vercel.app" target="_blank"><img class="linksicons"
-                     style="width:55px;height:55px; border-radius:50%;" src="./105.png" alt="Sebastian-105"></a>
+                     style="width:50px;height:50px;margin-right:10px"
+                     src="assets/images/favicon.0f31d2ea.ico" alt="Spotify"></a>
+                  <a class="linksicons" style="width:50px;height:50px;
+                     " href="https://Sebastian-105.vercel.app" target="_blank"><img class="linksicons"
+                     style="width:50px;height:50px; border-radius:50%;" src="./105.png" alt="Sebastian-105"></a>
+               </p>
                </p>
                <!--───────────────social media links───────────────-->
             </section>
@@ -145,7 +117,6 @@
          </p>
          <!--───────────────Sidenav───────────────-->
          <div class="hr"></div>
-         
          <div class="Untitled"></div>
          <!--─────The sidenav end─────-->
          <!--───────────────Contact───────────────-->
@@ -192,40 +163,16 @@
             <danyang>28stu076@lexingtonma.org</danyang>
          </a>
          <div class="social-media"></div>
-         
-         
          <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
             Scripts  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
          <!--JS Libarys-->
          <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
          <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
          <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> 
          <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.3.4/vue.cjs.js" integrity="sha512-Om0T2d9tl4H2ShSsEkWjJeQOlXGJg4OZvXKZw075refp2RNZ1avQDbqd6WhwGbWhqpcn2oPmExCEa/lSLzZaJw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
          <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js" integrity="sha512-KZmyTq3PLx9EZl0RHShHQuXtrvdJ+m35tuOiwlcZfs/rE7NZv29ygNA8SFCkMXTnYZQK2OX0Gm2qKGfvWEtRXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
          <!--JS Libarys end -->
-         <script>
-            if (location.href.includes('vercel.app') ||location.href.includes('netlify.app')) {
-               swal({
-  title: "Oh No!",
-  text: "This URL of my website is deprecated, click \"Ok\" to get the full verison of my website",
-  icon: "warning",
-  buttons: true,
-  dangerMode: true,
-})
-.then((willDelete) => {
-  if (willDelete) {
-    swal("Success","Going to my website", {
-      icon: "success",
-    });
-    window.location.replace("https://sebastian-105.onrender.com")
-  } else {
-    swal("Staying here","I would not recommend", {
-      icon: "warning",
-    });
-  }
-});}
-</script>
          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
          <script src="assets/lib/javascriptlib.js"></script>
          <script src="assets/js/jQuery.min.js"></script>
@@ -234,4 +181,3 @@
          <script src="https://icon105.netlify.app/Sebastian105.js" defer></script>
       </body>
    </html>
-   <!-- Original Template Made By @lilykhan (replit) -->
