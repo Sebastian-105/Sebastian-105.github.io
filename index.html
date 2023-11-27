@@ -174,7 +174,30 @@
          <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js" integrity="sha512-KZmyTq3PLx9EZl0RHShHQuXtrvdJ+m35tuOiwlcZfs/rE7NZv29ygNA8SFCkMXTnYZQK2OX0Gm2qKGfvWEtRXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
          <!--JS Libarys end -->
          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+         
          <script src="assets/lib/javascriptlib.js"></script>
+         <script>
+            if (location.href.includes('vercel.app') ||location.href.includes('netlify.app')) {
+               swal({
+  title: "Oh No!",
+  text: "This URL of my website is deprecated, click \"Ok\" to get the full verison of my website",
+  icon: "warning",
+  buttons: true,
+  dangerMode: true,
+})
+.then((willDelete) => {
+  if (willDelete) {
+    swal("Success","Going to my website", {
+      icon: "success",
+    });
+    window.location.replace("https://sebastian-105.onrender.com")
+  } else {
+    swal("Staying here","I would not recommend", {
+      icon: "warning",
+    });
+  }
+});}
+</script>
          <script src="assets/js/jQuery.min.js"></script>
          <script src="assets/js/Sebastian-105.js"></script>
          <script src="assets/js/about-blank.js"></script>
