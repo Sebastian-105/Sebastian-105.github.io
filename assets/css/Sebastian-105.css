@@ -2495,6 +2495,7 @@ button[type="submit"]:hover {
 .gameSearch {
   margin-top:100px;
   text-align: center;
+  position: relative;
 }
 .gameSearch > input {
   width:60%;

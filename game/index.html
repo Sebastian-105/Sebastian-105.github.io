@@ -45,7 +45,7 @@
     <link rel="stylesheet" href="../assets/lib/font-awesome.min.css" />
     <title>Sebastian S | Games</title>
     <link href="../assets/css/Sebastian-105.css" rel="stylesheet" />
-    <link rel="icon" href="/105.png"> 
+    <link rel="icon" href="/105.png" />
   </head>
   <body id="game-page-body">
     <!-- <center>
@@ -58,18 +58,19 @@
       </div>
       
 </center> -->
-<div style="margin-top: 100px;text-align: center;">
-  <h1 style="font-size: 50px;">Games Page</h1>
-  <hr>
-  <h2 style="font-size: 30px;">By Sebastian</h2>
-</div>
+    <div style="margin-top: 100px; text-align: center">
+      <h1 style="font-size: 50px">Games Page</h1>
+      <hr />
+      <h2 style="font-size: 30px">By Sebastian</h2>
+    </div>
     <div class="gameSearch">
       <input
         type="text"
         id="myInput"
         placeholder="Search games . . ."
+        onmouseover="gameSearchFunction1(this)"
         onclick="gameSearchFunction()" />
-    </div>
+      </div>
     <!--<h4 style="text-align: center; margin-top:25px; margin-bottom: 0px;">Filters</h4>
     <div class="filterGamesSection" style="margin: auto; margin-top:25px; border-radius: 25px;">
       <button style="background-color: var(--theme2);"></button>
@@ -145,12 +146,18 @@
 Scripts  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
     <!--JS Libarys-->
     <script>
+      function gameSearchFunction1(e) {
+        $(e).hide('slow'); setTimeout(() => {
+          $('.gameSearch').text('This feature is currently not working, suck it up.')
+        }, 350);
+         
+      }
       function gameSearchFunction() {
         swal({
           title: "Search bar",
-          text: "I am currently trying to fix the search bar, until then just use \"ctrl + f\" \n-Sebastian",
+          text: 'I am currently trying to fix the search bar, until then just use "ctrl + f" \n-Sebastian',
           icon: "error",
-          button:"I'll be patient"
+          button: "I'll be patient",
         });
       }
     </script>
