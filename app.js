@@ -23,7 +23,7 @@ app.get("/assets/*", function (req, res) {
   // eslint-disable-next-line no-undef
   res.sendFile(path.join(__dirname + "/401.html"));
 });
-app.get('/hello', function (req, res) {
+app.get('/hello1', function (req, res) {
   res.status(200).json({
     message: "Hello World!"
   });
