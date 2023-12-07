@@ -399,10 +399,10 @@ const floatingcontent = `
    <i class="fa fa-book" aria-hidden="true"> Privacy Policy</i></a><straight></straight><a onclick="window.open('legal/privacy/index.html')" target="_blank" title="Terms and Agreements">
    <i class="fa fa-handshake-o" aria-hidden="true"> Terms</i>
 
-</a><straight></straight>
-<a onclick="window.open('105/about-me/hireme/index.html')" target="_blank" title="Like What I do?">
+</a><!--<straight></straight>
+ <a onclick="window.open('105/about-me/hireme/index.html')" target="_blank" title="Like What I do?">
    <i class="fa fa-book" aria-hidden="true"> Privacy Policy</i></a><straight></straight><a onclick="window.open('legal/privacy/index.html')" target="_blank" title="Terms and Agreements">
-   <i class="fa-solid fa-address-card"> Hire Me</i>
+   <i class="fa-solid fa-address-card"> Hire Me</i> -->
 
 </a>
 <straight></straight>
