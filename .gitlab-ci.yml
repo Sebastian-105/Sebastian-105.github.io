@@ -1,0 +1,20 @@
+build-job:
+  stage: build
+  script:
+    - npm install
+
+test-job1:
+  stage: test
+  script:
+    - npm run test
+
+test-job2:
+  stage: test
+  script:
+    - jest 
+
+deploy-prod:
+  stage: deploy
+  script:
+    - npm run start
+  environment: production
