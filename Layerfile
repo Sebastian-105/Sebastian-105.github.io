@@ -1,12 +1,6 @@
 #Use an Ubuntu 18.04 base for our staging server
 FROM vm/ubuntu:18.04
-
-# To note: Layerfiles create entire VMs, *not* containers!
-
-# Install python
-RUN apt-get update && apt-get install python3
-
-# Create some files
+# install dependacies
 RUN npm install
 
 # You could also install & start a database:
