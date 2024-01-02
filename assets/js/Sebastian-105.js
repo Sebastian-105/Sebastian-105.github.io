@@ -269,6 +269,9 @@ function openchatroom() {
 function openHelpMenu() {
     $(`#allactions`).fadeToggle(`fast`);
 }
+function hideE() {
+  document.getElementById("hideelement").css("display", "none");
+}
 class Notification {
   constructor(content, status) {
     this.content = content;
