@@ -173,7 +173,7 @@ document.addEventListener("keydown", (e) => {
     aboutblank_window();
   } else if (e.key === "m" && e.ctrlKey) {
     $("#menurealz").fadeToggle("fast");
-  } else if ((e.key === "a" && e.ctrlKey) || (e.key === "H" && e.ctrlKey )) {
+  } else if ((e.key === "a" && e.ctrlKey) || (e.key === "H" && e.ctrlKey ) || (e.key === "P" && e.ctrlKey)) {
     e.preventDefault();
     openHelpMenu()
   } else if (e.key === "?") {
@@ -347,7 +347,7 @@ const floatingcontent = `
    <div class="menucontenttext">
     <h1 style="font-size:25px;">Keyboard Shotcuts:</h1>
     <subtitle>Most of the links the <code>ctrl</code> can be repaced with <code>alt</code> to open the page in a new window,  If it has <code>(alt comp)</code> next to it then it works</subtitle>
-    <ul class="actionsoptions" onclick="openHelpMenu()">Opens this menu (ctrl + a, ctrl + shift + h)</ul>
+    <ul class="actionsoptions" onclick="openHelpMenu()">Opens this menu (ctrl + a, ctrl + shift + h, ctrl + shift + p)</ul>
     <ul class="actionsoptions" onclick="window.open('./game/')">Games page (ctrl + g)</ul>
     <ul class="actionsoptions" onclick="opengamespage()">Open Games page in new window</ul>
 
