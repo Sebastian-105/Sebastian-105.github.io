@@ -66,6 +66,9 @@ const screenHeigthGame = screen.height;
 </script><body></html>`
     var myWindow = window.open("", "_blank");
     myWindow.document.write(windowContent);
+    setTimeout(() => {
+      document.getElementById("hideelement").css("display", "none")
+    }, 5000);
   };
       gamesContainer.appendChild(game105);
       // Add click event listener to the game element to show the game in the game container
