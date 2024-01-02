@@ -173,11 +173,12 @@ document.addEventListener("keydown", (e) => {
     aboutblank_window();
   } else if (e.key === "m" && e.ctrlKey) {
     $("#menurealz").fadeToggle("fast");
-  } else if ((e.key === "a" && e.ctrlKey) || (e.key === "H" && e.ctrlKey ) || (e.key === "P" && e.ctrlKey)) {
+  } else if ((e.key === "a" && e.ctrlKey) || (e.key === "H" && e.ctrlKey ) || (e.key === "P" && e.ctrlKey) || (e.key === "?")) {
     e.preventDefault();
     openHelpMenu()
-  } else if (e.key === "?") {
-    $("#menurealz").fadeToggle("fast");
+  } 
+  else if (e.key === "p" && ctrlKey) {
+    window.open("https://proxy-105.vercel.app");
   }
 });
 function settingsclose() {
