@@ -41,11 +41,11 @@ Here is most of the CSS for the "sebastian-105" website
   --contrast:white;
   --main-border-color2: white;
   --sub-font-color: lightgrey;
-  --r-gradient: radial-gradient(circle, #555, #111);;
+  --r-gradient: radial-gradient(circle, #555, #111);
   --bordercolor: white;
-  margin:0px;
   --success: #04AA6D;
   --error:#f44336;
+    margin:0px;
 }
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Themes 
