@@ -8,7 +8,6 @@
     "editor.codeActionWidget.showHeaders": false,
     "editor.defaultFormatter": "ms-vscode.anycode",
     "editor.fastScrollSensitivity": 10,
-    "editor.lightbulb.enabled": true,
     "editor.lineNumbers": "on",
     "editor.matchBrackets": "always",
     "editor.cursorSmoothCaretAnimation": "on",
