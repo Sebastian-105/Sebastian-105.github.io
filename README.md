@@ -7,7 +7,7 @@
 
 Unless it is directly linking something then delete it. <br>
 1). Because this website works on html and node.js (node.js is better and has more features), to run this website locally type in the terminal <br> 
-```npm install && npm run start```
+```npm install && npm run start && npm run test```
 <br>
 2). If you find those go through every HTML page and remove
 ```
