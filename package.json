@@ -47,10 +47,10 @@
     "typescript": "^4.2.3"
   },
   "scripts": {
+    "105": "npm install && npm run start && npm run test",
     "test": "jest",
     "build": "npm install",
-    "start": "nodemon index.js",
-    "105": "npm install && npm run start && npm run test"
+    "start": "nodemon index.js"
   },
   "jest": {
     "testEnvironment": "node",

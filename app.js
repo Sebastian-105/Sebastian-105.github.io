@@ -2,11 +2,7 @@
 const express = require("express");
 const app = express();
 const path = require("path");
-var vhost = require('vhost');
 
-express()
-.use(vhost('game.sebastian-105.onrender.com', require('/game/index.html').app))
-.listen(80)
 // const router = express.app();
 // eslint-disable-next-line no-undef
 app.use(express.static(__dirname + "/"));
