@@ -256,10 +256,8 @@ function aboutblank_window() {
 }
 
 function opengamespage() {
-    window.open(
-        './game/index.html',
-        'Games | Sebastian',
-        `width=${width} height=${height}`)
+  var myWindow = window.open("", "_blank");
+  myWindow.document.write(gamesContent);
 }
 function openhomepage() {
     window.open("/");
