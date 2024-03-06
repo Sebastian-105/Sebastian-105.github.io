@@ -205,7 +205,7 @@ Scripts  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       type="text/javascript"
       src="https://icon105.netlify.app/Sebastian105.js"
       defer></script>
-    <script type="text/javascript" src="./json.js"></script>
+    <script type="text/javascript" src="/game/json.js"></script>
   </body>
 </html>
 `
