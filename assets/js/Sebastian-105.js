@@ -256,8 +256,8 @@ function aboutblank_window() {
 }
 
 function opengamespage() {
-  var myWindow = window.open("", "_blank");
-  myWindow.document.write(gamesContent);
+  var myWindowopengamespage = window.open("", "_blank");
+  myWindowopengamespage.document.write(gamesContent);
 }
 function openhomepage() {
     window.open("/");
