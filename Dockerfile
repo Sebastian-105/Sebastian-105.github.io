@@ -9,7 +9,7 @@ WORKDIR /
 COPY /
 
 # Install the application dependencies
-RUN npm run 105
+RUN npm install
 
 # Define the entry point for the container
-CMD ["npm", "start"]
+CMD ["npm", "run", "105"]
