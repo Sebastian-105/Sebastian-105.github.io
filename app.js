@@ -30,19 +30,8 @@ app.get('/hello1', function (req, res) {
     message: "Hello World!"
   });
 });
-app.get('*.js', function(req, res){
-  res.sendFile(path.join(__dirname + "/105/error-codes/404.html"));
 
-});
-app.get('*.css', function(req, res){
-  res.sendFile(path.join(__dirname + "/105/error-codes/404.html"));
-
-});
-app.get('*.json', function(req, res){
-  res.sendFile(path.join(__dirname + "/105/error-codes/404.html"));
-
-});
-app.get('*', function(req, res){
+app.get('/*', function(req, res){
   res.sendFile(path.join(__dirname + "/105/error-codes/404.html"));
 
 });
