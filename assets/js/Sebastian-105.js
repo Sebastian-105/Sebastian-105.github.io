@@ -151,7 +151,7 @@ document.addEventListener("keydown", (e) => {
     console.log("settings page opened");
   } else if (e.key === "c" && e.ctrlKey) {
     e.preventDefault();
-    window.open("/105/chatroom/index.html");
+    prompt("If your on a LPS school account discord is blocked, even so, here is my link to my discord server","To Be Added Soon")
   } else if (e.key === "c" && e.altKey) {
     var chatroomwindow = window.open(
       "/105/chatroom/index.html",
