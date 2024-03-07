@@ -31,10 +31,6 @@ app.get('/hello1', function (req, res) {
   });
 });
 
-app.get('/*', function(req, res){
-  res.sendFile(path.join(__dirname + "/105/error-codes/404.html"));
-
-});
 
 
 module.exports = { app };
