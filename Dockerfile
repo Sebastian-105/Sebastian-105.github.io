@@ -12,4 +12,4 @@ COPY /
 RUN npm install
 
 # Define the entry point for the container
-CMD ["npm", "run", "105"]
+CMD ["npm", "run", "Sebastian"]
